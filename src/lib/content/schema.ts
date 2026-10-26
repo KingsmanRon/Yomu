@@ -366,6 +366,8 @@ export const TypingSchema = z
     mode: z.enum(["listen", "copy", "picture", "answer"]),
     target: LexRefSchema,
     question: LocalisedLineSchema.optional(),
+    /** answer mode: the text the question is about, shown again while typing. */
+    passage: LexRefSchema.optional(),
   })
   .strict();
 

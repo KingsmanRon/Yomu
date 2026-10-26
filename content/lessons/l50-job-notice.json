@@ -377,6 +377,7 @@
       },
       "mode": "answer",
       "target": "en.w.id",
+      "passage": "en.psg.job-notice",
       "question": {
         "zu": {
           "id": "zu.l50-job-notice.e06.q",
@@ -418,6 +419,7 @@
       },
       "mode": "answer",
       "target": "en.w.cleaner",
+      "passage": "en.psg.job-notice",
       "question": {
         "zu": {
           "id": "zu.l50-job-notice.e07.q",

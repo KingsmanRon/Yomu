@@ -5,7 +5,10 @@ import { fileURLToPath } from "node:url";
 // applied (local `supabase start`, or the CI service). See tests/db/README.md.
 export default defineConfig({
   resolve: {
-    alias: { "@": fileURLToPath(new URL("./src", import.meta.url)) },
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "server-only": fileURLToPath(new URL("./tests/shims/server-only.ts", import.meta.url)),
+    },
   },
   test: {
     include: ["tests/db/**/*.test.ts"],

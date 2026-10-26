@@ -354,6 +354,42 @@
       }
     },
     {
+      "id": "consent.analytics",
+      "description": "Separate optional consent: pseudonymous usage counts.",
+      "zu": {
+        "id": "zu.app.consent.analytics",
+        "text": "Singabala ukuthi uyisebenzisa kanjani i-app, ngaphandle kwegama lakho, ukuze siyithuthukise? Ungashintsha lokhu noma nini ku-Mina.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.analytics",
+        "text": "Na re ka bala hore o sebedisa app jwang, ntle le lebitso la hao, e le hore re e ntlafatse? O ka fetola sena neng kapa neng ho Nna.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.pin",
+      "description": "Confirm the PIN to save it safely online.",
+      "zu": {
+        "id": "zu.app.consent.pin",
+        "text": "Thinta ikhodi yakho eyimfihlo futhi, ukuze siyigcine ngokuphepha.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.pin",
+        "text": "Tobetsa khoutu ya hao ya lekunutu hape, hore re e boloke ka polokeho.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
       "id": "consent.declined",
       "description": "After declining consent.",
       "zu": {
@@ -450,14 +486,14 @@
       "description": "Cohort sharing: what joining always shares.",
       "zu": {
         "id": "zu.app.share.basic",
-        "text": "Uma ujoyina, uthisha wakho uzobona: isithombe sakho, izinga lakho, izifundo oziqedile, nosuku lokugcina oprakthize ngalo.",
+        "text": "Uma ujoyina, uthisha wakho uzobona: isithombe sakho, izinga lakho, izifundo oziqedile, nosuku lokugcina oprakthize ngalo. Uzobona nezibalo zekilasi lonke zamakhono abelukhuni, ngaphandle kokukhomba wena.",
         "review": {
           "status": "draft"
         }
       },
       "st": {
         "id": "st.app.share.basic",
-        "text": "Ha o kena, titjhere ya hao o tla bona: setshwantsho sa hao, boemo ba hao, dithuto tseo o di qetileng, le letsatsi la ho qetela leo o ikwetlisitseng ka lona.",
+        "text": "Ha o kena, titjhere ya hao o tla bona: setshwantsho sa hao, boemo ba hao, dithuto tseo o di qetileng, le letsatsi la ho qetela leo o ikwetlisitseng ka lona. O tla bona le dipalo tsa tlelase yohle tsa bokgoni bo neng bo le thata, ntle le ho o supa.",
         "review": {
           "status": "draft"
         }
@@ -2194,6 +2230,62 @@
       "st": {
         "id": "st.app.assist.new_pin",
         "text": "Etsa khoutu e ntjha ya lekunutu. Titjhere ya hao ha a a tlameha ho sheba.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "assist.enter_pin",
+      "description": "Device transfer: the learner enters their secret code on the new phone.",
+      "zu": {
+        "id": "zu.app.assist.enter_pin",
+        "text": "Faka ikhodi yakho eyimfihlo ukuze ulethe izifundo zakho kule foni.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.assist.enter_pin",
+        "text": "Kenya khoutu ya hao ya lekunutu ho tlisa dithuto tsa hao founung ena.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "assist.forgot",
+      "description": "Device transfer: the learner has forgotten their secret code.",
+      "zu": {
+        "id": "zu.app.assist.forgot",
+        "text": "Uma ukhohliwe ikhodi yakho, thinta lapha ukuze wenze entsha.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ngikhohliwe"
+      },
+      "st": {
+        "id": "st.app.assist.forgot",
+        "text": "Haeba o lebetse khoutu ya hao, tobetsa mona ho etsa e ntjha.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ke lebetse"
+      }
+    },
+    {
+      "id": "assist.moved",
+      "description": "Device transfer finished.",
+      "zu": {
+        "id": "zu.app.assist.moved",
+        "text": "Kulungile. Izifundo zakho sezikule foni manje.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.assist.moved",
+        "text": "Ho lokile. Dithuto tsa hao di se di le founung ena jwale.",
         "review": {
           "status": "draft"
         }

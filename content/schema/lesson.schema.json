@@ -1169,6 +1169,9 @@
                 },
                 "question": {
                   "$ref": "#/$defs/__schema12"
+                },
+                "passage": {
+                  "$ref": "#/$defs/__schema24"
                 }
               },
               "required": [

@@ -4,15 +4,20 @@ zu.app.assess.offer,isiZulu,"Ungathanda ukwenza umsebenzi omfushane ukuze sithol
 zu.app.assess.skip,isiZulu,Yeqa.,,app: Skip the placement activity.,app,,1,draft,no,zu.app.assess.skip.wav
 zu.app.assess.start,isiZulu,Qala.,,app: Start the placement activity.,app,,1,draft,no,zu.app.assess.start.wav
 zu.app.assess.thanks,isiZulu,Ngiyabonga.,,app: Neutral acknowledgement after every placement answer (never right/wrong).,app,,1.2,draft,no,zu.app.assess.thanks.wav
+zu.app.assist.enter_pin,isiZulu,Faka ikhodi yakho eyimfihlo ukuze ulethe izifundo zakho kule foni.,,app: Device transfer: the learner enters their secret code on the new phone.,app,,5.5,draft,no,zu.app.assist.enter_pin.wav
+zu.app.assist.forgot,isiZulu,"Uma ukhohliwe ikhodi yakho, thinta lapha ukuze wenze entsha.",,app: Device transfer: the learner has forgotten their secret code.,app,,5,draft,no,zu.app.assist.forgot.wav
 zu.app.assist.handover,isiZulu,Uthisha wakho uzokusiza manje. Ikhodi yakho eyimfihlo ihlala iyimfihlo.,,app: Facilitator-assisted mode starts.,app,,5.9,draft,no,zu.app.assist.handover.wav
+zu.app.assist.moved,isiZulu,Kulungile. Izifundo zakho sezikule foni manje.,,app: Device transfer finished.,app,,3.9,draft,no,zu.app.assist.moved.wav
 zu.app.assist.new_pin,isiZulu,Yenza ikhodi entsha eyimfihlo. Uthisha wakho akufanele abuke.,,app: Learner sets a new PIN during facilitator help.,app,,5.1,draft,no,zu.app.assist.new_pin.wav
 zu.app.badge.earned,isiZulu,Uthole ibheji elisha!,,app: New badge.,app,,2,draft,no,zu.app.badge.earned.wav
 zu.app.consent.agree,isiZulu,"Yebo, ngiyavuma.",,app: Consent button: agree.,app,,1.6,draft,no,zu.app.consent.agree.wav
+zu.app.consent.analytics,isiZulu,"Singabala ukuthi uyisebenzisa kanjani i-app, ngaphandle kwegama lakho, ukuze siyithuthukise? Ungashintsha lokhu noma nini ku-Mina.",,app: Separate optional consent: pseudonymous usage counts.,app,,10.4,draft,no,zu.app.consent.analytics.wav
 zu.app.consent.decline,isiZulu,"Cha, gcina kule foni kuphela.",,app: Consent button: keep on phone only.,app,,2.6,draft,no,zu.app.consent.decline.wav
 zu.app.consent.declined,isiZulu,Kulungile. Ukufunda kwakho kuzohlala kule foni kuphela. Ungashintsha umqondo kamuva ku-Mina.,,app: After declining consent.,app,,7.5,draft,no,zu.app.consent.declined.wav
 zu.app.consent.delete,isiZulu,"Ungayeka noma nini. Ku-Mina, thinta isithombe somgqomo ukuze ususe konke. Kuzosuswa ngokushesha, ngaphandle kokushayela muntu.",,app: Consent 5/5: how to delete.,app,,10.1,draft,no,zu.app.consent.delete.wav
 zu.app.consent.intro,isiZulu,"Ngaphambi kokuthi sigcine imininingwane yakho ku-inthanethi, lalela lokhu.",,app: Consent 1/5 (POPIA): before anything is stored on the server.,app,,6.1,draft,no,zu.app.consent.intro.wav
 zu.app.consent.offline,isiZulu,"Ukugcina ku-inthanethi kudinga i-inthanethi. Okwamanje, ukufunda kwakho kuhlala kule foni.",,app: Registration needs the internet.,app,,7.3,draft,no,zu.app.consent.offline.wav
+zu.app.consent.pin,isiZulu,"Thinta ikhodi yakho eyimfihlo futhi, ukuze siyigcine ngokuphepha.",,app: Confirm the PIN to save it safely online.,app,,5.4,draft,no,zu.app.consent.pin.wav
 zu.app.consent.question,isiZulu,Uyavuma ukuthi sigcine ukufunda kwakho ku-inthanethi ngokuphepha?,,app: Consent question.,app,,5.4,draft,no,zu.app.consent.question.wav
 zu.app.consent.saved,isiZulu,Siyabonga. Ukufunda kwakho sekugciniwe ngokuphepha.,,app: After registration succeeded.,app,,4.3,draft,no,zu.app.consent.saved.wav
 zu.app.consent.what,isiZulu,"Sizogcina: isithombe sakho, ikhodi yakho eyimfihlo ivalelwe ukuze kungabikho muntu oyifundayo, ulimi lwakho, nenqubekela phambili yakho: izifundo, izimpendulo namakhono. Asilidingi igama lakho. Asiligcini izwi lakho.",,app: Consent 2/5: what is stored.,app,,17,draft,no,zu.app.consent.what.wav
@@ -107,7 +112,7 @@ zu.app.revision.intro,isiZulu,Asiprakthize izinto obekunzima kuwe.,,app: Revisio
 zu.app.save.choice,isiZulu,"Ungagcina ukufunda kwakho kule foni kuphela, noma usigcine ku-inthanethi ngokuphepha ukuze singalahleki. Ukugcina ku-inthanethi kusebenzisa idatha encane.",,app: Offer to save progress online (registration) or keep it on the phone (guest).,app,,12.2,draft,no,zu.app.save.choice.wav
 zu.app.save.online,isiZulu,Ngifuna ukugcina ku-inthanethi.,,app: Button: save online (leads to spoken consent).,app,,2.8,draft,no,zu.app.save.online.wav
 zu.app.save.phone_only,isiZulu,Gcina kule foni kuphela.,,app: Button: keep on this phone only (guest).,app,,2.2,draft,no,zu.app.save.phone_only.wav
-zu.app.share.basic,isiZulu,"Uma ujoyina, uthisha wakho uzobona: isithombe sakho, izinga lakho, izifundo oziqedile, nosuku lokugcina oprakthize ngalo.",,app: Cohort sharing: what joining always shares.,app,,9.7,draft,no,zu.app.share.basic.wav
+zu.app.share.basic,isiZulu,"Uma ujoyina, uthisha wakho uzobona: isithombe sakho, izinga lakho, izifundo oziqedile, nosuku lokugcina oprakthize ngalo. Uzobona nezibalo zekilasi lonke zamakhono abelukhuni, ngaphandle kokukhomba wena.",,app: Cohort sharing: what joining always shares.,app,,16,draft,no,zu.app.share.basic.wav
 zu.app.share.confirm,isiZulu,Joyina ikilasi.,,app: Confirm joining.,app,,1.6,draft,no,zu.app.share.confirm.wav
 zu.app.share.intro,isiZulu,Ikilasi likathisha wakho lifuna ukubona inqubekela phambili yakho. Nguwe okhethayo ukuthi bangabonani.,,app: Cohort sharing consent 1/4.,app,,8.2,draft,no,zu.app.share.intro.wav
 zu.app.share.mastery,isiZulu,"Ingabe ufuna nokuthi uthisha abone amakhono owafundile, nezinsuku? Lokhu kuyadingeka ukuze uthole isitifiketi.",,app: Cohort sharing: optional mastery with dates (needed for certificates).,app,,8.9,draft,no,zu.app.share.mastery.wav

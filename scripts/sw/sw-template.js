@@ -133,5 +133,5 @@ self.addEventListener("fetch", (event) => {
 });
 
 self.addEventListener("message", (event) => {
-  if (event.data === "yomu:version") event.source && event.source.postMessage({ type: "yomu:version", version: VERSION });
+  if (event.data === "yomu:version" && event.source) event.source.postMessage({ type: "yomu:version", version: VERSION });
 });

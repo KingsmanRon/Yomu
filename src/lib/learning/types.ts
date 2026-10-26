@@ -115,6 +115,9 @@ export type Op =
 
 export type OpType = Op["type"];
 
+/** The data payload of an op of the given type. */
+export type OpData<T extends OpType> = Extract<Op, { type: T }>["data"];
+
 /* ------------------------------------------------------------------ */
 /* Derived state                                                       */
 /* ------------------------------------------------------------------ */

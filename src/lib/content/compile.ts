@@ -139,7 +139,7 @@ export function compileContent(input: CompileInput): CompileOutput {
     lessonReview[lesson.id] = { zu: "approved", st: "approved" };
     for (const lang of LANGS) {
       const lexIds = new Set<string>();
-      const useLex = (ref: string | undefined) => {
+      const lexFor = (ref: string | undefined) => {
         if (ref) lexIds.add(resolveLexRef(ref, lang));
         return ref ? resolveLexRef(ref, lang) : undefined;
       };
@@ -169,16 +169,16 @@ export function compileContent(input: CompileInput): CompileOutput {
             showImage: "showImage" in step && step.showImage ? imageUrl(step.showImage) : undefined,
             lex:
               step.teach === "letter_intro"
-                ? useLex(step.letter)
+                ? lexFor(step.letter)
                 : step.teach === "word_intro" || step.teach === "blend_demo"
-                  ? useLex(step.word)
-                  : useLex("showLex" in step ? step.showLex : undefined),
-            anchor: step.teach === "letter_intro" ? useLex(step.anchor) : undefined,
+                  ? lexFor(step.word)
+                  : lexFor("showLex" in step ? step.showLex : undefined),
+            anchor: step.teach === "letter_intro" ? lexFor(step.anchor) : undefined,
             tag: tag ? { id: tag.id, title: tag.title } : undefined,
           });
           continue;
         }
-        steps.push(compileExercise(step, lang, useLex, L, C, `${where} ${step.id}`));
+        steps.push(compileExercise(step, lang, lexFor, L, C, `${where} ${step.id}`));
       }
 
       const lex: Record<string, CompiledLex> = {};
@@ -243,7 +243,7 @@ export function compileContent(input: CompileInput): CompileOutput {
   function compileExercise(
     ex: Exercise,
     lang: Lang,
-    useLex: (ref: string | undefined) => string | undefined,
+    lexFor: (ref: string | undefined) => string | undefined,
     L: (s: SpokenLine | undefined, where: string) => CompiledLine,
     C: (clipId: string, where: string) => CompiledLine,
     where: string,
@@ -261,39 +261,42 @@ export function compileContent(input: CompileInput): CompileOutput {
       instruction: ex.instructionClip ? C(ex.instructionClip, where) : L(ex.instruction?.[lang], `${where} instruction`),
       feedback,
     };
-    const many = (refs: string[]) => refs.map((r) => useLex(r) as string);
+    const many = (refs: string[]) => refs.map((r) => lexFor(r) as string);
     switch (ex.type) {
       case "listen_repeat":
         return { ...common, type: ex.type, items: many(ex.items) };
       case "letter_sound":
-        return { ...common, type: ex.type, mode: ex.mode, target: useLex(ex.target)!, prompt: useLex(ex.prompt), options: many(ex.options) };
+        return { ...common, type: ex.type, mode: ex.mode, target: lexFor(ex.target)!, prompt: lexFor(ex.prompt), options: many(ex.options) };
       case "picture_match":
-        return { ...common, type: ex.type, mode: ex.mode, target: useLex(ex.target)!, options: many(ex.options) };
+        return { ...common, type: ex.type, mode: ex.mode, target: lexFor(ex.target)!, options: many(ex.options) };
       case "word_build":
-        return { ...common, type: ex.type, mode: ex.mode, target: useLex(ex.target)!, tiles: ex.tiles };
+        return { ...common, type: ex.type, mode: ex.mode, target: lexFor(ex.target)!, tiles: ex.tiles };
       case "listening_comprehension":
         return {
-          ...common, type: ex.type, audio: useLex(ex.audio)!, question: L(ex.question[lang], `${where} question`),
-          options: ex.options.map((o) => ({ ...o, image: o.image ? imageUrl(o.image) : undefined, lex: useLex(o.lex) })), answer: ex.answer,
+          ...common, type: ex.type, audio: lexFor(ex.audio)!, question: L(ex.question[lang], `${where} question`),
+          options: ex.options.map((o) => ({ ...o, image: o.image ? imageUrl(o.image) : undefined, lex: lexFor(o.lex) })), answer: ex.answer,
         };
       case "sentence_build":
-        return { ...common, type: ex.type, target: useLex(ex.target)!, tiles: ex.tiles };
+        return { ...common, type: ex.type, target: lexFor(ex.target)!, tiles: ex.tiles };
       case "reading_comprehension":
         return {
-          ...common, type: ex.type, passage: useLex(ex.passage)!, question: L(ex.question[lang], `${where} question`),
-          options: ex.options.map((o) => ({ ...o, image: o.image ? imageUrl(o.image) : undefined, lex: useLex(o.lex) })), answer: ex.answer,
+          ...common, type: ex.type, passage: lexFor(ex.passage)!, question: L(ex.question[lang], `${where} question`),
+          options: ex.options.map((o) => ({ ...o, image: o.image ? imageUrl(o.image) : undefined, lex: lexFor(o.lex) })), answer: ex.answer,
         };
       case "trace":
-        return { ...common, type: ex.type, letter: useLex(ex.letter)!, strokes: ex.strokes as [number, number][][] };
+        return { ...common, type: ex.type, letter: lexFor(ex.letter)!, strokes: ex.strokes as [number, number][][] };
       case "minimal_pair":
-        return { ...common, type: ex.type, mode: ex.mode, pair: [useLex(ex.pair[0])!, useLex(ex.pair[1])!], target: useLex(ex.target), same: ex.same };
+        return { ...common, type: ex.type, mode: ex.mode, pair: [lexFor(ex.pair[0])!, lexFor(ex.pair[1])!], target: lexFor(ex.target), same: ex.same };
       case "real_world":
         return {
           ...common, type: ex.type, scenario: ex.scenario, question: L(ex.question[lang], `${where} question`),
-          options: ex.options.map((o) => ({ ...o, image: o.image ? imageUrl(o.image) : undefined, lex: useLex(o.lex) })), answer: ex.answer,
+          options: ex.options.map((o) => ({ ...o, image: o.image ? imageUrl(o.image) : undefined, lex: lexFor(o.lex) })), answer: ex.answer,
         };
       case "typing":
-        return { ...common, type: ex.type, mode: ex.mode, target: useLex(ex.target)!, question: ex.question ? L(ex.question[lang], `${where} question`) : undefined };
+        return {
+          ...common, type: ex.type, mode: ex.mode, target: lexFor(ex.target)!,
+          question: ex.question ? L(ex.question[lang], `${where} question`) : undefined, passage: lexFor(ex.passage),
+        };
     }
   }
 

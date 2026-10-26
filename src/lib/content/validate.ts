@@ -12,7 +12,7 @@ import type { Competency } from "@/lib/learning/types";
 import { collectAudioAssets, resolveLexRef } from "./assets";
 import { DEFAULT_FEEDBACK } from "./feedback";
 import { orderedLessons, type ContentBundle } from "./load";
-import { isExercise, type Exercise, type Lesson, type LocalisedLine, type Step } from "./schema";
+import { isExercise, type Exercise, type LocalisedLine, type Step } from "./schema";
 
 export interface ValidationReport {
   errors: string[];
@@ -369,6 +369,7 @@ export function validateContent(bundle: ContentBundle, opts: { checkFiles?: bool
         const target = lex(ex.target, l, w);
         if (target && !/[a-z]/i.test(target.text)) err(w, "typing target has no letters");
         if (ex.mode === "answer") checkLine(ex.question, [l], `${w} question`, true, false);
+        if (ex.passage) lex(ex.passage, l, w);
         if (ex.mode === "picture" && !target?.image) err(w, "picture mode needs a picture");
         break;
       }

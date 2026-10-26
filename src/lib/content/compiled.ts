@@ -100,7 +100,7 @@ export type CompiledExercise = ExerciseCommon &
         options: CompiledOption[];
         answer: string;
       }
-    | { type: "typing"; mode: "listen" | "copy" | "picture" | "answer"; target: string; question?: CompiledLine }
+    | { type: "typing"; mode: "listen" | "copy" | "picture" | "answer"; target: string; question?: CompiledLine; passage?: string }
   );
 
 export type CompiledStep = CompiledTeachStep | CompiledExercise;
