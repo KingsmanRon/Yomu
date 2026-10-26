@@ -18,13 +18,14 @@
  *   HIDE_UNAPPROVED_CONTENT=true  ship only lessons whose every line is 'approved'
  *   SKIP_AUDIO_GENERATION=true    do not run ffmpeg (sizes of missing files count as 0)
  */
-import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { collectAudioAssets } from "../src/lib/content/assets";
 import { compileContent, lessonUrl } from "../src/lib/content/compile";
 import { loadContent } from "../src/lib/content/load";
 import { validateContent } from "../src/lib/content/validate";
-import { buildAudioIndex, sha } from "./lib/audio";
+import { buildAudioIndex } from "./lib/audio";
+import { hashContentTree } from "./lib/content-version";
 
 const root = process.cwd();
 const PRECACHE_BUDGET_BYTES = 3_500_000;
@@ -42,19 +43,6 @@ function write(rel: string, data: unknown) {
   const file = join(root, "public", rel);
   mkdirSync(dirname(file), { recursive: true });
   writeFileSync(file, typeof data === "string" ? data : JSON.stringify(data));
-}
-
-function hashContentTree(): string {
-  const parts: string[] = [];
-  const walk = (dir: string) => {
-    for (const f of readdirSync(dir).sort()) {
-      const p = join(dir, f);
-      if (statSync(p).isDirectory()) walk(p);
-      else if (f.endsWith(".json")) parts.push(`${p.slice(root.length)}:${sha(readFileSync(p, "utf8"))}`);
-    }
-  };
-  walk(join(root, "content"));
-  return sha(parts.join("\n"), 12);
 }
 
 async function main() {
@@ -80,7 +68,7 @@ async function main() {
     const f = join(root, "public", "images", `${id}.svg`);
     return existsSync(f) ? statSync(f).size : 0;
   };
-  const contentVersion = hashContentTree();
+  const contentVersion = hashContentTree(root);
   const out = compileContent({
     bundle,
     audio: index,

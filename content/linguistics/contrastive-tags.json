@@ -3,66 +3,128 @@
   "tags": [
     {
       "id": "ct.click-letters",
-      "languages": ["zu", "st"],
+      "languages": [
+        "zu",
+        "st"
+      ],
       "title": "Click letters: c, q, x",
       "description": "In isiZulu orthography c, q and x (and combinations such as ch, gc, nc, qh, xh) write click consonants. Sesotho writes a click with q (for example 'qala'). In English these letters are never clicks: c in 'cat' is /k/, q in 'queen' is /kw/, x in 'six' is /ks/. A home-language reader may read the c in 'cat' as a click.",
-      "examples": ["cat (c = /k/, not a click)", "zu: icici (c = dental click)", "st: ho qala (q = click)"],
+      "examples": [
+        "cat (c = /k/, not a click)",
+        "zu: icici (c = dental click)",
+        "st: ho qala (q = click)"
+      ],
       "teachingStrategy": "Name the difference explicitly in the teaching language when c is introduced, contrast the click and /k/ in a listening task, and check with a 'which sound does c make here?' item whose distractor is the click.",
-      "review": { "status": "draft" }
+      "review": {
+        "status": "draft"
+      }
     },
     {
       "id": "ct.aspirated-th-ph",
-      "languages": ["zu", "st"],
+      "languages": [
+        "zu",
+        "st"
+      ],
       "title": "th and ph",
       "description": "In isiZulu and Sesotho, 'th' and 'ph' write aspirated t and p (zu 'thatha', st 'thuto', zu 'phila', st 'phoofolo'). In English 'th' is /θ/ (thin) or /ð/ (the) and 'ph' is /f/ (phone). Learners may read 'the' with an aspirated t.",
-      "examples": ["the (th = /ð/)", "phone (ph = /f/)", "zu: thatha, st: thuto (th = aspirated t)"],
+      "examples": [
+        "the (th = /ð/)",
+        "phone (ph = /f/)",
+        "zu: thatha, st: thuto (th = aspirated t)"
+      ],
       "teachingStrategy": "Teach 'the' as a sight word with an explicit note that English th is made with the tongue between the teeth; contrast with the home-language th.",
-      "review": { "status": "draft" }
+      "review": {
+        "status": "draft"
+      }
     },
     {
       "id": "ct.short-vowels",
-      "languages": ["zu", "st"],
+      "languages": [
+        "zu",
+        "st"
+      ],
       "title": "English short vowels",
       "description": "English has more vowel sounds than isiZulu (5) or Sesotho (7, written with 5 letters). The short vowels in cat, pen, sit and bus have no exact home-language match: learners may read 'bus' with the home-language u (/u/) or merge 'pan' and 'pen'.",
-      "examples": ["pan / pen", "sit / set", "bus (u = /ʌ/, not /u/)"],
+      "examples": [
+        "pan / pen",
+        "sit / set",
+        "bus (u = /ʌ/, not /u/)"
+      ],
       "teachingStrategy": "Minimal-pair listening (which word did you hear?) before reading, slow model audio, and revision weighted to vowel errors.",
-      "review": { "status": "draft" }
+      "review": {
+        "status": "draft"
+      }
     },
     {
       "id": "ct.vowel-length",
-      "languages": ["zu", "st"],
+      "languages": [
+        "zu",
+        "st"
+      ],
       "title": "Short and long vowels (ship / sheep)",
       "description": "English distinguishes words by vowel length and quality (ship / sheep, sit / seat). Vowel length is not used this way in isiZulu or Sesotho, so the difference can be hard to hear.",
-      "examples": ["ship / sheep", "sit / seat"],
+      "examples": [
+        "ship / sheep",
+        "sit / seat"
+      ],
       "teachingStrategy": "Same-or-different listening tasks with clear model recordings; no reading demand until the sounds can be heard.",
-      "review": { "status": "draft" }
+      "review": {
+        "status": "draft"
+      }
     },
     {
       "id": "ct.final-consonants",
-      "languages": ["zu", "st"],
+      "languages": [
+        "zu",
+        "st"
+      ],
       "title": "Words that end in consonants",
       "description": "isiZulu and Sesotho syllables almost always end in a vowel. English words often end in a consonant or a cluster (cat, desk, jobs). Learners may add a vowel ('cati') or drop the final sound.",
-      "examples": ["cat (not 'cati')", "desk", "jobs"],
+      "examples": [
+        "cat (not 'cati')",
+        "desk",
+        "jobs"
+      ],
       "teachingStrategy": "Point to the last letter during blending demonstrations, give 'listen to the last sound' feedback, and include final-sound distractors.",
-      "review": { "status": "draft" }
+      "review": {
+        "status": "draft"
+      }
     },
     {
       "id": "ct.irregular-spelling",
-      "languages": ["zu", "st"],
+      "languages": [
+        "zu",
+        "st"
+      ],
       "title": "Words that do not follow the sound rules",
       "description": "isiZulu and Sesotho spelling is very regular. Many common English words are not (the, said, you, is), so sounding them out letter by letter does not work.",
-      "examples": ["the", "you", "is (s sounds like z)", "said"],
+      "examples": [
+        "the",
+        "you",
+        "is (s sounds like z)",
+        "said"
+      ],
       "teachingStrategy": "Teach these as sight words: whole-word recognition, frequent revision, and an explicit explanation that English is less regular than the home language.",
-      "review": { "status": "draft" }
+      "review": {
+        "status": "draft"
+      }
     },
     {
       "id": "ct.letter-names",
-      "languages": ["zu", "st"],
+      "languages": [
+        "zu",
+        "st"
+      ],
       "title": "Letter names and letter sounds",
       "description": "English letter names (C is 'see', A is 'ay') differ from the sounds the letters usually make in words. isiZulu and Sesotho letters are usually called by their sound.",
-      "examples": ["C: name 'see', sound /k/ in cat", "A: name 'ay', sound /æ/ in cat"],
+      "examples": [
+        "C: name 'see', sound /k/ in cat",
+        "A: name 'ay', sound /æ/ in cat"
+      ],
       "teachingStrategy": "Teach sounds first for reading; introduce names later for spelling aloud and forms.",
-      "review": { "status": "draft" }
+      "review": {
+        "status": "draft"
+      }
     }
   ]
 }

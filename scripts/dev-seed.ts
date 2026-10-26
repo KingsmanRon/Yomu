@@ -9,21 +9,7 @@
  * unless --allow-remote is given, so it cannot touch a production project by
  * accident. Safe to repeat: existing records are reused.
  */
-import { existsSync } from "node:fs";
-import { createClient } from "@supabase/supabase-js";
-
-if (existsSync(".env.local")) process.loadEnvFile(".env.local");
-
-const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-const key = process.env.SUPABASE_SECRET_KEY ?? "";
-if (!url || !key) {
-  console.error("Set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SECRET_KEY (see .env.example).");
-  process.exit(1);
-}
-if (!/^https?:\/\/(127\.0\.0\.1|localhost)(:\d+)?/.test(url) && !process.argv.includes("--allow-remote")) {
-  console.error(`Refusing to seed ${url}: not a local Supabase. Pass --allow-remote only for a disposable test project.`);
-  process.exit(1);
-}
+import { must, scriptClient } from "./lib/supabase";
 
 const PASSWORD = "yomu-dev-password";
 const STAFF = [
@@ -33,13 +19,7 @@ const STAFF = [
   { email: "platform@yomu.test", name: "Platform admin", role: "platform_admin" },
 ] as const;
 
-const db = createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } });
-
-async function must<T>(p: PromiseLike<{ data: T; error: unknown }>, what: string): Promise<T> {
-  const { data, error } = await p;
-  if (error) throw new Error(`${what}: ${JSON.stringify(error)}`);
-  return data;
-}
+const db = scriptClient("seed development accounts");
 
 async function userId(email: string): Promise<string> {
   for (let page = 1; page < 50; page++) {

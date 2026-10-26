@@ -49,16 +49,24 @@
           "id": "zu.unit.u0.title",
           "label": "Funda ngolimi lwakho",
           "text": "Funda ngolimi lwakho.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         },
         "st": {
           "id": "st.unit.u0.title",
           "label": "Bala ka puo ya hao",
           "text": "Bala ka puo ya hao.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         }
       },
-      "lessons": ["l00-hl-vowels", "l01-hl-syllables", "l02-bridge"]
+      "lessons": [
+        "l00-hl-vowels",
+        "l01-hl-syllables",
+        "l02-bridge"
+      ]
     },
     {
       "id": "u1",
@@ -70,16 +78,24 @@
           "id": "zu.unit.u1.title",
           "label": "Izinhlamvu zesiNgisi",
           "text": "Izinhlamvu nemisindo yesiNgisi.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         },
         "st": {
           "id": "st.unit.u1.title",
           "label": "Ditlhaku tsa Senyesemane",
           "text": "Ditlhaku le medumo ya Senyesemane.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         }
       },
-      "lessons": ["l10-satp", "l11-inmd", "l12-tracing"]
+      "lessons": [
+        "l10-satp",
+        "l11-inmd",
+        "l12-tracing"
+      ]
     },
     {
       "id": "u2",
@@ -91,16 +107,24 @@
           "id": "zu.unit.u2.title",
           "label": "Amagama okuqala",
           "text": "Amagama akho okuqala esiNgisi.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         },
         "st": {
           "id": "st.unit.u2.title",
           "label": "Mantswe a pele",
           "text": "Mantswe a hao a pele a Senyesemane.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         }
       },
-      "lessons": ["l20-blending", "l21-picture-words", "l22-sight-words"]
+      "lessons": [
+        "l20-blending",
+        "l21-picture-words",
+        "l22-sight-words"
+      ]
     },
     {
       "id": "u3",
@@ -112,16 +136,22 @@
           "id": "zu.unit.u3.title",
           "label": "Imisho yokuqala",
           "text": "Imisho yakho yokuqala.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         },
         "st": {
           "id": "st.unit.u3.title",
           "label": "Dipolelo tsa pele",
           "text": "Dipolelo tsa hao tsa pele.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         }
       },
-      "lessons": ["l30-first-sentences"]
+      "lessons": [
+        "l30-first-sentences"
+      ]
     },
     {
       "id": "u4",
@@ -133,16 +163,23 @@
           "id": "zu.unit.u4.title",
           "label": "IsiNgisi sansuku zonke",
           "text": "IsiNgisi sansuku zonke: ama-SMS nezimpawu.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         },
         "st": {
           "id": "st.unit.u4.title",
           "label": "Senyesemane sa letsatsi le letsatsi",
           "text": "Senyesemane sa letsatsi le letsatsi: di-SMS le matshwao.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         }
       },
-      "lessons": ["l40-sms", "l41-signs"]
+      "lessons": [
+        "l40-sms",
+        "l41-signs"
+      ]
     },
     {
       "id": "u5",
@@ -154,16 +191,22 @@
           "id": "zu.unit.u5.title",
           "label": "Ukufunda wedwa",
           "text": "Ukufunda wedwa.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         },
         "st": {
           "id": "st.unit.u5.title",
           "label": "Ho bala o le mong",
           "text": "Ho bala o le mong.",
-          "review": { "status": "draft" }
+          "review": {
+            "status": "draft"
+          }
         }
       },
-      "lessons": ["l50-job-notice"]
+      "lessons": [
+        "l50-job-notice"
+      ]
     }
   ]
 }

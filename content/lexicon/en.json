@@ -22,7 +22,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       }
     },
     {
@@ -46,7 +46,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "contrastiveTags": [
         "ct.short-vowels",
@@ -74,7 +74,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       }
     },
     {
@@ -98,7 +98,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       }
     },
     {
@@ -122,7 +122,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "contrastiveTags": [
         "ct.short-vowels"
@@ -149,7 +149,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       }
     },
     {
@@ -173,7 +173,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       }
     },
     {
@@ -197,7 +197,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       }
     },
     {
@@ -221,7 +221,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "contrastiveTags": [
         "ct.click-letters",
@@ -249,7 +249,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "contrastiveTags": [
         "ct.short-vowels"
@@ -276,7 +276,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "contrastiveTags": [
         "ct.short-vowels"
@@ -303,7 +303,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       }
     },
     {
@@ -327,7 +327,7 @@
           "status": "draft"
         },
         "note": "Letter NAME, as when spelling aloud.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "contrastiveTags": [
         "ct.click-letters"
@@ -1912,7 +1912,7 @@
           "status": "draft"
         },
         "note": "Model pronunciation of a high-frequency word, said on its own.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "irregular": true,
       "contrastiveTags": [
@@ -1932,7 +1932,7 @@
           "status": "draft"
         },
         "note": "Model pronunciation of a high-frequency word, said on its own.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "irregular": true,
       "contrastiveTags": [
@@ -1951,7 +1951,7 @@
           "status": "draft"
         },
         "note": "Model pronunciation of a high-frequency word, said on its own.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "irregular": true,
       "contrastiveTags": [
@@ -1970,7 +1970,7 @@
           "status": "draft"
         },
         "note": "Model pronunciation of a high-frequency word, said on its own.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "irregular": true,
       "contrastiveTags": [
@@ -2012,7 +2012,7 @@
           "status": "draft"
         },
         "note": "Model pronunciation of a high-frequency word, said on its own.",
-        "seconds": 1.0
+        "seconds": 1
       },
       "irregular": true,
       "contrastiveTags": [
