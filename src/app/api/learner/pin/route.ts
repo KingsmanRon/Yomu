@@ -31,15 +31,17 @@ export const POST = handler(async (request) => {
   if (!(await verifyPin(body.currentPin, cred.pin_hash))) {
     const failed = cred.failed_attempts + 1;
     const delay = pinRetryDelaySeconds(failed);
-    await db
+    const { error: countError } = await db
       .from("learner_credentials")
       .update({ failed_attempts: failed, retry_after: delay ? new Date(Date.now() + delay * 1000).toISOString() : null })
       .eq("learner_id", learner.id);
+    if (countError) throw countError;
     throw new HttpError(403, "pin_wrong");
   }
-  await db
+  const { error: updateError } = await db
     .from("learner_credentials")
     .update({ pin_hash: await hashPin(body.newPin), failed_attempts: 0, retry_after: null, updated_at: new Date().toISOString() })
     .eq("learner_id", learner.id);
+  if (updateError) throw updateError;
   return json({ ok: true });
 });

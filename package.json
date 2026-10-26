@@ -28,7 +28,8 @@
     "docs:aet": "tsx scripts/generate-aet-alignment.ts",
     "db:seed-content": "tsx scripts/seed-content.ts",
     "perf:lighthouse": "tsx scripts/perf-lighthouse.ts",
-    "supabase": "supabase"
+    "supabase": "supabase",
+    "db:seed-dev": "tsx scripts/dev-seed.ts"
   },
   "dependencies": {
     "@supabase/auth-js": "2.118.0",

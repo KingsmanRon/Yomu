@@ -102,12 +102,13 @@ export async function facilitatorSignIn(email: string, password: string): Promis
   };
 }
 
-/** Stop background token refresh for profiles that are not in use. */
+/**
+ * Only the active profile's session refreshes in the background. Clients stay
+ * cached (one per storage key), so switching back to a learner reuses theirs.
+ */
 export function pauseOtherSessions(activeProfileId: string | null): void {
   for (const [id, client] of clients) {
-    if (id !== activeProfileId) {
-      void client.stopAutoRefresh();
-      clients.delete(id);
-    }
+    if (id === activeProfileId) void client.startAutoRefresh();
+    else void client.stopAutoRefresh();
   }
 }

@@ -229,3 +229,16 @@ create trigger content_reviews_apply after insert on public.content_reviews
 -- Tables with no client policies at all (server only): learner_credentials,
 -- facilitator_assists, tutor_requests, tutor_unanswered_intents, ai_spend_daily,
 -- analytics_events, error_logs, deletion_log, join_attempts.
+
+------------------------------------------------------------------------------
+-- Server role. auto_expose_new_tables is off, so the API roles get nothing by
+-- default; the server (service role, which bypasses RLS) is granted data
+-- access explicitly. It is used only by route handlers after they have
+-- authenticated and authorised the caller.
+------------------------------------------------------------------------------
+
+grant usage on schema public to service_role;
+grant select, insert, update, delete on all tables in schema public to service_role;
+grant usage, select on all sequences in schema public to service_role;
+alter default privileges in schema public grant select, insert, update, delete on tables to service_role;
+alter default privileges in schema public grant usage, select on sequences to service_role;

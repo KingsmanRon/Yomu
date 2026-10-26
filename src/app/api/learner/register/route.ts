@@ -65,6 +65,7 @@ export const POST = handler(async (request) => {
   ]);
   const failed = results.find((r) => r.error);
   if (failed?.error) {
+    // Undo the partial registration (credentials, devices and consents cascade).
     await db.from("learners").delete().eq("id", learner.id);
     throw failed.error;
   }

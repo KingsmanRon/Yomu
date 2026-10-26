@@ -247,7 +247,7 @@ export function Assist({ profileId }: { profileId?: string }) {
   return (
     <Screen label="facilitator help" className="gap-4 py-4">
       <div className="flex items-center gap-2">
-        <button type="button" data-testid="back" aria-label="back" onClick={() => void leave(profileId ? `/pin/${profileId}` : "/profiles")} className="flex h-12 w-12 items-center justify-center rounded-full text-ink-soft">
+        <button type="button" data-testid="back" aria-label="back" onClick={() => void leave(profileId ? `/pin/${profileId}` : profiles.length > 0 ? "/profiles" : "/language")} className="flex h-12 w-12 items-center justify-center rounded-full text-ink-soft">
           <IconBack />
         </button>
         <IconTeacher size={28} className="text-primary" />

@@ -81,7 +81,7 @@ export const OpSchema = z.discriminatedUnion("type", [
           kind: z.enum(["placement", "pre", "post", "retake"]),
           instrument: shortId,
           skipped: z.boolean(),
-          scores: z.record(
+          scores: z.partialRecord(
             z.enum(["hl_decoding", "letter_recognition", "letter_sounds", "sight_words", "sentence_reading", "transfer_decoding"]),
             z.object({ correct: z.number().int().min(0).max(50), total: z.number().int().min(0).max(50) }).strict(),
           ),

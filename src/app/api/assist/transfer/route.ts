@@ -54,13 +54,15 @@ export const POST = handler(async (request) => {
     if (!(await verifyPin(body.pin, cred.pin_hash))) {
       const failed = cred.failed_attempts + 1;
       const delay = pinRetryDelaySeconds(failed);
-      await db
+      const { error: countError } = await db
         .from("learner_credentials")
         .update({ failed_attempts: failed, retry_after: delay ? new Date(Date.now() + delay * 1000).toISOString() : null })
         .eq("learner_id", learner.id);
+      if (countError) throw countError;
       throw new HttpError(403, "pin_wrong");
     }
-    await db.from("learner_credentials").update({ failed_attempts: 0, retry_after: null }).eq("learner_id", learner.id);
+    const { error: resetError } = await db.from("learner_credentials").update({ failed_attempts: 0, retry_after: null }).eq("learner_id", learner.id);
+    if (resetError) throw resetError;
   } else {
     const { error } = await db
       .from("learner_credentials")

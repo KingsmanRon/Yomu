@@ -7,7 +7,7 @@ import { player } from "../../audio/player";
 import { loadAppLines } from "../../content";
 import { navigate } from "../../router";
 import { useLearner } from "../../state";
-import { IconListen } from "../../ui/icons";
+import { IconListen, IconTeacher } from "../../ui/icons";
 import { AudioNotice, Screen } from "../../ui/kit";
 import { usePlaying } from "../../ui/speech";
 
@@ -82,6 +82,19 @@ export function LanguageSelect() {
           <AudioNotice key={l} line={intros[l]} />
         )).slice(0, 1)}
       </div>
+      {/* A facilitator can bring an existing learner's progress to this phone. */}
+      <button
+        type="button"
+        data-testid="language-assist"
+        aria-label="teacher help"
+        onClick={() => {
+          player.stop();
+          navigate("/assist");
+        }}
+        className="mx-auto flex h-12 w-12 items-center justify-center rounded-full text-ink-soft"
+      >
+        <IconTeacher size={28} />
+      </button>
     </Screen>
   );
 }

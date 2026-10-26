@@ -41,14 +41,32 @@ export function scrubContext(context: Record<string, unknown>): Record<string, s
   return out;
 }
 
+/** A readable message for thrown values, including Supabase's plain error objects. */
+export function describeError(error: unknown): string {
+  if (error instanceof Error) return `${error.name}: ${error.message}`;
+  if (error && typeof error === "object") {
+    const e = error as { code?: unknown; message?: unknown; details?: unknown };
+    if (typeof e.message === "string") {
+      return `${typeof e.code === "string" ? `${e.code}: ` : ""}${e.message}${typeof e.details === "string" && e.details ? ` (${e.details})` : ""}`;
+    }
+    try {
+      return JSON.stringify(error);
+    } catch {
+      // Fall through to String().
+    }
+  }
+  return String(error);
+}
+
 export async function logServerError(error: unknown, context: Record<string, unknown> = {}, pseudonym?: string) {
-  const message = scrub(error instanceof Error ? `${error.name}: ${error.message}` : String(error));
+  const message = scrub(describeError(error));
   console.error("[yomu]", message, context);
   try {
     if (!serverEnv.supabaseUrl || !serverEnv.supabaseSecretKey) return;
-    await supabaseAdmin()
+    const { error: insertError } = await supabaseAdmin()
       .from("error_logs")
       .insert({ message, context: scrubContext(context), pseudonym: pseudonym ?? null, build_id: process.env.NEXT_PUBLIC_BUILD_ID ?? null });
+    if (insertError) console.error("[yomu] could not store error log:", describeError(insertError));
   } catch {
     // Logging must never break a request.
   }
@@ -86,5 +104,7 @@ export async function recordEvents(
     ),
     client_at: e.at ?? null,
   }));
-  await supabaseAdmin().from("analytics_events").insert(rows);
+  const { error } = await supabaseAdmin().from("analytics_events").insert(rows);
+  // Analytics must never break a request; a failure is only logged.
+  if (error) console.error("[yomu] could not store analytics:", describeError(error));
 }
