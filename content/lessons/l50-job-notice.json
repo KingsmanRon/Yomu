@@ -1,0 +1,471 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l50-job-notice",
+  "version": 1,
+  "level": 5,
+  "unit": "u5",
+  "order": 1,
+  "minutes": 7,
+  "target": "en",
+  "title": {
+    "en": "Reading a job notice",
+    "zu": {
+      "id": "zu.l50-job-notice.title",
+      "label": "Isaziso somsebenzi",
+      "text": "Funda isaziso somsebenzi, uphendule imibuzo.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l50-job-notice.title",
+      "label": "Tsebiso ya mosebetsi",
+      "text": "Bala tsebiso ya mosebetsi, o arabe dipotso.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Reading a short job notice independently, answering questions about it and typing short written answers.",
+  "objectives": [
+    {
+      "id": "obj.l50.read-notice",
+      "description": "Read a short job notice and answer questions about the job, place, days, time and what to bring.",
+      "strand": "functional_reading",
+      "masteryCompetencies": [
+        "decode",
+        "understand_written"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-2",
+          "outcome": "aet.2.functional-reading"
+        }
+      ]
+    },
+    {
+      "id": "obj.l50.write-answer",
+      "description": "Type a short written answer to a question about a text.",
+      "strand": "writing",
+      "masteryCompetencies": [
+        "write"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-2",
+          "outcome": "aet.2.functional-writing"
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l40.read-sms",
+    "obj.l41.read-signs"
+  ],
+  "contrastiveTags": [],
+  "steps": [
+    {
+      "id": "l50-job-notice.t01",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.cleaner"
+    },
+    {
+      "id": "l50-job-notice.t02",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.id"
+    },
+    {
+      "id": "l50-job-notice.e01",
+      "type": "reading_comprehension",
+      "objectives": [
+        "obj.l50.read-notice"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l50-job-notice.e01.instr",
+          "text": "Funda isaziso, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e01.instr",
+          "text": "Bala tsebiso, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "passage": "en.psg.job-notice",
+      "question": {
+        "zu": {
+          "id": "zu.l50-job-notice.e01.q",
+          "text": "Ngumsebenzi muni?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e01.q",
+          "text": "Ke mosebetsi ofe?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "cook",
+          "image": "cook"
+        },
+        {
+          "id": "cleaner",
+          "image": "cleaner"
+        },
+        {
+          "id": "driver",
+          "image": "driver"
+        }
+      ],
+      "answer": "cleaner"
+    },
+    {
+      "id": "l50-job-notice.e02",
+      "type": "reading_comprehension",
+      "objectives": [
+        "obj.l50.read-notice"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l50-job-notice.e02.instr",
+          "text": "Funda isaziso, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e02.instr",
+          "text": "Bala tsebiso, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "passage": "en.psg.job-notice",
+      "question": {
+        "zu": {
+          "id": "zu.l50-job-notice.e02.q",
+          "text": "Umsebenzi ukuphi?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e02.q",
+          "text": "Mosebetsi o kae?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "clinic",
+          "image": "clinic"
+        },
+        {
+          "id": "shop",
+          "image": "shop"
+        },
+        {
+          "id": "bank",
+          "image": "bank"
+        }
+      ],
+      "answer": "clinic"
+    },
+    {
+      "id": "l50-job-notice.e03",
+      "type": "reading_comprehension",
+      "objectives": [
+        "obj.l50.read-notice"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l50-job-notice.e03.instr",
+          "text": "Funda isaziso, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e03.instr",
+          "text": "Bala tsebiso, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "passage": "en.psg.job-notice",
+      "question": {
+        "zu": {
+          "id": "zu.l50-job-notice.e03.q",
+          "text": "Kufanele uphathe ini?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e03.q",
+          "text": "O tlameha ho tlisa eng?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "money",
+          "image": "money"
+        },
+        {
+          "id": "phone",
+          "image": "phone"
+        },
+        {
+          "id": "id",
+          "image": "id-book"
+        }
+      ],
+      "answer": "id"
+    },
+    {
+      "id": "l50-job-notice.e04",
+      "type": "reading_comprehension",
+      "objectives": [
+        "obj.l50.read-notice"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l50-job-notice.e04.instr",
+          "text": "Funda isaziso, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e04.instr",
+          "text": "Bala tsebiso, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "passage": "en.psg.job-notice",
+      "question": {
+        "zu": {
+          "id": "zu.l50-job-notice.e04.q",
+          "text": "Kufanele uqale ngasiphi isikhathi?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e04.q",
+          "text": "O tlameha ho qala ka nako mang?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "t7",
+          "text": "7"
+        },
+        {
+          "id": "t9",
+          "text": "9"
+        },
+        {
+          "id": "t12",
+          "text": "12"
+        }
+      ],
+      "answer": "t7"
+    },
+    {
+      "id": "l50-job-notice.e05",
+      "type": "reading_comprehension",
+      "objectives": [
+        "obj.l50.read-notice"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l50-job-notice.e05.instr",
+          "text": "Funda isaziso, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e05.instr",
+          "text": "Bala tsebiso, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "passage": "en.psg.job-notice",
+      "question": {
+        "zu": {
+          "id": "zu.l50-job-notice.e05.q",
+          "text": "Izinsuku zomsebenzi yiziphi?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e05.q",
+          "text": "Matsatsi a mosebetsi ke afe?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "sat",
+          "text": "Saturday"
+        },
+        {
+          "id": "mf",
+          "text": "Monday to Friday"
+        },
+        {
+          "id": "sun",
+          "text": "Sunday"
+        }
+      ],
+      "answer": "mf"
+    },
+    {
+      "id": "l50-job-notice.e06",
+      "type": "typing",
+      "objectives": [
+        "obj.l50.write-answer"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l50-job-notice.e06.instr",
+          "text": "Funda isaziso futhi. Lalela umbuzo, bese ubhala impendulo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e06.instr",
+          "text": "Bala tsebiso hape. Mamela potso, ebe o ngola karabo.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "mode": "answer",
+      "target": "en.w.id",
+      "question": {
+        "zu": {
+          "id": "zu.l50-job-notice.e06.q",
+          "text": "Kufanele uphathe ini? Bhala igama.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e06.q",
+          "text": "O tlameha ho tlisa eng? Ngola lentswe.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      }
+    },
+    {
+      "id": "l50-job-notice.e07",
+      "type": "typing",
+      "objectives": [
+        "obj.l50.write-answer"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l50-job-notice.e07.instr",
+          "text": "Funda isaziso futhi. Lalela umbuzo, bese ubhala impendulo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e07.instr",
+          "text": "Bala tsebiso hape. Mamela potso, ebe o ngola karabo.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "mode": "answer",
+      "target": "en.w.cleaner",
+      "question": {
+        "zu": {
+          "id": "zu.l50-job-notice.e07.q",
+          "text": "Ngumsebenzi muni? Bhala igama.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l50-job-notice.e07.q",
+          "text": "Ke mosebetsi ofe? Ngola lentswe.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      }
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l50-job-notice.intro",
+      "text": "Izaziso zemisebenzi zinolwazi olubalulekile. Funda isaziso kancane, umugqa ngamunye, bese uphendula imibuzo.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l50-job-notice.intro",
+      "text": "Ditsebiso tsa mesebetsi di na le tlhahisoleseding ya bohlokwa. Bala tsebiso butle, mola ka mong, ebe o araba dipotso.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l50-job-notice.outro",
+      "text": "Wenze kahle kakhulu! Ufunde isaziso somsebenzi wedwa, wabhala nezimpendulo.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l50-job-notice.outro",
+      "text": "O entse hantle haholo! O balile tsebiso ya mosebetsi o le mong, mme wa ngola le dikarabo.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

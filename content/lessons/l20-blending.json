@@ -1,0 +1,346 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l20-blending",
+  "version": 1,
+  "level": 2,
+  "unit": "u2",
+  "order": 1,
+  "minutes": 6,
+  "target": "en",
+  "title": {
+    "en": "Blending three-sound words (cat, sit, map, pen)",
+    "zu": {
+      "id": "zu.l20-blending.title",
+      "label": "Hlanganisa imisindo",
+      "text": "Hlanganisa imisindo emithathu wakhe amagama: cat, sit, map, pen.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l20-blending.title",
+      "label": "Kopanya medumo",
+      "text": "Kopanya medumo e meraro o hahe mantswe: cat, sit, map, pen.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Blending three sounds into words, reading them without audio, spelling them with tiles, and hearing short-vowel differences.",
+  "objectives": [
+    {
+      "id": "obj.l20.read-cvc",
+      "description": "Read three-sound words (cat, sit, map, pen) with no audio and show their meaning.",
+      "strand": "decoding",
+      "masteryCompetencies": [
+        "decode"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.decode-words"
+        }
+      ],
+      "contrastiveTags": [
+        "ct.final-consonants",
+        "ct.short-vowels"
+      ]
+    },
+    {
+      "id": "obj.l20.spell-cvc",
+      "description": "Build three-sound words from letter tiles after hearing them.",
+      "strand": "writing",
+      "masteryCompetencies": [
+        "write"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.write-letters-words"
+        }
+      ]
+    },
+    {
+      "id": "obj.l20.hear-vowels",
+      "description": "Hear the difference between English vowel sounds in words (pan / pen, ship / sheep).",
+      "strand": "phonemic_awareness",
+      "masteryCompetencies": [
+        "recognise"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.listen-understand"
+        }
+      ],
+      "contrastiveTags": [
+        "ct.short-vowels",
+        "ct.vowel-length"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l11.inmd-letters",
+    "obj.l11.c-says-k"
+  ],
+  "contrastiveTags": [
+    "ct.final-consonants",
+    "ct.short-vowels",
+    "ct.vowel-length",
+    "ct.click-letters"
+  ],
+  "steps": [
+    {
+      "id": "l20-blending.t01",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "en.l.e"
+    },
+    {
+      "id": "l20-blending.t02",
+      "teach": "blend_demo",
+      "lineClip": "teach.blend_demo",
+      "word": "en.w.cat"
+    },
+    {
+      "id": "l20-blending.t03",
+      "teach": "contrast_note",
+      "line": {
+        "zu": {
+          "id": "zu.l20-blending.t03",
+          "text": "EsiZulwini amagama avame ukuphela ngonkamisa. EsiNgisini amagama amaningi aphela ngomsindo onjengo-t. Sithi cat, hhayi cati.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l20-blending.t03",
+          "text": "Ho Sesotho mantswe a atisa ho fela ka e nngwe ya ditlhaku a, e, i, o, u. Ho Senyesemane mantswe a mangata a fela ka modumo o kang t. Re re cat, e seng cati.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "tag": "ct.final-consonants",
+      "showText": "cat"
+    },
+    {
+      "id": "l20-blending.t04",
+      "teach": "blend_demo",
+      "lineClip": "teach.blend_demo",
+      "word": "en.w.sit"
+    },
+    {
+      "id": "l20-blending.t05",
+      "teach": "blend_demo",
+      "lineClip": "teach.blend_demo",
+      "word": "en.w.map"
+    },
+    {
+      "id": "l20-blending.t06",
+      "teach": "blend_demo",
+      "lineClip": "teach.blend_demo",
+      "word": "en.w.pen"
+    },
+    {
+      "id": "l20-blending.e01",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l20.read-cvc"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.w.cat",
+      "options": [
+        "en.w.cat",
+        "en.w.map",
+        "en.w.pen"
+      ]
+    },
+    {
+      "id": "l20-blending.e02",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l20.read-cvc"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.w.sit",
+      "options": [
+        "en.w.pen",
+        "en.w.sit",
+        "en.w.cat"
+      ]
+    },
+    {
+      "id": "l20-blending.e03",
+      "type": "word_build",
+      "objectives": [
+        "obj.l20.spell-cvc"
+      ],
+      "instructionClip": "instr.build_word",
+      "mode": "listen",
+      "target": "en.w.map",
+      "tiles": [
+        "m",
+        "a",
+        "p",
+        "t"
+      ]
+    },
+    {
+      "id": "l20-blending.e04",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l20.read-cvc"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.w.pen",
+      "options": [
+        "en.w.map",
+        "en.w.sit",
+        "en.w.pen"
+      ]
+    },
+    {
+      "id": "l20-blending.e05",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l20.hear-vowels"
+      ],
+      "instructionClip": "instr.which_word",
+      "mode": "which_word",
+      "pair": [
+        "en.w.pan",
+        "en.w.pen"
+      ],
+      "target": "en.w.pen"
+    },
+    {
+      "id": "l20-blending.e06",
+      "type": "word_build",
+      "objectives": [
+        "obj.l20.spell-cvc"
+      ],
+      "instructionClip": "instr.build_word",
+      "mode": "listen",
+      "target": "en.w.sit",
+      "tiles": [
+        "t",
+        "i",
+        "s",
+        "a"
+      ]
+    },
+    {
+      "id": "l20-blending.e07",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l20.read-cvc"
+      ],
+      "instructionClip": "instr.picture_word",
+      "mode": "name",
+      "target": "en.w.map",
+      "options": [
+        "en.w.man",
+        "en.w.map",
+        "en.w.cat"
+      ]
+    },
+    {
+      "id": "l20-blending.e08",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l20.hear-vowels"
+      ],
+      "instructionClip": "instr.same_different",
+      "mode": "same_different",
+      "pair": [
+        "en.w.ship",
+        "en.w.sheep"
+      ],
+      "same": false
+    },
+    {
+      "id": "l20-blending.e09",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l20.read-cvc"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.w.map",
+      "options": [
+        "en.w.cat",
+        "en.w.map",
+        "en.w.sit"
+      ]
+    },
+    {
+      "id": "l20-blending.e10",
+      "type": "word_build",
+      "objectives": [
+        "obj.l20.spell-cvc"
+      ],
+      "instructionClip": "instr.build_word",
+      "mode": "listen",
+      "target": "en.w.cat",
+      "tiles": [
+        "c",
+        "a",
+        "t",
+        "k"
+      ]
+    },
+    {
+      "id": "l20-blending.e11",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l20.hear-vowels"
+      ],
+      "instructionClip": "instr.which_word",
+      "mode": "which_word",
+      "pair": [
+        "en.w.pan",
+        "en.w.pen"
+      ],
+      "target": "en.w.pan"
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l20-blending.intro",
+      "text": "Manje sizohlanganisa imisindo emithathu sakhe amagama. Lalela: c, a, t... cat! Ungakhohlwa umsindo wokugcina.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l20-blending.intro",
+      "text": "Jwale re tla kopanya medumo e meraro ho aha mantswe. Mamela: c, a, t... cat! O se ke wa lebala modumo wa ho qetela.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l20-blending.outro",
+      "text": "Uyafunda isiNgisi! Ufunde amagama: cat, sit, map, pen.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l20-blending.outro",
+      "text": "O a bala Senyesemane! O balile mantswe: cat, sit, map, pen.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

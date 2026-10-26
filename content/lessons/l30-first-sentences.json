@@ -1,0 +1,447 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l30-first-sentences",
+  "version": 1,
+  "level": 3,
+  "unit": "u3",
+  "order": 1,
+  "minutes": 7,
+  "target": "en",
+  "title": {
+    "en": "Reading your first sentences",
+    "zu": {
+      "id": "zu.l30-first-sentences.title",
+      "label": "Imisho yokuqala",
+      "text": "Funda imisho yakho yokuqala: I am at work. The bus is here.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l30-first-sentences.title",
+      "label": "Dipolelo tsa pele",
+      "text": "Bala dipolelo tsa hao tsa pele: I am at work. The bus is here.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Reading simple sentences without audio, building sentences from word tiles and understanding spoken sentences.",
+  "objectives": [
+    {
+      "id": "obj.l30.read-sentences",
+      "description": "Read simple sentences (I am at work. The bus is here.) with no audio and show their meaning.",
+      "strand": "comprehension",
+      "masteryCompetencies": [
+        "decode",
+        "understand_written"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.read-sentences"
+        }
+      ]
+    },
+    {
+      "id": "obj.l30.build-sentences",
+      "description": "Put the words of a heard sentence in the right order.",
+      "strand": "writing",
+      "masteryCompetencies": [
+        "write"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.write-sentences"
+        }
+      ]
+    },
+    {
+      "id": "obj.l30.listen-sentences",
+      "description": "Understand short spoken English sentences.",
+      "strand": "comprehension",
+      "masteryCompetencies": [
+        "understand_spoken"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.listen-understand"
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l21.read-words",
+    "obj.l22.read-sight-words"
+  ],
+  "contrastiveTags": [],
+  "steps": [
+    {
+      "id": "l30-first-sentences.t01",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.work"
+    },
+    {
+      "id": "l30-first-sentences.t02",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.here"
+    },
+    {
+      "id": "l30-first-sentences.t03",
+      "teach": "explain",
+      "line": {
+        "zu": {
+          "id": "zu.l30-first-sentences.t03",
+          "text": "Bheka umusho: I am at work. Usho ukuthi: ngisemsebenzini.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l30-first-sentences.t03",
+          "text": "Sheba polelo: I am at work. E bolela hore: ke mosebetsing.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "showLex": "en.sen.i-am-at-work"
+    },
+    {
+      "id": "l30-first-sentences.e01",
+      "type": "listening_comprehension",
+      "objectives": [
+        "obj.l30.listen-sentences"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l30-first-sentences.e01.instr",
+          "text": "Lalela umusho. Yini ekhona lapha? Thinta isithombe.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l30-first-sentences.e01.instr",
+          "text": "Mamela polelo. Ke eng e leng mona? Tobetsa setshwantsho.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "audio": "en.sen.the-bus-is-here",
+      "question": {
+        "zu": {
+          "id": "zu.l30-first-sentences.e01.q",
+          "text": "Yini ekhona lapha?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l30-first-sentences.e01.q",
+          "text": "Ke eng e leng mona?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "bus",
+          "image": "bus"
+        },
+        {
+          "id": "cat",
+          "image": "cat"
+        },
+        {
+          "id": "work",
+          "image": "work"
+        }
+      ],
+      "answer": "bus"
+    },
+    {
+      "id": "l30-first-sentences.e02",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l30.read-sentences"
+      ],
+      "instructionClip": "instr.read_sentence_picture",
+      "mode": "read",
+      "target": "en.sen.i-am-at-work",
+      "options": [
+        "en.sen.the-bus-is-here",
+        "en.sen.i-am-at-work",
+        "en.sen.the-cat-is-here"
+      ]
+    },
+    {
+      "id": "l30-first-sentences.e03",
+      "type": "sentence_build",
+      "objectives": [
+        "obj.l30.build-sentences"
+      ],
+      "instructionClip": "instr.build_sentence",
+      "target": "en.sen.the-bus-is-here",
+      "tiles": [
+        "bus",
+        "here.",
+        "The",
+        "cat",
+        "is"
+      ]
+    },
+    {
+      "id": "l30-first-sentences.e04",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l30.read-sentences"
+      ],
+      "instructionClip": "instr.read_sentence_picture",
+      "mode": "read",
+      "target": "en.sen.the-cat-is-here",
+      "options": [
+        "en.sen.you-can-sit-here",
+        "en.sen.the-cat-is-here",
+        "en.sen.i-am-at-work"
+      ]
+    },
+    {
+      "id": "l30-first-sentences.e05",
+      "type": "reading_comprehension",
+      "objectives": [
+        "obj.l30.read-sentences"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l30-first-sentences.e05.instr",
+          "text": "Funda umusho, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l30-first-sentences.e05.instr",
+          "text": "Bala polelo, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "passage": "en.sen.you-can-sit-here",
+      "question": {
+        "zu": {
+          "id": "zu.l30-first-sentences.e05.q",
+          "text": "Umuntu angenzani lapha?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l30-first-sentences.e05.q",
+          "text": "Motho a ka etsang mona?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "sit",
+          "image": "sit"
+        },
+        {
+          "id": "work",
+          "image": "work"
+        },
+        {
+          "id": "bus",
+          "image": "bus"
+        }
+      ],
+      "answer": "sit"
+    },
+    {
+      "id": "l30-first-sentences.e06",
+      "type": "sentence_build",
+      "objectives": [
+        "obj.l30.build-sentences"
+      ],
+      "instructionClip": "instr.build_sentence",
+      "target": "en.sen.i-am-at-work",
+      "tiles": [
+        "work.",
+        "I",
+        "am",
+        "you",
+        "at"
+      ]
+    },
+    {
+      "id": "l30-first-sentences.e07",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l30.read-sentences"
+      ],
+      "instructionClip": "instr.read_sentence_picture",
+      "mode": "read",
+      "target": "en.sen.the-bus-is-here",
+      "options": [
+        "en.sen.the-cat-is-here",
+        "en.sen.you-can-sit-here",
+        "en.sen.the-bus-is-here"
+      ]
+    },
+    {
+      "id": "l30-first-sentences.e08",
+      "type": "listening_comprehension",
+      "objectives": [
+        "obj.l30.listen-sentences"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l30-first-sentences.e08.instr",
+          "text": "Lalela umusho. Uphi lo muntu? Thinta isithombe.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l30-first-sentences.e08.instr",
+          "text": "Mamela polelo. Motho enwa o kae? Tobetsa setshwantsho.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "audio": "en.sen.i-am-at-work",
+      "question": {
+        "zu": {
+          "id": "zu.l30-first-sentences.e08.q",
+          "text": "Uphi lo muntu?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l30-first-sentences.e08.q",
+          "text": "Motho enwa o kae?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "bus",
+          "image": "bus"
+        },
+        {
+          "id": "work",
+          "image": "work"
+        },
+        {
+          "id": "clinic",
+          "image": "clinic"
+        }
+      ],
+      "answer": "work"
+    },
+    {
+      "id": "l30-first-sentences.e09",
+      "type": "reading_comprehension",
+      "objectives": [
+        "obj.l30.read-sentences"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l30-first-sentences.e09.instr",
+          "text": "Funda umusho, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l30-first-sentences.e09.instr",
+          "text": "Bala polelo, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "passage": "en.sen.the-cat-is-here",
+      "question": {
+        "zu": {
+          "id": "zu.l30-first-sentences.e09.q",
+          "text": "Yini ekhona lapha?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l30-first-sentences.e09.q",
+          "text": "Ke eng e leng mona?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "dog",
+          "image": "dog"
+        },
+        {
+          "id": "cat",
+          "image": "cat"
+        },
+        {
+          "id": "man",
+          "image": "man"
+        }
+      ],
+      "answer": "cat"
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l30-first-sentences.intro",
+      "text": "Usuyakwazi ukufunda amagama. Manje sizowahlanganisa abe imisho. Umusho uqala ngohlamvu olukhulu, uphele ngechashazi.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l30-first-sentences.intro",
+      "text": "O se o kgona ho bala mantswe. Jwale re tla a kopanya ho etsa dipolelo. Polelo e qala ka tlhaku e kgolo, e fele ka kgutlo.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l30-first-sentences.outro",
+      "text": "Wenze kahle kakhulu! Ufunde imisho yakho yokuqala yesiNgisi.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l30-first-sentences.outro",
+      "text": "O entse hantle haholo! O balile dipolelo tsa hao tsa pele tsa Senyesemane.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

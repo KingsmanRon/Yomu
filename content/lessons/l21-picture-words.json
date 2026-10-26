@@ -1,0 +1,322 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l21-picture-words",
+  "version": 1,
+  "level": 2,
+  "unit": "u2",
+  "order": 2,
+  "minutes": 6,
+  "target": "en",
+  "title": {
+    "en": "Picture-to-word matching and building words with tiles",
+    "zu": {
+      "id": "zu.l21-picture-words.title",
+      "label": "Amagama nezithombe",
+      "text": "Hlanganisa amagama nezithombe, wakhe amagama ngezinhlamvu.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l21-picture-words.title",
+      "label": "Mantswe le ditshwantsho",
+      "text": "Tsamaisa mantswe le ditshwantsho, o hahe mantswe ka ditlhaku.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Reading new three-sound words (man, tin, pan, dad, bus), matching words and pictures, and spelling with tiles; letters b and u.",
+  "objectives": [
+    {
+      "id": "obj.l21.read-words",
+      "description": "Read new three-sound words (man, tin, pan, dad, bus) with no audio and match them to pictures.",
+      "strand": "decoding",
+      "masteryCompetencies": [
+        "decode",
+        "understand_written"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.decode-words"
+        }
+      ],
+      "contrastiveTags": [
+        "ct.short-vowels"
+      ]
+    },
+    {
+      "id": "obj.l21.build-words",
+      "description": "Spell three-sound words with letter tiles.",
+      "strand": "writing",
+      "masteryCompetencies": [
+        "write"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.write-letters-words"
+        }
+      ]
+    },
+    {
+      "id": "obj.l21.understand-words",
+      "description": "Understand these words when they are spoken.",
+      "strand": "vocabulary",
+      "masteryCompetencies": [
+        "understand_spoken"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.listen-understand"
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l20.read-cvc"
+  ],
+  "contrastiveTags": [
+    "ct.short-vowels"
+  ],
+  "steps": [
+    {
+      "id": "l21-picture-words.t01",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "en.l.b"
+    },
+    {
+      "id": "l21-picture-words.t02",
+      "teach": "letter_intro",
+      "line": {
+        "zu": {
+          "id": "zu.l21-picture-words.t02",
+          "text": "Uhlamvu u esiNgisini, egameni elithi bus, aluzwakali njengo-u wesiZulu. Lalela: u, bus.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l21-picture-words.t02",
+          "text": "Tlhaku u ho Senyesemane, lentsweng bus, ha e utlwahale jwalo ka u ya Sesotho. Mamela: u, bus.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "letter": "en.l.u"
+    },
+    {
+      "id": "l21-picture-words.t03",
+      "teach": "blend_demo",
+      "lineClip": "teach.blend_demo",
+      "word": "en.w.bus"
+    },
+    {
+      "id": "l21-picture-words.e01",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l21.read-words"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.w.man",
+      "options": [
+        "en.w.man",
+        "en.w.dad",
+        "en.w.bus"
+      ]
+    },
+    {
+      "id": "l21-picture-words.e02",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l21.understand-words"
+      ],
+      "instructionClip": "instr.listen_picture",
+      "mode": "listen",
+      "target": "en.w.tin",
+      "options": [
+        "en.w.pan",
+        "en.w.tin",
+        "en.w.man"
+      ]
+    },
+    {
+      "id": "l21-picture-words.e03",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l21.read-words"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.w.bus",
+      "options": [
+        "en.w.tin",
+        "en.w.bus",
+        "en.w.pan"
+      ]
+    },
+    {
+      "id": "l21-picture-words.e04",
+      "type": "word_build",
+      "objectives": [
+        "obj.l21.build-words"
+      ],
+      "instructionClip": "instr.build_word_picture",
+      "mode": "picture",
+      "target": "en.w.pan",
+      "tiles": [
+        "p",
+        "a",
+        "n",
+        "m"
+      ]
+    },
+    {
+      "id": "l21-picture-words.e05",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l21.read-words"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.w.dad",
+      "options": [
+        "en.w.man",
+        "en.w.bus",
+        "en.w.dad"
+      ]
+    },
+    {
+      "id": "l21-picture-words.e06",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l21.read-words"
+      ],
+      "instructionClip": "instr.picture_word",
+      "mode": "name",
+      "target": "en.w.tin",
+      "options": [
+        "en.w.tin",
+        "en.w.man",
+        "en.w.pan"
+      ]
+    },
+    {
+      "id": "l21-picture-words.e07",
+      "type": "word_build",
+      "objectives": [
+        "obj.l21.build-words"
+      ],
+      "instructionClip": "instr.build_word",
+      "mode": "listen",
+      "target": "en.w.bus",
+      "tiles": [
+        "b",
+        "u",
+        "s",
+        "d"
+      ]
+    },
+    {
+      "id": "l21-picture-words.e08",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l21.understand-words"
+      ],
+      "instructionClip": "instr.listen_picture",
+      "mode": "listen",
+      "target": "en.w.dad",
+      "options": [
+        "en.w.dad",
+        "en.w.man",
+        "en.w.bus"
+      ]
+    },
+    {
+      "id": "l21-picture-words.e09",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l21.read-words"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.w.pan",
+      "options": [
+        "en.w.pan",
+        "en.w.tin",
+        "en.w.man"
+      ]
+    },
+    {
+      "id": "l21-picture-words.e10",
+      "type": "word_build",
+      "objectives": [
+        "obj.l21.build-words"
+      ],
+      "instructionClip": "instr.build_word",
+      "mode": "listen",
+      "target": "en.w.man",
+      "tiles": [
+        "m",
+        "a",
+        "n",
+        "d"
+      ]
+    },
+    {
+      "id": "l21-picture-words.e11",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l21.understand-words"
+      ],
+      "instructionClip": "instr.listen_picture",
+      "mode": "listen",
+      "target": "en.w.bus",
+      "options": [
+        "en.w.tin",
+        "en.w.dad",
+        "en.w.bus"
+      ]
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l21-picture-words.intro",
+      "text": "Namuhla ufunda amagama amasha ngezinhlamvu osuzazi. Sizophinde sifunde izinhlamvu ezimbili ezintsha: b no-u.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l21-picture-words.intro",
+      "text": "Kajeno o bala mantswe a matjha ka ditlhaku tseo o seng o di tseba. Re tla boela re ithute ditlhaku tse pedi tse ntjha: b le u.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l21-picture-words.outro",
+      "text": "Kuhle kakhulu! Usufunde amagama amaningi esiNgisi.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l21-picture-words.outro",
+      "text": "Ho hotle haholo! O se o balile mantswe a mangata a Senyesemane.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l00-hl-vowels",
+  "version": 1,
+  "level": 0,
+  "unit": "u0",
+  "order": 1,
+  "minutes": 4,
+  "target": "home",
+  "title": {
+    "en": "Letters and sounds you already speak",
+    "zu": {
+      "id": "zu.l00-hl-vowels.title",
+      "label": "Izinhlamvu ozaziyo",
+      "text": "Izinhlamvu nemisindo osuyikhuluma kakade.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l00-hl-vowels.title",
+      "label": "Ditlhaku tseo o di tsebang",
+      "text": "Ditlhaku le medumo eo o seng o e bua.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Home-language vowels a, e, i, o, u: matching letters to sounds and hearing vowels in familiar words.",
+  "objectives": [
+    {
+      "id": "obj.l00.hl-vowels",
+      "description": "See a home-language vowel letter (a, e, i, o, u) with no audio and choose its sound.",
+      "strand": "home_language_bridge",
+      "masteryCompetencies": [
+        "decode"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "pre-aet",
+          "outcome": "aet.pre.hl-letter-sounds"
+        }
+      ]
+    },
+    {
+      "id": "obj.l00.hl-hear-vowels",
+      "description": "Hear a home-language vowel, alone or inside a familiar word, and find its letter.",
+      "strand": "phonemic_awareness",
+      "masteryCompetencies": [
+        "recognise"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "pre-aet",
+          "outcome": "aet.pre.phonological-awareness"
+        }
+      ]
+    }
+  ],
+  "prerequisites": [],
+  "contrastiveTags": [],
+  "steps": [
+    {
+      "id": "l00-hl-vowels.t01",
+      "teach": "explain",
+      "line": {
+        "zu": {
+          "id": "zu.l00-hl-vowels.t01",
+          "text": "Lezi ngonkamisa abahlanu: a, e, i, o, u. Uhlamvu ngalunye lunomsindo walo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l00-hl-vowels.t01",
+          "text": "Tsena ke ditlhaku tse hlano: a, e, i, o, u. Tlhaku ka nngwe e na le modumo wa yona.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "showText": "a  e  i  o  u"
+    },
+    {
+      "id": "l00-hl-vowels.t02",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "hl.l.a"
+    },
+    {
+      "id": "l00-hl-vowels.t03",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "hl.l.e"
+    },
+    {
+      "id": "l00-hl-vowels.t04",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "hl.l.i"
+    },
+    {
+      "id": "l00-hl-vowels.t05",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "hl.l.o"
+    },
+    {
+      "id": "l00-hl-vowels.t06",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "hl.l.u"
+    },
+    {
+      "id": "l00-hl-vowels.e01",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-hear-vowels"
+      ],
+      "instructionClip": "instr.sound_letter",
+      "mode": "sound_to_letter",
+      "target": "hl.l.a",
+      "options": [
+        "hl.l.a",
+        "hl.l.i",
+        "hl.l.u"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e02",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-hear-vowels"
+      ],
+      "instructionClip": "instr.sound_letter",
+      "mode": "sound_to_letter",
+      "target": "hl.l.e",
+      "options": [
+        "hl.l.o",
+        "hl.l.e",
+        "hl.l.a"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e03",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-vowels"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "hl.l.i",
+      "options": [
+        "hl.l.e",
+        "hl.l.i",
+        "hl.l.u"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e04",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-vowels"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "hl.l.o",
+      "options": [
+        "hl.l.o",
+        "hl.l.a",
+        "hl.l.u"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e05",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-vowels"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "hl.l.u",
+      "options": [
+        "hl.l.i",
+        "hl.l.o",
+        "hl.l.u"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e06",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-vowels"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "hl.l.a",
+      "options": [
+        "hl.l.a",
+        "hl.l.e",
+        "hl.l.o"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e07",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-vowels"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "hl.l.e",
+      "options": [
+        "hl.l.u",
+        "hl.l.a",
+        "hl.l.e"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e08",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-hear-vowels"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.hear_letter",
+      "mode": "hear_in_word",
+      "prompt": "zu.w.inja",
+      "target": "hl.l.i",
+      "options": [
+        "hl.l.i",
+        "hl.l.a",
+        "hl.l.u"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e09",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-hear-vowels"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.hear_letter",
+      "mode": "hear_in_word",
+      "prompt": "zu.w.ubisi",
+      "target": "hl.l.u",
+      "options": [
+        "hl.l.o",
+        "hl.l.u",
+        "hl.l.i"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e10",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-hear-vowels"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.hear_letter",
+      "mode": "hear_in_word",
+      "prompt": "zu.w.amanzi",
+      "target": "hl.l.a",
+      "options": [
+        "hl.l.a",
+        "hl.l.e",
+        "hl.l.i"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e11",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-hear-vowels"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.hear_letter",
+      "mode": "hear_in_word",
+      "prompt": "st.syl.me",
+      "target": "hl.l.e",
+      "options": [
+        "hl.l.e",
+        "hl.l.a",
+        "hl.l.o"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e12",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-hear-vowels"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.hear_letter",
+      "mode": "hear_in_word",
+      "prompt": "st.syl.ta",
+      "target": "hl.l.a",
+      "options": [
+        "hl.l.u",
+        "hl.l.a",
+        "hl.l.i"
+      ]
+    },
+    {
+      "id": "l00-hl-vowels.e13",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l00.hl-hear-vowels"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.hear_letter",
+      "mode": "hear_in_word",
+      "prompt": "st.syl.mo",
+      "target": "hl.l.o",
+      "options": [
+        "hl.l.o",
+        "hl.l.e",
+        "hl.l.u"
+      ]
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l00-hl-vowels.intro",
+      "text": "Uyakwazi kakade ukukhuluma isiZulu. Manje sizofunda izinhlamvu ezibhala imisindo oyaziyo. Siqala ngonkamisa abahlanu: a, e, i, o, u.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l00-hl-vowels.intro",
+      "text": "O se o kgona ho bua Sesotho. Jwale re tla ithuta ditlhaku tse ngolang medumo eo o e tsebang. Re qala ka ditlhaku tse hlano: a, e, i, o, u.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l00-hl-vowels.outro",
+      "text": "Wenze kahle! Manje wazi onkamisa abahlanu. Esifundweni esilandelayo sizobahlanganisa nezinye izinhlamvu.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l00-hl-vowels.outro",
+      "text": "O entse hantle! Jwale o tseba ditlhaku tsena tse hlano. Thutong e latelang re tla di kopanya le ditlhaku tse ding.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l10-satp",
+  "version": 1,
+  "level": 1,
+  "unit": "u1",
+  "order": 1,
+  "minutes": 5,
+  "target": "en",
+  "title": {
+    "en": "English letter sounds: s, a, t, p",
+    "zu": {
+      "id": "zu.l10-satp.title",
+      "label": "s, a, t, p",
+      "text": "Imisindo yesiNgisi: s, a, t, p.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l10-satp.title",
+      "label": "s, a, t, p",
+      "text": "Medumo ya Senyesemane: s, a, t, p.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "First English letter sounds (s, a, t, p) and first blends: at, sat, tap.",
+  "objectives": [
+    {
+      "id": "obj.l10.satp-letters",
+      "description": "See the letters s, a, t and p with no audio and choose their English sounds.",
+      "strand": "phonics",
+      "masteryCompetencies": [
+        "decode"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.letter-sounds"
+        }
+      ],
+      "contrastiveTags": [
+        "ct.letter-names"
+      ]
+    },
+    {
+      "id": "obj.l10.satp-hear",
+      "description": "Hear the English sounds /s/, /æ/, /t/ and /p/ and find their letters.",
+      "strand": "phonemic_awareness",
+      "masteryCompetencies": [
+        "recognise"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.letter-sounds"
+        }
+      ]
+    },
+    {
+      "id": "obj.l10.first-blends",
+      "description": "Blend s, a, t and p into short words (at, sat, tap) and read them with no audio.",
+      "strand": "decoding",
+      "masteryCompetencies": [
+        "decode"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.decode-words"
+        }
+      ],
+      "contrastiveTags": [
+        "ct.final-consonants"
+      ]
+    }
+  ],
+  "prerequisites": [],
+  "contrastiveTags": [
+    "ct.letter-names",
+    "ct.final-consonants"
+  ],
+  "steps": [
+    {
+      "id": "l10-satp.t01",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "en.l.s"
+    },
+    {
+      "id": "l10-satp.t02",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "en.l.a"
+    },
+    {
+      "id": "l10-satp.t03",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "en.l.t"
+    },
+    {
+      "id": "l10-satp.t04",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "en.l.p"
+    },
+    {
+      "id": "l10-satp.e01",
+      "type": "listen_repeat",
+      "objectives": [
+        "obj.l10.satp-hear"
+      ],
+      "instructionClip": "instr.listen_repeat",
+      "items": [
+        "en.l.s",
+        "en.l.a",
+        "en.l.t",
+        "en.l.p"
+      ]
+    },
+    {
+      "id": "l10-satp.e02",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l10.satp-hear"
+      ],
+      "instructionClip": "instr.sound_letter",
+      "mode": "sound_to_letter",
+      "target": "en.l.s",
+      "options": [
+        "en.l.s",
+        "en.l.t",
+        "en.l.a"
+      ]
+    },
+    {
+      "id": "l10-satp.e03",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l10.satp-hear"
+      ],
+      "instructionClip": "instr.sound_letter",
+      "mode": "sound_to_letter",
+      "target": "en.l.p",
+      "options": [
+        "en.l.t",
+        "en.l.p",
+        "en.l.s"
+      ]
+    },
+    {
+      "id": "l10-satp.e04",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l10.satp-letters"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "en.l.a",
+      "options": [
+        "en.l.a",
+        "en.l.s",
+        "en.l.p"
+      ]
+    },
+    {
+      "id": "l10-satp.e05",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l10.satp-letters"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "en.l.t",
+      "options": [
+        "en.l.p",
+        "en.l.t",
+        "en.l.a"
+      ]
+    },
+    {
+      "id": "l10-satp.e06",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l10.satp-letters"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "en.l.s",
+      "options": [
+        "en.l.t",
+        "en.l.a",
+        "en.l.s"
+      ]
+    },
+    {
+      "id": "l10-satp.e07",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l10.satp-letters"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "en.l.p",
+      "options": [
+        "en.l.p",
+        "en.l.a",
+        "en.l.t"
+      ]
+    },
+    {
+      "id": "l10-satp.t05",
+      "teach": "blend_demo",
+      "lineClip": "teach.blend_demo",
+      "word": "en.w.at"
+    },
+    {
+      "id": "l10-satp.t06",
+      "teach": "blend_demo",
+      "lineClip": "teach.blend_demo",
+      "word": "en.w.sat"
+    },
+    {
+      "id": "l10-satp.e08",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l10.first-blends"
+      ],
+      "instructionClip": "instr.word_sound",
+      "mode": "letter_to_sound",
+      "target": "en.w.sat",
+      "options": [
+        "en.w.sat",
+        "en.w.at",
+        "en.w.tap"
+      ]
+    },
+    {
+      "id": "l10-satp.e09",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l10.first-blends"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.w.tap",
+      "options": [
+        "en.w.pan",
+        "en.w.tap",
+        "en.w.map"
+      ]
+    },
+    {
+      "id": "l10-satp.e10",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l10.first-blends"
+      ],
+      "instructionClip": "instr.word_sound",
+      "mode": "letter_to_sound",
+      "target": "en.w.at",
+      "options": [
+        "en.w.tap",
+        "en.w.sat",
+        "en.w.at"
+      ]
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l10-satp.intro",
+      "text": "Namuhla sifunda imisindo yezinhlamvu ezine zesiNgisi: s, a, t, p. Sifunda imisindo, hhayi amagama ezinhlamvu.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l10-satp.intro",
+      "text": "Kajeno re ithuta medumo ya ditlhaku tse nne tsa Senyesemane: s, a, t, p. Re ithuta medumo, e seng mabitso a ditlhaku.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l10-satp.outro",
+      "text": "Wenze kahle! Wazi imisindo emine: s, a, t, p. Usufundile namagama amancane: at, sat, tap.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l10-satp.outro",
+      "text": "O entse hantle! O tseba medumo e mene: s, a, t, p. O se o balile le mantswe a manyane: at, sat, tap.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

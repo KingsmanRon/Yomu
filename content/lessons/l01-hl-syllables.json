@@ -1,0 +1,470 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l01-hl-syllables",
+  "version": 1,
+  "level": 0,
+  "unit": "u0",
+  "order": 2,
+  "minutes": 5,
+  "target": "home",
+  "title": {
+    "en": "Building syllables and reading your first home-language words",
+    "zu": {
+      "id": "zu.l01-hl-syllables.title",
+      "label": "Amagama okuqala",
+      "text": "Sakha izingxenye zamagama, sifunde amagama okuqala ngesiZulu.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l01-hl-syllables.title",
+      "label": "Mantswe a pele",
+      "text": "Re aha dikarolo tsa mantswe, re bala mantswe a pele ka Sesotho.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Blending a consonant and a vowel into syllables, then reading and building familiar home-language words.",
+  "objectives": [
+    {
+      "id": "obj.l01.hl-syllables",
+      "description": "Blend a consonant and a vowel into a syllable (ma, ba, mi, bu) and read it with no audio.",
+      "strand": "home_language_bridge",
+      "masteryCompetencies": [
+        "decode"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "pre-aet",
+          "outcome": "aet.pre.hl-decoding"
+        }
+      ]
+    },
+    {
+      "id": "obj.l01.hl-words",
+      "description": "Read simple, familiar home-language words with no audio and match them to pictures.",
+      "strand": "home_language_bridge",
+      "masteryCompetencies": [
+        "decode",
+        "understand_written"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "pre-aet",
+          "outcome": "aet.pre.hl-decoding"
+        }
+      ]
+    },
+    {
+      "id": "obj.l01.hl-build",
+      "description": "Build a familiar home-language word from its syllables after hearing it.",
+      "strand": "writing",
+      "masteryCompetencies": [
+        "write"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "pre-aet",
+          "outcome": "aet.pre.hl-decoding"
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l00.hl-vowels"
+  ],
+  "contrastiveTags": [],
+  "steps": [
+    {
+      "id": "l01-hl-syllables.t01",
+      "teach": "explain",
+      "line": {
+        "zu": {
+          "id": "zu.l01-hl-syllables.t01",
+          "text": "Bheka: m kanye no-a kwenza ma. Lalela: mmm, a, ma.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l01-hl-syllables.t01",
+          "text": "Sheba: m le a di etsa ma. Mamela: mmm, a, ma.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "showText": "m + a = ma"
+    },
+    {
+      "id": "l01-hl-syllables.t02",
+      "teach": "explain",
+      "line": {
+        "zu": {
+          "id": "zu.l01-hl-syllables.t02",
+          "text": "Futhi b kanye no-a kwenza ba. Lalela: b, a, ba.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l01-hl-syllables.t02",
+          "text": "Hape b le a di etsa ba. Mamela: b, a, ba.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "showText": "b + a = ba"
+    },
+    {
+      "id": "l01-hl-syllables.e01",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l01.hl-syllables"
+      ],
+      "instructionClip": "instr.syllable_sound",
+      "mode": "letter_to_sound",
+      "target": "hl.syl.ma",
+      "options": [
+        "hl.syl.ma",
+        "hl.syl.ba",
+        "hl.syl.mo"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e02",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l01.hl-syllables"
+      ],
+      "instructionClip": "instr.syllable_sound",
+      "mode": "letter_to_sound",
+      "target": "hl.syl.bi",
+      "options": [
+        "hl.syl.bu",
+        "hl.syl.bi",
+        "hl.syl.mi"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e03",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l01.hl-syllables"
+      ],
+      "instructionClip": "instr.syllable_sound",
+      "mode": "letter_to_sound",
+      "target": "hl.syl.mu",
+      "options": [
+        "hl.syl.ma",
+        "hl.syl.bu",
+        "hl.syl.mu"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e04",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l01.hl-syllables"
+      ],
+      "instructionClip": "instr.sound_syllable",
+      "mode": "sound_to_letter",
+      "target": "hl.syl.be",
+      "options": [
+        "hl.syl.be",
+        "hl.syl.ba",
+        "hl.syl.me"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e05",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l01.hl-syllables"
+      ],
+      "instructionClip": "instr.syllable_sound",
+      "mode": "letter_to_sound",
+      "target": "hl.syl.le",
+      "options": [
+        "hl.syl.li",
+        "hl.syl.le",
+        "hl.syl.se"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.t03",
+      "teach": "word_intro",
+      "pathways": [
+        "zu"
+      ],
+      "lineClip": "teach.word_intro",
+      "word": "zu.w.umama"
+    },
+    {
+      "id": "l01-hl-syllables.e06",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l01.hl-words"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "zu.w.imali",
+      "options": [
+        "zu.w.ubisi",
+        "zu.w.imali",
+        "zu.w.umama"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e07",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l01.hl-words"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "zu.w.ubisi",
+      "options": [
+        "zu.w.ubaba",
+        "zu.w.ubisi",
+        "zu.w.imali"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e08",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l01.hl-words"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "zu.w.ubaba",
+      "options": [
+        "zu.w.ubaba",
+        "zu.w.umama",
+        "zu.w.ubisi"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e09",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l01.hl-words"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "zu.w.umama",
+      "options": [
+        "zu.w.imali",
+        "zu.w.ubaba",
+        "zu.w.umama"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e10",
+      "type": "word_build",
+      "objectives": [
+        "obj.l01.hl-build"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.build_syllables",
+      "mode": "listen",
+      "target": "zu.w.imali",
+      "tiles": [
+        "ma",
+        "li",
+        "i",
+        "bi"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e11",
+      "type": "word_build",
+      "objectives": [
+        "obj.l01.hl-build"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.build_syllables",
+      "mode": "listen",
+      "target": "zu.w.ubaba",
+      "tiles": [
+        "ba",
+        "u",
+        "ma",
+        "ba"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.t04",
+      "teach": "word_intro",
+      "pathways": [
+        "st"
+      ],
+      "lineClip": "teach.word_intro",
+      "word": "st.w.bese"
+    },
+    {
+      "id": "l01-hl-syllables.e12",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l01.hl-words"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "st.w.lebese",
+      "options": [
+        "st.w.metsi",
+        "st.w.lebese",
+        "st.w.ntate"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e13",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l01.hl-words"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "st.w.metsi",
+      "options": [
+        "st.w.ntate",
+        "st.w.bese",
+        "st.w.metsi"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e14",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l01.hl-words"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "st.w.ntate",
+      "options": [
+        "st.w.ntate",
+        "st.w.lebese",
+        "st.w.bese"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e15",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l01.hl-words"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "st.w.bese",
+      "options": [
+        "st.w.metsi",
+        "st.w.ntate",
+        "st.w.bese"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e16",
+      "type": "word_build",
+      "objectives": [
+        "obj.l01.hl-build"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.build_syllables",
+      "mode": "listen",
+      "target": "st.w.lebese",
+      "tiles": [
+        "be",
+        "le",
+        "se",
+        "ma"
+      ]
+    },
+    {
+      "id": "l01-hl-syllables.e17",
+      "type": "word_build",
+      "objectives": [
+        "obj.l01.hl-build"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.build_syllables",
+      "mode": "listen",
+      "target": "st.w.metsi",
+      "tiles": [
+        "tsi",
+        "me",
+        "ba"
+      ]
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l01-hl-syllables.intro",
+      "text": "Uhlamvu nonkamisa kuyahlangana kwakhe ingxenye yegama, njengo-m no-a benza ma. Izingxenye zakha amagama.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l01-hl-syllables.intro",
+      "text": "Tlhaku le e nngwe ya ditlhaku tse hlano di kopana ho etsa karolo ya lentswe, jwalo ka m le a di etsa ma. Dikarolo di aha mantswe.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l01-hl-syllables.outro",
+      "text": "Uyafunda manje! Ufunde amagama esiZulu. Lelo khono lizokusiza nasesiNgisini.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l01-hl-syllables.outro",
+      "text": "Jwale o a bala! O balile mantswe a Sesotho. Bokgoni boo bo tla o thusa le ho Senyesemane.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

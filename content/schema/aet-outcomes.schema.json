@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "outcomes": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema0"
+      }
+    }
+  },
+  "required": [
+    "disclaimer",
+    "outcomes"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^aet\\.[a-z0-9.-]+$"
+        },
+        "level": {
+          "type": "string",
+          "enum": [
+            "pre-aet",
+            "aet-1",
+            "aet-2",
+            "aet-3",
+            "aet-4"
+          ]
+        },
+        "learningArea": {
+          "type": "string"
+        },
+        "outcome": {
+          "type": "string"
+        },
+        "officialReference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "proposed_unreviewed",
+            "specialist_reviewed"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "level",
+        "learningArea",
+        "outcome",
+        "officialReference",
+        "status"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$id": "https://yomu.invalid/content/schema/aet-outcomes.schema.json",
+  "title": "Yomu content: aet-outcomes"
+}

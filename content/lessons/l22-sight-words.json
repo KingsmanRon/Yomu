@@ -1,0 +1,306 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l22-sight-words",
+  "version": 1,
+  "level": 2,
+  "unit": "u2",
+  "order": 3,
+  "minutes": 5,
+  "target": "en",
+  "title": {
+    "en": "Common sight words (the, a, is, I, you)",
+    "zu": {
+      "id": "zu.l22-sight-words.title",
+      "label": "Amagama amancane",
+      "text": "Amagama amancane abonakala yonke indawo: the, a, is, I, you.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l22-sight-words.title",
+      "label": "Mantswe a manyane",
+      "text": "Mantswe a manyane a hlahang hohle: the, a, is, I, you.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "High-frequency words that do not follow the sound rules (the, a, is, I, you): recognition, reading and typing.",
+  "objectives": [
+    {
+      "id": "obj.l22.read-sight-words",
+      "description": "Recognise and read the high-frequency words the, a, is, I and you on sight.",
+      "strand": "sight_words",
+      "masteryCompetencies": [
+        "decode"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.sight-words"
+        }
+      ],
+      "contrastiveTags": [
+        "ct.irregular-spelling",
+        "ct.aspirated-th-ph"
+      ]
+    },
+    {
+      "id": "obj.l22.type-words",
+      "description": "Type the words the and you on the phone keyboard.",
+      "strand": "writing",
+      "masteryCompetencies": [
+        "write"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.write-letters-words"
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l20.read-cvc"
+  ],
+  "contrastiveTags": [
+    "ct.irregular-spelling",
+    "ct.aspirated-th-ph"
+  ],
+  "steps": [
+    {
+      "id": "l22-sight-words.t01",
+      "teach": "contrast_note",
+      "line": {
+        "zu": {
+          "id": "zu.l22-sight-words.t01",
+          "text": "Leli gama lithi the. Alizwakali njengoba libhaliwe. Ulikhumbule ngokulibona.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l22-sight-words.t01",
+          "text": "Lentswe lena ke the. Ha le utlwahale jwalo ka ha le ngotswe. Le hopole ka ho le bona.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "tag": "ct.irregular-spelling",
+      "showLex": "en.sw.the"
+    },
+    {
+      "id": "l22-sight-words.t02",
+      "teach": "contrast_note",
+      "line": {
+        "zu": {
+          "id": "zu.l22-sight-words.t02",
+          "text": "EsiNgisini u-th wenziwa ngolimi phakathi kwamazinyo: the. Akufani no-th wesiZulu egameni elithi thatha.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l22-sight-words.t02",
+          "text": "Ho Senyesemane th e etswa ka leleme pakeng tsa meno: the. Ha e tshwane le th ya Sesotho lentsweng thuto.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "tag": "ct.aspirated-th-ph",
+      "showText": "th"
+    },
+    {
+      "id": "l22-sight-words.t03",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.sw.i"
+    },
+    {
+      "id": "l22-sight-words.t04",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.sw.you"
+    },
+    {
+      "id": "l22-sight-words.t05",
+      "teach": "explain",
+      "line": {
+        "zu": {
+          "id": "zu.l22-sight-words.t05",
+          "text": "Igama elithi a lisho into eyodwa, njengo-a cat. Igama elithi is lisetshenziswa njengakule: the cat is here.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l22-sight-words.t05",
+          "text": "Lentswe a le bolela ntho e le nngwe, jwalo ka a cat. Lentswe is le sebediswa jwalo ka mona: the cat is here.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "showText": "a    is"
+    },
+    {
+      "id": "l22-sight-words.e01",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l22.read-sight-words"
+      ],
+      "instructionClip": "instr.word_sound",
+      "mode": "letter_to_sound",
+      "target": "en.sw.the",
+      "options": [
+        "en.sw.the",
+        "hl.syl.tha",
+        "en.sw.you"
+      ]
+    },
+    {
+      "id": "l22-sight-words.e02",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l22.read-sight-words"
+      ],
+      "instructionClip": "instr.word_sound",
+      "mode": "letter_to_sound",
+      "target": "en.sw.you",
+      "options": [
+        "en.sw.is",
+        "en.sw.you",
+        "en.sw.a"
+      ]
+    },
+    {
+      "id": "l22-sight-words.e03",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l22.read-sight-words"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.sw.i",
+      "options": [
+        "en.sw.you",
+        "en.sw.i"
+      ]
+    },
+    {
+      "id": "l22-sight-words.e04",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l22.read-sight-words"
+      ],
+      "instructionClip": "instr.word_sound",
+      "mode": "letter_to_sound",
+      "target": "en.sw.is",
+      "options": [
+        "en.sw.is",
+        "en.sw.i",
+        "en.sw.the"
+      ]
+    },
+    {
+      "id": "l22-sight-words.e05",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l22.read-sight-words"
+      ],
+      "instructionClip": "instr.which_word",
+      "mode": "which_word",
+      "pair": [
+        "en.sw.the",
+        "en.sw.a"
+      ],
+      "target": "en.sw.a"
+    },
+    {
+      "id": "l22-sight-words.e06",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l22.read-sight-words"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.sw.you",
+      "options": [
+        "en.sw.i",
+        "en.sw.you"
+      ]
+    },
+    {
+      "id": "l22-sight-words.e07",
+      "type": "typing",
+      "objectives": [
+        "obj.l22.type-words"
+      ],
+      "instructionClip": "instr.type_word",
+      "mode": "listen",
+      "target": "en.sw.you"
+    },
+    {
+      "id": "l22-sight-words.e08",
+      "type": "typing",
+      "objectives": [
+        "obj.l22.type-words"
+      ],
+      "instructionClip": "instr.copy_word",
+      "mode": "copy",
+      "target": "en.sw.the"
+    },
+    {
+      "id": "l22-sight-words.e09",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l22.read-sight-words"
+      ],
+      "instructionClip": "instr.word_sound",
+      "mode": "letter_to_sound",
+      "target": "en.sw.a",
+      "options": [
+        "en.sw.a",
+        "en.sw.is",
+        "en.sw.you"
+      ]
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l22-sight-words.intro",
+      "text": "Amanye amagama esiNgisi awalandeli imithetho yemisindo. Siwafunda ngokuwabona wonke, njengesithombe. La magama avela cishe kuyo yonke imisho.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l22-sight-words.intro",
+      "text": "Mantswe a mang a Senyesemane ha a latele melao ya medumo. Re a ithuta ka ho a bona a feletse, jwalo ka setshwantsho. Mantswe ana a hlaha hoo e ka bang dipolelong tsohle.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l22-sight-words.outro",
+      "text": "Wenze kahle! Usuyawazi amagama amahlanu amancane: the, a, is, I, you. Uzowabona yonke indawo.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l22-sight-words.outro",
+      "text": "O entse hantle! O se o tseba mantswe a mahlano a manyane: the, a, is, I, you. O tla a bona hohle.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

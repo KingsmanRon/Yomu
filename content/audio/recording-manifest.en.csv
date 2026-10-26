@@ -1,0 +1,87 @@
+﻿asset_id,language,text_to_record,context_note,where_used,kind,lesson_id,target_duration_s,review_status,recorded,file_name
+en.l.a,English (South Africa),/æ/ as in 'cat',"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'a',model_audio,,1.2,draft,no,en.l.a.wav
+en.l.a.name,English (South Africa),ay,"Letter NAME, as when spelling aloud.",letter name for 'a',model_audio,,1,draft,no,en.l.a.name.wav
+en.l.b,English (South Africa),"/b/ as in 'bus': short, not 'buh'","Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'b',model_audio,,1.2,draft,no,en.l.b.wav
+en.l.b.name,English (South Africa),bee,"Letter NAME, as when spelling aloud.",letter name for 'b',model_audio,,1,draft,no,en.l.b.name.wav
+en.l.c,English (South Africa),/k/ as in 'cat' (not a click),"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'c',model_audio,,1.2,draft,no,en.l.c.wav
+en.l.c.name,English (South Africa),see,"Letter NAME, as when spelling aloud.",letter name for 'c',model_audio,,1,draft,no,en.l.c.name.wav
+en.l.d,English (South Africa),"/d/ as in 'dad': short, not 'duh'","Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'd',model_audio,,1.2,draft,no,en.l.d.wav
+en.l.d.name,English (South Africa),dee,"Letter NAME, as when spelling aloud.",letter name for 'd',model_audio,,1,draft,no,en.l.d.name.wav
+en.l.e,English (South Africa),/ɛ/ as in 'pen',"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'e',model_audio,,1.2,draft,no,en.l.e.wav
+en.l.e.name,English (South Africa),ee,"Letter NAME, as when spelling aloud.",letter name for 'e',model_audio,,1,draft,no,en.l.e.name.wav
+en.l.i,English (South Africa),/ɪ/ as in 'sit',"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'i',model_audio,,1.2,draft,no,en.l.i.wav
+en.l.i.name,English (South Africa),eye,"Letter NAME, as when spelling aloud.",letter name for 'i',model_audio,,1,draft,no,en.l.i.name.wav
+en.l.m,English (South Africa),/m/: a long 'mmm',"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'm',model_audio,,1.2,draft,no,en.l.m.wav
+en.l.m.name,English (South Africa),em,"Letter NAME, as when spelling aloud.",letter name for 'm',model_audio,,1,draft,no,en.l.m.name.wav
+en.l.n,English (South Africa),/n/: a long 'nnn',"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'n',model_audio,,1.2,draft,no,en.l.n.wav
+en.l.n.name,English (South Africa),en,"Letter NAME, as when spelling aloud.",letter name for 'n',model_audio,,1,draft,no,en.l.n.name.wav
+en.l.p,English (South Africa),"/p/ as in 'pen': short, not 'puh'","Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'p',model_audio,,1.2,draft,no,en.l.p.wav
+en.l.p.name,English (South Africa),pee,"Letter NAME, as when spelling aloud.",letter name for 'p',model_audio,,1,draft,no,en.l.p.name.wav
+en.l.q,English (South Africa),/kw/ as in 'queen' (not a click),"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'q',model_audio,,1.2,draft,no,en.l.q.wav
+en.l.q.name,English (South Africa),cue,"Letter NAME, as when spelling aloud.",letter name for 'q',model_audio,,1,draft,no,en.l.q.name.wav
+en.l.s,English (South Africa),"/s/: a long hiss, 'sss'","Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 's',model_audio,,1.2,draft,no,en.l.s.wav
+en.l.s.name,English (South Africa),ess,"Letter NAME, as when spelling aloud.",letter name for 's',model_audio,,1,draft,no,en.l.s.name.wav
+en.l.t,English (South Africa),"/t/ as in 'tap': short and crisp, not 'tuh'","Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 't',model_audio,,1.2,draft,no,en.l.t.wav
+en.l.t.name,English (South Africa),tee,"Letter NAME, as when spelling aloud.",letter name for 't',model_audio,,1,draft,no,en.l.t.name.wav
+en.l.u,English (South Africa),/ʌ/ as in 'bus' (not 'oo'),"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'u',model_audio,,1.2,draft,no,en.l.u.wav
+en.l.u.name,English (South Africa),you,"Letter NAME, as when spelling aloud.",letter name for 'u',model_audio,,1,draft,no,en.l.u.name.wav
+en.psg.job-notice,English (South Africa),Job: cleaner. A clinic needs a cleaner. Work is from Monday to Friday. Start at 7 in the morning. Bring your ID. Come to the clinic on Monday.,"Read as a notice, slowly, with a short pause after each line.","model audio for passage 'JOB: CLEANER
+A clinic needs a cleaner.
+Work is from Monday to Friday.
+Start at 7 in the morning.
+Bring your ID.
+Come to the clinic on Monday.'",model_audio,,14,draft,no,en.psg.job-notice.wav
+en.sen.dad-is-at-the-shop,English (South Africa),Dad is at the shop.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'Dad is at the shop.',model_audio,,2.5,draft,no,en.sen.dad-is-at-the-shop.wav
+en.sen.i-am-at-work,English (South Africa),I am at work.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'I am at work.',model_audio,,2.5,draft,no,en.sen.i-am-at-work.wav
+en.sen.sms-airtime,English (South Africa),Your airtime is low.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'Your airtime is low.',model_audio,,2.5,draft,no,en.sen.sms-airtime.wav
+en.sen.sms-clinic,English (South Africa),Clinic: Your appointment is on Monday at 9:00.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'Clinic: Your appointment is on Monday at 9:00.',model_audio,,2.5,draft,no,en.sen.sms-clinic.wav
+en.sen.sms-shop,English (South Africa),Shop: Your order is ready. Come on Friday.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'Shop: Your order is ready. Come on Friday.',model_audio,,2.5,draft,no,en.sen.sms-shop.wav
+en.sen.the-bus-is-here,English (South Africa),The bus is here.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'The bus is here.',model_audio,,2.5,draft,no,en.sen.the-bus-is-here.wav
+en.sen.the-cat-is-here,English (South Africa),The cat is here.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'The cat is here.',model_audio,,2.5,draft,no,en.sen.the-cat-is-here.wav
+en.sen.the-man-can-sit,English (South Africa),The man can sit.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'The man can sit.',model_audio,,2.5,draft,no,en.sen.the-man-can-sit.wav
+en.sen.you-can-sit-here,English (South Africa),You can sit here.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'You can sit here.',model_audio,,2.5,draft,no,en.sen.you-can-sit-here.wav
+en.sw.a,English (South Africa),a,"Model pronunciation of a high-frequency word, said on its own.",model audio for sight_word 'a',model_audio,,1,draft,no,en.sw.a.wav
+en.sw.i,English (South Africa),I,"Model pronunciation of a high-frequency word, said on its own.",model audio for sight_word 'I',model_audio,,1,draft,no,en.sw.i.wav
+en.sw.is,English (South Africa),is,"Model pronunciation of a high-frequency word, said on its own.",model audio for sight_word 'is',model_audio,,1,draft,no,en.sw.is.wav
+en.sw.the,English (South Africa),the,"Model pronunciation of a high-frequency word, said on its own.",model audio for sight_word 'the',model_audio,,1,draft,no,en.sw.the.wav
+en.sw.you,English (South Africa),you,"Model pronunciation of a high-frequency word, said on its own.",model audio for sight_word 'you',model_audio,,1,draft,no,en.sw.you.wav
+en.w.airtime,English (South Africa),airtime,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'airtime',model_audio,,1.2,draft,no,en.w.airtime.wav
+en.w.am,English (South Africa),am,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'am',model_audio,,1.2,draft,no,en.w.am.wav
+en.w.at,English (South Africa),at,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'at',model_audio,,1.2,draft,no,en.w.at.wav
+en.w.bank,English (South Africa),bank,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'bank',model_audio,,1.2,draft,no,en.w.bank.wav
+en.w.bus,English (South Africa),bus,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'bus',model_audio,,1.2,draft,no,en.w.bus.wav
+en.w.can,English (South Africa),can,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'can',model_audio,,1.2,draft,no,en.w.can.wav
+en.w.cat,English (South Africa),cat,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'cat',model_audio,,1.2,draft,no,en.w.cat.wav
+en.w.cleaner,English (South Africa),cleaner,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'cleaner',model_audio,,1.2,draft,no,en.w.cleaner.wav
+en.w.clinic,English (South Africa),clinic,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'clinic',model_audio,,1.2,draft,no,en.w.clinic.wav
+en.w.closed,English (South Africa),CLOSED,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'CLOSED',model_audio,,1.2,draft,no,en.w.closed.wav
+en.w.cook,English (South Africa),cook,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'cook',model_audio,,1.2,draft,no,en.w.cook.wav
+en.w.dad,English (South Africa),dad,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'dad',model_audio,,1.2,draft,no,en.w.dad.wav
+en.w.danger,English (South Africa),DANGER,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'DANGER',model_audio,,1.2,draft,no,en.w.danger.wav
+en.w.driver,English (South Africa),driver,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'driver',model_audio,,1.2,draft,no,en.w.driver.wav
+en.w.exit,English (South Africa),EXIT,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'EXIT',model_audio,,1.2,draft,no,en.w.exit.wav
+en.w.friday,English (South Africa),Friday,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'Friday',model_audio,,1.2,draft,no,en.w.friday.wav
+en.w.here,English (South Africa),here,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'here',model_audio,,1.2,draft,no,en.w.here.wav
+en.w.id,English (South Africa),ID,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'ID',model_audio,,1.2,draft,no,en.w.id.wav
+en.w.low,English (South Africa),low,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'low',model_audio,,1.2,draft,no,en.w.low.wav
+en.w.man,English (South Africa),man,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'man',model_audio,,1.2,draft,no,en.w.man.wav
+en.w.map,English (South Africa),map,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'map',model_audio,,1.2,draft,no,en.w.map.wav
+en.w.monday,English (South Africa),Monday,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'Monday',model_audio,,1.2,draft,no,en.w.monday.wav
+en.w.money,English (South Africa),money,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'money',model_audio,,1.2,draft,no,en.w.money.wav
+en.w.ok,English (South Africa),OK,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'OK',model_audio,,1.2,draft,no,en.w.ok.wav
+en.w.open,English (South Africa),OPEN,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'OPEN',model_audio,,1.2,draft,no,en.w.open.wav
+en.w.pan,English (South Africa),pan,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'pan',model_audio,,1.2,draft,no,en.w.pan.wav
+en.w.pen,English (South Africa),pen,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'pen',model_audio,,1.2,draft,no,en.w.pen.wav
+en.w.sat,English (South Africa),sat,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'sat',model_audio,,1.2,draft,no,en.w.sat.wav
+en.w.sheep,English (South Africa),sheep,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'sheep',model_audio,,1.2,draft,no,en.w.sheep.wav
+en.w.ship,English (South Africa),ship,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'ship',model_audio,,1.2,draft,no,en.w.ship.wav
+en.w.shop,English (South Africa),shop,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'shop',model_audio,,1.2,draft,no,en.w.shop.wav
+en.w.sit,English (South Africa),sit,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'sit',model_audio,,1.2,draft,no,en.w.sit.wav
+en.w.stop,English (South Africa),STOP,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'STOP',model_audio,,1.2,draft,no,en.w.stop.wav
+en.w.sun,English (South Africa),sun,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'sun',model_audio,,1.2,draft,no,en.w.sun.wav
+en.w.tap,English (South Africa),tap,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'tap',model_audio,,1.2,draft,no,en.w.tap.wav
+en.w.ten,English (South Africa),ten,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'ten',model_audio,,1.2,draft,no,en.w.ten.wav
+en.w.tin,English (South Africa),tin,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'tin',model_audio,,1.2,draft,no,en.w.tin.wav
+en.w.toilets,English (South Africa),TOILETS,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'TOILETS',model_audio,,1.2,draft,no,en.w.toilets.wav
+en.w.work,English (South Africa),work,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'work',model_audio,,1.2,draft,no,en.w.work.wav
+en.w.yes,English (South Africa),yes,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'yes',model_audio,,1.2,draft,no,en.w.yes.wav

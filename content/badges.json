@@ -1,0 +1,397 @@
+{
+  "$schema": "./schema/badges.schema.json",
+  "badges": [
+    {
+      "id": "b.first-lesson",
+      "icon": "badge-lesson",
+      "category": "habit",
+      "title": {
+        "en": "First lesson finished",
+        "zu": {
+          "id": "zu.badge.first-lesson",
+          "text": "Uqede isifundo sakho sokuqala!",
+          "label": "Isifundo sokuqala",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.first-lesson",
+          "text": "O qetile thuto ya hao ya pele!",
+          "label": "Thuto ya pele",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "lessons_completed",
+        "count": 1
+      }
+    },
+    {
+      "id": "b.first-hl-word",
+      "icon": "badge-hl-word",
+      "category": "literacy",
+      "title": {
+        "en": "Read your first home-language word",
+        "zu": {
+          "id": "zu.badge.first-hl-word",
+          "text": "Ufunde igama lakho lokuqala lesiZulu!",
+          "label": "Igama lokuqala",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.first-hl-word",
+          "text": "O balile lentswe la hao la pele la Sesotho!",
+          "label": "Lentswe la pele",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "objective_mastered",
+        "objective": "obj.l01.hl-words"
+      }
+    },
+    {
+      "id": "b.english-sounds",
+      "icon": "badge-sounds",
+      "category": "literacy",
+      "title": {
+        "en": "Know your first English letter sounds",
+        "zu": {
+          "id": "zu.badge.english-sounds",
+          "text": "Wazi imisindo yakho yokuqala yesiNgisi!",
+          "label": "Imisindo yesiNgisi",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.english-sounds",
+          "text": "O tseba medumo ya hao ya pele ya Senyesemane!",
+          "label": "Medumo ya Senyesemane",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "objective_mastered",
+        "objective": "obj.l10.satp-letters"
+      }
+    },
+    {
+      "id": "b.first-letters",
+      "icon": "badge-letters",
+      "category": "literacy",
+      "title": {
+        "en": "Wrote your first English letters",
+        "zu": {
+          "id": "zu.badge.first-letters",
+          "text": "Ubhale izinhlamvu zakho zokuqala!",
+          "label": "Izinhlamvu zokuqala",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.first-letters",
+          "text": "O ngotse ditlhaku tsa hao tsa pele!",
+          "label": "Ditlhaku tsa pele",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "objective_mastered",
+        "objective": "obj.l12.write-letters"
+      }
+    },
+    {
+      "id": "b.first-english-word",
+      "icon": "badge-word",
+      "category": "literacy",
+      "title": {
+        "en": "Read your first English word on your own",
+        "zu": {
+          "id": "zu.badge.first-english-word",
+          "text": "Ufunde igama lakho lokuqala lesiNgisi wedwa!",
+          "label": "Igama lesiNgisi",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.first-english-word",
+          "text": "O balile lentswe la hao la pele la Senyesemane o le mong!",
+          "label": "Lentswe la Senyesemane",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "objective_mastered",
+        "objective": "obj.l20.read-cvc"
+      }
+    },
+    {
+      "id": "b.sight-words",
+      "icon": "badge-sight",
+      "category": "literacy",
+      "title": {
+        "en": "Know the little words (the, a, is, I, you)",
+        "zu": {
+          "id": "zu.badge.sight-words",
+          "text": "Wazi amagama amancane abalulekile!",
+          "label": "Amagama amancane",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.sight-words",
+          "text": "O tseba mantswe a manyane a bohlokwa!",
+          "label": "Mantswe a manyane",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "objective_mastered",
+        "objective": "obj.l22.read-sight-words"
+      }
+    },
+    {
+      "id": "b.first-sentence",
+      "icon": "badge-sentence",
+      "category": "literacy",
+      "title": {
+        "en": "Read your first English sentence",
+        "zu": {
+          "id": "zu.badge.first-sentence",
+          "text": "Ufunde umusho wakho wokuqala wesiNgisi!",
+          "label": "Umusho wokuqala",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.first-sentence",
+          "text": "O balile polelo ya hao ya pele ya Senyesemane!",
+          "label": "Polelo ya pele",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "objective_mastered",
+        "objective": "obj.l30.read-sentences"
+      }
+    },
+    {
+      "id": "b.read-sms",
+      "icon": "badge-sms",
+      "category": "literacy",
+      "title": {
+        "en": "Read an SMS",
+        "zu": {
+          "id": "zu.badge.read-sms",
+          "text": "Ufunde i-SMS!",
+          "label": "I-SMS",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.read-sms",
+          "text": "O balile SMS!",
+          "label": "SMS",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "objective_mastered",
+        "objective": "obj.l40.read-sms"
+      }
+    },
+    {
+      "id": "b.typed-reply",
+      "icon": "badge-reply",
+      "category": "literacy",
+      "title": {
+        "en": "Typed a reply on the phone",
+        "zu": {
+          "id": "zu.badge.typed-reply",
+          "text": "Ubhale impendulo efonini!",
+          "label": "Impendulo",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.typed-reply",
+          "text": "O ngotse karabo founung!",
+          "label": "Karabo",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "objective_mastered",
+        "objective": "obj.l40.type-reply"
+      }
+    },
+    {
+      "id": "b.read-signs",
+      "icon": "badge-signs",
+      "category": "literacy",
+      "title": {
+        "en": "Read common signs",
+        "zu": {
+          "id": "zu.badge.read-signs",
+          "text": "Uyakwazi ukufunda izimpawu!",
+          "label": "Izimpawu",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.read-signs",
+          "text": "O kgona ho bala matshwao!",
+          "label": "Matshwao",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "objective_mastered",
+        "objective": "obj.l41.read-signs"
+      }
+    },
+    {
+      "id": "b.read-notice",
+      "icon": "badge-notice",
+      "category": "literacy",
+      "title": {
+        "en": "Read a notice and answered questions",
+        "zu": {
+          "id": "zu.badge.read-notice",
+          "text": "Ufunde isaziso!",
+          "label": "Isaziso",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.read-notice",
+          "text": "O balile tsebiso!",
+          "label": "Tsebiso",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "objective_mastered",
+        "objective": "obj.l50.read-notice"
+      }
+    },
+    {
+      "id": "b.streak-3",
+      "icon": "badge-streak",
+      "category": "habit",
+      "title": {
+        "en": "Practised on 3 days in a row",
+        "zu": {
+          "id": "zu.badge.streak-3",
+          "text": "Uprakthize izinsuku ezintathu!",
+          "label": "Izinsuku ezi-3",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.streak-3",
+          "text": "O ikwetlisitse matsatsi a mararo!",
+          "label": "Matsatsi a 3",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "streak",
+        "days": 3
+      }
+    },
+    {
+      "id": "b.streak-7",
+      "icon": "badge-streak",
+      "category": "habit",
+      "title": {
+        "en": "Practised on 7 days in a row",
+        "zu": {
+          "id": "zu.badge.streak-7",
+          "text": "Uprakthize izinsuku eziyisikhombisa!",
+          "label": "Izinsuku ezi-7",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.streak-7",
+          "text": "O ikwetlisitse matsatsi a supileng!",
+          "label": "Matsatsi a 7",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "streak",
+        "days": 7
+      }
+    },
+    {
+      "id": "b.lessons-5",
+      "icon": "badge-lesson",
+      "category": "habit",
+      "title": {
+        "en": "Finished 5 lessons",
+        "zu": {
+          "id": "zu.badge.lessons-5",
+          "text": "Uqede izifundo ezinhlanu!",
+          "label": "Izifundo ezi-5",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.badge.lessons-5",
+          "text": "O qetile dithuto tse hlano!",
+          "label": "Dithuto tse 5",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "criterion": {
+        "kind": "lessons_completed",
+        "count": 5
+      }
+    }
+  ]
+}

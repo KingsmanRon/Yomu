@@ -1,0 +1,474 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l40-sms",
+  "version": 1,
+  "level": 4,
+  "unit": "u4",
+  "order": 1,
+  "minutes": 7,
+  "target": "en",
+  "title": {
+    "en": "Reading a simple SMS",
+    "zu": {
+      "id": "zu.l40-sms.title",
+      "label": "Funda i-SMS",
+      "text": "Funda i-SMS elula: isikhumbuzo se-appointment, noma i-airtime iphansi.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l40-sms.title",
+      "label": "Bala SMS",
+      "text": "Bala SMS e bonolo: kgopotso ya appointment, kapa airtime e tlase.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Reading short SMS messages (appointment reminder, low airtime, order ready) for sender, day and time; typing a short reply.",
+  "objectives": [
+    {
+      "id": "obj.l40.read-sms",
+      "description": "Read a short SMS and find key information: who sent it, what it is about, which day and what time.",
+      "strand": "functional_reading",
+      "masteryCompetencies": [
+        "decode",
+        "understand_written"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-2",
+          "outcome": "aet.2.functional-reading"
+        }
+      ]
+    },
+    {
+      "id": "obj.l40.type-reply",
+      "description": "Type a short reply (OK, yes) on the phone keyboard.",
+      "strand": "writing",
+      "masteryCompetencies": [
+        "write"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-2",
+          "outcome": "aet.2.functional-writing"
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l30.read-sentences"
+  ],
+  "contrastiveTags": [],
+  "steps": [
+    {
+      "id": "l40-sms.t01",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.clinic"
+    },
+    {
+      "id": "l40-sms.t02",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.monday"
+    },
+    {
+      "id": "l40-sms.t03",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.airtime"
+    },
+    {
+      "id": "l40-sms.t04",
+      "teach": "explain",
+      "line": {
+        "zu": {
+          "id": "zu.l40-sms.t04",
+          "text": "I-SMS ivame ukuqala ngegama lalowo oyithumele. Lapha kuthi Clinic: umtholampilo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.t04",
+          "text": "SMS hangata e qala ka lebitso la ya e rometseng. Mona ho re Clinic: tliliniki.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "showText": "Clinic: Your appointment is on Monday at 9:00."
+    },
+    {
+      "id": "l40-sms.e01",
+      "type": "real_world",
+      "objectives": [
+        "obj.l40.read-sms"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l40-sms.e01.instr",
+          "text": "Funda i-SMS, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.e01.instr",
+          "text": "Bala SMS, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sms",
+        "sender": "Clinic",
+        "time": "08:15",
+        "body": "Clinic: Your appointment is on Monday at 9:00."
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l40-sms.e01.q",
+          "text": "Ubani othumele le SMS?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.e01.q",
+          "text": "Ke mang ya rometseng SMS ena?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "clinic",
+          "image": "clinic",
+          "text": "Clinic"
+        },
+        {
+          "id": "bank",
+          "image": "bank",
+          "text": "Bank"
+        },
+        {
+          "id": "shop",
+          "image": "shop",
+          "text": "Shop"
+        }
+      ],
+      "answer": "clinic"
+    },
+    {
+      "id": "l40-sms.e02",
+      "type": "real_world",
+      "objectives": [
+        "obj.l40.read-sms"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l40-sms.e02.instr",
+          "text": "Funda i-SMS, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.e02.instr",
+          "text": "Bala SMS, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sms",
+        "sender": "Clinic",
+        "time": "08:15",
+        "body": "Clinic: Your appointment is on Monday at 9:00."
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l40-sms.e02.q",
+          "text": "Ngaluphi usuku i-appointment?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.e02.q",
+          "text": "Appointment e ka letsatsi lefe?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "friday",
+          "text": "Friday"
+        },
+        {
+          "id": "monday",
+          "text": "Monday"
+        },
+        {
+          "id": "sunday",
+          "text": "Sunday"
+        }
+      ],
+      "answer": "monday"
+    },
+    {
+      "id": "l40-sms.e03",
+      "type": "real_world",
+      "objectives": [
+        "obj.l40.read-sms"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l40-sms.e03.instr",
+          "text": "Funda i-SMS, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.e03.instr",
+          "text": "Bala SMS, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sms",
+        "sender": "Network",
+        "time": "19:02",
+        "body": "Your airtime is low."
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l40-sms.e03.q",
+          "text": "Le SMS ikutshela ngani?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.e03.q",
+          "text": "SMS ena e o bolella ka eng?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "clinic",
+          "image": "clinic"
+        },
+        {
+          "id": "airtime",
+          "image": "airtime"
+        },
+        {
+          "id": "bus",
+          "image": "bus"
+        }
+      ],
+      "answer": "airtime"
+    },
+    {
+      "id": "l40-sms.e04",
+      "type": "picture_match",
+      "objectives": [
+        "obj.l40.read-sms"
+      ],
+      "instructionClip": "instr.read_picture",
+      "mode": "read",
+      "target": "en.w.clinic",
+      "options": [
+        "en.w.bank",
+        "en.w.shop",
+        "en.w.clinic"
+      ]
+    },
+    {
+      "id": "l40-sms.e05",
+      "type": "real_world",
+      "objectives": [
+        "obj.l40.read-sms"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l40-sms.e05.instr",
+          "text": "Funda i-SMS, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.e05.instr",
+          "text": "Bala SMS, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sms",
+        "sender": "Shop",
+        "time": "12:40",
+        "body": "Shop: Your order is ready. Come on Friday."
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l40-sms.e05.q",
+          "text": "Kufanele uye nini esitolo?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.e05.q",
+          "text": "O tlameha ho ya lebenkeleng neng?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "monday",
+          "text": "Monday"
+        },
+        {
+          "id": "friday",
+          "text": "Friday"
+        }
+      ],
+      "answer": "friday"
+    },
+    {
+      "id": "l40-sms.e06",
+      "type": "real_world",
+      "objectives": [
+        "obj.l40.read-sms"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l40-sms.e06.instr",
+          "text": "Funda i-SMS, bese uphendula umbuzo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.e06.instr",
+          "text": "Bala SMS, ebe o araba potso.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sms",
+        "sender": "Clinic",
+        "time": "08:15",
+        "body": "Clinic: Your appointment is on Monday at 9:00."
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l40-sms.e06.q",
+          "text": "Ngasiphi isikhathi?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l40-sms.e06.q",
+          "text": "Ka nako mang?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "t9",
+          "text": "9:00"
+        },
+        {
+          "id": "t815",
+          "text": "8:15"
+        },
+        {
+          "id": "t12",
+          "text": "12:00"
+        }
+      ],
+      "answer": "t9"
+    },
+    {
+      "id": "l40-sms.e07",
+      "type": "typing",
+      "objectives": [
+        "obj.l40.type-reply"
+      ],
+      "instructionClip": "instr.type_word",
+      "mode": "listen",
+      "target": "en.w.ok"
+    },
+    {
+      "id": "l40-sms.e08",
+      "type": "typing",
+      "objectives": [
+        "obj.l40.type-reply"
+      ],
+      "instructionClip": "instr.copy_word",
+      "mode": "copy",
+      "target": "en.w.yes"
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l40-sms.intro",
+      "text": "Ama-SMS asitshela izinto ezibalulekile: umtholampilo, ibhange, isitolo. Namuhla sizofunda ukuthola ulwazi olubalulekile ku-SMS.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l40-sms.intro",
+      "text": "Di-SMS di re bolella dintho tsa bohlokwa: tliliniki, banka, lebenkele. Kajeno re tla ithuta ho fumana tlhahisoleseding ya bohlokwa ho SMS.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l40-sms.outro",
+      "text": "Wenze kahle! Manje uyakwazi ukufunda i-SMS nokuthola ukuthi ivela kubani nokuthi kunini.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l40-sms.outro",
+      "text": "O entse hantle! Jwale o kgona ho bala SMS le ho fumana hore e tswa ho mang le hore ke neng.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

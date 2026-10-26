@@ -1,0 +1,1183 @@
+{
+  "$schema": "../schema/clips.schema.json",
+  "clips": [
+    {
+      "id": "fb.correct.1",
+      "purpose": "feedback_correct",
+      "description": "Praise after a correct answer.",
+      "zu": {
+        "id": "zu.clip.fb.correct.1",
+        "text": "Wenze kahle!",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.correct.1",
+        "text": "O entse hantle!",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.correct.2",
+      "purpose": "feedback_correct",
+      "description": "Praise after a correct answer.",
+      "zu": {
+        "id": "zu.clip.fb.correct.2",
+        "text": "Yebo, kulungile!",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.correct.2",
+        "text": "E, ho nepahetse!",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.correct.3",
+      "purpose": "feedback_correct",
+      "description": "Praise after a correct answer.",
+      "zu": {
+        "id": "zu.clip.fb.correct.3",
+        "text": "Kuhle kakhulu!",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.correct.3",
+        "text": "Ho hotle haholo!",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.correct.read",
+      "purpose": "feedback_correct",
+      "description": "Praise after reading a word with no audio help.",
+      "zu": {
+        "id": "zu.clip.fb.correct.read",
+        "text": "Ulifunde wedwa lelo gama. Wenze kahle!",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.correct.read",
+        "text": "O balile lentswe leo o le mong. O entse hantle!",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.try_again",
+      "purpose": "feedback_error",
+      "description": "Gentle prompt before a second try.",
+      "zu": {
+        "id": "zu.clip.fb.try_again",
+        "text": "Cishe. Ake sizame futhi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.try_again",
+        "text": "Ho batla ho le jwalo. A re lekeng hape.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.wrong_choice",
+      "purpose": "feedback_error",
+      "description": "Generic wrong choice.",
+      "zu": {
+        "id": "zu.clip.fb.wrong_choice",
+        "text": "Akusiyo leyo. Bheka futhi, bese ulalela futhi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.wrong_choice",
+        "text": "Ha se yona. Sheba hape, mme o mamele hape.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.first_sound",
+      "purpose": "feedback_error",
+      "description": "The chosen word differs in its first sound.",
+      "zu": {
+        "id": "zu.clip.fb.first_sound",
+        "text": "Lalela umsindo wokuqala wegama, bese ubheka uhlamvu lokuqala.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.first_sound",
+        "text": "Mamela modumo wa pele wa lentswe, mme o shebe tlhaku ya pele.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.middle_sound",
+      "purpose": "feedback_error",
+      "description": "The chosen word differs in its middle (vowel) sound.",
+      "zu": {
+        "id": "zu.clip.fb.middle_sound",
+        "text": "Lalela umsindo ophakathi nendawo. Yiluphi uhlamvu olwenza lowo msindo?",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.middle_sound",
+        "text": "Mamela modumo o bohareng. Ke tlhaku efe e etsang modumo oo?",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.last_sound",
+      "purpose": "feedback_error",
+      "description": "The chosen word differs in its last sound.",
+      "zu": {
+        "id": "zu.clip.fb.last_sound",
+        "text": "Lalela umsindo wokugcina. Ungawukhohlwa.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.last_sound",
+        "text": "Mamela modumo wa ho qetela. O se ke wa o lebala.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.letter_shape",
+      "purpose": "feedback_error",
+      "description": "Confused letters that look alike.",
+      "zu": {
+        "id": "zu.clip.fb.letter_shape",
+        "text": "Bheka kahle isimo salolu hlamvu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.letter_shape",
+        "text": "Sheba hantle sebopeho sa tlhaku ena.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.meaning",
+      "purpose": "feedback_error",
+      "description": "Picture does not match the meaning.",
+      "zu": {
+        "id": "zu.clip.fb.meaning",
+        "text": "Funda igama futhi kancane, bese ubheka izithombe.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.meaning",
+        "text": "Bala lentswe hape butle, mme o shebe ditshwantsho.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.order",
+      "purpose": "feedback_error",
+      "description": "Tiles or words in the wrong order.",
+      "zu": {
+        "id": "zu.clip.fb.order",
+        "text": "Ukulandelana akukalungi. Qala ngakwesobunxele.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.order",
+        "text": "Tatellano ha e eso nepahale. Qala ka ho le letshehadi.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.missing_letter",
+      "purpose": "feedback_error",
+      "description": "A sound or letter is missing.",
+      "zu": {
+        "id": "zu.clip.fb.missing_letter",
+        "text": "Kukhona umsindo oshodayo. Sho igama kancane, ulalele yonke imisindo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.missing_letter",
+        "text": "Ho na le modumo o haellang. Bua lentswe butle, o mamele medumo yohle.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.trace_off_path",
+      "purpose": "feedback_error",
+      "description": "Tracing left the letter path.",
+      "zu": {
+        "id": "zu.clip.fb.trace_off_path",
+        "text": "Landela amachashazi ngomunwe wakho, uqale echashazini eliluhlaza.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.trace_off_path",
+        "text": "Latela matheba ka monwana wa hao, o qale lethebeng le letala.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.typing_mismatch",
+      "purpose": "feedback_error",
+      "description": "Typed word does not match.",
+      "zu": {
+        "id": "zu.clip.fb.typing_mismatch",
+        "text": "Hlola uhlamvu ngalunye. Bheka igama bese ulibhala futhi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.typing_mismatch",
+        "text": "Hlahloba tlhaku ka nngwe. Sheba lentswe mme o le ngole hape.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.same_different",
+      "purpose": "feedback_error",
+      "description": "Wrong same/different judgement.",
+      "zu": {
+        "id": "zu.clip.fb.same_different",
+        "text": "Lalela futhi imisindo emibili ngokucophelela.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.same_different",
+        "text": "Mamela hape medumo e mmedi ka hloko.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.detail",
+      "purpose": "feedback_error",
+      "description": "Comprehension answer missed a detail.",
+      "zu": {
+        "id": "zu.clip.fb.detail",
+        "text": "Funda futhi, ubheke amagama abalulekile.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.detail",
+        "text": "Bala hape, o batle mantswe a bohlokwa.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.show_answer",
+      "purpose": "feedback_error",
+      "description": "After the second try: show the answer.",
+      "zu": {
+        "id": "zu.clip.fb.show_answer",
+        "text": "Nayi impendulo. Bheka bese ulalela.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.show_answer",
+        "text": "Karabo ke ena. Sheba mme o mamele.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "fb.mistakes_ok",
+      "purpose": "feedback_error",
+      "description": "Reassurance after a missed item.",
+      "zu": {
+        "id": "zu.clip.fb.mistakes_ok",
+        "text": "Amaphutha asisiza ukuthi sifunde. Sizophinde sikuprakthize lokhu kamuva.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.fb.mistakes_ok",
+        "text": "Diphoso di re thusa ho ithuta. Re tla boela re ikwetlisa sena hamorao.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.read_picture",
+      "purpose": "instruction",
+      "description": "Read a word with no audio, then choose the picture.",
+      "zu": {
+        "id": "zu.clip.instr.read_picture",
+        "text": "Funda igama. Bese uthinta isithombe esihambisana nalo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.read_picture",
+        "text": "Bala lentswe. Ebe o tobetsa setshwantsho se tsamaellanang le lona.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.read_sentence_picture",
+      "purpose": "instruction",
+      "description": "Read a sentence with no audio, then choose the picture.",
+      "zu": {
+        "id": "zu.clip.instr.read_sentence_picture",
+        "text": "Funda umusho. Bese uthinta isithombe esihambisana nawo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.read_sentence_picture",
+        "text": "Bala polelo. Ebe o tobetsa setshwantsho se tsamaellanang le yona.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.listen_picture",
+      "purpose": "instruction",
+      "description": "Hear a word, then choose the picture.",
+      "zu": {
+        "id": "zu.clip.instr.listen_picture",
+        "text": "Lalela igama. Bese uthinta isithombe esihambisana nalo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.listen_picture",
+        "text": "Mamela lentswe. Ebe o tobetsa setshwantsho se tsamaellanang le lona.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.picture_word",
+      "purpose": "instruction",
+      "description": "See a picture, then choose the written word.",
+      "zu": {
+        "id": "zu.clip.instr.picture_word",
+        "text": "Bheka isithombe. Thinta igama elihambisana naso.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.picture_word",
+        "text": "Sheba setshwantsho. Tobetsa lentswe le tsamaellanang le sona.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.sound_letter",
+      "purpose": "instruction",
+      "description": "Hear a sound, choose the letter.",
+      "zu": {
+        "id": "zu.clip.instr.sound_letter",
+        "text": "Lalela umsindo. Thinta uhlamvu olwenza lowo msindo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.sound_letter",
+        "text": "Mamela modumo. Tobetsa tlhaku e etsang modumo oo.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.letter_sound",
+      "purpose": "instruction",
+      "description": "See a letter, choose its sound from audio options.",
+      "zu": {
+        "id": "zu.clip.instr.letter_sound",
+        "text": "Bheka uhlamvu. Lalela imisindo, bese ukhetha umsindo walolu hlamvu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.letter_sound",
+        "text": "Sheba tlhaku. Mamela medumo, ebe o kgetha modumo wa tlhaku ena.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.word_sound",
+      "purpose": "instruction",
+      "description": "See a word, choose the matching spoken word.",
+      "zu": {
+        "id": "zu.clip.instr.word_sound",
+        "text": "Funda leli gama. Lalela izinketho, bese ukhetha ezwakala njengaleli gama.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.word_sound",
+        "text": "Bala lentswe lena. Mamela dikgetho, ebe o kgetha e utlwahalang jwalo ka lentswe lena.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.hear_letter",
+      "purpose": "instruction",
+      "description": "Hear a word or syllable, choose the letter you hear.",
+      "zu": {
+        "id": "zu.clip.instr.hear_letter",
+        "text": "Lalela. Yiluphi uhlamvu olizwayo?",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.hear_letter",
+        "text": "Mamela. O utlwa tlhaku efe?",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.listen_repeat",
+      "purpose": "instruction",
+      "description": "Listen, then say the word aloud.",
+      "zu": {
+        "id": "zu.clip.instr.listen_repeat",
+        "text": "Lalela, bese uphinda igama ngezwi eliphezulu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.listen_repeat",
+        "text": "Mamela, ebe o pheta lentswe ka lentswe le hodimo.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.build_word",
+      "purpose": "instruction",
+      "description": "Hear a word, build it with letter tiles.",
+      "zu": {
+        "id": "zu.clip.instr.build_word",
+        "text": "Lalela igama. Bese ulakha ngezinhlamvu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.build_word",
+        "text": "Mamela lentswe. Ebe o le aha ka ditlhaku.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.build_word_picture",
+      "purpose": "instruction",
+      "description": "See a picture, build the word with tiles.",
+      "zu": {
+        "id": "zu.clip.instr.build_word_picture",
+        "text": "Bheka isithombe. Yakha igama ngezinhlamvu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.build_word_picture",
+        "text": "Sheba setshwantsho. Aha lentswe ka ditlhaku.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.build_syllables",
+      "purpose": "instruction",
+      "description": "Hear a home-language word, build it from syllables.",
+      "zu": {
+        "id": "zu.clip.instr.build_syllables",
+        "text": "Lalela igama. Lakhe ngezingxenye zalo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.build_syllables",
+        "text": "Mamela lentswe. Le hahe ka dikarolo tsa lona.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.build_sentence",
+      "purpose": "instruction",
+      "description": "Hear a sentence, put the words in order.",
+      "zu": {
+        "id": "zu.clip.instr.build_sentence",
+        "text": "Lalela umusho. Hlela amagama ngokulandelana okufanele.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.build_sentence",
+        "text": "Mamela polelo. Beha mantswe ka tatellano e nepahetseng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.trace",
+      "purpose": "instruction",
+      "description": "Trace a letter.",
+      "zu": {
+        "id": "zu.clip.instr.trace",
+        "text": "Landela amachashazi ngomunwe wakho ukuze ubhale uhlamvu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.trace",
+        "text": "Latela matheba ka monwana wa hao ho ngola tlhaku.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.which_word",
+      "purpose": "instruction",
+      "description": "Hear one word of a pair, choose which was said.",
+      "zu": {
+        "id": "zu.clip.instr.which_word",
+        "text": "Lalela. Yiliphi igama olizwile? Lithinte.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.which_word",
+        "text": "Mamela. O utlwile lentswe lefe? Le tobetse.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.same_different",
+      "purpose": "instruction",
+      "description": "Hear two sounds, decide same or different.",
+      "zu": {
+        "id": "zu.clip.instr.same_different",
+        "text": "Lalela imisindo emibili. Ingabe iyafana noma iyahlukahluka?",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.same_different",
+        "text": "Mamela medumo e mmedi. Na e a tshwana kapa e a fapana?",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.type_word",
+      "purpose": "instruction",
+      "description": "Hear a word, type it on the phone keyboard.",
+      "zu": {
+        "id": "zu.clip.instr.type_word",
+        "text": "Lalela igama, bese ulibhala ngekhibhodi yefoni.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.type_word",
+        "text": "Mamela lentswe, ebe o le ngola ka khiboto ya founu.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.copy_word",
+      "purpose": "instruction",
+      "description": "See a word, type it.",
+      "zu": {
+        "id": "zu.clip.instr.copy_word",
+        "text": "Bhala leli gama ngekhibhodi yefoni.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.copy_word",
+        "text": "Ngola lentswe lena ka khiboto ya founu.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.type_picture",
+      "purpose": "instruction",
+      "description": "See a picture, type the word.",
+      "zu": {
+        "id": "zu.clip.instr.type_picture",
+        "text": "Bheka isithombe. Bhala igama ngekhibhodi yefoni.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.type_picture",
+        "text": "Sheba setshwantsho. Ngola lentswe ka khiboto ya founu.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.letter_name",
+      "purpose": "instruction",
+      "description": "Placement: hear an English letter name, choose the letter.",
+      "zu": {
+        "id": "zu.clip.instr.letter_name",
+        "text": "Lalela igama lohlamvu lwesiNgisi. Thinta lolo hlamvu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.letter_name",
+        "text": "Mamela lebitso la tlhaku ya Senyesemane. Tobetsa tlhaku eo.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.syllable_sound",
+      "purpose": "instruction",
+      "description": "See a written syllable, choose its sound from audio options.",
+      "zu": {
+        "id": "zu.clip.instr.syllable_sound",
+        "text": "Funda le ngxenye yegama. Lalela izinketho, bese ukhetha efanayo nayo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.syllable_sound",
+        "text": "Bala karolo ena ya lentswe. Mamela dikgetho, ebe o kgetha e tshwanang le yona.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "instr.sound_syllable",
+      "purpose": "instruction",
+      "description": "Hear a syllable, choose the written syllable.",
+      "zu": {
+        "id": "zu.clip.instr.sound_syllable",
+        "text": "Lalela. Thinta ingxenye yegama oyizwayo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.instr.sound_syllable",
+        "text": "Mamela. Tobetsa karolo ya lentswe eo o e utlwang.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "teach.letter_intro",
+      "purpose": "instruction",
+      "description": "Shared teaching line before a letter is shown and its sound played.",
+      "zu": {
+        "id": "zu.clip.teach.letter_intro",
+        "text": "Bheka lolu hlamvu. Lalela umsindo walo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.teach.letter_intro",
+        "text": "Sheba tlhaku ena. Mamela modumo wa yona.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "teach.word_intro",
+      "purpose": "instruction",
+      "description": "Shared teaching line before a word, its picture and its meaning.",
+      "zu": {
+        "id": "zu.clip.teach.word_intro",
+        "text": "Bheka leli gama nesithombe salo. Lalela.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.teach.word_intro",
+        "text": "Sheba lentswe lena le setshwantsho sa lona. Mamela.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "teach.blend_demo",
+      "purpose": "instruction",
+      "description": "Shared teaching line before a blending demonstration.",
+      "zu": {
+        "id": "zu.clip.teach.blend_demo",
+        "text": "Lalela umsindo ngamunye, bese siyihlanganisa sakhe igama.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.teach.blend_demo",
+        "text": "Mamela modumo ka mong, ebe re a kopanya ho aha lentswe.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.menu",
+      "purpose": "tutor",
+      "description": "Opening the help panel.",
+      "zu": {
+        "id": "zu.clip.tutor.menu",
+        "text": "Ufuna usizo ngani? Thinta isithombe.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.menu",
+        "text": "O batla thuso ka eng? Tobetsa setshwantsho.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.how_it_works",
+      "purpose": "tutor",
+      "description": "Before replaying how an exercise works.",
+      "zu": {
+        "id": "zu.clip.tutor.how_it_works",
+        "text": "Ngizokuchazela ukuthi lo msebenzi wenziwa kanjani.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.how_it_works",
+        "text": "Ke tla o hlalosetsa hore mosebetsi ona o etswa jwang.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.listen_slow",
+      "purpose": "tutor",
+      "description": "Before slow playback.",
+      "zu": {
+        "id": "zu.clip.tutor.listen_slow",
+        "text": "Lalela kancane.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.listen_slow",
+        "text": "Mamela butle.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.sound_of_letter",
+      "purpose": "tutor",
+      "description": "Before playing a letter sound on request.",
+      "zu": {
+        "id": "zu.clip.tutor.sound_of_letter",
+        "text": "Lalela ukuthi lolu hlamvu luzwakala kanjani esiNgisini.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.sound_of_letter",
+        "text": "Mamela hore tlhaku ena e utlwahala jwang ka Senyesemane.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.word_meaning",
+      "purpose": "tutor",
+      "description": "Before playing a word's meaning on request.",
+      "zu": {
+        "id": "zu.clip.tutor.word_meaning",
+        "text": "Ake ngikutshele ukuthi leli gama lisho ukuthini.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.word_meaning",
+        "text": "E re ke o bolelle hore lentswe lena le bolela eng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.read_alone_first",
+      "purpose": "tutor",
+      "description": "When the learner asks to hear a word they are meant to read alone.",
+      "zu": {
+        "id": "zu.clip.tutor.read_alone_first",
+        "text": "Zama ukulifunda wedwa kuqala. Uma ngikufundela lona, ngeke libalwe njengokufunda wedwa. Kodwa kulungile ukucela usizo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.read_alone_first",
+        "text": "Leka ho le bala o le mong pele. Ha nka o balla lona, le ke ke la balwa e le ho bala o le mong. Empa ho lokile ho kopa thuso.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.cant_answer_yet",
+      "purpose": "tutor",
+      "description": "Tier 2: no validated clip matches the question.",
+      "zu": {
+        "id": "zu.clip.tutor.cant_answer_yet",
+        "text": "Angikwazi ukuphendula lokho okwamanje. Asiqhubeke nesifundo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.cant_answer_yet",
+        "text": "Ha ke kgone ho araba seo hajwale. A re tswelleng ka thuto.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.off_topic",
+      "purpose": "tutor",
+      "description": "Tier 2/3: question outside English literacy.",
+      "zu": {
+        "id": "zu.clip.tutor.off_topic",
+        "text": "Ngingakusiza kuphela ngokufunda nokubhala isiNgisi. Asiqhubeke.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.off_topic",
+        "text": "Nka o thusa feela ka ho bala le ho ngola Senyesemane. A re tswelleng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.resting",
+      "purpose": "tutor",
+      "description": "Tier 2/3 unavailable (spending cap, rate limit or provider failure).",
+      "zu": {
+        "id": "zu.clip.tutor.resting",
+        "text": "Umsizi akatholakali manje. Asiqhubeke nesifundo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.resting",
+        "text": "Mothusi ha a fumanehe hona jwale. A re tswelleng ka thuto.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.needs_internet",
+      "purpose": "tutor",
+      "description": "A network-only tutor feature was requested offline.",
+      "zu": {
+        "id": "zu.clip.tutor.needs_internet",
+        "text": "Ukubuza imibuzo kudinga i-inthanethi. Ungaqhubeka ufunde ngaphandle kwayo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.needs_internet",
+        "text": "Ho botsa dipotso ho hloka inthanete. O ka tswela pele ho ithuta ntle le yona.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.ask_prompt",
+      "purpose": "tutor",
+      "description": "Tier 2: before recording a spoken question.",
+      "zu": {
+        "id": "zu.clip.tutor.ask_prompt",
+        "text": "Buza umbuzo wakho emva kokukhala kwensimbi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.ask_prompt",
+        "text": "Botsa potso ya hao ka mora hore tshepe e lle.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.blend_again",
+      "purpose": "tutor",
+      "description": "Before replaying a blending demonstration.",
+      "zu": {
+        "id": "zu.clip.tutor.blend_again",
+        "text": "Masihlanganise imisindo futhi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.blend_again",
+        "text": "A re kopanyeng medumo hape.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "tutor.replay_intro",
+      "purpose": "tutor",
+      "description": "Before replaying the lesson explanation.",
+      "zu": {
+        "id": "zu.clip.tutor.replay_intro",
+        "text": "Nansi incazelo futhi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.tutor.replay_intro",
+        "text": "Tlhaloso ke ena hape.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "sys.offline",
+      "purpose": "system",
+      "description": "The device is offline.",
+      "zu": {
+        "id": "zu.clip.sys.offline",
+        "text": "Awuxhunyiwe ku-inthanethi. Ungaqhubeka ufunde ngezifundo ozilandile.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.sys.offline",
+        "text": "Ha o a hokahana le inthanete. O ka tswela pele ho ithuta ka dithuto tseo o di jarollotseng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "sys.error_generic",
+      "purpose": "system",
+      "description": "Unexpected error with one recovery action.",
+      "zu": {
+        "id": "zu.clip.sys.error_generic",
+        "text": "Kukhona okungahambanga kahle. Thinta umcibisholo ukuze uzame futhi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.sys.error_generic",
+        "text": "Ho na le se sa tsamaeng hantle. Tobetsa motsu ho leka hape.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "sys.needs_download",
+      "purpose": "system",
+      "description": "Lesson content is not on the phone yet.",
+      "zu": {
+        "id": "zu.clip.sys.needs_download",
+        "text": "Lesi sifundo asikalandwa. Ukusilanda kusebenzisa idatha.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.sys.needs_download",
+        "text": "Thuto ena ha e eso jarollwe. Ho e jarolla ho sebedisa data.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "sys.uses_data",
+      "purpose": "system",
+      "description": "Action will use mobile data; size is on screen.",
+      "zu": {
+        "id": "zu.clip.sys.uses_data",
+        "text": "Lokhu kuzosebenzisa idatha yeselula. Usayizi ubhalwe esikrinini.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.sys.uses_data",
+        "text": "Sena se tla sebedisa data ya founu. Boholo bo ngotswe skrineng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "sys.waiting_wifi",
+      "purpose": "system",
+      "description": "Download waits for Wi-Fi (setting).",
+      "zu": {
+        "id": "zu.clip.sys.waiting_wifi",
+        "text": "Ukulanda kuzolinda i-Wi-Fi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.clip.sys.waiting_wifi",
+        "text": "Ho jarolla ho tla emela Wi-Fi.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    }
+  ]
+}

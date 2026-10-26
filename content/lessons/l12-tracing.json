@@ -1,0 +1,439 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l12-tracing",
+  "version": 1,
+  "level": 1,
+  "unit": "u1",
+  "order": 3,
+  "minutes": 5,
+  "target": "en",
+  "title": {
+    "en": "Tracing and writing your first English letters",
+    "zu": {
+      "id": "zu.l12-tracing.title",
+      "label": "Bhala izinhlamvu",
+      "text": "Landela futhi ubhale izinhlamvu zakho zokuqala zesiNgisi.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l12-tracing.title",
+      "label": "Ngola ditlhaku",
+      "text": "Latela mme o ngole ditlhaku tsa hao tsa pele tsa Senyesemane.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Letter formation by touch tracing (t, i, n, p, a, s) and first typing of letters and a word on the phone keyboard.",
+  "objectives": [
+    {
+      "id": "obj.l12.write-letters",
+      "description": "Form the lower-case letters t, i, n, p, a and s by tracing in the right stroke order.",
+      "strand": "writing",
+      "masteryCompetencies": [
+        "write"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.write-letters-words"
+        }
+      ]
+    },
+    {
+      "id": "obj.l12.type-letters",
+      "description": "Find and type letters and a short word on the phone keyboard.",
+      "strand": "writing",
+      "masteryCompetencies": [
+        "write"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.write-letters-words"
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l10.satp-letters"
+  ],
+  "contrastiveTags": [],
+  "steps": [
+    {
+      "id": "l12-tracing.t01",
+      "teach": "explain",
+      "line": {
+        "zu": {
+          "id": "zu.l12-tracing.t01",
+          "text": "Ukubhala kusiza ukufunda. Uma ubhala uhlamvu, uyalukhumbula kalula.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l12-tracing.t01",
+          "text": "Ho ngola ho thusa ho bala. Ha o ngola tlhaku, o e hopola habonolo.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "showText": "t  i  n  p  a  s"
+    },
+    {
+      "id": "l12-tracing.e01",
+      "type": "trace",
+      "objectives": [
+        "obj.l12.write-letters"
+      ],
+      "instructionClip": "instr.trace",
+      "letter": "en.l.t",
+      "strokes": [
+        [
+          [
+            50,
+            14
+          ],
+          [
+            50,
+            78
+          ],
+          [
+            55,
+            87
+          ],
+          [
+            66,
+            88
+          ]
+        ],
+        [
+          [
+            34,
+            38
+          ],
+          [
+            66,
+            38
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "l12-tracing.e02",
+      "type": "trace",
+      "objectives": [
+        "obj.l12.write-letters"
+      ],
+      "instructionClip": "instr.trace",
+      "letter": "en.l.i",
+      "strokes": [
+        [
+          [
+            50,
+            42
+          ],
+          [
+            50,
+            88
+          ]
+        ],
+        [
+          [
+            50,
+            22
+          ],
+          [
+            50,
+            27
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "l12-tracing.e03",
+      "type": "trace",
+      "objectives": [
+        "obj.l12.write-letters"
+      ],
+      "instructionClip": "instr.trace",
+      "letter": "en.l.n",
+      "strokes": [
+        [
+          [
+            32,
+            42
+          ],
+          [
+            32,
+            88
+          ]
+        ],
+        [
+          [
+            32,
+            54
+          ],
+          [
+            40,
+            44
+          ],
+          [
+            52,
+            41
+          ],
+          [
+            62,
+            45
+          ],
+          [
+            66,
+            55
+          ],
+          [
+            66,
+            88
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "l12-tracing.e04",
+      "type": "trace",
+      "objectives": [
+        "obj.l12.write-letters"
+      ],
+      "instructionClip": "instr.trace",
+      "letter": "en.l.p",
+      "strokes": [
+        [
+          [
+            34,
+            42
+          ],
+          [
+            34,
+            99
+          ]
+        ],
+        [
+          [
+            34,
+            50
+          ],
+          [
+            44,
+            42
+          ],
+          [
+            58,
+            42
+          ],
+          [
+            66,
+            50
+          ],
+          [
+            68,
+            62
+          ],
+          [
+            62,
+            74
+          ],
+          [
+            50,
+            78
+          ],
+          [
+            34,
+            72
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "l12-tracing.e05",
+      "type": "trace",
+      "objectives": [
+        "obj.l12.write-letters"
+      ],
+      "instructionClip": "instr.trace",
+      "letter": "en.l.a",
+      "strokes": [
+        [
+          [
+            66,
+            50
+          ],
+          [
+            58,
+            42
+          ],
+          [
+            44,
+            42
+          ],
+          [
+            35,
+            51
+          ],
+          [
+            33,
+            66
+          ],
+          [
+            38,
+            81
+          ],
+          [
+            50,
+            88
+          ],
+          [
+            61,
+            82
+          ],
+          [
+            66,
+            70
+          ]
+        ],
+        [
+          [
+            66,
+            42
+          ],
+          [
+            66,
+            88
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "l12-tracing.e06",
+      "type": "trace",
+      "objectives": [
+        "obj.l12.write-letters"
+      ],
+      "instructionClip": "instr.trace",
+      "letter": "en.l.s",
+      "strokes": [
+        [
+          [
+            64,
+            47
+          ],
+          [
+            56,
+            41
+          ],
+          [
+            43,
+            41
+          ],
+          [
+            35,
+            48
+          ],
+          [
+            39,
+            58
+          ],
+          [
+            51,
+            63
+          ],
+          [
+            62,
+            68
+          ],
+          [
+            66,
+            78
+          ],
+          [
+            58,
+            87
+          ],
+          [
+            43,
+            88
+          ],
+          [
+            34,
+            82
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "l12-tracing.e07",
+      "type": "typing",
+      "objectives": [
+        "obj.l12.type-letters"
+      ],
+      "instructionClip": "instr.copy_word",
+      "mode": "copy",
+      "target": "en.l.s"
+    },
+    {
+      "id": "l12-tracing.e08",
+      "type": "typing",
+      "objectives": [
+        "obj.l12.type-letters"
+      ],
+      "instructionClip": "instr.copy_word",
+      "mode": "copy",
+      "target": "en.l.t"
+    },
+    {
+      "id": "l12-tracing.e09",
+      "type": "typing",
+      "objectives": [
+        "obj.l12.type-letters"
+      ],
+      "instructionClip": "instr.copy_word",
+      "mode": "copy",
+      "target": "en.w.sat"
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l12-tracing.intro",
+      "text": "Namuhla sizobhala. Uzolandela izinhlamvu ngomunwe wakho esikrinini. Qala echashazini eliluhlaza.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l12-tracing.intro",
+      "text": "Kajeno re tla ngola. O tla latela ditlhaku ka monwana wa hao skrineng. Qala lethebeng le letala.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l12-tracing.outro",
+      "text": "Wenze kahle! Ubhale izinhlamvu zakho zokuqala zesiNgisi. Qhubeka uprakthize ukubhala.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l12-tracing.outro",
+      "text": "O entse hantle! O ngotse ditlhaku tsa hao tsa pele tsa Senyesemane. Tswela pele ho ikwetlisa ho ngola.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}
