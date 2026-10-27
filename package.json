@@ -29,7 +29,8 @@
     "db:seed-content": "tsx scripts/seed-content.ts",
     "perf:lighthouse": "tsx scripts/perf-lighthouse.ts",
     "supabase": "supabase",
-    "db:seed-dev": "tsx scripts/dev-seed.ts"
+    "db:seed-dev": "tsx scripts/dev-seed.ts",
+    "env:local": "tsx scripts/write-local-env.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.3.0",
