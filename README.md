@@ -28,7 +28,7 @@ npm run build && npm start  # production build at http://localhost:3000
 ```
 
 - Learner app: <http://localhost:3000>. Use a phone-sized window (or Chrome device emulation); the sound check needs a click to allow audio.
-- Staff area: <http://localhost:3000/staff>. `db:seed-dev` prints the accounts (`facilitator@yomu.test`, `admin@yomu.test`, `reviewer@yomu.test`, `platform@yomu.test`, password `yomu-dev-password`) and the class join code.
+- Staff area: <http://localhost:3000/staff>. `db:seed-dev` prints the accounts (`facilitator@yomu.test`, `admin@yomu.test`, `reviewer@yomu.test`, `platform@yomu.test`, password `yomu-dev-password`) and the class join code. Staff sign-in always needs a second step: at an account's first sign-in, add it to any authenticator app (scan the QR code or type the key shown), then save the recovery codes.
 - Developer tutor lab: <http://localhost:3000/dev/tutor> (outside production only).
 
 For development with hot reload, run `npm run content:build` once and then `npm run dev`. The service worker is off in development unless `NEXT_PUBLIC_ENABLE_SW_IN_DEV=true`.

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, type FormEvent, type ReactNode } from "react";
 import { APP_NAME, backendConfigured } from "@/config/app";
 import { StaffProvider, useStaff } from "./StaffProvider";
+import { TwoStepGate } from "./TwoStep";
 import { Button, Field, Notice, inputClass } from "./ui";
 
 export function StaffShell({ children }: { children: ReactNode }) {
@@ -45,7 +46,7 @@ function Frame({ children }: { children: ReactNode }) {
         ) : roles.length === 0 ? (
           <Notice tone="warn">This account has no staff role yet. Ask a platform administrator to add you to an organisation.</Notice>
         ) : (
-          children
+          <TwoStepGate>{children}</TwoStepGate>
         )}
       </main>
     </div>
@@ -67,7 +68,10 @@ function SignIn() {
   return (
     <form onSubmit={(e) => void submit(e)} className="mx-auto flex w-full max-w-sm flex-col gap-3 rounded-2xl border border-line bg-white p-5">
       <h1 className="text-xl font-bold">Sign in</h1>
-      <p className="text-sm text-ink-soft">For facilitators, organisation administrators and content reviewers. Learners use the app itself and never need an email address.</p>
+      <p className="text-sm text-ink-soft">
+        For facilitators, organisation administrators and content reviewers. After your password you also need a code from an authenticator app. Learners use
+        the app itself and never need an email address.
+      </p>
       <Field label="Email">
         <input type="email" required autoComplete="username" value={email} onChange={(e) => setEmail(e.target.value)} className={inputClass} data-testid="staff-email" />
       </Field>

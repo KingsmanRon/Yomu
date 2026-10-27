@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState, type FormEvent } from "react";
 import { downloadWithToken, staffClient } from "./client";
 import { useStaff } from "./StaffProvider";
+import { TwoStepCard, TwoStepResetCard } from "./TwoStep";
 import { Badge, Button, Card, Field, Notice, Table, inputClass } from "./ui";
 
 interface Cohort {
@@ -126,6 +127,8 @@ export function StaffHome() {
       )}
 
       {has("platform_admin") && <PilotMetrics />}
+      {has("platform_admin") && <TwoStepResetCard />}
+      <TwoStepCard />
     </div>
   );
 }

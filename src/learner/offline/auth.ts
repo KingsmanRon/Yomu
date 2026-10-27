@@ -65,12 +65,26 @@ export async function forgetSession(profileId: string): Promise<void> {
   }
 }
 
+export interface FacilitatorSession {
+  token: string;
+  signOut: () => Promise<void>;
+}
+
+export interface PendingFacilitatorSignIn {
+  /** The code from the facilitator's authenticator app; throws "mfa_code_wrong" or "network". */
+  verify: (code: string) => Promise<FacilitatorSession>;
+  cancel: () => Promise<void>;
+}
+
 /**
- * Facilitator sign-in for assisted mode on a learner's phone. The session is
- * held in memory only (never written to the phone's storage) and is ended
- * with `signOut` as soon as the help is finished.
+ * Facilitator sign-in for assisted mode on a learner's phone, in two steps:
+ * the password, then a code from the facilitator's authenticator app (staff
+ * access needs both; accounts without an authenticator are refused with
+ * "mfa_not_set_up"). The session is held in memory only (never written to the
+ * phone's storage) and is ended with `signOut` as soon as the help is
+ * finished.
  */
-export async function facilitatorSignIn(email: string, password: string): Promise<{ token: string; signOut: () => Promise<void> }> {
+export async function facilitatorSignIn(email: string, password: string): Promise<PendingFacilitatorSignIn> {
   if (!backendConfigured()) throw new Error("backend_not_configured");
   const { AuthClient } = await import("@supabase/auth-js");
   const client = new AuthClient({
@@ -81,24 +95,38 @@ export async function facilitatorSignIn(email: string, password: string): Promis
     autoRefreshToken: false,
     detectSessionInUrl: false,
   });
+  const offline = (error: { status?: number; name?: string } | null) => error?.status === 0 || error?.name === "AuthRetryableFetchError";
   let result: Awaited<ReturnType<GoTrueClient["signInWithPassword"]>>;
   try {
     result = await client.signInWithPassword({ email, password });
   } catch {
     throw new Error("network");
   }
-  if (result.error || !result.data.session) {
-    throw new Error(result.error?.status === 0 || result.error?.name === "AuthRetryableFetchError" ? "network" : "invalid_credentials");
+  if (result.error || !result.data.session) throw new Error(offline(result.error) ? "network" : "invalid_credentials");
+  const signOut = async () => {
+    try {
+      await client.signOut({ scope: "local" });
+    } catch {
+      // The in-memory session is dropped with the page in any case.
+    }
+  };
+  const factor = result.data.user?.factors?.find((f) => f.factor_type === "totp" && f.status === "verified");
+  if (!factor) {
+    await signOut();
+    throw new Error("mfa_not_set_up");
   }
   return {
-    token: result.data.session.access_token,
-    signOut: async () => {
+    verify: async (code) => {
+      let verified: Awaited<ReturnType<GoTrueClient["mfa"]["challengeAndVerify"]>>;
       try {
-        await client.signOut({ scope: "local" });
+        verified = await client.mfa.challengeAndVerify({ factorId: factor.id, code });
       } catch {
-        // The in-memory session is dropped with the page in any case.
+        throw new Error("network");
       }
+      if (verified.error || !verified.data) throw new Error(offline(verified.error) ? "network" : "mfa_code_wrong");
+      return { token: verified.data.access_token, signOut };
     },
+    cancel: signOut,
   };
 }
 

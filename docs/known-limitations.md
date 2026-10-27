@@ -31,7 +31,7 @@ What the MVP does not do, does only partly, or has not been tested on. Each item
 - **One phone at a time.** Moving to a new phone goes through a facilitator and signs the old phone out; the old phone keeps its local copy until the learner removes it.
 - **Browser storage can be cleared.** A guest's progress lives only in the browser's storage on that phone; clearing site data or uninstalling the browser loses it. Saving online protects against this.
 - **First visit downloads about 3.3 MB** in the background (budget 3.5 MB): the app, the onboarding audio and the first lessons in both languages, so onboarding and the first lessons work offline. Before the language choice the app cannot know which half is needed.
-- **Staff accounts** use email and password without multi-factor authentication, and roles are assigned by the operator in the database (there is no admin screen for it). The staff area is in English only (staff are literate users; learners never see it).
+- **Staff accounts** need email, password and a code from an authenticator app (TOTP); the server and the database refuse staff access without the second step. Recovery is by one-time recovery codes or a reset by a platform administrator. Roles are assigned by the operator in the database (there is no admin screen for it). Authenticator codes can be reused within their 30-second window (Supabase Auth does not record used codes), and a phishing site that relays the password and code in real time is not stopped by TOTP. The staff area is in English only (staff are literate users; learners never see it).
 
 ## Privacy and research
 
