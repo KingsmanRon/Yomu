@@ -54,8 +54,9 @@ export function Assist({ profileId }: { profileId?: string }) {
   const [pin, setPin] = useState("");
   const [first, setFirst] = useState("");
   const [lines, setLines] = useState<Record<string, CompiledLine> | null>(null);
-  // The anonymous session made for a transfer is reused if the learner retries.
-  const transferDevice = useRef<{ id: string; token: string } | null>(null);
+  // The new phone's anonymous session and the move's ID are kept for retries:
+  // repeating a move whose reply was lost finishes that same move.
+  const transferDevice = useRef<{ id: string; token: string; transferId: string } | null>(null);
   const fromPinScreen = profiles.find((p) => p.id === profileId) ?? null;
 
   const learnerLang: TeachingLanguage | null =
@@ -124,7 +125,7 @@ export function Assist({ profileId }: { profileId?: string }) {
       } else {
         if (!transferDevice.current) {
           const id = crypto.randomUUID();
-          transferDevice.current = { id, token: await signInAnonymously(id) };
+          transferDevice.current = { id, token: await signInAnonymously(id), transferId: crypto.randomUUID() };
         }
         const device = transferDevice.current;
         const r = await api<{ learnerId: string; language: TeachingLanguage; avatarId: string; nickname: string | null; analyticsConsent: boolean }>(
@@ -132,7 +133,7 @@ export function Assist({ profileId }: { profileId?: string }) {
           "/api/assist/transfer",
           {
             token: facilitator.token,
-            body: { learnerId: target.learner.learnerId, deviceProfileId: device.id, deviceToken: device.token, ...opts },
+            body: { transferId: device.transferId, learnerId: target.learner.learnerId, deviceProfileId: device.id, deviceToken: device.token, ...opts },
           },
         );
         const profile = await restoreProfile(db, {
@@ -164,8 +165,10 @@ export function Assist({ profileId }: { profileId?: string }) {
           code === "not_your_learner"
             ? "This learner is not in one of your classes."
             : code === "network"
-              ? "The internet connection was lost. Nothing was changed. Try again when connected."
-              : "Something went wrong. Nothing was changed. Please try again.",
+              ? "The internet connection was lost before the answer arrived. Try again when connected: trying again is safe (a move that already happened is simply finished)."
+              : code === "learner_moved"
+                ? "This learner was moved to another phone at the same moment. Check which phone the learner is using."
+                : "Something went wrong. Nothing was changed. Please try again.",
         );
         setPhase("choose");
         await say("sys.error_generic");
