@@ -6,7 +6,7 @@ export const GET = handler(async (request) => {
   const { learner } = await requireLearner(request);
   const db = supabaseAdmin();
   const byLearner = (table: string, columns = "*") => db.from(table).select(columns).eq("learner_id", learner.id);
-  const [consents, memberships, devices, ops, progress, mastery, achievements, streaks, revision, tutorLogs, assists] =
+  const [consents, memberships, devices, ops, progress, mastery, achievements, streaks, revision, tutorLogs, assists, transfers] =
     await Promise.all([
       byLearner("consent_records"),
       db.from("cohort_memberships").select("*, cohorts(name)").eq("learner_id", learner.id),
@@ -19,8 +19,9 @@ export const GET = handler(async (request) => {
       byLearner("revision_schedule"),
       byLearner("tutor_logs", "created_at, tier, language, lesson_id, request_text, response_text, generated, expires_at"),
       byLearner("facilitator_assists", "action, created_at"),
+      byLearner("device_transfers", "id, created_at, status, pin_reset, revoked_at"),
     ]);
-  for (const r of [consents, memberships, devices, ops, progress, mastery, achievements, streaks, revision, tutorLogs, assists]) {
+  for (const r of [consents, memberships, devices, ops, progress, mastery, achievements, streaks, revision, tutorLogs, assists, transfers]) {
     if (r.error) throw r.error;
   }
   const body = {
@@ -46,6 +47,7 @@ export const GET = handler(async (request) => {
     revisionSchedule: revision.data,
     tutorLogs: tutorLogs.data,
     facilitatorHelp: assists.data,
+    moves: transfers.data,
   };
   return new Response(JSON.stringify(body, null, 2), {
     headers: {
