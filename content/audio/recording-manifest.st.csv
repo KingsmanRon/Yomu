@@ -62,6 +62,7 @@ st.app.me.facilitator,Sesotho (South Africa),Titjhere a ka o thusa founung ena. 
 st.app.me.intro,Sesotho (South Africa),Mona o ka fetola disetting tsa hao mme o hlokomele dintlha tsa hao.,,app: Profile and settings screen.,app,,5.6,draft,no,st.app.me.intro.wav
 st.app.me.language,Sesotho (South Africa),Fetola puo eo o ithutang ka yona.,,app: Change teaching language.,app,,2.9,draft,no,st.app.me.language.wav
 st.app.me.level,Sesotho (South Africa),Kgetha moo o batlang ho qala teng.,,app: Change level.,app,,3,draft,no,st.app.me.level.wav
+st.app.me.moved_phone,Sesotho (South Africa),Dithuto tsa hao tse bolokilweng inthaneteng di se di le founung e nngwe. Seo o se etsang mona se dula founung ena feela. O ka tlosa profaele ena founung ena.,,app: This phone's online session was replaced: the learner was moved to another phone. Offers removing the profile from this phone.,app,,12.5,draft,no,st.app.me.moved_phone.wav
 st.app.me.retake,Sesotho (South Africa),Etsa mosebetsi o mokgutshwane hape hore re fumane boemo bo nepahetseng.,,app: Retake placement activity.,app,,5.9,draft,no,st.app.me.retake.wav
 st.app.me.sharing,Sesotho (South Africa),Sheba kapa o fetole seo o se arolelanang le tlelase ya hao.,,app: What I share with my class.,app,,4.9,draft,no,st.app.me.sharing.wav
 st.app.me.text_size,Sesotho (South Africa),Etsa mongolo o be moholo.,,app: Text size setting.,app,,2.3,draft,no,st.app.me.text_size.wav

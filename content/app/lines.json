@@ -150,6 +150,7 @@
     {
       "id": "save.choice",
       "description": "Offer to save progress online (registration) or keep it on the phone (guest).",
+      "source": "You can keep your learning on this phone only, or keep it safely on the internet so that it is not lost. Keeping it on the internet uses a little data.",
       "zu": {
         "id": "zu.app.save.choice",
         "text": "Ungagcina ukufunda kwakho kule foni kuphela, noma usigcine ku-inthanethi ngokuphepha ukuze singalahleki. Ukugcina ku-inthanethi kusebenzisa idatha encane.",
@@ -168,6 +169,7 @@
     {
       "id": "save.online",
       "description": "Button: save online (leads to spoken consent).",
+      "source": "I want to keep it on the internet.",
       "zu": {
         "id": "zu.app.save.online",
         "text": "Ngifuna ukugcina ku-inthanethi.",
@@ -188,6 +190,7 @@
     {
       "id": "save.phone_only",
       "description": "Button: keep on this phone only (guest).",
+      "source": "Keep it on this phone only.",
       "zu": {
         "id": "zu.app.save.phone_only",
         "text": "Gcina kule foni kuphela.",
@@ -208,6 +211,7 @@
     {
       "id": "consent.intro",
       "description": "Consent 1/5 (POPIA): before anything is stored on the server.",
+      "source": "Before we keep your information on the internet, listen to this.",
       "zu": {
         "id": "zu.app.consent.intro",
         "text": "Ngaphambi kokuthi sigcine imininingwane yakho ku-inthanethi, lalela lokhu.",
@@ -226,6 +230,7 @@
     {
       "id": "consent.what",
       "description": "Consent 2/5: what is stored.",
+      "source": "We will keep: your picture, your secret code, locked so that nobody can read it, your language, and your progress: lessons, answers and skills. We do not need your name. We do not keep your voice.",
       "zu": {
         "id": "zu.app.consent.what",
         "text": "Sizogcina: isithombe sakho, ikhodi yakho eyimfihlo ivalelwe ukuze kungabikho muntu oyifundayo, ulimi lwakho, nenqubekela phambili yakho: izifundo, izimpendulo namakhono. Asilidingi igama lakho. Asiligcini izwi lakho.",
@@ -244,6 +249,7 @@
     {
       "id": "consent.why",
       "description": "Consent 3/5: why.",
+      "source": "Why: so that your learning is not lost if your phone is lost or broken, and so that you can carry on using another phone.",
       "zu": {
         "id": "zu.app.consent.why",
         "text": "Kungani: ukuze ukufunda kwakho kungalahleki uma ifoni yakho ilahleka noma iphuka, nokuze uqhubeke kwenye ifoni.",
@@ -262,6 +268,7 @@
     {
       "id": "consent.who",
       "description": "Consent 4/5: who can see it.",
+      "source": "Who can see it: only you. If you join a class later, we will first ask you what your teacher may see. We will never sell your information.",
       "zu": {
         "id": "zu.app.consent.who",
         "text": "Ubani ongakubona: nguwe kuphela. Uma ujoyina ikilasi kamuva, sizokubuza kuqala ukuthi uthisha wakho angabonani. Asisoze sayithengisa imininingwane yakho.",
@@ -280,6 +287,7 @@
     {
       "id": "consent.delete",
       "description": "Consent 5/5: how to delete.",
+      "source": "You can stop at any time. In Me, tap the picture of the bin to delete everything. It is deleted straight away, without phoning anyone.",
       "zu": {
         "id": "zu.app.consent.delete",
         "text": "Ungayeka noma nini. Ku-Mina, thinta isithombe somgqomo ukuze ususe konke. Kuzosuswa ngokushesha, ngaphandle kokushayela muntu.",
@@ -298,6 +306,7 @@
     {
       "id": "consent.question",
       "description": "Consent question.",
+      "source": "Do you agree that we keep your learning safely on the internet?",
       "zu": {
         "id": "zu.app.consent.question",
         "text": "Uyavuma ukuthi sigcine ukufunda kwakho ku-inthanethi ngokuphepha?",
@@ -316,6 +325,7 @@
     {
       "id": "consent.agree",
       "description": "Consent button: agree.",
+      "source": "Yes, I agree.",
       "zu": {
         "id": "zu.app.consent.agree",
         "text": "Yebo, ngiyavuma.",
@@ -336,6 +346,7 @@
     {
       "id": "consent.decline",
       "description": "Consent button: keep on phone only.",
+      "source": "No, keep it on this phone only.",
       "zu": {
         "id": "zu.app.consent.decline",
         "text": "Cha, gcina kule foni kuphela.",
@@ -356,6 +367,7 @@
     {
       "id": "consent.analytics",
       "description": "Separate optional consent: pseudonymous usage counts.",
+      "source": "May we count how you use the app, without your name, so that we can improve it? You can change this at any time in Me.",
       "zu": {
         "id": "zu.app.consent.analytics",
         "text": "Singabala ukuthi uyisebenzisa kanjani i-app, ngaphandle kwegama lakho, ukuze siyithuthukise? Ungashintsha lokhu noma nini ku-Mina.",
@@ -374,6 +386,7 @@
     {
       "id": "consent.pin",
       "description": "Confirm the PIN to save it safely online.",
+      "source": "Tap your secret code again, so that we can keep it safely.",
       "zu": {
         "id": "zu.app.consent.pin",
         "text": "Thinta ikhodi yakho eyimfihlo futhi, ukuze siyigcine ngokuphepha.",
@@ -392,6 +405,7 @@
     {
       "id": "consent.declined",
       "description": "After declining consent.",
+      "source": "That is fine. Your learning will stay on this phone only. You can change your mind later in Me.",
       "zu": {
         "id": "zu.app.consent.declined",
         "text": "Kulungile. Ukufunda kwakho kuzohlala kule foni kuphela. Ungashintsha umqondo kamuva ku-Mina.",
@@ -410,6 +424,7 @@
     {
       "id": "consent.saved",
       "description": "After registration succeeded.",
+      "source": "Thank you. Your learning is now kept safely.",
       "zu": {
         "id": "zu.app.consent.saved",
         "text": "Siyabonga. Ukufunda kwakho sekugciniwe ngokuphepha.",
@@ -428,6 +443,7 @@
     {
       "id": "consent.offline",
       "description": "Registration needs the internet.",
+      "source": "Keeping it on the internet needs the internet. For now, your learning stays on this phone.",
       "zu": {
         "id": "zu.app.consent.offline",
         "text": "Ukugcina ku-inthanethi kudinga i-inthanethi. Okwamanje, ukufunda kwakho kuhlala kule foni.",
@@ -446,6 +462,7 @@
     {
       "id": "consent.withdraw",
       "description": "Withdraw account-storage consent (deletes online data).",
+      "source": "If you withdraw your consent, we will delete your learning from the internet. It will stay on this phone only.",
       "zu": {
         "id": "zu.app.consent.withdraw",
         "text": "Uma uhoxisa imvume, sizosusa ukufunda kwakho ku-inthanethi. Kuzohlala kule foni kuphela.",
@@ -466,6 +483,7 @@
     {
       "id": "share.intro",
       "description": "Cohort sharing consent 1/4.",
+      "source": "Your teacher's class wants to see your progress. You choose what they may see.",
       "zu": {
         "id": "zu.app.share.intro",
         "text": "Ikilasi likathisha wakho lifuna ukubona inqubekela phambili yakho. Nguwe okhethayo ukuthi bangabonani.",
@@ -484,6 +502,7 @@
     {
       "id": "share.basic",
       "description": "Cohort sharing: what joining always shares.",
+      "source": "If you join, your teacher will see: your picture, your level, the lessons you have finished, and the last day you practised. They will also see numbers for the whole class about skills that were difficult, without pointing to you.",
       "zu": {
         "id": "zu.app.share.basic",
         "text": "Uma ujoyina, uthisha wakho uzobona: isithombe sakho, izinga lakho, izifundo oziqedile, nosuku lokugcina oprakthize ngalo. Uzobona nezibalo zekilasi lonke zamakhono abelukhuni, ngaphandle kokukhomba wena.",
@@ -502,6 +521,7 @@
     {
       "id": "share.mastery",
       "description": "Cohort sharing: optional mastery with dates (needed for certificates).",
+      "source": "Do you also want the teacher to see the skills you have learned, with the dates? This is needed for a certificate.",
       "zu": {
         "id": "zu.app.share.mastery",
         "text": "Ingabe ufuna nokuthi uthisha abone amakhono owafundile, nezinsuku? Lokhu kuyadingeka ukuze uthole isitifiketi.",
@@ -520,6 +540,7 @@
     {
       "id": "share.mistakes",
       "description": "Cohort sharing: optional mistake history.",
+      "source": "Do you want the teacher to see the questions you got wrong, so that they can help you?",
       "zu": {
         "id": "zu.app.share.mistakes",
         "text": "Ingabe ufuna uthisha abone imibuzo oyiphosile, ukuze akusize?",
@@ -538,6 +559,7 @@
     {
       "id": "share.tutor",
       "description": "Cohort sharing: optional tutor question log.",
+      "source": "Do you want the teacher to see the questions you asked the helper?",
       "zu": {
         "id": "zu.app.share.tutor",
         "text": "Ingabe ufuna uthisha abone imibuzo oyibuze umsizi?",
@@ -556,6 +578,7 @@
     {
       "id": "share.yes",
       "description": "Yes button.",
+      "source": "Yes.",
       "zu": {
         "id": "zu.app.share.yes",
         "text": "Yebo.",
@@ -576,6 +599,7 @@
     {
       "id": "share.no",
       "description": "No button.",
+      "source": "No.",
       "zu": {
         "id": "zu.app.share.no",
         "text": "Cha.",
@@ -596,6 +620,7 @@
     {
       "id": "share.confirm",
       "description": "Confirm joining.",
+      "source": "Join the class.",
       "zu": {
         "id": "zu.app.share.confirm",
         "text": "Joyina ikilasi.",
@@ -616,6 +641,7 @@
     {
       "id": "share.stop_explain",
       "description": "Before stopping sharing with a class.",
+      "source": "If you stop sharing, your teacher stops seeing your progress straight away.",
       "zu": {
         "id": "zu.app.share.stop_explain",
         "text": "Uma uyeka ukwabelana, uthisha wakho uzoyeka ngokushesha ukubona inqubekela phambili yakho.",
@@ -636,6 +662,7 @@
     {
       "id": "share.stopped",
       "description": "After stopping sharing.",
+      "source": "Sharing has stopped.",
       "zu": {
         "id": "zu.app.share.stopped",
         "text": "Ukwabelana kumisiwe.",
@@ -694,6 +721,7 @@
     {
       "id": "join.need_account",
       "description": "Joining needs an online account first.",
+      "source": "To join a class, first keep your learning on the internet.",
       "zu": {
         "id": "zu.app.join.need_account",
         "text": "Ukuze ujoyine ikilasi, qala ugcine ukufunda kwakho ku-inthanethi.",
@@ -748,6 +776,7 @@
     {
       "id": "mic.explain",
       "description": "Before asking for microphone permission.",
+      "source": "Some activities ask you to say words aloud. To let you hear yourself, the app needs the microphone. Your voice stays on this phone and is deleted when the activity ends. You can say no and still use everything.",
       "zu": {
         "id": "zu.app.mic.explain",
         "text": "Eminye imisebenzi ikucela ukuthi usho amagama ngezwi. Ukuze uzizwe, i-app idinga imakrofoni. Izwi lakho lihlala kule foni futhi liyasuswa uma umsebenzi uphela. Ungathi cha futhi usasebenzisa konke.",
@@ -766,6 +795,7 @@
     {
       "id": "mic.allow",
       "description": "Allow microphone button.",
+      "source": "Allow the microphone.",
       "zu": {
         "id": "zu.app.mic.allow",
         "text": "Vumela imakrofoni.",
@@ -786,6 +816,7 @@
     {
       "id": "mic.no",
       "description": "Decline microphone button.",
+      "source": "No, thank you.",
       "zu": {
         "id": "zu.app.mic.no",
         "text": "Cha, ngiyabonga.",
@@ -806,6 +837,7 @@
     {
       "id": "mic.denied",
       "description": "Microphone not available or refused.",
+      "source": "No problem. Say the words aloud without recording, then tap the arrow when you have finished.",
       "zu": {
         "id": "zu.app.mic.denied",
         "text": "Akunankinga. Sho amagama ngezwi ngaphandle kokuqopha, bese uthinta umcibisholo uma usuqedile.",
@@ -1934,6 +1966,7 @@
     {
       "id": "me.export",
       "description": "Download a copy of my data.",
+      "source": "You can get a copy of all the information about you that we keep.",
       "zu": {
         "id": "zu.app.me.export",
         "text": "Ungathola ikhophi yayo yonke imininingwane yakho esiyigcinile.",
@@ -1954,6 +1987,7 @@
     {
       "id": "me.delete",
       "description": "Delete all my data.",
+      "source": "Delete all my information.",
       "zu": {
         "id": "zu.app.me.delete",
         "text": "Susa yonke imininingwane yami.",
@@ -2054,6 +2088,7 @@
     {
       "id": "delete.explain",
       "description": "Explain deletion before confirming.",
+      "source": "If you delete, everything about you is removed from this phone and from our system. Your teacher will no longer see you. This cannot be undone. To delete, press and hold the red button.",
       "zu": {
         "id": "zu.app.delete.explain",
         "text": "Uma usula, konke okumayelana nawe kuzosuswa kule foni nasohlelweni lwethu. Uthisha wakho ngeke esakubona. Lokhu akunakuhlehliswa. Ukuze usule, cindezela ubambe inkinobho ebomvu.",
@@ -2072,6 +2107,7 @@
     {
       "id": "delete.confirm",
       "description": "Press-and-hold delete button.",
+      "source": "Hold to delete.",
       "zu": {
         "id": "zu.app.delete.confirm",
         "text": "Bamba ukuze usule.",
@@ -2092,6 +2128,7 @@
     {
       "id": "delete.done",
       "description": "After deletion.",
+      "source": "Everything has been deleted. Thank you for learning with us.",
       "zu": {
         "id": "zu.app.delete.done",
         "text": "Konke kususiwe. Siyabonga ngokufunda nathi.",
@@ -2110,6 +2147,7 @@
     {
       "id": "delete.offline",
       "description": "Online deletion needs connectivity.",
+      "source": "Deleting from the internet needs the internet. Try again when you are connected.",
       "zu": {
         "id": "zu.app.delete.offline",
         "text": "Ukususa ku-inthanethi kudinga i-inthanethi. Zama futhi uma usuxhunyiwe.",
@@ -2128,6 +2166,7 @@
     {
       "id": "export.done",
       "description": "Data export ready.",
+      "source": "Your copy is ready.",
       "zu": {
         "id": "zu.app.export.done",
         "text": "Ikhophi yakho isilungile.",
@@ -2222,6 +2261,7 @@
     {
       "id": "assist.handover",
       "description": "Facilitator-assisted mode starts.",
+      "source": "Your teacher will help you now. Your secret code stays secret.",
       "zu": {
         "id": "zu.app.assist.handover",
         "text": "Uthisha wakho uzokusiza manje. Ikhodi yakho eyimfihlo ihlala iyimfihlo.",
@@ -2240,6 +2280,7 @@
     {
       "id": "assist.new_pin",
       "description": "Learner sets a new PIN during facilitator help.",
+      "source": "Make a new secret code. Your teacher should not look.",
       "zu": {
         "id": "zu.app.assist.new_pin",
         "text": "Yenza ikhodi entsha eyimfihlo. Uthisha wakho akufanele abuke.",

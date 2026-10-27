@@ -28,6 +28,10 @@
         "description": {
           "type": "string"
         },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
         "zu": {
           "$ref": "#/$defs/__schema1"
         },

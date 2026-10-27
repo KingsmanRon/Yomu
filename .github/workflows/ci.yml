@@ -33,6 +33,10 @@ jobs:
         run: npm run content:schema -- --check
       - name: AET alignment document is up to date
         run: npm run docs:aet -- --check
+      - name: Consent scripts document is up to date
+        run: npm run docs:consent -- --check
+      - name: Audio recording manifest is up to date
+        run: npm run audio:manifest -- --check
       - run: npm test
 
   integration:

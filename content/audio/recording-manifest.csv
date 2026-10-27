@@ -148,6 +148,7 @@ st.app.me.facilitator,Sesotho (South Africa),Titjhere a ka o thusa founung ena. 
 st.app.me.intro,Sesotho (South Africa),Mona o ka fetola disetting tsa hao mme o hlokomele dintlha tsa hao.,,app: Profile and settings screen.,app,,5.6,draft,no,st.app.me.intro.wav
 st.app.me.language,Sesotho (South Africa),Fetola puo eo o ithutang ka yona.,,app: Change teaching language.,app,,2.9,draft,no,st.app.me.language.wav
 st.app.me.level,Sesotho (South Africa),Kgetha moo o batlang ho qala teng.,,app: Change level.,app,,3,draft,no,st.app.me.level.wav
+st.app.me.moved_phone,Sesotho (South Africa),Dithuto tsa hao tse bolokilweng inthaneteng di se di le founung e nngwe. Seo o se etsang mona se dula founung ena feela. O ka tlosa profaele ena founung ena.,,app: This phone's online session was replaced: the learner was moved to another phone. Offers removing the profile from this phone.,app,,12.5,draft,no,st.app.me.moved_phone.wav
 st.app.me.retake,Sesotho (South Africa),Etsa mosebetsi o mokgutshwane hape hore re fumane boemo bo nepahetseng.,,app: Retake placement activity.,app,,5.9,draft,no,st.app.me.retake.wav
 st.app.me.sharing,Sesotho (South Africa),Sheba kapa o fetole seo o se arolelanang le tlelase ya hao.,,app: What I share with my class.,app,,4.9,draft,no,st.app.me.sharing.wav
 st.app.me.text_size,Sesotho (South Africa),Etsa mongolo o be moholo.,,app: Text size setting.,app,,2.3,draft,no,st.app.me.text_size.wav
@@ -544,6 +545,7 @@ zu.app.me.facilitator,isiZulu,Uthisha angakusiza kule foni. Ikhodi yakho eyimfih
 zu.app.me.intro,isiZulu,Lapha ungashintsha izilungiselelo zakho futhi unakekele imininingwane yakho.,,app: Profile and settings screen.,app,,6.2,draft,no,zu.app.me.intro.wav
 zu.app.me.language,isiZulu,Shintsha ulimi ofunda ngalo.,,app: Change teaching language.,app,,2.6,draft,no,zu.app.me.language.wav
 zu.app.me.level,isiZulu,Khetha lapho ufuna ukuqala khona.,,app: Change level.,app,,2.9,draft,no,zu.app.me.level.wav
+zu.app.me.moved_phone,isiZulu,Izifundo zakho ezigcinwe ku-inthanethi manje zikwenye ifoni. Okwenzayo lapha kuhlala kule foni kuphela. Ungasusa le phrofayela kule foni.,,app: This phone's online session was replaced: the learner was moved to another phone. Offers removing the profile from this phone.,app,,10.9,draft,no,zu.app.me.moved_phone.wav
 zu.app.me.retake,isiZulu,Phinda umsebenzi omfushane ukuze sithole izinga elifanele.,,app: Retake placement activity.,app,,4.9,draft,no,zu.app.me.retake.wav
 zu.app.me.sharing,isiZulu,Bheka noma ushintshe okwabelana nekilasi lakho.,,app: What I share with my class.,app,,4,draft,no,zu.app.me.sharing.wav
 zu.app.me.text_size,isiZulu,Yenza umbhalo ube mkhulu.,,app: Text size setting.,app,,2.3,draft,no,zu.app.me.text_size.wav

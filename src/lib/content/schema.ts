@@ -532,6 +532,12 @@ export const AppLineSchema = z
   .object({
     id: z.string().regex(/^[a-z0-9][a-z0-9._-]*$/),
     description: z.string(),
+    /**
+     * The English text the translations were written from, for translators,
+     * reviewers and the consent documentation (docs/consent-scripts.md).
+     * Never shown or spoken to learners: the content build drops it.
+     */
+    source: z.string().min(1).optional(),
     zu: LabelledLineSchema,
     st: LabelledLineSchema,
   })
