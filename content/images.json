@@ -1,0 +1,734 @@
+{
+  "$schema": "./schema/images.schema.json",
+  "images": [
+    {
+      "id": "airtime",
+      "file": "images/airtime.svg",
+      "alt": "A phone with one signal bar and a coin with a down arrow (low airtime)",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "app-icon",
+      "file": "images/app-icon.svg",
+      "alt": "App icon: an open book with sound waves",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-aloe",
+      "file": "images/avatar-aloe.svg",
+      "alt": "An aloe plant in a pot",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-baobab",
+      "file": "images/avatar-baobab.svg",
+      "alt": "A baobab tree",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-bird",
+      "file": "images/avatar-bird.svg",
+      "alt": "A blue bird",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-cow",
+      "file": "images/avatar-cow.svg",
+      "alt": "A cow's face",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-drum",
+      "file": "images/avatar-drum.svg",
+      "alt": "A drum",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-fish",
+      "file": "images/avatar-fish.svg",
+      "alt": "An orange fish",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-moon",
+      "file": "images/avatar-moon.svg",
+      "alt": "A crescent moon at night",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-mountain",
+      "file": "images/avatar-mountain.svg",
+      "alt": "A flat-topped mountain",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-pot",
+      "file": "images/avatar-pot.svg",
+      "alt": "A three-legged pot",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-protea",
+      "file": "images/avatar-protea.svg",
+      "alt": "A pink protea flower",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-star",
+      "file": "images/avatar-star.svg",
+      "alt": "A yellow star",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "avatar-sun",
+      "file": "images/avatar-sun.svg",
+      "alt": "A sun",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-hl-word",
+      "file": "images/badge-hl-word.svg",
+      "alt": "Medal with an open book",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-lesson",
+      "file": "images/badge-lesson.svg",
+      "alt": "Medal with a tick",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-letters",
+      "file": "images/badge-letters.svg",
+      "alt": "Medal with a pencil",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-notice",
+      "file": "images/badge-notice.svg",
+      "alt": "Medal with a notice board",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-reply",
+      "file": "images/badge-reply.svg",
+      "alt": "Medal with a keyboard",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-sentence",
+      "file": "images/badge-sentence.svg",
+      "alt": "Medal with lines of text",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-sight",
+      "file": "images/badge-sight.svg",
+      "alt": "Medal with an eye",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-signs",
+      "file": "images/badge-signs.svg",
+      "alt": "Medal with a signpost",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-sms",
+      "file": "images/badge-sms.svg",
+      "alt": "Medal with a message bubble",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-sounds",
+      "file": "images/badge-sounds.svg",
+      "alt": "Medal with a speaker",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-streak",
+      "file": "images/badge-streak.svg",
+      "alt": "Medal with a flame",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "badge-word",
+      "file": "images/badge-word.svg",
+      "alt": "Medal with a word card",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "bank",
+      "file": "images/bank.svg",
+      "alt": "A bank building",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "bread",
+      "file": "images/bread.svg",
+      "alt": "A loaf of bread",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "bus",
+      "file": "images/bus.svg",
+      "alt": "A bus",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "calendar",
+      "file": "images/calendar.svg",
+      "alt": "A calendar page with the first day marked",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "cat",
+      "file": "images/cat.svg",
+      "alt": "A sitting orange cat",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "cleaner",
+      "file": "images/cleaner.svg",
+      "alt": "A cleaner holding a mop",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "clinic",
+      "file": "images/clinic.svg",
+      "alt": "A clinic building with a green cross",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "cook",
+      "file": "images/cook.svg",
+      "alt": "A cook in a chef's hat holding a pot",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "dad",
+      "file": "images/dad.svg",
+      "alt": "A father holding a child's hand",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "dog",
+      "file": "images/dog.svg",
+      "alt": "A dog",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "driver",
+      "file": "images/driver.svg",
+      "alt": "A taxi driver at the wheel of a minibus",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "house",
+      "file": "images/house.svg",
+      "alt": "A house",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "id-book",
+      "file": "images/id-book.svg",
+      "alt": "A green identity document book",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "man",
+      "file": "images/man.svg",
+      "alt": "A man standing",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "map",
+      "file": "images/map.svg",
+      "alt": "A folded map with a route and a location pin",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "me",
+      "file": "images/me.svg",
+      "alt": "A person pointing at themself",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "meaning-closed",
+      "file": "images/meaning-closed.svg",
+      "alt": "A closed door with a padlock",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "meaning-danger",
+      "file": "images/meaning-danger.svg",
+      "alt": "A yellow warning triangle with an exclamation mark",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "meaning-exit",
+      "file": "images/meaning-exit.svg",
+      "alt": "A person walking out through a doorway",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "meaning-open",
+      "file": "images/meaning-open.svg",
+      "alt": "An open door",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "meaning-stop",
+      "file": "images/meaning-stop.svg",
+      "alt": "A raised open hand meaning stop",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "meaning-toilet",
+      "file": "images/meaning-toilet.svg",
+      "alt": "A toilet",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "milk",
+      "file": "images/milk.svg",
+      "alt": "A bottle and a glass of milk",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "money",
+      "file": "images/money.svg",
+      "alt": "Bank notes and coins",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pan",
+      "file": "images/pan.svg",
+      "alt": "A frying pan",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pen",
+      "file": "images/pen.svg",
+      "alt": "A blue ballpoint pen",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "phone",
+      "file": "images/phone.svg",
+      "alt": "A mobile phone",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pin-ball",
+      "file": "images/pin-ball.svg",
+      "alt": "A ball",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pin-car",
+      "file": "images/pin-car.svg",
+      "alt": "A red car",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pin-cup",
+      "file": "images/pin-cup.svg",
+      "alt": "A cup",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pin-flower",
+      "file": "images/pin-flower.svg",
+      "alt": "A flower",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pin-hat",
+      "file": "images/pin-hat.svg",
+      "alt": "A hat",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pin-house",
+      "file": "images/pin-house.svg",
+      "alt": "A house",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pin-key",
+      "file": "images/pin-key.svg",
+      "alt": "A key",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pin-leaf",
+      "file": "images/pin-leaf.svg",
+      "alt": "A leaf",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "pin-tree",
+      "file": "images/pin-tree.svg",
+      "alt": "A tree",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "sheep",
+      "file": "images/sheep.svg",
+      "alt": "A sheep",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "ship",
+      "file": "images/ship.svg",
+      "alt": "A ship on the sea",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "shop",
+      "file": "images/shop.svg",
+      "alt": "A shop with a striped awning",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "sign-closed",
+      "file": "images/sign-closed.svg",
+      "alt": "A red CLOSED sign",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "sign-danger",
+      "file": "images/sign-danger.svg",
+      "alt": "A DANGER sign",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "sign-exit",
+      "file": "images/sign-exit.svg",
+      "alt": "A green EXIT sign",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "sign-open",
+      "file": "images/sign-open.svg",
+      "alt": "A green OPEN sign",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "sign-stop",
+      "file": "images/sign-stop.svg",
+      "alt": "A red STOP sign",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "sign-toilets",
+      "file": "images/sign-toilets.svg",
+      "alt": "A blue TOILETS sign",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "sit",
+      "file": "images/sit.svg",
+      "alt": "A person sitting on a chair",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "sms",
+      "file": "images/sms.svg",
+      "alt": "A mobile phone showing a text message",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "sun",
+      "file": "images/sun.svg",
+      "alt": "The sun",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "tap",
+      "file": "images/tap.svg",
+      "alt": "A water tap with drops",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "ten",
+      "file": "images/ten.svg",
+      "alt": "The number 10",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "tin",
+      "file": "images/tin.svg",
+      "alt": "A food tin",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "water",
+      "file": "images/water.svg",
+      "alt": "A bucket of water",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "woman",
+      "file": "images/woman.svg",
+      "alt": "A woman wearing a headwrap",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "work",
+      "file": "images/work.svg",
+      "alt": "A worker in a hard hat and safety vest holding a spanner",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    },
+    {
+      "id": "you",
+      "file": "images/you.svg",
+      "alt": "A person pointing at the viewer",
+      "author": "Yomu project contributors",
+      "license": "MIT (repository licence)",
+      "source": "Original artwork drawn in code: scripts/illustrations/draw.ts",
+      "created": "2026-10-26"
+    }
+  ]
+}

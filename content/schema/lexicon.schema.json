@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "entries": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema0"
+      }
+    }
+  },
+  "required": [
+    "entries"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(en|zu|st)\\.(l|syl|w|sw|ph|sen|psg)\\.[a-z0-9_-]+$"
+        },
+        "lang": {
+          "type": "string",
+          "enum": [
+            "zu",
+            "st",
+            "en"
+          ]
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "letter",
+            "syllable",
+            "word",
+            "sight_word",
+            "phrase",
+            "sentence",
+            "passage"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "image": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "audio": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "nameAudio": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "gloss": {
+          "type": "object",
+          "properties": {
+            "zu": {
+              "$ref": "#/$defs/__schema5"
+            },
+            "st": {
+              "$ref": "#/$defs/__schema5"
+            }
+          },
+          "required": [
+            "zu",
+            "st"
+          ],
+          "additionalProperties": false
+        },
+        "graphemes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "contrastiveTags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ct\\.[a-z0-9-]+$"
+          }
+        },
+        "irregular": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "lang",
+        "kind",
+        "text",
+        "audio"
+      ],
+      "additionalProperties": false
+    },
+    "__schema1": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/__schema2"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string"
+        },
+        "seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 90
+        },
+        "review": {
+          "$ref": "#/$defs/__schema3"
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "review"
+      ],
+      "additionalProperties": false
+    },
+    "__schema2": {
+      "type": "string",
+      "pattern": "^(zu|st|en)\\.[a-z0-9][a-z0-9._-]*$"
+    },
+    "__schema3": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/__schema4"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "$ref": "#/$defs/__schema4"
+              },
+              "role": {
+                "type": "string",
+                "enum": [
+                  "native_speaker",
+                  "adult_literacy_educator",
+                  "linguist",
+                  "aet_specialist",
+                  "voice_director"
+                ]
+              },
+              "date": {
+                "type": "string",
+                "format": "date",
+                "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+              },
+              "notes": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "status",
+              "role",
+              "date"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "__schema4": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "native_speaker_reviewed",
+        "educator_reviewed",
+        "approved"
+      ]
+    },
+    "__schema5": {
+      "type": "object",
+      "properties": {
+        "word": {
+          "type": "string",
+          "minLength": 1
+        },
+        "line": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/__schema2"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1
+            },
+            "note": {
+              "type": "string"
+            },
+            "seconds": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 90
+            },
+            "review": {
+              "$ref": "#/$defs/__schema3"
+            }
+          },
+          "required": [
+            "id",
+            "text",
+            "review"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "word",
+        "line"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$id": "https://yomu.invalid/content/schema/lexicon.schema.json",
+  "title": "Yomu content: lexicon"
+}

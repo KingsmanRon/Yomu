@@ -1,0 +1,212 @@
+{
+  "$schema": "./schema/curriculum.schema.json",
+  "levels": [
+    {
+      "level": 0,
+      "title": "Home-language reading bridge",
+      "description": "Decoding in isiZulu or Sesotho first: home-language vowels, syllables and first words, then carrying the skill into English. Optional; offered when the placement shows the learner cannot yet decode in their home language.",
+      "aetLevel": "pre-aet"
+    },
+    {
+      "level": 1,
+      "title": "Foundations",
+      "description": "English letter recognition, phonemic awareness, letter-sound relationships and first letter formation.",
+      "aetLevel": "aet-1"
+    },
+    {
+      "level": 2,
+      "title": "First words",
+      "description": "Blending sounds into words, word identification, spelling with tiles, picture matching and common sight words.",
+      "aetLevel": "aet-1"
+    },
+    {
+      "level": 3,
+      "title": "Sentences",
+      "description": "Reading simple sentences, building sentences and basic comprehension.",
+      "aetLevel": "aet-1"
+    },
+    {
+      "level": 4,
+      "title": "Everyday English",
+      "description": "Reading SMS messages, signs, notices and other everyday texts, and typing short replies.",
+      "aetLevel": "aet-2"
+    },
+    {
+      "level": 5,
+      "title": "Independent reading",
+      "description": "Reading short passages, answering questions and writing short responses.",
+      "aetLevel": "aet-2"
+    }
+  ],
+  "units": [
+    {
+      "id": "u0",
+      "level": 0,
+      "order": 1,
+      "title": {
+        "en": "Read your own language",
+        "zu": {
+          "id": "zu.unit.u0.title",
+          "label": "Funda ngolimi lwakho",
+          "text": "Funda ngolimi lwakho.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.unit.u0.title",
+          "label": "Bala ka puo ya hao",
+          "text": "Bala ka puo ya hao.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "lessons": [
+        "l00-hl-vowels",
+        "l01-hl-syllables",
+        "l02-bridge"
+      ]
+    },
+    {
+      "id": "u1",
+      "level": 1,
+      "order": 2,
+      "title": {
+        "en": "English letters and sounds",
+        "zu": {
+          "id": "zu.unit.u1.title",
+          "label": "Izinhlamvu zesiNgisi",
+          "text": "Izinhlamvu nemisindo yesiNgisi.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.unit.u1.title",
+          "label": "Ditlhaku tsa Senyesemane",
+          "text": "Ditlhaku le medumo ya Senyesemane.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "lessons": [
+        "l10-satp",
+        "l11-inmd",
+        "l12-tracing"
+      ]
+    },
+    {
+      "id": "u2",
+      "level": 2,
+      "order": 3,
+      "title": {
+        "en": "First English words",
+        "zu": {
+          "id": "zu.unit.u2.title",
+          "label": "Amagama okuqala",
+          "text": "Amagama akho okuqala esiNgisi.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.unit.u2.title",
+          "label": "Mantswe a pele",
+          "text": "Mantswe a hao a pele a Senyesemane.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "lessons": [
+        "l20-blending",
+        "l21-picture-words",
+        "l22-sight-words"
+      ]
+    },
+    {
+      "id": "u3",
+      "level": 3,
+      "order": 4,
+      "title": {
+        "en": "First sentences",
+        "zu": {
+          "id": "zu.unit.u3.title",
+          "label": "Imisho yokuqala",
+          "text": "Imisho yakho yokuqala.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.unit.u3.title",
+          "label": "Dipolelo tsa pele",
+          "text": "Dipolelo tsa hao tsa pele.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "lessons": [
+        "l30-first-sentences"
+      ]
+    },
+    {
+      "id": "u4",
+      "level": 4,
+      "order": 5,
+      "title": {
+        "en": "Everyday English",
+        "zu": {
+          "id": "zu.unit.u4.title",
+          "label": "IsiNgisi sansuku zonke",
+          "text": "IsiNgisi sansuku zonke: ama-SMS nezimpawu.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.unit.u4.title",
+          "label": "Senyesemane sa letsatsi le letsatsi",
+          "text": "Senyesemane sa letsatsi le letsatsi: di-SMS le matshwao.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "lessons": [
+        "l40-sms",
+        "l41-signs"
+      ]
+    },
+    {
+      "id": "u5",
+      "level": 5,
+      "order": 6,
+      "title": {
+        "en": "Independent reading",
+        "zu": {
+          "id": "zu.unit.u5.title",
+          "label": "Ukufunda wedwa",
+          "text": "Ukufunda wedwa.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.unit.u5.title",
+          "label": "Ho bala o le mong",
+          "text": "Ho bala o le mong.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "lessons": [
+        "l50-job-notice"
+      ]
+    }
+  ]
+}

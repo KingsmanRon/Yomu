@@ -1,0 +1,484 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l41-signs",
+  "version": 1,
+  "level": 4,
+  "unit": "u4",
+  "order": 2,
+  "minutes": 6,
+  "target": "en",
+  "title": {
+    "en": "Reading common signs",
+    "zu": {
+      "id": "zu.l41-signs.title",
+      "label": "Izimpawu",
+      "text": "Funda izimpawu ezivamile: STOP, EXIT, DANGER, TOILETS, OPEN, CLOSED.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l41-signs.title",
+      "label": "Matshwao",
+      "text": "Bala matshwao a tlwaelehileng: STOP, EXIT, DANGER, TOILETS, OPEN, CLOSED.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Reading common public and workplace signs (STOP, EXIT, DANGER, TOILETS, OPEN, CLOSED) and acting on them.",
+  "objectives": [
+    {
+      "id": "obj.l41.read-signs",
+      "description": "Read common signs (STOP, EXIT, DANGER, TOILETS, OPEN, CLOSED) with no audio and act on their meaning.",
+      "strand": "functional_reading",
+      "masteryCompetencies": [
+        "decode",
+        "understand_written"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-2",
+          "outcome": "aet.2.functional-reading"
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l22.read-sight-words"
+  ],
+  "contrastiveTags": [],
+  "steps": [
+    {
+      "id": "l41-signs.t01",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.stop"
+    },
+    {
+      "id": "l41-signs.t02",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.exit"
+    },
+    {
+      "id": "l41-signs.t03",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.danger"
+    },
+    {
+      "id": "l41-signs.t04",
+      "teach": "word_intro",
+      "lineClip": "teach.word_intro",
+      "word": "en.w.toilets"
+    },
+    {
+      "id": "l41-signs.t05",
+      "teach": "explain",
+      "line": {
+        "zu": {
+          "id": "zu.l41-signs.t05",
+          "text": "OPEN kusho ukuthi kuvuliwe. CLOSED kusho ukuthi kuvaliwe.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.t05",
+          "text": "OPEN e bolela hore ho bulehile. CLOSED e bolela hore ho kwetswe.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "showText": "OPEN    CLOSED"
+    },
+    {
+      "id": "l41-signs.e01",
+      "type": "listen_repeat",
+      "objectives": [
+        "obj.l41.read-signs"
+      ],
+      "instructionClip": "instr.listen_repeat",
+      "items": [
+        "en.w.stop",
+        "en.w.exit",
+        "en.w.danger"
+      ]
+    },
+    {
+      "id": "l41-signs.e02",
+      "type": "real_world",
+      "objectives": [
+        "obj.l41.read-signs"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l41-signs.e02.instr",
+          "text": "Funda uphawu, bese uthinta isithombe esishoyo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e02.instr",
+          "text": "Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sign",
+        "text": "EXIT"
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l41-signs.e02.q",
+          "text": "Lolu phawu lusho ukuthini?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e02.q",
+          "text": "Letshwao lena le bolela eng?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "toilet",
+          "image": "meaning-toilet"
+        },
+        {
+          "id": "out",
+          "image": "meaning-exit"
+        },
+        {
+          "id": "stop",
+          "image": "meaning-stop"
+        }
+      ],
+      "answer": "out"
+    },
+    {
+      "id": "l41-signs.e03",
+      "type": "real_world",
+      "objectives": [
+        "obj.l41.read-signs"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l41-signs.e03.instr",
+          "text": "Funda uphawu, bese uthinta isithombe esishoyo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e03.instr",
+          "text": "Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sign",
+        "text": "DANGER"
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l41-signs.e03.q",
+          "text": "Lolu phawu lusho ukuthini?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e03.q",
+          "text": "Letshwao lena le bolela eng?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "danger",
+          "image": "meaning-danger"
+        },
+        {
+          "id": "open",
+          "image": "meaning-open"
+        },
+        {
+          "id": "toilet",
+          "image": "meaning-toilet"
+        }
+      ],
+      "answer": "danger"
+    },
+    {
+      "id": "l41-signs.e04",
+      "type": "real_world",
+      "objectives": [
+        "obj.l41.read-signs"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l41-signs.e04.instr",
+          "text": "Funda uphawu, bese uthinta isithombe esishoyo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e04.instr",
+          "text": "Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sign",
+        "text": "TOILETS"
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l41-signs.e04.q",
+          "text": "Lolu phawu lusho ukuthini?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e04.q",
+          "text": "Letshwao lena le bolela eng?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "out",
+          "image": "meaning-exit"
+        },
+        {
+          "id": "stop",
+          "image": "meaning-stop"
+        },
+        {
+          "id": "toilet",
+          "image": "meaning-toilet"
+        }
+      ],
+      "answer": "toilet"
+    },
+    {
+      "id": "l41-signs.e05",
+      "type": "real_world",
+      "objectives": [
+        "obj.l41.read-signs"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l41-signs.e05.instr",
+          "text": "Funda uphawu, bese uthinta isithombe esishoyo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e05.instr",
+          "text": "Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sign",
+        "text": "STOP"
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l41-signs.e05.q",
+          "text": "Lolu phawu lusho ukuthini?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e05.q",
+          "text": "Letshwao lena le bolela eng?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "stop",
+          "image": "meaning-stop"
+        },
+        {
+          "id": "danger",
+          "image": "meaning-danger"
+        },
+        {
+          "id": "open",
+          "image": "meaning-open"
+        }
+      ],
+      "answer": "stop"
+    },
+    {
+      "id": "l41-signs.e06",
+      "type": "real_world",
+      "objectives": [
+        "obj.l41.read-signs"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l41-signs.e06.instr",
+          "text": "Funda uphawu, bese uthinta isithombe esishoyo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e06.instr",
+          "text": "Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sign",
+        "text": "CLOSED"
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l41-signs.e06.q",
+          "text": "Ungangena manje?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e06.q",
+          "text": "Na o ka kena hona jwale?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "yes",
+          "image": "meaning-open"
+        },
+        {
+          "id": "no",
+          "image": "meaning-closed"
+        }
+      ],
+      "answer": "no"
+    },
+    {
+      "id": "l41-signs.e07",
+      "type": "real_world",
+      "objectives": [
+        "obj.l41.read-signs"
+      ],
+      "instruction": {
+        "zu": {
+          "id": "zu.l41-signs.e07.instr",
+          "text": "Funda uphawu, bese uthinta isithombe esishoyo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e07.instr",
+          "text": "Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "scenario": {
+        "kind": "sign",
+        "text": "OPEN"
+      },
+      "question": {
+        "zu": {
+          "id": "zu.l41-signs.e07.q",
+          "text": "Ungangena manje?",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l41-signs.e07.q",
+          "text": "Na o ka kena hona jwale?",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "options": [
+        {
+          "id": "no",
+          "image": "meaning-closed"
+        },
+        {
+          "id": "yes",
+          "image": "meaning-open"
+        }
+      ],
+      "answer": "yes"
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l41-signs.intro",
+      "text": "Izimpawu zisitshela okufanele sikwenze nokuthi sihlale siphephile. Eziningi zibhalwe ngezinhlamvu ezinkulu.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l41-signs.intro",
+      "text": "Matshwao a re bolella seo re lokelang ho se etsa le ho dula re bolokehile. A mangata a ngotswe ka ditlhaku tse kgolo.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l41-signs.outro",
+      "text": "Kuhle! Manje uyakwazi ukufunda izimpawu ezibalulekile emsebenzini nasedolobheni.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l41-signs.outro",
+      "text": "Ho hotle! Jwale o kgona ho bala matshwao a bohlokwa mosebetsing le toropong.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

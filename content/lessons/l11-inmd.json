@@ -1,0 +1,362 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l11-inmd",
+  "version": 1,
+  "level": 1,
+  "unit": "u1",
+  "order": 2,
+  "minutes": 6,
+  "target": "en",
+  "title": {
+    "en": "English letter sounds: i, n, m, d (and c)",
+    "zu": {
+      "id": "zu.l11-inmd.title",
+      "label": "i, n, m, d",
+      "text": "Imisindo yesiNgisi: i, n, m, d, kanye no-c.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l11-inmd.title",
+      "label": "i, n, m, d",
+      "text": "Medumo ya Senyesemane: i, n, m, d, le c.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Letter sounds i, n, m, d, and the letter c as /k/, with explicit attention to home-language click letters.",
+  "objectives": [
+    {
+      "id": "obj.l11.inmd-letters",
+      "description": "See the letters i, n, m and d (alone and in short words) and choose their English sounds.",
+      "strand": "phonics",
+      "masteryCompetencies": [
+        "decode"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.letter-sounds"
+        }
+      ]
+    },
+    {
+      "id": "obj.l11.inmd-hear",
+      "description": "Hear the English sounds /ɪ/, /n/, /m/ and /d/ and find their letters.",
+      "strand": "phonemic_awareness",
+      "masteryCompetencies": [
+        "recognise"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.letter-sounds"
+        }
+      ]
+    },
+    {
+      "id": "obj.l11.c-says-k",
+      "description": "Read the letter c as /k/ in English words, not as a home-language click.",
+      "strand": "phonics",
+      "masteryCompetencies": [
+        "decode"
+      ],
+      "reading": true,
+      "aet": [
+        {
+          "level": "aet-1",
+          "outcome": "aet.1.letter-sounds"
+        }
+      ],
+      "contrastiveTags": [
+        "ct.click-letters",
+        "ct.letter-names"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l10.satp-letters"
+  ],
+  "contrastiveTags": [
+    "ct.click-letters",
+    "ct.letter-names",
+    "ct.short-vowels"
+  ],
+  "steps": [
+    {
+      "id": "l11-inmd.t01",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "en.l.i"
+    },
+    {
+      "id": "l11-inmd.t02",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "en.l.n"
+    },
+    {
+      "id": "l11-inmd.t03",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "en.l.m"
+    },
+    {
+      "id": "l11-inmd.t04",
+      "teach": "letter_intro",
+      "lineClip": "teach.letter_intro",
+      "letter": "en.l.d"
+    },
+    {
+      "id": "l11-inmd.e01",
+      "type": "listen_repeat",
+      "objectives": [
+        "obj.l11.inmd-hear"
+      ],
+      "instructionClip": "instr.listen_repeat",
+      "items": [
+        "en.l.i",
+        "en.l.n",
+        "en.l.m",
+        "en.l.d"
+      ]
+    },
+    {
+      "id": "l11-inmd.e02",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l11.inmd-hear"
+      ],
+      "instructionClip": "instr.sound_letter",
+      "mode": "sound_to_letter",
+      "target": "en.l.m",
+      "options": [
+        "en.l.n",
+        "en.l.m",
+        "en.l.d"
+      ]
+    },
+    {
+      "id": "l11-inmd.e03",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l11.inmd-hear"
+      ],
+      "instructionClip": "instr.sound_letter",
+      "mode": "sound_to_letter",
+      "target": "en.l.i",
+      "options": [
+        "en.l.i",
+        "en.l.a",
+        "en.l.n"
+      ]
+    },
+    {
+      "id": "l11-inmd.e04",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l11.inmd-letters"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "en.l.n",
+      "options": [
+        "en.l.m",
+        "en.l.n",
+        "en.l.d"
+      ]
+    },
+    {
+      "id": "l11-inmd.e05",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l11.inmd-letters"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "en.l.d",
+      "options": [
+        "en.l.d",
+        "en.l.t",
+        "en.l.p"
+      ]
+    },
+    {
+      "id": "l11-inmd.e06",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l11.inmd-letters"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "en.l.i",
+      "options": [
+        "en.l.a",
+        "en.l.i",
+        "en.l.e"
+      ]
+    },
+    {
+      "id": "l11-inmd.e07",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l11.inmd-letters"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "mode": "letter_to_sound",
+      "target": "en.l.m",
+      "options": [
+        "en.l.m",
+        "en.l.n",
+        "en.l.s"
+      ]
+    },
+    {
+      "id": "l11-inmd.t05",
+      "teach": "letter_intro",
+      "line": {
+        "zu": {
+          "id": "zu.l11-inmd.t05",
+          "text": "Manje uhlamvu c. EsiZulwini u-c uyaqhafaza, njengasegameni elithi icici. EsiNgisini, egameni elithi cat, u-c akaqhafazi: uzwakala njengo-k.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l11-inmd.t05",
+          "text": "Jwale tlhaku c. Ho Senyesemane, lentsweng cat, c e utlwahala jwalo ka k. Ha e utlwahale jwalo ka modumo wa q wa Sesotho.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "letter": "en.l.c"
+    },
+    {
+      "id": "l11-inmd.t06",
+      "teach": "contrast_note",
+      "pathways": [
+        "zu"
+      ],
+      "line": {
+        "zu": {
+          "id": "zu.l11-inmd.t06",
+          "text": "Lalela umehluko: lokhu ukuqhafaza kwesiZulu, futhi lokhu ngu-k wesiNgisi. Egameni elithi cat, sisebenzisa u-k.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "tag": "ct.click-letters",
+      "showText": "cat"
+    },
+    {
+      "id": "l11-inmd.e08",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l11.c-says-k"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "feedback": {
+        "wrong_choice": "fb.first_sound"
+      },
+      "mode": "letter_to_sound",
+      "target": "en.l.c",
+      "options": [
+        "zu.l.c",
+        "en.l.c",
+        "en.l.s"
+      ]
+    },
+    {
+      "id": "l11-inmd.e09",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l11.c-says-k"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.letter_sound",
+      "feedback": {
+        "wrong_choice": "fb.first_sound"
+      },
+      "mode": "letter_to_sound",
+      "target": "en.l.c",
+      "options": [
+        "st.l.q",
+        "en.l.s",
+        "en.l.c"
+      ]
+    },
+    {
+      "id": "l11-inmd.e10",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l11.c-says-k"
+      ],
+      "instructionClip": "instr.word_sound",
+      "mode": "letter_to_sound",
+      "target": "en.w.can",
+      "options": [
+        "en.w.man",
+        "en.w.can",
+        "en.w.pan"
+      ]
+    },
+    {
+      "id": "l11-inmd.e11",
+      "type": "letter_sound",
+      "objectives": [
+        "obj.l11.inmd-letters"
+      ],
+      "instructionClip": "instr.word_sound",
+      "mode": "letter_to_sound",
+      "target": "en.w.man",
+      "options": [
+        "en.w.pan",
+        "en.w.can",
+        "en.w.man"
+      ]
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l11-inmd.intro",
+      "text": "Siqhubeka nezinhlamvu ezine ezintsha: i, n, m, d. Bese sifunda uhlamvu c, oluzwakala ngendlela ehlukile esiNgisini.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l11-inmd.intro",
+      "text": "Re tswela pele ka ditlhaku tse nne tse ntjha: i, n, m, d. Ebe re ithuta tlhaku c, e utlwahalang ka tsela e fapaneng ho Senyesemane.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l11-inmd.outro",
+      "text": "Kuhle! Manje wazi i, n, m, d, futhi uyazi ukuthi u-c esiNgisini uzwakala njengo-k.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l11-inmd.outro",
+      "text": "Ho hotle! Jwale o tseba i, n, m, d, mme o a tseba hore c ho Senyesemane e utlwahala jwalo ka k.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

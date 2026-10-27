@@ -1,0 +1,669 @@
+{
+  "$schema": "../schema/lexicon.schema.json",
+  "entries": [
+    {
+      "id": "zu.l.a",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "a",
+      "audio": {
+        "id": "zu.l.a",
+        "text": "a",
+        "note": "Native isiZulu speaker: say only the vowel sound 'a', as in 'amanzi'.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.e",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "e",
+      "audio": {
+        "id": "zu.l.e",
+        "text": "e",
+        "note": "Native isiZulu speaker: say only the vowel sound 'e', as in 'ekhaya'.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.i",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "i",
+      "audio": {
+        "id": "zu.l.i",
+        "text": "i",
+        "note": "Native isiZulu speaker: say only the vowel sound 'i', as in 'inja'.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.o",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "o",
+      "audio": {
+        "id": "zu.l.o",
+        "text": "o",
+        "note": "Native isiZulu speaker: say only the vowel sound 'o', as in 'olwandle'.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.u",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "u",
+      "audio": {
+        "id": "zu.l.u",
+        "text": "u",
+        "note": "Native isiZulu speaker: say only the vowel sound 'u', as in 'ubisi'.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.m",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "m",
+      "audio": {
+        "id": "zu.l.m",
+        "text": "m",
+        "note": "Native isiZulu speaker: say only the consonant sound 'm' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.s",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "s",
+      "audio": {
+        "id": "zu.l.s",
+        "text": "s",
+        "note": "Native isiZulu speaker: say only the consonant sound 's' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.n",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "n",
+      "audio": {
+        "id": "zu.l.n",
+        "text": "n",
+        "note": "Native isiZulu speaker: say only the consonant sound 'n' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.d",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "d",
+      "audio": {
+        "id": "zu.l.d",
+        "text": "d",
+        "note": "Native isiZulu speaker: say only the consonant sound 'd' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.t",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "t",
+      "audio": {
+        "id": "zu.l.t",
+        "text": "t",
+        "note": "Native isiZulu speaker: say only the consonant sound 't' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.p",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "p",
+      "audio": {
+        "id": "zu.l.p",
+        "text": "p",
+        "note": "Native isiZulu speaker: say only the consonant sound 'p' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.b",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "b",
+      "audio": {
+        "id": "zu.l.b",
+        "text": "b",
+        "note": "Native isiZulu speaker: say only the consonant sound 'b' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.l.c",
+      "lang": "zu",
+      "kind": "letter",
+      "text": "c",
+      "audio": {
+        "id": "zu.l.c",
+        "text": "c",
+        "note": "Native isiZulu speaker: the dental click written c, as in 'icici'. Click only, no vowel.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      },
+      "contrastiveTags": [
+        "ct.click-letters"
+      ]
+    },
+    {
+      "id": "zu.syl.ma",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "ma",
+      "audio": {
+        "id": "zu.syl.ma",
+        "text": "ma",
+        "note": "Native isiZulu speaker: say the syllable 'ma' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.me",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "me",
+      "audio": {
+        "id": "zu.syl.me",
+        "text": "me",
+        "note": "Native isiZulu speaker: say the syllable 'me' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.mi",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "mi",
+      "audio": {
+        "id": "zu.syl.mi",
+        "text": "mi",
+        "note": "Native isiZulu speaker: say the syllable 'mi' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.mo",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "mo",
+      "audio": {
+        "id": "zu.syl.mo",
+        "text": "mo",
+        "note": "Native isiZulu speaker: say the syllable 'mo' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.mu",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "mu",
+      "audio": {
+        "id": "zu.syl.mu",
+        "text": "mu",
+        "note": "Native isiZulu speaker: say the syllable 'mu' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.ba",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "ba",
+      "audio": {
+        "id": "zu.syl.ba",
+        "text": "ba",
+        "note": "Native isiZulu speaker: say the syllable 'ba' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.be",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "be",
+      "audio": {
+        "id": "zu.syl.be",
+        "text": "be",
+        "note": "Native isiZulu speaker: say the syllable 'be' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.bi",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "bi",
+      "audio": {
+        "id": "zu.syl.bi",
+        "text": "bi",
+        "note": "Native isiZulu speaker: say the syllable 'bi' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.bo",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "bo",
+      "audio": {
+        "id": "zu.syl.bo",
+        "text": "bo",
+        "note": "Native isiZulu speaker: say the syllable 'bo' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.bu",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "bu",
+      "audio": {
+        "id": "zu.syl.bu",
+        "text": "bu",
+        "note": "Native isiZulu speaker: say the syllable 'bu' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.le",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "le",
+      "audio": {
+        "id": "zu.syl.le",
+        "text": "le",
+        "note": "Native isiZulu speaker: say the syllable 'le' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.li",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "li",
+      "audio": {
+        "id": "zu.syl.li",
+        "text": "li",
+        "note": "Native isiZulu speaker: say the syllable 'li' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.se",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "se",
+      "audio": {
+        "id": "zu.syl.se",
+        "text": "se",
+        "note": "Native isiZulu speaker: say the syllable 'se' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.si",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "si",
+      "audio": {
+        "id": "zu.syl.si",
+        "text": "si",
+        "note": "Native isiZulu speaker: say the syllable 'si' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.ta",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "ta",
+      "audio": {
+        "id": "zu.syl.ta",
+        "text": "ta",
+        "note": "Native isiZulu speaker: say the syllable 'ta' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.te",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "te",
+      "audio": {
+        "id": "zu.syl.te",
+        "text": "te",
+        "note": "Native isiZulu speaker: say the syllable 'te' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "zu.syl.tha",
+      "lang": "zu",
+      "kind": "syllable",
+      "text": "tha",
+      "audio": {
+        "id": "zu.syl.tha",
+        "text": "tha",
+        "note": "Native isiZulu speaker: say the syllable 'tha' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      },
+      "contrastiveTags": [
+        "ct.aspirated-th-ph"
+      ]
+    },
+    {
+      "id": "zu.w.umama",
+      "lang": "zu",
+      "kind": "word",
+      "text": "umama",
+      "image": "woman",
+      "graphemes": [
+        "u",
+        "ma",
+        "ma"
+      ],
+      "audio": {
+        "id": "zu.w.umama",
+        "text": "umama",
+        "note": "Native isiZulu speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "zu.w.ubaba",
+      "lang": "zu",
+      "kind": "word",
+      "text": "ubaba",
+      "image": "dad",
+      "graphemes": [
+        "u",
+        "ba",
+        "ba"
+      ],
+      "audio": {
+        "id": "zu.w.ubaba",
+        "text": "ubaba",
+        "note": "Native isiZulu speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "zu.w.imali",
+      "lang": "zu",
+      "kind": "word",
+      "text": "imali",
+      "image": "money",
+      "graphemes": [
+        "i",
+        "ma",
+        "li"
+      ],
+      "audio": {
+        "id": "zu.w.imali",
+        "text": "imali",
+        "note": "Native isiZulu speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "zu.w.ubisi",
+      "lang": "zu",
+      "kind": "word",
+      "text": "ubisi",
+      "image": "milk",
+      "graphemes": [
+        "u",
+        "bi",
+        "si"
+      ],
+      "audio": {
+        "id": "zu.w.ubisi",
+        "text": "ubisi",
+        "note": "Native isiZulu speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "zu.w.amanzi",
+      "lang": "zu",
+      "kind": "word",
+      "text": "amanzi",
+      "image": "water",
+      "graphemes": [
+        "a",
+        "ma",
+        "nzi"
+      ],
+      "audio": {
+        "id": "zu.w.amanzi",
+        "text": "amanzi",
+        "note": "Native isiZulu speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "zu.w.inja",
+      "lang": "zu",
+      "kind": "word",
+      "text": "inja",
+      "image": "dog",
+      "graphemes": [
+        "i",
+        "nja"
+      ],
+      "audio": {
+        "id": "zu.w.inja",
+        "text": "inja",
+        "note": "Native isiZulu speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "zu.w.indlu",
+      "lang": "zu",
+      "kind": "word",
+      "text": "indlu",
+      "image": "house",
+      "graphemes": [
+        "i",
+        "ndlu"
+      ],
+      "audio": {
+        "id": "zu.w.indlu",
+        "text": "indlu",
+        "note": "Native isiZulu speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "zu.w.ibhasi",
+      "lang": "zu",
+      "kind": "word",
+      "text": "ibhasi",
+      "image": "bus",
+      "graphemes": [
+        "i",
+        "bha",
+        "si"
+      ],
+      "audio": {
+        "id": "zu.w.ibhasi",
+        "text": "ibhasi",
+        "note": "Native isiZulu speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "zu.w.ikati",
+      "lang": "zu",
+      "kind": "word",
+      "text": "ikati",
+      "image": "cat",
+      "graphemes": [
+        "i",
+        "ka",
+        "ti"
+      ],
+      "audio": {
+        "id": "zu.w.ikati",
+        "text": "ikati",
+        "note": "Native isiZulu speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "zu.w.isinkwa",
+      "lang": "zu",
+      "kind": "word",
+      "text": "isinkwa",
+      "image": "bread",
+      "graphemes": [
+        "i",
+        "si",
+        "nkwa"
+      ],
+      "audio": {
+        "id": "zu.w.isinkwa",
+        "text": "isinkwa",
+        "note": "Native isiZulu speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    }
+  ]
+}

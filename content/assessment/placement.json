@@ -1,0 +1,288 @@
+{
+  "$schema": "../schema/assessment.schema.json",
+  "id": "placement",
+  "version": "placement-v1",
+  "intro": {
+    "zu": {
+      "id": "zu.assess.intro",
+      "text": "Masiqale. Lalela umbuzo ngamunye. Uma ungazi, khetha nje isithombe, kulungile.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.assess.intro",
+      "text": "A re qaleng. Mamela potso ka nngwe. Ha o sa tsebe, kgetha feela setshwantsho, ho lokile.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.assess.outro",
+      "text": "Siqedile. Ngiyabonga ngokuzama.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.assess.outro",
+      "text": "Re qetile. Ke a leboha ka ho leka.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "as.hl.zu.1",
+      "section": "hl_decoding",
+      "format": "read_picture",
+      "target": "zu.w.imali",
+      "options": [
+        "zu.w.imali",
+        "zu.w.ubisi",
+        "zu.w.inja"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.read_picture"
+    },
+    {
+      "id": "as.hl.zu.2",
+      "section": "hl_decoding",
+      "format": "read_picture",
+      "target": "zu.w.ubaba",
+      "options": [
+        "zu.w.ubaba",
+        "zu.w.umama",
+        "zu.w.indlu"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.read_picture"
+    },
+    {
+      "id": "as.hl.zu.3",
+      "section": "hl_decoding",
+      "format": "read_picture",
+      "target": "zu.w.amanzi",
+      "options": [
+        "zu.w.amanzi",
+        "zu.w.isinkwa",
+        "zu.w.ikati"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.read_picture"
+    },
+    {
+      "id": "as.hl.st.1",
+      "section": "hl_decoding",
+      "format": "read_picture",
+      "target": "st.w.tjhelete",
+      "options": [
+        "st.w.tjhelete",
+        "st.w.lebese",
+        "st.w.ntja"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.read_picture"
+    },
+    {
+      "id": "as.hl.st.2",
+      "section": "hl_decoding",
+      "format": "read_picture",
+      "target": "st.w.ntate",
+      "options": [
+        "st.w.ntate",
+        "st.w.mme",
+        "st.w.ntlo"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.read_picture"
+    },
+    {
+      "id": "as.hl.st.3",
+      "section": "hl_decoding",
+      "format": "read_picture",
+      "target": "st.w.metsi",
+      "options": [
+        "st.w.metsi",
+        "st.w.bohobe",
+        "st.w.katse"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.read_picture"
+    },
+    {
+      "id": "as.lr.1",
+      "section": "letter_recognition",
+      "format": "hear_choose_text",
+      "target": "en.l.s",
+      "options": [
+        "en.l.s",
+        "en.l.m",
+        "en.l.t"
+      ],
+      "useLetterName": true,
+      "instructionClip": "instr.letter_name"
+    },
+    {
+      "id": "as.lr.2",
+      "section": "letter_recognition",
+      "format": "hear_choose_text",
+      "target": "en.l.b",
+      "options": [
+        "en.l.d",
+        "en.l.b",
+        "en.l.p"
+      ],
+      "useLetterName": true,
+      "instructionClip": "instr.letter_name"
+    },
+    {
+      "id": "as.lr.3",
+      "section": "letter_recognition",
+      "format": "hear_choose_text",
+      "target": "en.l.m",
+      "options": [
+        "en.l.n",
+        "en.l.u",
+        "en.l.m"
+      ],
+      "useLetterName": true,
+      "instructionClip": "instr.letter_name"
+    },
+    {
+      "id": "as.ls.1",
+      "section": "letter_sounds",
+      "format": "hear_choose_text",
+      "target": "en.l.t",
+      "options": [
+        "en.l.d",
+        "en.l.t",
+        "en.l.p"
+      ],
+      "instructionClip": "instr.sound_letter"
+    },
+    {
+      "id": "as.ls.2",
+      "section": "letter_sounds",
+      "format": "hear_choose_text",
+      "target": "en.l.a",
+      "options": [
+        "en.l.i",
+        "en.l.e",
+        "en.l.a"
+      ],
+      "instructionClip": "instr.sound_letter"
+    },
+    {
+      "id": "as.ls.3",
+      "section": "letter_sounds",
+      "format": "hear_choose_text",
+      "target": "en.l.n",
+      "options": [
+        "en.l.n",
+        "en.l.m",
+        "en.l.s"
+      ],
+      "instructionClip": "instr.sound_letter"
+    },
+    {
+      "id": "as.sw.1",
+      "section": "sight_words",
+      "format": "hear_choose_text",
+      "target": "en.sw.the",
+      "options": [
+        "en.sw.you",
+        "en.sw.the",
+        "en.sw.is"
+      ],
+      "instructionClip": "instr.which_word"
+    },
+    {
+      "id": "as.sw.2",
+      "section": "sight_words",
+      "format": "hear_choose_text",
+      "target": "en.sw.you",
+      "options": [
+        "en.sw.you",
+        "en.sw.the",
+        "en.sw.a"
+      ],
+      "instructionClip": "instr.which_word"
+    },
+    {
+      "id": "as.sw.3",
+      "section": "sight_words",
+      "format": "hear_choose_text",
+      "target": "en.sw.is",
+      "options": [
+        "en.sw.i",
+        "en.sw.a",
+        "en.sw.is"
+      ],
+      "instructionClip": "instr.which_word"
+    },
+    {
+      "id": "as.td.1",
+      "section": "transfer_decoding",
+      "format": "read_picture",
+      "target": "en.w.sun",
+      "options": [
+        "en.w.bus",
+        "en.w.sun",
+        "en.w.man"
+      ],
+      "instructionClip": "instr.read_picture"
+    },
+    {
+      "id": "as.td.2",
+      "section": "transfer_decoding",
+      "format": "read_picture",
+      "target": "en.w.ten",
+      "options": [
+        "en.w.tin",
+        "en.w.pen",
+        "en.w.ten"
+      ],
+      "instructionClip": "instr.read_picture"
+    },
+    {
+      "id": "as.sr.1",
+      "section": "sentence_reading",
+      "format": "read_picture",
+      "target": "en.sen.dad-is-at-the-shop",
+      "options": [
+        "en.sen.the-bus-is-here",
+        "en.sen.dad-is-at-the-shop",
+        "en.sen.the-cat-is-here"
+      ],
+      "instructionClip": "instr.read_sentence_picture"
+    },
+    {
+      "id": "as.sr.2",
+      "section": "sentence_reading",
+      "format": "read_picture",
+      "target": "en.sen.the-man-can-sit",
+      "options": [
+        "en.sen.the-man-can-sit",
+        "en.sen.i-am-at-work",
+        "en.sen.dad-is-at-the-shop"
+      ],
+      "instructionClip": "instr.read_sentence_picture"
+    }
+  ]
+}

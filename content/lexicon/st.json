@@ -1,0 +1,680 @@
+{
+  "$schema": "../schema/lexicon.schema.json",
+  "entries": [
+    {
+      "id": "st.l.a",
+      "lang": "st",
+      "kind": "letter",
+      "text": "a",
+      "audio": {
+        "id": "st.l.a",
+        "text": "a",
+        "note": "Native South African Sesotho speaker: say only the vowel sound 'a', as in 'ntate'.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.e",
+      "lang": "st",
+      "kind": "letter",
+      "text": "e",
+      "audio": {
+        "id": "st.l.e",
+        "text": "e",
+        "note": "Native South African Sesotho speaker: say only the vowel sound 'e', as in 'lebese'.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.i",
+      "lang": "st",
+      "kind": "letter",
+      "text": "i",
+      "audio": {
+        "id": "st.l.i",
+        "text": "i",
+        "note": "Native South African Sesotho speaker: say only the vowel sound 'i', as in 'metsi'.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.o",
+      "lang": "st",
+      "kind": "letter",
+      "text": "o",
+      "audio": {
+        "id": "st.l.o",
+        "text": "o",
+        "note": "Native South African Sesotho speaker: say only the vowel sound 'o', as in 'ntlo'.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.u",
+      "lang": "st",
+      "kind": "letter",
+      "text": "u",
+      "audio": {
+        "id": "st.l.u",
+        "text": "u",
+        "note": "Native South African Sesotho speaker: say only the vowel sound 'u', as in 'thuso'.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.m",
+      "lang": "st",
+      "kind": "letter",
+      "text": "m",
+      "audio": {
+        "id": "st.l.m",
+        "text": "m",
+        "note": "Native South African Sesotho speaker: say only the consonant sound 'm' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.s",
+      "lang": "st",
+      "kind": "letter",
+      "text": "s",
+      "audio": {
+        "id": "st.l.s",
+        "text": "s",
+        "note": "Native South African Sesotho speaker: say only the consonant sound 's' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.n",
+      "lang": "st",
+      "kind": "letter",
+      "text": "n",
+      "audio": {
+        "id": "st.l.n",
+        "text": "n",
+        "note": "Native South African Sesotho speaker: say only the consonant sound 'n' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.d",
+      "lang": "st",
+      "kind": "letter",
+      "text": "d",
+      "audio": {
+        "id": "st.l.d",
+        "text": "d",
+        "note": "Native South African Sesotho speaker: say only the consonant sound 'd' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.t",
+      "lang": "st",
+      "kind": "letter",
+      "text": "t",
+      "audio": {
+        "id": "st.l.t",
+        "text": "t",
+        "note": "Native South African Sesotho speaker: say only the consonant sound 't' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.p",
+      "lang": "st",
+      "kind": "letter",
+      "text": "p",
+      "audio": {
+        "id": "st.l.p",
+        "text": "p",
+        "note": "Native South African Sesotho speaker: say only the consonant sound 'p' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.b",
+      "lang": "st",
+      "kind": "letter",
+      "text": "b",
+      "audio": {
+        "id": "st.l.b",
+        "text": "b",
+        "note": "Native South African Sesotho speaker: say only the consonant sound 'b' as it sounds in your language, with no vowel after it.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.l.q",
+      "lang": "st",
+      "kind": "letter",
+      "text": "q",
+      "audio": {
+        "id": "st.l.q",
+        "text": "q",
+        "note": "Native South African Sesotho speaker: the click written q, as in 'ho qala'. Click only, no vowel.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      },
+      "contrastiveTags": [
+        "ct.click-letters"
+      ]
+    },
+    {
+      "id": "st.syl.ma",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "ma",
+      "audio": {
+        "id": "st.syl.ma",
+        "text": "ma",
+        "note": "Native South African Sesotho speaker: say the syllable 'ma' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.me",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "me",
+      "audio": {
+        "id": "st.syl.me",
+        "text": "me",
+        "note": "Native South African Sesotho speaker: say the syllable 'me' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.mi",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "mi",
+      "audio": {
+        "id": "st.syl.mi",
+        "text": "mi",
+        "note": "Native South African Sesotho speaker: say the syllable 'mi' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.mo",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "mo",
+      "audio": {
+        "id": "st.syl.mo",
+        "text": "mo",
+        "note": "Native South African Sesotho speaker: say the syllable 'mo' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.mu",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "mu",
+      "audio": {
+        "id": "st.syl.mu",
+        "text": "mu",
+        "note": "Native South African Sesotho speaker: say the syllable 'mu' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.ba",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "ba",
+      "audio": {
+        "id": "st.syl.ba",
+        "text": "ba",
+        "note": "Native South African Sesotho speaker: say the syllable 'ba' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.be",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "be",
+      "audio": {
+        "id": "st.syl.be",
+        "text": "be",
+        "note": "Native South African Sesotho speaker: say the syllable 'be' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.bi",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "bi",
+      "audio": {
+        "id": "st.syl.bi",
+        "text": "bi",
+        "note": "Native South African Sesotho speaker: say the syllable 'bi' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.bo",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "bo",
+      "audio": {
+        "id": "st.syl.bo",
+        "text": "bo",
+        "note": "Native South African Sesotho speaker: say the syllable 'bo' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.bu",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "bu",
+      "audio": {
+        "id": "st.syl.bu",
+        "text": "bu",
+        "note": "Native South African Sesotho speaker: say the syllable 'bu' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.le",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "le",
+      "audio": {
+        "id": "st.syl.le",
+        "text": "le",
+        "note": "Native South African Sesotho speaker: say the syllable 'le' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.li",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "li",
+      "audio": {
+        "id": "st.syl.li",
+        "text": "li",
+        "note": "Native South African Sesotho speaker: say the syllable 'li' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.se",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "se",
+      "audio": {
+        "id": "st.syl.se",
+        "text": "se",
+        "note": "Native South African Sesotho speaker: say the syllable 'se' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.si",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "si",
+      "audio": {
+        "id": "st.syl.si",
+        "text": "si",
+        "note": "Native South African Sesotho speaker: say the syllable 'si' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.ta",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "ta",
+      "audio": {
+        "id": "st.syl.ta",
+        "text": "ta",
+        "note": "Native South African Sesotho speaker: say the syllable 'ta' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.te",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "te",
+      "audio": {
+        "id": "st.syl.te",
+        "text": "te",
+        "note": "Native South African Sesotho speaker: say the syllable 'te' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.tsi",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "tsi",
+      "audio": {
+        "id": "st.syl.tsi",
+        "text": "tsi",
+        "note": "Native South African Sesotho speaker: say the syllable 'tsi' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      }
+    },
+    {
+      "id": "st.syl.tha",
+      "lang": "st",
+      "kind": "syllable",
+      "text": "tha",
+      "audio": {
+        "id": "st.syl.tha",
+        "text": "tha",
+        "note": "Native South African Sesotho speaker: say the syllable 'tha' clearly, once.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1
+      },
+      "contrastiveTags": [
+        "ct.aspirated-th-ph"
+      ]
+    },
+    {
+      "id": "st.w.mme",
+      "lang": "st",
+      "kind": "word",
+      "text": "mme",
+      "image": "woman",
+      "graphemes": [
+        "m",
+        "me"
+      ],
+      "audio": {
+        "id": "st.w.mme",
+        "text": "mme",
+        "note": "Native South African Sesotho speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "st.w.ntate",
+      "lang": "st",
+      "kind": "word",
+      "text": "ntate",
+      "image": "dad",
+      "graphemes": [
+        "n",
+        "ta",
+        "te"
+      ],
+      "audio": {
+        "id": "st.w.ntate",
+        "text": "ntate",
+        "note": "Native South African Sesotho speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "st.w.tjhelete",
+      "lang": "st",
+      "kind": "word",
+      "text": "tjhelete",
+      "image": "money",
+      "graphemes": [
+        "tjhe",
+        "le",
+        "te"
+      ],
+      "audio": {
+        "id": "st.w.tjhelete",
+        "text": "tjhelete",
+        "note": "Native South African Sesotho speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "st.w.lebese",
+      "lang": "st",
+      "kind": "word",
+      "text": "lebese",
+      "image": "milk",
+      "graphemes": [
+        "le",
+        "be",
+        "se"
+      ],
+      "audio": {
+        "id": "st.w.lebese",
+        "text": "lebese",
+        "note": "Native South African Sesotho speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "st.w.metsi",
+      "lang": "st",
+      "kind": "word",
+      "text": "metsi",
+      "image": "water",
+      "graphemes": [
+        "me",
+        "tsi"
+      ],
+      "audio": {
+        "id": "st.w.metsi",
+        "text": "metsi",
+        "note": "Native South African Sesotho speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "st.w.ntja",
+      "lang": "st",
+      "kind": "word",
+      "text": "ntja",
+      "image": "dog",
+      "graphemes": [
+        "n",
+        "tja"
+      ],
+      "audio": {
+        "id": "st.w.ntja",
+        "text": "ntja",
+        "note": "Native South African Sesotho speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "st.w.ntlo",
+      "lang": "st",
+      "kind": "word",
+      "text": "ntlo",
+      "image": "house",
+      "graphemes": [
+        "n",
+        "tlo"
+      ],
+      "audio": {
+        "id": "st.w.ntlo",
+        "text": "ntlo",
+        "note": "Native South African Sesotho speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "st.w.bese",
+      "lang": "st",
+      "kind": "word",
+      "text": "bese",
+      "image": "bus",
+      "graphemes": [
+        "be",
+        "se"
+      ],
+      "audio": {
+        "id": "st.w.bese",
+        "text": "bese",
+        "note": "Native South African Sesotho speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "st.w.katse",
+      "lang": "st",
+      "kind": "word",
+      "text": "katse",
+      "image": "cat",
+      "graphemes": [
+        "ka",
+        "tse"
+      ],
+      "audio": {
+        "id": "st.w.katse",
+        "text": "katse",
+        "note": "Native South African Sesotho speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    },
+    {
+      "id": "st.w.bohobe",
+      "lang": "st",
+      "kind": "word",
+      "text": "bohobe",
+      "image": "bread",
+      "graphemes": [
+        "bo",
+        "ho",
+        "be"
+      ],
+      "audio": {
+        "id": "st.w.bohobe",
+        "text": "bohobe",
+        "note": "Native South African Sesotho speaker: say the word as in everyday speech, clearly.",
+        "review": {
+          "status": "draft"
+        },
+        "seconds": 1.2
+      }
+    }
+  ]
+}

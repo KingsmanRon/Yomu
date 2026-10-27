@@ -1,0 +1,327 @@
+{
+  "$schema": "../schema/lesson.schema.json",
+  "id": "l02-bridge",
+  "version": 1,
+  "level": 0,
+  "unit": "u0",
+  "order": 3,
+  "minutes": 5,
+  "target": "home",
+  "title": {
+    "en": "The same letters in English: what stays the same and what changes",
+    "zu": {
+      "id": "zu.l02-bridge.title",
+      "label": "Izinhlamvu esiNgisini",
+      "text": "Izinhlamvu ezifanayo esiNgisini: okufanayo nokushintshayo.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l02-bridge.title",
+      "label": "Ditlhaku ho Senyesemane",
+      "text": "Ditlhaku tse tshwanang ho Senyesemane: se tshwanang le se fetohang.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "summary": "Carrying home-language decoding into English: letters that keep a similar sound and letters that change (clicks, th, vowels).",
+  "objectives": [
+    {
+      "id": "obj.l02.same-letters",
+      "description": "Recognise that letters such as m, s, n and d make similar sounds in the home language and in English.",
+      "strand": "home_language_bridge",
+      "masteryCompetencies": [
+        "recognise"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "pre-aet",
+          "outcome": "aet.pre.phonological-awareness"
+        }
+      ]
+    },
+    {
+      "id": "obj.l02.changed-letters",
+      "description": "Recognise letters and letter pairs that sound different in English: click letters, th, and vowels such as u in 'bus'.",
+      "strand": "home_language_bridge",
+      "masteryCompetencies": [
+        "recognise"
+      ],
+      "reading": false,
+      "aet": [
+        {
+          "level": "pre-aet",
+          "outcome": "aet.pre.phonological-awareness"
+        }
+      ],
+      "contrastiveTags": [
+        "ct.click-letters",
+        "ct.aspirated-th-ph",
+        "ct.short-vowels"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "obj.l01.hl-syllables"
+  ],
+  "contrastiveTags": [
+    "ct.click-letters",
+    "ct.aspirated-th-ph",
+    "ct.short-vowels"
+  ],
+  "steps": [
+    {
+      "id": "l02-bridge.t01",
+      "teach": "explain",
+      "line": {
+        "zu": {
+          "id": "zu.l02-bridge.t01",
+          "text": "Lezi zinhlamvu zizwakala cishe ngendlela efanayo esiZulwini nasesiNgisini.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l02-bridge.t01",
+          "text": "Ditlhaku tsena di utlwahala hoo e ka bang ka tsela e tshwanang ho Sesotho le ho Senyesemane.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "showText": "m  s  n  d"
+    },
+    {
+      "id": "l02-bridge.e01",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l02.same-letters"
+      ],
+      "instructionClip": "instr.same_different",
+      "mode": "same_different",
+      "pair": [
+        "hl.l.m",
+        "en.l.m"
+      ],
+      "same": true
+    },
+    {
+      "id": "l02-bridge.e02",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l02.same-letters"
+      ],
+      "instructionClip": "instr.same_different",
+      "mode": "same_different",
+      "pair": [
+        "hl.l.s",
+        "en.l.s"
+      ],
+      "same": true
+    },
+    {
+      "id": "l02-bridge.e03",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l02.same-letters"
+      ],
+      "instructionClip": "instr.same_different",
+      "mode": "same_different",
+      "pair": [
+        "hl.l.n",
+        "en.l.n"
+      ],
+      "same": true
+    },
+    {
+      "id": "l02-bridge.e04",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l02.same-letters"
+      ],
+      "instructionClip": "instr.same_different",
+      "mode": "same_different",
+      "pair": [
+        "hl.l.d",
+        "en.l.d"
+      ],
+      "same": true
+    },
+    {
+      "id": "l02-bridge.t02",
+      "teach": "contrast_note",
+      "pathways": [
+        "zu"
+      ],
+      "line": {
+        "zu": {
+          "id": "zu.l02-bridge.t02",
+          "text": "Kodwa qaphela! EsiZulwini, u-c, u-q no-x bayaqhafaza, njengo-c egameni elithi icici. EsiNgisini abaqhafazi. Egameni elithi cat, u-c uzwakala njengo-k.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "tag": "ct.click-letters",
+      "showText": "c  q  x"
+    },
+    {
+      "id": "l02-bridge.t03",
+      "teach": "contrast_note",
+      "pathways": [
+        "st"
+      ],
+      "line": {
+        "st": {
+          "id": "st.l02-bridge.t03",
+          "text": "Empa hlokomela! Ho Sesotho, q e ngola modumo o kang o lentsweng qala. Ho Senyesemane, q ha e utlwahale jwalo.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "tag": "ct.click-letters",
+      "showText": "q"
+    },
+    {
+      "id": "l02-bridge.e05",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l02.changed-letters"
+      ],
+      "pathways": [
+        "zu"
+      ],
+      "instructionClip": "instr.same_different",
+      "mode": "same_different",
+      "pair": [
+        "zu.l.c",
+        "en.l.c"
+      ],
+      "same": false
+    },
+    {
+      "id": "l02-bridge.e06",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l02.changed-letters"
+      ],
+      "pathways": [
+        "st"
+      ],
+      "instructionClip": "instr.same_different",
+      "mode": "same_different",
+      "pair": [
+        "st.l.q",
+        "en.l.q"
+      ],
+      "same": false
+    },
+    {
+      "id": "l02-bridge.t04",
+      "teach": "contrast_note",
+      "line": {
+        "zu": {
+          "id": "zu.l02-bridge.t04",
+          "text": "Futhi u-th: esiZulwini u-th usegameni elithi thatha. EsiNgisini u-th uzwakala ngendlela ehlukile, njengasegameni elithi the.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l02-bridge.t04",
+          "text": "Hape th: ho Sesotho th e ka lentsweng thuto. Ho Senyesemane th e utlwahala ka tsela e fapaneng, jwalo ka lentsweng the.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "tag": "ct.aspirated-th-ph",
+      "showText": "th"
+    },
+    {
+      "id": "l02-bridge.e07",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l02.changed-letters"
+      ],
+      "instructionClip": "instr.same_different",
+      "mode": "same_different",
+      "pair": [
+        "hl.syl.tha",
+        "en.sw.the"
+      ],
+      "same": false
+    },
+    {
+      "id": "l02-bridge.t05",
+      "teach": "explain",
+      "line": {
+        "zu": {
+          "id": "zu.l02-bridge.t05",
+          "text": "Nonkamisa besiNgisi bangazwakala ngendlela ehlukile kancane. Sizobafunda kahle ezifundweni ezilandelayo.",
+          "review": {
+            "status": "draft"
+          }
+        },
+        "st": {
+          "id": "st.l02-bridge.t05",
+          "text": "Le ditlhaku a, e, i, o, u di ka utlwahala ka tsela e fapaneng hanyane ho Senyesemane. Re tla di ithuta hantle dithutong tse latelang.",
+          "review": {
+            "status": "draft"
+          }
+        }
+      },
+      "showText": "a  e  i  o  u"
+    },
+    {
+      "id": "l02-bridge.e08",
+      "type": "minimal_pair",
+      "objectives": [
+        "obj.l02.changed-letters"
+      ],
+      "instructionClip": "instr.same_different",
+      "mode": "same_different",
+      "pair": [
+        "hl.l.u",
+        "en.l.u"
+      ],
+      "same": false
+    }
+  ],
+  "intro": {
+    "zu": {
+      "id": "zu.l02-bridge.intro",
+      "text": "Usuyakwazi ukufunda ngesiZulu. IsiNgisi sisebenzisa izinhlamvu ezifanayo, kodwa ezinye zizwakala ngendlela ehlukile. Asibheke.",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l02-bridge.intro",
+      "text": "O se o kgona ho bala ka Sesotho. Senyesemane se sebedisa ditlhaku tse tshwanang, empa tse ding di utlwahala ka tsela e fapaneng. A re shebeng.",
+      "review": {
+        "status": "draft"
+      }
+    }
+  },
+  "outro": {
+    "zu": {
+      "id": "zu.l02-bridge.outro",
+      "text": "Manje uyazi: izinhlamvu eziningi ziyafana, kodwa ezinye zishintsha esiNgisini. Usukulungele izinhlamvu zesiNgisi!",
+      "review": {
+        "status": "draft"
+      }
+    },
+    "st": {
+      "id": "st.l02-bridge.outro",
+      "text": "Jwale o a tseba: ditlhaku tse ngata di a tshwana, empa tse ding di a fetoha ho Senyesemane. O se o loketse ditlhaku tsa Senyesemane!",
+      "review": {
+        "status": "draft"
+      }
+    }
+  }
+}

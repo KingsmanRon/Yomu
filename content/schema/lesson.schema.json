@@ -1,0 +1,1358 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^l\\d\\d-[a-z0-9-]+$"
+    },
+    "version": {
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "unit": {
+      "type": "string",
+      "pattern": "^u\\d$"
+    },
+    "order": {
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991
+    },
+    "minutes": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 10
+    },
+    "target": {
+      "type": "string",
+      "enum": [
+        "en",
+        "home"
+      ]
+    },
+    "title": {
+      "type": "object",
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 3
+        },
+        "zu": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "st": {
+          "$ref": "#/$defs/__schema0"
+        }
+      },
+      "required": [
+        "en",
+        "zu",
+        "st"
+      ],
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 10
+    },
+    "objectives": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema7"
+      }
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema8"
+      }
+    },
+    "contrastiveTags": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema10"
+      }
+    },
+    "intro": {
+      "$ref": "#/$defs/__schema12"
+    },
+    "outro": {
+      "$ref": "#/$defs/__schema12"
+    },
+    "steps": {
+      "minItems": 3,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema16"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "level",
+    "unit",
+    "order",
+    "minutes",
+    "target",
+    "title",
+    "summary",
+    "objectives",
+    "prerequisites",
+    "contrastiveTags",
+    "intro",
+    "outro",
+    "steps"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "text": {
+          "$ref": "#/$defs/__schema2"
+        },
+        "note": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "seconds": {
+          "$ref": "#/$defs/__schema4"
+        },
+        "review": {
+          "$ref": "#/$defs/__schema5"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "review"
+      ],
+      "additionalProperties": false
+    },
+    "__schema1": {
+      "type": "string",
+      "pattern": "^(zu|st|en)\\.[a-z0-9][a-z0-9._-]*$"
+    },
+    "__schema2": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema3": {
+      "type": "string"
+    },
+    "__schema4": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 90
+    },
+    "__schema5": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/__schema6"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "$ref": "#/$defs/__schema6"
+              },
+              "role": {
+                "type": "string",
+                "enum": [
+                  "native_speaker",
+                  "adult_literacy_educator",
+                  "linguist",
+                  "aet_specialist",
+                  "voice_director"
+                ]
+              },
+              "date": {
+                "type": "string",
+                "format": "date",
+                "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+              },
+              "notes": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "status",
+              "role",
+              "date"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "__schema6": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "native_speaker_reviewed",
+        "educator_reviewed",
+        "approved"
+      ]
+    },
+    "__schema7": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/__schema8"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 10
+        },
+        "strand": {
+          "type": "string",
+          "enum": [
+            "home_language_bridge",
+            "phonemic_awareness",
+            "phonics",
+            "decoding",
+            "sight_words",
+            "vocabulary",
+            "comprehension",
+            "writing",
+            "functional_reading"
+          ]
+        },
+        "masteryCompetencies": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/__schema9"
+          }
+        },
+        "reading": {
+          "type": "boolean"
+        },
+        "contrastiveTags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/__schema10"
+          }
+        },
+        "aet": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/__schema11"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "description",
+        "strand",
+        "masteryCompetencies",
+        "reading",
+        "aet"
+      ],
+      "additionalProperties": false
+    },
+    "__schema8": {
+      "type": "string",
+      "pattern": "^obj\\.[a-z0-9][a-z0-9.-]*$"
+    },
+    "__schema9": {
+      "type": "string",
+      "enum": [
+        "recognise",
+        "understand_spoken",
+        "repeat",
+        "decode",
+        "understand_written",
+        "write"
+      ]
+    },
+    "__schema10": {
+      "type": "string",
+      "pattern": "^ct\\.[a-z0-9-]+$"
+    },
+    "__schema11": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": [
+            "pre-aet",
+            "aet-1",
+            "aet-2",
+            "aet-3",
+            "aet-4"
+          ]
+        },
+        "outcome": {
+          "type": "string",
+          "pattern": "^aet\\.[a-z0-9.-]+$"
+        }
+      },
+      "required": [
+        "level",
+        "outcome"
+      ],
+      "additionalProperties": false
+    },
+    "__schema12": {
+      "type": "object",
+      "properties": {
+        "zu": {
+          "$ref": "#/$defs/__schema13"
+        },
+        "st": {
+          "$ref": "#/$defs/__schema15"
+        }
+      },
+      "additionalProperties": false
+    },
+    "__schema13": {
+      "$ref": "#/$defs/__schema14"
+    },
+    "__schema14": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "text": {
+          "$ref": "#/$defs/__schema2"
+        },
+        "note": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "seconds": {
+          "$ref": "#/$defs/__schema4"
+        },
+        "review": {
+          "$ref": "#/$defs/__schema5"
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "review"
+      ],
+      "additionalProperties": false
+    },
+    "__schema15": {
+      "$ref": "#/$defs/__schema14"
+    },
+    "__schema16": {
+      "anyOf": [
+        {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema17"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema18"
+                },
+                "line": {
+                  "$ref": "#/$defs/__schema20"
+                },
+                "lineClip": {
+                  "$ref": "#/$defs/__schema21"
+                },
+                "teach": {
+                  "type": "string",
+                  "const": "explain"
+                },
+                "showText": {
+                  "type": "string"
+                },
+                "showImage": {
+                  "$ref": "#/$defs/__schema23"
+                },
+                "showLex": {
+                  "$ref": "#/$defs/__schema24"
+                }
+              },
+              "required": [
+                "id",
+                "teach"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema17"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema18"
+                },
+                "line": {
+                  "$ref": "#/$defs/__schema20"
+                },
+                "lineClip": {
+                  "$ref": "#/$defs/__schema21"
+                },
+                "teach": {
+                  "type": "string",
+                  "const": "letter_intro"
+                },
+                "letter": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "anchor": {
+                  "$ref": "#/$defs/__schema24"
+                }
+              },
+              "required": [
+                "id",
+                "teach",
+                "letter"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema17"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema18"
+                },
+                "line": {
+                  "$ref": "#/$defs/__schema20"
+                },
+                "lineClip": {
+                  "$ref": "#/$defs/__schema21"
+                },
+                "teach": {
+                  "type": "string",
+                  "const": "word_intro"
+                },
+                "word": {
+                  "$ref": "#/$defs/__schema24"
+                }
+              },
+              "required": [
+                "id",
+                "teach",
+                "word"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema17"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema18"
+                },
+                "line": {
+                  "$ref": "#/$defs/__schema20"
+                },
+                "lineClip": {
+                  "$ref": "#/$defs/__schema21"
+                },
+                "teach": {
+                  "type": "string",
+                  "const": "blend_demo"
+                },
+                "word": {
+                  "$ref": "#/$defs/__schema24"
+                }
+              },
+              "required": [
+                "id",
+                "teach",
+                "word"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema17"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema18"
+                },
+                "line": {
+                  "$ref": "#/$defs/__schema20"
+                },
+                "lineClip": {
+                  "$ref": "#/$defs/__schema21"
+                },
+                "teach": {
+                  "type": "string",
+                  "const": "contrast_note"
+                },
+                "tag": {
+                  "$ref": "#/$defs/__schema10"
+                },
+                "showText": {
+                  "type": "string"
+                },
+                "showLex": {
+                  "$ref": "#/$defs/__schema24"
+                }
+              },
+              "required": [
+                "id",
+                "teach",
+                "tag"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "listen_repeat"
+                },
+                "items": {
+                  "minItems": 1,
+                  "maxItems": 6,
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/__schema24"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "items"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "letter_sound"
+                },
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "sound_to_letter",
+                    "letter_to_sound",
+                    "hear_in_word"
+                  ]
+                },
+                "target": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "prompt": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "options": {
+                  "minItems": 2,
+                  "maxItems": 4,
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/__schema24"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "mode",
+                "target",
+                "options"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "picture_match"
+                },
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "read",
+                    "listen",
+                    "name"
+                  ]
+                },
+                "target": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "options": {
+                  "minItems": 2,
+                  "maxItems": 4,
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/__schema24"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "mode",
+                "target",
+                "options"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "word_build"
+                },
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "listen",
+                    "picture"
+                  ]
+                },
+                "target": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "tiles": {
+                  "minItems": 2,
+                  "maxItems": 10,
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/__schema31"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "mode",
+                "target",
+                "tiles"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "listening_comprehension"
+                },
+                "audio": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "question": {
+                  "$ref": "#/$defs/__schema12"
+                },
+                "options": {
+                  "minItems": 2,
+                  "maxItems": 4,
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/__schema32"
+                  }
+                },
+                "answer": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "audio",
+                "question",
+                "options",
+                "answer"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "sentence_build"
+                },
+                "target": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "tiles": {
+                  "minItems": 2,
+                  "maxItems": 10,
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/__schema37"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "target",
+                "tiles"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "reading_comprehension"
+                },
+                "passage": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "question": {
+                  "$ref": "#/$defs/__schema12"
+                },
+                "options": {
+                  "minItems": 2,
+                  "maxItems": 4,
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/__schema32"
+                  }
+                },
+                "answer": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "passage",
+                "question",
+                "options",
+                "answer"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "trace"
+                },
+                "letter": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "strokes": {
+                  "minItems": 1,
+                  "maxItems": 4,
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/__schema38"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "letter",
+                "strokes"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "minimal_pair"
+                },
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "which_word",
+                    "same_different"
+                  ]
+                },
+                "pair": {
+                  "type": "array",
+                  "prefixItems": [
+                    {
+                      "$ref": "#/$defs/__schema24"
+                    },
+                    {
+                      "$ref": "#/$defs/__schema24"
+                    }
+                  ],
+                  "items": false,
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "target": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "same": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "mode",
+                "pair"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "real_world"
+                },
+                "scenario": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string",
+                          "const": "sms"
+                        },
+                        "sender": {
+                          "type": "string"
+                        },
+                        "time": {
+                          "type": "string"
+                        },
+                        "body": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "sender",
+                        "time",
+                        "body"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string",
+                          "const": "sign"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "text"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string",
+                          "const": "form"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "fields": {
+                          "minItems": 1,
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/__schema40"
+                          }
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "title",
+                        "fields"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
+                },
+                "question": {
+                  "$ref": "#/$defs/__schema12"
+                },
+                "options": {
+                  "minItems": 2,
+                  "maxItems": 4,
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/__schema32"
+                  }
+                },
+                "answer": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "scenario",
+                "question",
+                "options",
+                "answer"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/__schema25"
+                },
+                "objectives": {
+                  "$ref": "#/$defs/__schema26"
+                },
+                "pathways": {
+                  "$ref": "#/$defs/__schema27"
+                },
+                "instruction": {
+                  "$ref": "#/$defs/__schema28"
+                },
+                "instructionClip": {
+                  "$ref": "#/$defs/__schema29"
+                },
+                "feedback": {
+                  "$ref": "#/$defs/__schema30"
+                },
+                "type": {
+                  "type": "string",
+                  "const": "typing"
+                },
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "listen",
+                    "copy",
+                    "picture",
+                    "answer"
+                  ]
+                },
+                "target": {
+                  "$ref": "#/$defs/__schema24"
+                },
+                "question": {
+                  "$ref": "#/$defs/__schema12"
+                },
+                "passage": {
+                  "$ref": "#/$defs/__schema24"
+                }
+              },
+              "required": [
+                "id",
+                "objectives",
+                "type",
+                "mode",
+                "target"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        }
+      ]
+    },
+    "__schema17": {
+      "type": "string",
+      "pattern": "^l\\d\\d-[a-z0-9-]+\\.t\\d\\d[a-z]?$"
+    },
+    "__schema18": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema19"
+      }
+    },
+    "__schema19": {
+      "type": "string",
+      "enum": [
+        "zu",
+        "st"
+      ]
+    },
+    "__schema20": {
+      "$ref": "#/$defs/__schema12"
+    },
+    "__schema21": {
+      "$ref": "#/$defs/__schema22"
+    },
+    "__schema22": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "__schema23": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "__schema24": {
+      "type": "string",
+      "pattern": "^(en|zu|st|hl)\\.(l|syl|w|sw|ph|sen|psg)\\.[a-z0-9_-]+$"
+    },
+    "__schema25": {
+      "type": "string",
+      "pattern": "^l\\d\\d-[a-z0-9-]+\\.e\\d\\d[a-z]?$"
+    },
+    "__schema26": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema8"
+      }
+    },
+    "__schema27": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema19"
+      }
+    },
+    "__schema28": {
+      "$ref": "#/$defs/__schema12"
+    },
+    "__schema29": {
+      "$ref": "#/$defs/__schema22"
+    },
+    "__schema30": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "enum": [
+          "wrong_choice",
+          "first_sound",
+          "middle_sound",
+          "last_sound",
+          "letter_shape",
+          "meaning",
+          "order",
+          "missing_letter",
+          "trace_off_path",
+          "typing_mismatch",
+          "same_different",
+          "detail"
+        ]
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/__schema22"
+      }
+    },
+    "__schema31": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema32": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/__schema33"
+        },
+        "image": {
+          "$ref": "#/$defs/__schema34"
+        },
+        "text": {
+          "$ref": "#/$defs/__schema35"
+        },
+        "lex": {
+          "$ref": "#/$defs/__schema36"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "__schema33": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+$"
+    },
+    "__schema34": {
+      "$ref": "#/$defs/__schema23"
+    },
+    "__schema35": {
+      "type": "string"
+    },
+    "__schema36": {
+      "$ref": "#/$defs/__schema24"
+    },
+    "__schema37": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema38": {
+      "minItems": 2,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema39"
+      }
+    },
+    "__schema39": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "__schema40": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$id": "https://yomu.invalid/content/schema/lesson.schema.json",
+  "title": "Yomu content: lesson"
+}

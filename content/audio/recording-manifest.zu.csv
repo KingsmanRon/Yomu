@@ -1,0 +1,398 @@
+﻿asset_id,language,text_to_record,context_note,where_used,kind,lesson_id,target_duration_s,review_status,recorded,file_name
+zu.app.assess.done,isiZulu,Siyabonga. Sithole indawo enhle yokuthi uqale khona.,,app: End of placement.,app,,4.4,draft,no,zu.app.assess.done.wav
+zu.app.assess.offer,isiZulu,"Ungathanda ukwenza umsebenzi omfushane ukuze sithole indawo engcono yokuqala? Uthatha cishe imizuzu emihlanu. Akusona isivivinyo, futhi awudingi ukukhathazeka ngamaphutha.",,app: Offer the optional placement activity.,app,,13.6,draft,no,zu.app.assess.offer.wav
+zu.app.assess.skip,isiZulu,Yeqa.,,app: Skip the placement activity.,app,,1,draft,no,zu.app.assess.skip.wav
+zu.app.assess.start,isiZulu,Qala.,,app: Start the placement activity.,app,,1,draft,no,zu.app.assess.start.wav
+zu.app.assess.thanks,isiZulu,Ngiyabonga.,,app: Neutral acknowledgement after every placement answer (never right/wrong).,app,,1.2,draft,no,zu.app.assess.thanks.wav
+zu.app.assist.enter_pin,isiZulu,Faka ikhodi yakho eyimfihlo ukuze ulethe izifundo zakho kule foni.,,app: Device transfer: the learner enters their secret code on the new phone.,app,,5.5,draft,no,zu.app.assist.enter_pin.wav
+zu.app.assist.forgot,isiZulu,"Uma ukhohliwe ikhodi yakho, thinta lapha ukuze wenze entsha.",,app: Device transfer: the learner has forgotten their secret code.,app,,5,draft,no,zu.app.assist.forgot.wav
+zu.app.assist.handover,isiZulu,Uthisha wakho uzokusiza manje. Ikhodi yakho eyimfihlo ihlala iyimfihlo.,,app: Facilitator-assisted mode starts.,app,,5.9,draft,no,zu.app.assist.handover.wav
+zu.app.assist.moved,isiZulu,Kulungile. Izifundo zakho sezikule foni manje.,,app: Device transfer finished.,app,,3.9,draft,no,zu.app.assist.moved.wav
+zu.app.assist.new_pin,isiZulu,Yenza ikhodi entsha eyimfihlo. Uthisha wakho akufanele abuke.,,app: Learner sets a new PIN during facilitator help.,app,,5.1,draft,no,zu.app.assist.new_pin.wav
+zu.app.badge.earned,isiZulu,Uthole ibheji elisha!,,app: New badge.,app,,2,draft,no,zu.app.badge.earned.wav
+zu.app.consent.agree,isiZulu,"Yebo, ngiyavuma.",,app: Consent button: agree.,app,,1.6,draft,no,zu.app.consent.agree.wav
+zu.app.consent.analytics,isiZulu,"Singabala ukuthi uyisebenzisa kanjani i-app, ngaphandle kwegama lakho, ukuze siyithuthukise? Ungashintsha lokhu noma nini ku-Mina.",,app: Separate optional consent: pseudonymous usage counts.,app,,10.4,draft,no,zu.app.consent.analytics.wav
+zu.app.consent.decline,isiZulu,"Cha, gcina kule foni kuphela.",,app: Consent button: keep on phone only.,app,,2.6,draft,no,zu.app.consent.decline.wav
+zu.app.consent.declined,isiZulu,Kulungile. Ukufunda kwakho kuzohlala kule foni kuphela. Ungashintsha umqondo kamuva ku-Mina.,,app: After declining consent.,app,,7.5,draft,no,zu.app.consent.declined.wav
+zu.app.consent.delete,isiZulu,"Ungayeka noma nini. Ku-Mina, thinta isithombe somgqomo ukuze ususe konke. Kuzosuswa ngokushesha, ngaphandle kokushayela muntu.",,app: Consent 5/5: how to delete.,app,,10.1,draft,no,zu.app.consent.delete.wav
+zu.app.consent.intro,isiZulu,"Ngaphambi kokuthi sigcine imininingwane yakho ku-inthanethi, lalela lokhu.",,app: Consent 1/5 (POPIA): before anything is stored on the server.,app,,6.1,draft,no,zu.app.consent.intro.wav
+zu.app.consent.offline,isiZulu,"Ukugcina ku-inthanethi kudinga i-inthanethi. Okwamanje, ukufunda kwakho kuhlala kule foni.",,app: Registration needs the internet.,app,,7.3,draft,no,zu.app.consent.offline.wav
+zu.app.consent.pin,isiZulu,"Thinta ikhodi yakho eyimfihlo futhi, ukuze siyigcine ngokuphepha.",,app: Confirm the PIN to save it safely online.,app,,5.4,draft,no,zu.app.consent.pin.wav
+zu.app.consent.question,isiZulu,Uyavuma ukuthi sigcine ukufunda kwakho ku-inthanethi ngokuphepha?,,app: Consent question.,app,,5.4,draft,no,zu.app.consent.question.wav
+zu.app.consent.saved,isiZulu,Siyabonga. Ukufunda kwakho sekugciniwe ngokuphepha.,,app: After registration succeeded.,app,,4.3,draft,no,zu.app.consent.saved.wav
+zu.app.consent.what,isiZulu,"Sizogcina: isithombe sakho, ikhodi yakho eyimfihlo ivalelwe ukuze kungabikho muntu oyifundayo, ulimi lwakho, nenqubekela phambili yakho: izifundo, izimpendulo namakhono. Asilidingi igama lakho. Asiligcini izwi lakho.",,app: Consent 2/5: what is stored.,app,,17,draft,no,zu.app.consent.what.wav
+zu.app.consent.who,isiZulu,"Ubani ongakubona: nguwe kuphela. Uma ujoyina ikilasi kamuva, sizokubuza kuqala ukuthi uthisha wakho angabonani. Asisoze sayithengisa imininingwane yakho.",,app: Consent 4/5: who can see it.,app,,12.2,draft,no,zu.app.consent.who.wav
+zu.app.consent.why,isiZulu,"Kungani: ukuze ukufunda kwakho kungalahleki uma ifoni yakho ilahleka noma iphuka, nokuze uqhubeke kwenye ifoni.",,app: Consent 3/5: why.,app,,8.9,draft,no,zu.app.consent.why.wav
+zu.app.consent.withdraw,isiZulu,"Uma uhoxisa imvume, sizosusa ukufunda kwakho ku-inthanethi. Kuzohlala kule foni kuphela.",,app: Withdraw account-storage consent (deletes online data).,app,,7.2,draft,no,zu.app.consent.withdraw.wav
+zu.app.delete.confirm,isiZulu,Bamba ukuze usule.,,app: Press-and-hold delete button.,app,,1.8,draft,no,zu.app.delete.confirm.wav
+zu.app.delete.done,isiZulu,Konke kususiwe. Siyabonga ngokufunda nathi.,,app: After deletion.,app,,3.7,draft,no,zu.app.delete.done.wav
+zu.app.delete.explain,isiZulu,"Uma usula, konke okumayelana nawe kuzosuswa kule foni nasohlelweni lwethu. Uthisha wakho ngeke esakubona. Lokhu akunakuhlehliswa. Ukuze usule, cindezela ubambe inkinobho ebomvu.",,app: Explain deletion before confirming.,app,,14,draft,no,zu.app.delete.explain.wav
+zu.app.delete.offline,isiZulu,Ukususa ku-inthanethi kudinga i-inthanethi. Zama futhi uma usuxhunyiwe.,,app: Online deletion needs connectivity.,app,,5.9,draft,no,zu.app.delete.offline.wav
+zu.app.demo.choose,isiZulu,"Ukuze uphendule, uthinta isithombe. Zama: thinta isithombe esikhulu.",,app: Demo: answering by tapping a picture.,app,,5.6,draft,no,zu.app.demo.choose.wav
+zu.app.demo.continue,isiZulu,Umcibisholo oluhlaza ukuyisa phambili. Wuthinte.,,app: Demo: the green continue arrow.,app,,4.1,draft,no,zu.app.demo.continue.wav
+zu.app.demo.done,isiZulu,Usulungile!,,app: Demo finished.,app,,1.2,draft,no,zu.app.demo.done.wav
+zu.app.demo.help,isiZulu,"Uphawu lombuzo wusizo. Futhi uma ucindezela ubambe noma iyiphi inkinobho, uzozwa ukuthi yenzani.",,app: Demo: help and press-and-hold to hear a button.,app,,7.8,draft,no,zu.app.demo.help.wav
+zu.app.demo.listen,isiZulu,Lena yinkinobho yokulalela. Iphinda amagama. Yithinte manje.,,app: How-it-works demo: the listen button.,app,,5,draft,no,zu.app.demo.listen.wav
+zu.app.demo.listen_done,isiZulu,"Kuhle! Uma ungezwanga kahle, ungayithinta futhi noma nini.",,app: Demo: after tapping listen.,app,,4.9,draft,no,zu.app.demo.listen_done.wav
+zu.app.downloads.done,isiZulu,Kulandiwe. Ungasebenzisa lezi zifundo ngaphandle kwe-inthanethi.,,app: Download finished.,app,,5.3,draft,no,zu.app.downloads.done.wav
+zu.app.downloads.download,isiZulu,Landa.,,app: Download button.,app,,1,draft,no,zu.app.downloads.download.wav
+zu.app.downloads.intro,isiZulu,Landa izifundo ukuze uzisebenzise ngaphandle kwe-inthanethi. Usayizi ukhonjiswa ngaphambi kokulanda.,,app: Downloads screen.,app,,8.1,draft,no,zu.app.downloads.intro.wav
+zu.app.downloads.remove,isiZulu,Susa.,,app: Remove download button.,app,,1,draft,no,zu.app.downloads.remove.wav
+zu.app.export.done,isiZulu,Ikhophi yakho isilungile.,,app: Data export ready.,app,,2.3,draft,no,zu.app.export.done.wav
+zu.app.home.all_done,isiZulu,Uqede zonke izifundo ezikhona manje. Qhubeka uprakthize!,,app: Every available lesson completed.,app,,4.7,draft,no,zu.app.home.all_done.wav
+zu.app.home.continue,isiZulu,Qhubeka ufunde.,,app: Continue / start the recommended lesson.,app,,1.6,draft,no,zu.app.home.continue.wav
+zu.app.home.greeting,isiZulu,Siyakwamukela futhi! Thinta inkinobho enkulu ukuze uqhubeke ufunda.,,app: Home screen greeting.,app,,5.6,draft,no,zu.app.home.greeting.wav
+zu.app.home.revise,isiZulu,Prakthiza amagama obekunzima kuwe.,,app: Start a revision session.,app,,3,draft,no,zu.app.home.revise.wav
+zu.app.home.streak,isiZulu,Uprakthize namuhla. Wenze kahle!,,app: Streak kept today.,app,,2.9,draft,no,zu.app.home.streak.wav
+zu.app.join.bad_code,isiZulu,Leyo nombolo ayisebenzanga. Yihlole nothisha wakho bese uzama futhi.,,app: Unknown class code.,app,,5.6,draft,no,zu.app.join.bad_code.wav
+zu.app.join.done,isiZulu,Manje usekilasini.,,app: Joined a class.,app,,1.8,draft,no,zu.app.join.done.wav
+zu.app.join.intro,isiZulu,"Joyina ikilasi lakho. Bhala inombolo ekhonjiswa uthisha wakho, noma uskene ikhodi eyisikwele.",,app: Join a class.,app,,7.6,draft,no,zu.app.join.intro.wav
+zu.app.join.need_account,isiZulu,"Ukuze ujoyine ikilasi, qala ugcine ukufunda kwakho ku-inthanethi.",,app: Joining needs an online account first.,app,,5.4,draft,no,zu.app.join.need_account.wav
+zu.app.join.scan,isiZulu,Khomba ikhamera kukhodi eyisikwele.,,app: Scan the class QR code with the camera.,app,,3.1,draft,no,zu.app.join.scan.wav
+zu.app.lesson.complete,isiZulu,Isifundo siphelile! Wenze kahle.,,app: Lesson finished.,app,,2.9,draft,no,zu.app.lesson.complete.wav
+zu.app.lesson.exit_confirm,isiZulu,Ufuna ukumisa isifundo? Inqubekela phambili yakho igciniwe.,,app: Leaving a lesson early.,app,,4.9,draft,no,zu.app.lesson.exit_confirm.wav
+zu.app.lesson.keep_going,isiZulu,Qhubeka.,,app: Keep going.,app,,1,draft,no,zu.app.lesson.keep_going.wav
+zu.app.lesson.next,isiZulu,Isifundo esilandelayo.,,app: Next lesson button.,app,,2.1,draft,no,zu.app.lesson.next.wav
+zu.app.lesson.stop,isiZulu,Misa.,,app: Stop the lesson.,app,,1,draft,no,zu.app.lesson.stop.wav
+zu.app.me.captions,isiZulu,Bonisa amagama ngaphansi kwezwi.,,app: Captions setting.,app,,2.9,draft,no,zu.app.me.captions.wav
+zu.app.me.delete,isiZulu,Susa yonke imininingwane yami.,,app: Delete all my data.,app,,2.7,draft,no,zu.app.me.delete.wav
+zu.app.me.downloads,isiZulu,Landa izifundo ukuze uzisebenzise ngaphandle kwe-inthanethi.,,app: Lesson downloads.,app,,5,draft,no,zu.app.me.downloads.wav
+zu.app.me.export,isiZulu,Ungathola ikhophi yayo yonke imininingwane yakho esiyigcinile.,,app: Download a copy of my data.,app,,5.2,draft,no,zu.app.me.export.wav
+zu.app.me.facilitator,isiZulu,Uthisha angakusiza kule foni. Ikhodi yakho eyimfihlo ihlala iyimfihlo.,,app: Facilitator help (teacher signs in on this phone).,app,,5.8,draft,no,zu.app.me.facilitator.wav
+zu.app.me.intro,isiZulu,Lapha ungashintsha izilungiselelo zakho futhi unakekele imininingwane yakho.,,app: Profile and settings screen.,app,,6.2,draft,no,zu.app.me.intro.wav
+zu.app.me.language,isiZulu,Shintsha ulimi ofunda ngalo.,,app: Change teaching language.,app,,2.6,draft,no,zu.app.me.language.wav
+zu.app.me.level,isiZulu,Khetha lapho ufuna ukuqala khona.,,app: Change level.,app,,2.9,draft,no,zu.app.me.level.wav
+zu.app.me.moved_phone,isiZulu,Izifundo zakho ezigcinwe ku-inthanethi manje zikwenye ifoni. Okwenzayo lapha kuhlala kule foni kuphela. Ungasusa le phrofayela kule foni.,,app: This phone's online session was replaced: the learner was moved to another phone. Offers removing the profile from this phone.,app,,10.9,draft,no,zu.app.me.moved_phone.wav
+zu.app.me.retake,isiZulu,Phinda umsebenzi omfushane ukuze sithole izinga elifanele.,,app: Retake placement activity.,app,,4.9,draft,no,zu.app.me.retake.wav
+zu.app.me.sharing,isiZulu,Bheka noma ushintshe okwabelana nekilasi lakho.,,app: What I share with my class.,app,,4,draft,no,zu.app.me.sharing.wav
+zu.app.me.text_size,isiZulu,Yenza umbhalo ube mkhulu.,,app: Text size setting.,app,,2.3,draft,no,zu.app.me.text_size.wav
+zu.app.me.wifi_only,isiZulu,"Landa izifundo kuphela uma uku-Wi-Fi, ukuze ungasebenzisi idatha.",,app: Download on Wi-Fi only setting.,app,,5.4,draft,no,zu.app.me.wifi_only.wav
+zu.app.mic.allow,isiZulu,Vumela imakrofoni.,,app: Allow microphone button.,app,,1.8,draft,no,zu.app.mic.allow.wav
+zu.app.mic.denied,isiZulu,"Akunankinga. Sho amagama ngezwi ngaphandle kokuqopha, bese uthinta umcibisholo uma usuqedile.",,app: Microphone not available or refused.,app,,7.6,draft,no,zu.app.mic.denied.wav
+zu.app.mic.explain,isiZulu,"Eminye imisebenzi ikucela ukuthi usho amagama ngezwi. Ukuze uzizwe, i-app idinga imakrofoni. Izwi lakho lihlala kule foni futhi liyasuswa uma umsebenzi uphela. Ungathi cha futhi usasebenzisa konke.",,app: Before asking for microphone permission.,app,,15.6,draft,no,zu.app.mic.explain.wav
+zu.app.mic.no,isiZulu,"Cha, ngiyabonga.",,app: Decline microphone button.,app,,1.6,draft,no,zu.app.mic.no.wav
+zu.app.nav.learn,isiZulu,Izifundo.,,app: Bottom navigation: learning path.,app,,1.1,draft,no,zu.app.nav.learn.wav
+zu.app.nav.me,isiZulu,Mina: izilungiselelo nemininingwane yami.,,app: Bottom navigation: profile and settings.,app,,3.6,draft,no,zu.app.nav.me.wav
+zu.app.nav.practice,isiZulu,Ukuprakthiza.,,app: Bottom navigation: revision.,app,,1.4,draft,no,zu.app.nav.practice.wav
+zu.app.nav.progress,isiZulu,Inqubekela phambili yakho.,,app: Bottom navigation: progress and badges.,app,,2.4,draft,no,zu.app.nav.progress.wav
+zu.app.net.mobile,isiZulu,Usebenzisa idatha yeselula.,,app: Status: on mobile data.,app,,2.5,draft,no,zu.app.net.mobile.wav
+zu.app.net.offline,isiZulu,Awuxhunyiwe ku-inthanethi.,,app: Status: offline.,app,,2.4,draft,no,zu.app.net.offline.wav
+zu.app.net.wifi,isiZulu,Usebenzisa i-Wi-Fi.,,app: Status: on Wi-Fi.,app,,1.9,draft,no,zu.app.net.wifi.wav
+zu.app.path.intro,isiZulu,Nazi izifundo zakho. Thinta indilinga ukuze uqale.,,app: Learning path screen.,app,,4.2,draft,no,zu.app.path.intro.wav
+zu.app.path.locked,isiZulu,Lesi sifundo sizovuleka uma uqeda esingaphambi kwaso.,,app: Tapping a lesson that is not open yet.,app,,4.5,draft,no,zu.app.path.locked.wav
+zu.app.pin.confirm,isiZulu,Thinta izithombe ezine ezifanayo futhi.,,app: Confirm the PIN.,app,,3.4,draft,no,zu.app.pin.confirm.wav
+zu.app.pin.create,isiZulu,"Manje yenza ikhodi yakho eyimfihlo: thinta izithombe ezine. Zikhumbule, futhi ungazikhombisi muntu.",,app: Create a picture PIN.,app,,8,draft,no,zu.app.pin.create.wav
+zu.app.pin.enter,isiZulu,Thinta izithombe zakho ezine eziyimfihlo.,,app: Enter PIN.,app,,3.6,draft,no,zu.app.pin.enter.wav
+zu.app.pin.mismatch,isiZulu,Amakhodi womabili awafani. Asiphinde siyenze.,,app: PIN confirmation did not match.,app,,3.9,draft,no,zu.app.pin.mismatch.wav
+zu.app.pin.saved,isiZulu,Ikhodi yakho eyimfihlo igciniwe.,,app: PIN saved.,app,,2.9,draft,no,zu.app.pin.saved.wav
+zu.app.pin.wait,isiZulu,"Sicela ulinde kancane, bese uzama futhi. Uma ukhohlwe ikhodi yakho, cela uthisha wakho akusize.",,app: Too many wrong PINs: short wait.,app,,7.7,draft,no,zu.app.pin.wait.wav
+zu.app.pin.wrong,isiZulu,Leyo khodi ayilungile. Zama futhi.,,app: Wrong PIN.,app,,3,draft,no,zu.app.pin.wrong.wav
+zu.app.place.change_any_time,isiZulu,Ungashintsha lapho uqala khona noma nini.,,app: Reassurance that level can change.,app,,3.6,draft,no,zu.app.place.change_any_time.wav
+zu.app.place.level0,isiZulu,Asiqale ngokufunda ngesiZulu. Kwenza isiNgisi sibe lula.,,app: Start at Level 0.,app,,4.7,draft,no,zu.app.place.level0.wav
+zu.app.place.level1,isiZulu,Asiqale ngezinhlamvu nemisindo yesiNgisi.,,app: Start at Level 1.,app,,3.6,draft,no,zu.app.place.level1.wav
+zu.app.place.level2,isiZulu,Asiqale ngamagama akho okuqala esiNgisi.,,app: Start at Level 2.,app,,3.5,draft,no,zu.app.place.level2.wav
+zu.app.place.level3,isiZulu,Asiqale ngemisho.,,app: Start at Level 3.,app,,1.7,draft,no,zu.app.place.level3.wav
+zu.app.place.level4,isiZulu,Asiqale ngesiNgisi sansuku zonke: ama-SMS nezimpawu.,,app: Start at Level 4.,app,,4.4,draft,no,zu.app.place.level4.wav
+zu.app.place.self_no,isiZulu,"Angikakwazi, noma angiqiniseki.",,app: Self-placement: cannot read yet / not sure.,app,,2.8,draft,no,zu.app.place.self_no.wav
+zu.app.place.self_question,isiZulu,Uyakwazi ukufunda amagama esiZulu?,,app: Self-placement when the activity is skipped.,app,,3,draft,no,zu.app.place.self_question.wav
+zu.app.place.self_yes,isiZulu,"Yebo, ngiyakwazi.",,app: Self-placement: can read the home language.,app,,1.7,draft,no,zu.app.place.self_yes.wav
+zu.app.profile.choose_picture,isiZulu,Zikhethele isithombe. Sizokusiza ukuthola ukufunda kwakho kule foni.,,app: Choose an avatar picture.,app,,5.6,draft,no,zu.app.profile.choose_picture.wav
+zu.app.profiles.add,isiZulu,Engeza omunye umfundi kule foni.,,app: Add another learner on this phone.,app,,2.9,draft,no,zu.app.profiles.add.wav
+zu.app.profiles.switch,isiZulu,Shintsha umfundi.,,app: Switch learner.,app,,1.7,draft,no,zu.app.profiles.switch.wav
+zu.app.profiles.who,isiZulu,Ngubani ofundayo manje? Thinta isithombe sakho.,,app: Profile picker on a shared phone.,app,,4,draft,no,zu.app.profiles.who.wav
+zu.app.progress.intro,isiZulu,Nakhu osukufundile.,,app: Progress screen.,app,,1.9,draft,no,zu.app.progress.intro.wav
+zu.app.repeat.compare,isiZulu,"Lalela isibonelo, bese uzilalela wena. Ingabe kuzwakale kufana?",,app: Compare model and own recording.,app,,5.2,draft,no,zu.app.repeat.compare.wav
+zu.app.repeat.different,isiZulu,Kuhlukile.,,app: Self-check: sounded different.,app,,1.2,draft,no,zu.app.repeat.different.wav
+zu.app.repeat.practised,isiZulu,Kuhle ukuprakthiza! Ukusho amagama ngezwi kuyakusiza ukuthi uwakhumbule.,,"app: After a self-check (always recorded as practised, never scored).",app,,5.9,draft,no,zu.app.repeat.practised.wav
+zu.app.repeat.record,isiZulu,Thinta imakrofoni bese usho igama.,,app: Tap the microphone to record yourself.,app,,3,draft,no,zu.app.repeat.record.wav
+zu.app.repeat.same,isiZulu,Kuyafana.,,app: Self-check: sounded the same.,app,,1.1,draft,no,zu.app.repeat.same.wav
+zu.app.repeat.say_aloud,isiZulu,Sho igama ngezwi manje. Bese uthinta umcibisholo oluhlaza.,,app: Say aloud without recording.,app,,4.9,draft,no,zu.app.repeat.say_aloud.wav
+zu.app.revision.done,isiZulu,Ukuprakthiza kuphelile.,,app: Revision session finished.,app,,2.2,draft,no,zu.app.revision.done.wav
+zu.app.revision.empty,isiZulu,Akukho okokuprakthiza manje. Wenze kahle!,,app: No revision due.,app,,3.6,draft,no,zu.app.revision.empty.wav
+zu.app.revision.intro,isiZulu,Asiprakthize izinto obekunzima kuwe.,,app: Revision session start.,app,,3.2,draft,no,zu.app.revision.intro.wav
+zu.app.save.choice,isiZulu,"Ungagcina ukufunda kwakho kule foni kuphela, noma usigcine ku-inthanethi ngokuphepha ukuze singalahleki. Ukugcina ku-inthanethi kusebenzisa idatha encane.",,app: Offer to save progress online (registration) or keep it on the phone (guest).,app,,12.2,draft,no,zu.app.save.choice.wav
+zu.app.save.online,isiZulu,Ngifuna ukugcina ku-inthanethi.,,app: Button: save online (leads to spoken consent).,app,,2.8,draft,no,zu.app.save.online.wav
+zu.app.save.phone_only,isiZulu,Gcina kule foni kuphela.,,app: Button: keep on this phone only (guest).,app,,2.2,draft,no,zu.app.save.phone_only.wav
+zu.app.share.basic,isiZulu,"Uma ujoyina, uthisha wakho uzobona: isithombe sakho, izinga lakho, izifundo oziqedile, nosuku lokugcina oprakthize ngalo. Uzobona nezibalo zekilasi lonke zamakhono abelukhuni, ngaphandle kokukhomba wena.",,app: Cohort sharing: what joining always shares.,app,,16,draft,no,zu.app.share.basic.wav
+zu.app.share.confirm,isiZulu,Joyina ikilasi.,,app: Confirm joining.,app,,1.6,draft,no,zu.app.share.confirm.wav
+zu.app.share.intro,isiZulu,Ikilasi likathisha wakho lifuna ukubona inqubekela phambili yakho. Nguwe okhethayo ukuthi bangabonani.,,app: Cohort sharing consent 1/4.,app,,8.2,draft,no,zu.app.share.intro.wav
+zu.app.share.mastery,isiZulu,"Ingabe ufuna nokuthi uthisha abone amakhono owafundile, nezinsuku? Lokhu kuyadingeka ukuze uthole isitifiketi.",,app: Cohort sharing: optional mastery with dates (needed for certificates).,app,,8.9,draft,no,zu.app.share.mastery.wav
+zu.app.share.mistakes,isiZulu,"Ingabe ufuna uthisha abone imibuzo oyiphosile, ukuze akusize?",,app: Cohort sharing: optional mistake history.,app,,5.1,draft,no,zu.app.share.mistakes.wav
+zu.app.share.no,isiZulu,Cha.,,app: No button.,app,,1,draft,no,zu.app.share.no.wav
+zu.app.share.stop_explain,isiZulu,"Uma uyeka ukwabelana, uthisha wakho uzoyeka ngokushesha ukubona inqubekela phambili yakho.",,app: Before stopping sharing with a class.,app,,7.3,draft,no,zu.app.share.stop_explain.wav
+zu.app.share.stopped,isiZulu,Ukwabelana kumisiwe.,,app: After stopping sharing.,app,,1.9,draft,no,zu.app.share.stopped.wav
+zu.app.share.tutor,isiZulu,Ingabe ufuna uthisha abone imibuzo oyibuze umsizi?,,app: Cohort sharing: optional tutor question log.,app,,4.2,draft,no,zu.app.share.tutor.wav
+zu.app.share.yes,isiZulu,Yebo.,,app: Yes button.,app,,1,draft,no,zu.app.share.yes.wav
+zu.app.ui.back,isiZulu,Emuva.,,app: Back button.,app,,1,draft,no,zu.app.ui.back.wav
+zu.app.ui.check,isiZulu,Hlola impendulo.,,app: Check answer button.,app,,1.6,draft,no,zu.app.ui.check.wav
+zu.app.ui.clear,isiZulu,Sula.,,app: Clear answer button.,app,,1,draft,no,zu.app.ui.clear.wav
+zu.app.ui.close,isiZulu,Vala.,,app: Close button.,app,,1,draft,no,zu.app.ui.close.wav
+zu.app.ui.continue,isiZulu,Qhubeka.,,app: Continue button.,app,,1,draft,no,zu.app.ui.continue.wav
+zu.app.ui.help,isiZulu,Usizo.,,app: Help button.,app,,1,draft,no,zu.app.ui.help.wav
+zu.app.ui.listen_again,isiZulu,Lalela futhi.,,app: Listen again button.,app,,1.4,draft,no,zu.app.ui.listen_again.wav
+zu.app.ui.listen_slow,isiZulu,Lalela kancane.,,app: Listen slowly button.,app,,1.6,draft,no,zu.app.ui.listen_slow.wav
+zu.app.welcome.choose_language,isiZulu,"Sawubona! Uma ufuna ukufunda isiNgisi ngesiZulu, thinta lapha.",,app: Language selection: each card plays its own language.,app,,5.2,draft,no,zu.app.welcome.choose_language.wav
+zu.app.welcome.hello,isiZulu,"Siyakwamukela! Lapha ufunda ukufunda nokubhala isiNgisi, kancane kancane, ngolimi lwakho. Awudingi ukwazi ukufunda ukuze uqale: lalela, bese uthinta izithombe.",,app: Welcome after choosing a language. Never names the app (the name is configurable).,app,,12.6,draft,no,zu.app.welcome.hello.wav
+zu.assess.intro,isiZulu,"Masiqale. Lalela umbuzo ngamunye. Uma ungazi, khetha nje isithombe, kulungile.",,placement activity introduction,assessment,,6.4,draft,no,zu.assess.intro.wav
+zu.assess.outro,isiZulu,Siqedile. Ngiyabonga ngokuzama.,,placement activity closing,assessment,,2.8,draft,no,zu.assess.outro.wav
+zu.badge.english-sounds,isiZulu,Wazi imisindo yakho yokuqala yesiNgisi!,,badge b.english-sounds,app,,3.4,draft,no,zu.badge.english-sounds.wav
+zu.badge.first-english-word,isiZulu,Ufunde igama lakho lokuqala lesiNgisi wedwa!,,badge b.first-english-word,app,,3.8,draft,no,zu.badge.first-english-word.wav
+zu.badge.first-hl-word,isiZulu,Ufunde igama lakho lokuqala lesiZulu!,,badge b.first-hl-word,app,,3.2,draft,no,zu.badge.first-hl-word.wav
+zu.badge.first-lesson,isiZulu,Uqede isifundo sakho sokuqala!,,badge b.first-lesson,app,,2.7,draft,no,zu.badge.first-lesson.wav
+zu.badge.first-letters,isiZulu,Ubhale izinhlamvu zakho zokuqala!,,badge b.first-letters,app,,2.9,draft,no,zu.badge.first-letters.wav
+zu.badge.first-sentence,isiZulu,Ufunde umusho wakho wokuqala wesiNgisi!,,badge b.first-sentence,app,,3.4,draft,no,zu.badge.first-sentence.wav
+zu.badge.lessons-5,isiZulu,Uqede izifundo ezinhlanu!,,badge b.lessons-5,app,,2.3,draft,no,zu.badge.lessons-5.wav
+zu.badge.read-notice,isiZulu,Ufunde isaziso!,,badge b.read-notice,app,,1.6,draft,no,zu.badge.read-notice.wav
+zu.badge.read-signs,isiZulu,Uyakwazi ukufunda izimpawu!,,badge b.read-signs,app,,2.5,draft,no,zu.badge.read-signs.wav
+zu.badge.read-sms,isiZulu,Ufunde i-SMS!,,badge b.read-sms,app,,1.4,draft,no,zu.badge.read-sms.wav
+zu.badge.sight-words,isiZulu,Wazi amagama amancane abalulekile!,,badge b.sight-words,app,,3,draft,no,zu.badge.sight-words.wav
+zu.badge.streak-3,isiZulu,Uprakthize izinsuku ezintathu!,,badge b.streak-3,app,,2.7,draft,no,zu.badge.streak-3.wav
+zu.badge.streak-7,isiZulu,Uprakthize izinsuku eziyisikhombisa!,,badge b.streak-7,app,,3.2,draft,no,zu.badge.streak-7.wav
+zu.badge.typed-reply,isiZulu,Ubhale impendulo efonini!,,badge b.typed-reply,app,,2.3,draft,no,zu.badge.typed-reply.wav
+zu.clip.fb.correct.1,isiZulu,Wenze kahle!,,tutor clip fb.correct.1: Praise after a correct answer.,feedback,,1.3,draft,no,zu.clip.fb.correct.1.wav
+zu.clip.fb.correct.2,isiZulu,"Yebo, kulungile!",,tutor clip fb.correct.2: Praise after a correct answer.,feedback,,1.6,draft,no,zu.clip.fb.correct.2.wav
+zu.clip.fb.correct.3,isiZulu,Kuhle kakhulu!,,tutor clip fb.correct.3: Praise after a correct answer.,feedback,,1.5,draft,no,zu.clip.fb.correct.3.wav
+zu.clip.fb.correct.read,isiZulu,Ulifunde wedwa lelo gama. Wenze kahle!,,tutor clip fb.correct.read: Praise after reading a word with no audio help.,feedback,,3.3,draft,no,zu.clip.fb.correct.read.wav
+zu.clip.fb.detail,isiZulu,"Funda futhi, ubheke amagama abalulekile.",,tutor clip fb.detail: Comprehension answer missed a detail.,feedback,,3.5,draft,no,zu.clip.fb.detail.wav
+zu.clip.fb.first_sound,isiZulu,"Lalela umsindo wokuqala wegama, bese ubheka uhlamvu lokuqala.",,tutor clip fb.first_sound: The chosen word differs in its first sound.,feedback,,5.1,draft,no,zu.clip.fb.first_sound.wav
+zu.clip.fb.last_sound,isiZulu,Lalela umsindo wokugcina. Ungawukhohlwa.,,tutor clip fb.last_sound: The chosen word differs in its last sound.,feedback,,3.5,draft,no,zu.clip.fb.last_sound.wav
+zu.clip.fb.letter_shape,isiZulu,Bheka kahle isimo salolu hlamvu.,,tutor clip fb.letter_shape: Confused letters that look alike.,feedback,,2.9,draft,no,zu.clip.fb.letter_shape.wav
+zu.clip.fb.meaning,isiZulu,"Funda igama futhi kancane, bese ubheka izithombe.",,tutor clip fb.meaning: Picture does not match the meaning.,feedback,,4.2,draft,no,zu.clip.fb.meaning.wav
+zu.clip.fb.middle_sound,isiZulu,Lalela umsindo ophakathi nendawo. Yiluphi uhlamvu olwenza lowo msindo?,,tutor clip fb.middle_sound: The chosen word differs in its middle (vowel) sound.,feedback,,5.8,draft,no,zu.clip.fb.middle_sound.wav
+zu.clip.fb.missing_letter,isiZulu,"Kukhona umsindo oshodayo. Sho igama kancane, ulalele yonke imisindo.",,tutor clip fb.missing_letter: A sound or letter is missing.,feedback,,5.6,draft,no,zu.clip.fb.missing_letter.wav
+zu.clip.fb.mistakes_ok,isiZulu,Amaphutha asisiza ukuthi sifunde. Sizophinde sikuprakthize lokhu kamuva.,,tutor clip fb.mistakes_ok: Reassurance after a missed item.,feedback,,5.9,draft,no,zu.clip.fb.mistakes_ok.wav
+zu.clip.fb.order,isiZulu,Ukulandelana akukalungi. Qala ngakwesobunxele.,,tutor clip fb.order: Tiles or words in the wrong order.,feedback,,3.9,draft,no,zu.clip.fb.order.wav
+zu.clip.fb.same_different,isiZulu,Lalela futhi imisindo emibili ngokucophelela.,,tutor clip fb.same_different: Wrong same/different judgement.,feedback,,3.9,draft,no,zu.clip.fb.same_different.wav
+zu.clip.fb.show_answer,isiZulu,Nayi impendulo. Bheka bese ulalela.,,tutor clip fb.show_answer: After the second try: show the answer.,feedback,,3.1,draft,no,zu.clip.fb.show_answer.wav
+zu.clip.fb.trace_off_path,isiZulu,"Landela amachashazi ngomunwe wakho, uqale echashazini eliluhlaza.",,tutor clip fb.trace_off_path: Tracing left the letter path.,feedback,,5.4,draft,no,zu.clip.fb.trace_off_path.wav
+zu.clip.fb.try_again,isiZulu,Cishe. Ake sizame futhi.,,tutor clip fb.try_again: Gentle prompt before a second try.,feedback,,2.2,draft,no,zu.clip.fb.try_again.wav
+zu.clip.fb.typing_mismatch,isiZulu,Hlola uhlamvu ngalunye. Bheka igama bese ulibhala futhi.,,tutor clip fb.typing_mismatch: Typed word does not match.,feedback,,4.7,draft,no,zu.clip.fb.typing_mismatch.wav
+zu.clip.fb.wrong_choice,isiZulu,"Akusiyo leyo. Bheka futhi, bese ulalela futhi.",,tutor clip fb.wrong_choice: Generic wrong choice.,feedback,,3.9,draft,no,zu.clip.fb.wrong_choice.wav
+zu.clip.instr.build_sentence,isiZulu,Lalela umusho. Hlela amagama ngokulandelana okufanele.,,"tutor clip instr.build_sentence: Hear a sentence, put the words in order.",instruction,,4.6,draft,no,zu.clip.instr.build_sentence.wav
+zu.clip.instr.build_syllables,isiZulu,Lalela igama. Lakhe ngezingxenye zalo.,,"tutor clip instr.build_syllables: Hear a home-language word, build it from syllables.",instruction,,3.3,draft,no,zu.clip.instr.build_syllables.wav
+zu.clip.instr.build_word,isiZulu,Lalela igama. Bese ulakha ngezinhlamvu.,,"tutor clip instr.build_word: Hear a word, build it with letter tiles.",instruction,,3.4,draft,no,zu.clip.instr.build_word.wav
+zu.clip.instr.build_word_picture,isiZulu,Bheka isithombe. Yakha igama ngezinhlamvu.,,"tutor clip instr.build_word_picture: See a picture, build the word with tiles.",instruction,,3.6,draft,no,zu.clip.instr.build_word_picture.wav
+zu.clip.instr.copy_word,isiZulu,Bhala leli gama ngekhibhodi yefoni.,,"tutor clip instr.copy_word: See a word, type it.",instruction,,3.1,draft,no,zu.clip.instr.copy_word.wav
+zu.clip.instr.hear_letter,isiZulu,Lalela. Yiluphi uhlamvu olizwayo?,,"tutor clip instr.hear_letter: Hear a word or syllable, choose the letter you hear.",instruction,,2.9,draft,no,zu.clip.instr.hear_letter.wav
+zu.clip.instr.letter_name,isiZulu,Lalela igama lohlamvu lwesiNgisi. Thinta lolo hlamvu.,,"tutor clip instr.letter_name: Placement: hear an English letter name, choose the letter.",instruction,,4.5,draft,no,zu.clip.instr.letter_name.wav
+zu.clip.instr.letter_sound,isiZulu,"Bheka uhlamvu. Lalela imisindo, bese ukhetha umsindo walolu hlamvu.",,"tutor clip instr.letter_sound: See a letter, choose its sound from audio options.",instruction,,5.6,draft,no,zu.clip.instr.letter_sound.wav
+zu.clip.instr.listen_picture,isiZulu,Lalela igama. Bese uthinta isithombe esihambisana nalo.,,"tutor clip instr.listen_picture: Hear a word, then choose the picture.",instruction,,4.6,draft,no,zu.clip.instr.listen_picture.wav
+zu.clip.instr.listen_repeat,isiZulu,"Lalela, bese uphinda igama ngezwi eliphezulu.",,"tutor clip instr.listen_repeat: Listen, then say the word aloud.",instruction,,3.9,draft,no,zu.clip.instr.listen_repeat.wav
+zu.clip.instr.picture_word,isiZulu,Bheka isithombe. Thinta igama elihambisana naso.,,"tutor clip instr.picture_word: See a picture, then choose the written word.",instruction,,4.1,draft,no,zu.clip.instr.picture_word.wav
+zu.clip.instr.read_picture,isiZulu,Funda igama. Bese uthinta isithombe esihambisana nalo.,,"tutor clip instr.read_picture: Read a word with no audio, then choose the picture.",instruction,,4.6,draft,no,zu.clip.instr.read_picture.wav
+zu.clip.instr.read_sentence_picture,isiZulu,Funda umusho. Bese uthinta isithombe esihambisana nawo.,,"tutor clip instr.read_sentence_picture: Read a sentence with no audio, then choose the picture.",instruction,,4.6,draft,no,zu.clip.instr.read_sentence_picture.wav
+zu.clip.instr.same_different,isiZulu,Lalela imisindo emibili. Ingabe iyafana noma iyahlukahluka?,,"tutor clip instr.same_different: Hear two sounds, decide same or different.",instruction,,4.9,draft,no,zu.clip.instr.same_different.wav
+zu.clip.instr.sound_letter,isiZulu,Lalela umsindo. Thinta uhlamvu olwenza lowo msindo.,,"tutor clip instr.sound_letter: Hear a sound, choose the letter.",instruction,,4.3,draft,no,zu.clip.instr.sound_letter.wav
+zu.clip.instr.sound_syllable,isiZulu,Lalela. Thinta ingxenye yegama oyizwayo.,,"tutor clip instr.sound_syllable: Hear a syllable, choose the written syllable.",instruction,,3.5,draft,no,zu.clip.instr.sound_syllable.wav
+zu.clip.instr.syllable_sound,isiZulu,"Funda le ngxenye yegama. Lalela izinketho, bese ukhetha efanayo nayo.",,"tutor clip instr.syllable_sound: See a written syllable, choose its sound from audio options.",instruction,,5.7,draft,no,zu.clip.instr.syllable_sound.wav
+zu.clip.instr.trace,isiZulu,Landela amachashazi ngomunwe wakho ukuze ubhale uhlamvu.,,tutor clip instr.trace: Trace a letter.,instruction,,4.7,draft,no,zu.clip.instr.trace.wav
+zu.clip.instr.type_picture,isiZulu,Bheka isithombe. Bhala igama ngekhibhodi yefoni.,,"tutor clip instr.type_picture: See a picture, type the word.",instruction,,4.1,draft,no,zu.clip.instr.type_picture.wav
+zu.clip.instr.type_word,isiZulu,"Lalela igama, bese ulibhala ngekhibhodi yefoni.",,"tutor clip instr.type_word: Hear a word, type it on the phone keyboard.",instruction,,4,draft,no,zu.clip.instr.type_word.wav
+zu.clip.instr.which_word,isiZulu,Lalela. Yiliphi igama olizwile? Lithinte.,,"tutor clip instr.which_word: Hear one word of a pair, choose which was said.",instruction,,3.6,draft,no,zu.clip.instr.which_word.wav
+zu.clip.instr.word_sound,isiZulu,"Funda leli gama. Lalela izinketho, bese ukhetha ezwakala njengaleli gama.",,"tutor clip instr.word_sound: See a word, choose the matching spoken word.",instruction,,6,draft,no,zu.clip.instr.word_sound.wav
+zu.clip.sys.error_generic,isiZulu,Kukhona okungahambanga kahle. Thinta umcibisholo ukuze uzame futhi.,,tutor clip sys.error_generic: Unexpected error with one recovery action.,app,,5.6,draft,no,zu.clip.sys.error_generic.wav
+zu.clip.sys.needs_download,isiZulu,Lesi sifundo asikalandwa. Ukusilanda kusebenzisa idatha.,,tutor clip sys.needs_download: Lesson content is not on the phone yet.,app,,4.7,draft,no,zu.clip.sys.needs_download.wav
+zu.clip.sys.offline,isiZulu,Awuxhunyiwe ku-inthanethi. Ungaqhubeka ufunde ngezifundo ozilandile.,,tutor clip sys.offline: The device is offline.,app,,5.6,draft,no,zu.clip.sys.offline.wav
+zu.clip.sys.uses_data,isiZulu,Lokhu kuzosebenzisa idatha yeselula. Usayizi ubhalwe esikrinini.,,tutor clip sys.uses_data: Action will use mobile data; size is on screen.,app,,5.3,draft,no,zu.clip.sys.uses_data.wav
+zu.clip.sys.waiting_wifi,isiZulu,Ukulanda kuzolinda i-Wi-Fi.,,tutor clip sys.waiting_wifi: Download waits for Wi-Fi (setting).,app,,2.5,draft,no,zu.clip.sys.waiting_wifi.wav
+zu.clip.teach.blend_demo,isiZulu,"Lalela umsindo ngamunye, bese siyihlanganisa sakhe igama.",,tutor clip teach.blend_demo: Shared teaching line before a blending demonstration.,instruction,,4.8,draft,no,zu.clip.teach.blend_demo.wav
+zu.clip.teach.letter_intro,isiZulu,Bheka lolu hlamvu. Lalela umsindo walo.,,tutor clip teach.letter_intro: Shared teaching line before a letter is shown and its sound played.,instruction,,3.4,draft,no,zu.clip.teach.letter_intro.wav
+zu.clip.teach.word_intro,isiZulu,Bheka leli gama nesithombe salo. Lalela.,,"tutor clip teach.word_intro: Shared teaching line before a word, its picture and its meaning.",instruction,,3.5,draft,no,zu.clip.teach.word_intro.wav
+zu.clip.tutor.ask_prompt,isiZulu,Buza umbuzo wakho emva kokukhala kwensimbi.,,tutor clip tutor.ask_prompt: Tier 2: before recording a spoken question.,tutor,,3.7,draft,no,zu.clip.tutor.ask_prompt.wav
+zu.clip.tutor.blend_again,isiZulu,Masihlanganise imisindo futhi.,,tutor clip tutor.blend_again: Before replaying a blending demonstration.,tutor,,2.7,draft,no,zu.clip.tutor.blend_again.wav
+zu.clip.tutor.cant_answer_yet,isiZulu,Angikwazi ukuphendula lokho okwamanje. Asiqhubeke nesifundo.,,tutor clip tutor.cant_answer_yet: Tier 2: no validated clip matches the question.,tutor,,5,draft,no,zu.clip.tutor.cant_answer_yet.wav
+zu.clip.tutor.how_it_works,isiZulu,Ngizokuchazela ukuthi lo msebenzi wenziwa kanjani.,,tutor clip tutor.how_it_works: Before replaying how an exercise works.,tutor,,4.2,draft,no,zu.clip.tutor.how_it_works.wav
+zu.clip.tutor.listen_slow,isiZulu,Lalela kancane.,,tutor clip tutor.listen_slow: Before slow playback.,tutor,,1.6,draft,no,zu.clip.tutor.listen_slow.wav
+zu.clip.tutor.menu,isiZulu,Ufuna usizo ngani? Thinta isithombe.,,tutor clip tutor.menu: Opening the help panel.,tutor,,3.2,draft,no,zu.clip.tutor.menu.wav
+zu.clip.tutor.needs_internet,isiZulu,Ukubuza imibuzo kudinga i-inthanethi. Ungaqhubeka ufunde ngaphandle kwayo.,,tutor clip tutor.needs_internet: A network-only tutor feature was requested offline.,tutor,,6.1,draft,no,zu.clip.tutor.needs_internet.wav
+zu.clip.tutor.off_topic,isiZulu,Ngingakusiza kuphela ngokufunda nokubhala isiNgisi. Asiqhubeke.,,tutor clip tutor.off_topic: Tier 2/3: question outside English literacy.,tutor,,5.2,draft,no,zu.clip.tutor.off_topic.wav
+zu.clip.tutor.read_alone_first,isiZulu,"Zama ukulifunda wedwa kuqala. Uma ngikufundela lona, ngeke libalwe njengokufunda wedwa. Kodwa kulungile ukucela usizo.",,tutor clip tutor.read_alone_first: When the learner asks to hear a word they are meant to read alone.,tutor,,9.5,draft,no,zu.clip.tutor.read_alone_first.wav
+zu.clip.tutor.replay_intro,isiZulu,Nansi incazelo futhi.,,tutor clip tutor.replay_intro: Before replaying the lesson explanation.,tutor,,2,draft,no,zu.clip.tutor.replay_intro.wav
+zu.clip.tutor.resting,isiZulu,Umsizi akatholakali manje. Asiqhubeke nesifundo.,,"tutor clip tutor.resting: Tier 2/3 unavailable (spending cap, rate limit or provider failure).",tutor,,4.1,draft,no,zu.clip.tutor.resting.wav
+zu.clip.tutor.sound_of_letter,isiZulu,Lalela ukuthi lolu hlamvu luzwakala kanjani esiNgisini.,,tutor clip tutor.sound_of_letter: Before playing a letter sound on request.,tutor,,4.6,draft,no,zu.clip.tutor.sound_of_letter.wav
+zu.clip.tutor.word_meaning,isiZulu,Ake ngikutshele ukuthi leli gama lisho ukuthini.,,tutor clip tutor.word_meaning: Before playing a word's meaning on request.,tutor,,4.1,draft,no,zu.clip.tutor.word_meaning.wav
+zu.gloss.airtime,isiZulu,Igama elithi airtime lisho i-airtime.,,meaning of 'airtime',gloss,,3.2,draft,no,zu.gloss.airtime.wav
+zu.gloss.bank,isiZulu,Igama elithi bank lisho ibhange.,,meaning of 'bank',gloss,,2.9,draft,no,zu.gloss.bank.wav
+zu.gloss.bus,isiZulu,Igama elithi bus lisho ibhasi.,,meaning of 'bus',gloss,,2.7,draft,no,zu.gloss.bus.wav
+zu.gloss.cat,isiZulu,Igama elithi cat lisho ikati.,,meaning of 'cat',gloss,,2.6,draft,no,zu.gloss.cat.wav
+zu.gloss.cleaner,isiZulu,Igama elithi cleaner lisho umhlanzi.,,meaning of 'cleaner',gloss,,3.2,draft,no,zu.gloss.cleaner.wav
+zu.gloss.clinic,isiZulu,Igama elithi clinic lisho umtholampilo.,,meaning of 'clinic',gloss,,3.4,draft,no,zu.gloss.clinic.wav
+zu.gloss.closed,isiZulu,Igama elithi CLOSED lisho kuvaliwe.,,meaning of 'CLOSED',gloss,,3.1,draft,no,zu.gloss.closed.wav
+zu.gloss.cook,isiZulu,Igama elithi cook lisho umpheki.,,meaning of 'cook',gloss,,2.9,draft,no,zu.gloss.cook.wav
+zu.gloss.dad,isiZulu,Igama elithi dad lisho ubaba.,,meaning of 'dad',gloss,,2.6,draft,no,zu.gloss.dad.wav
+zu.gloss.danger,isiZulu,Igama elithi DANGER lisho ingozi.,,meaning of 'DANGER',gloss,,2.9,draft,no,zu.gloss.danger.wav
+zu.gloss.driver,isiZulu,Igama elithi driver lisho umshayeli.,,meaning of 'driver',gloss,,3.2,draft,no,zu.gloss.driver.wav
+zu.gloss.exit,isiZulu,Igama elithi EXIT lisho indlela yokuphuma.,,meaning of 'EXIT',gloss,,3.6,draft,no,zu.gloss.exit.wav
+zu.gloss.friday,isiZulu,Igama elithi Friday lisho uLwesihlanu.,,meaning of 'Friday',gloss,,3.3,draft,no,zu.gloss.friday.wav
+zu.gloss.here,isiZulu,Igama elithi here lisho lapha.,,meaning of 'here',gloss,,2.7,draft,no,zu.gloss.here.wav
+zu.gloss.i,isiZulu,Igama elithi I lisho mina.,,meaning of 'I',gloss,,2.4,draft,no,zu.gloss.i.wav
+zu.gloss.id,isiZulu,Igama elithi ID lisho umazisi.,,meaning of 'ID',gloss,,2.7,draft,no,zu.gloss.id.wav
+zu.gloss.low,isiZulu,Igama elithi low lisho iphansi.,,meaning of 'low',gloss,,2.8,draft,no,zu.gloss.low.wav
+zu.gloss.man,isiZulu,Igama elithi man lisho indoda.,,meaning of 'man',gloss,,2.7,draft,no,zu.gloss.man.wav
+zu.gloss.map,isiZulu,Igama elithi map lisho imephu.,,meaning of 'map',gloss,,2.7,draft,no,zu.gloss.map.wav
+zu.gloss.monday,isiZulu,Igama elithi Monday lisho uMsombuluko.,,meaning of 'Monday',gloss,,3.3,draft,no,zu.gloss.monday.wav
+zu.gloss.money,isiZulu,Igama elithi money lisho imali.,,meaning of 'money',gloss,,2.8,draft,no,zu.gloss.money.wav
+zu.gloss.ok,isiZulu,Igama elithi OK lisho kulungile.,,meaning of 'OK',gloss,,2.9,draft,no,zu.gloss.ok.wav
+zu.gloss.open,isiZulu,Igama elithi OPEN lisho kuvuliwe.,,meaning of 'OPEN',gloss,,2.9,draft,no,zu.gloss.open.wav
+zu.gloss.pan,isiZulu,Igama elithi pan lisho ipani.,,meaning of 'pan',gloss,,2.6,draft,no,zu.gloss.pan.wav
+zu.gloss.pen,isiZulu,Igama elithi pen lisho ipeni.,,meaning of 'pen',gloss,,2.6,draft,no,zu.gloss.pen.wav
+zu.gloss.sheep,isiZulu,Igama elithi sheep lisho imvu.,,meaning of 'sheep',gloss,,2.7,draft,no,zu.gloss.sheep.wav
+zu.gloss.ship,isiZulu,Igama elithi ship lisho umkhumbi.,,meaning of 'ship',gloss,,2.9,draft,no,zu.gloss.ship.wav
+zu.gloss.shop,isiZulu,Igama elithi shop lisho isitolo.,,meaning of 'shop',gloss,,2.9,draft,no,zu.gloss.shop.wav
+zu.gloss.sit,isiZulu,Igama elithi sit lisho hlala phansi.,,meaning of 'sit',gloss,,3.2,draft,no,zu.gloss.sit.wav
+zu.gloss.stop,isiZulu,Igama elithi STOP lisho yima.,,meaning of 'STOP',gloss,,2.6,draft,no,zu.gloss.stop.wav
+zu.gloss.sun,isiZulu,Igama elithi sun lisho ilanga.,,meaning of 'sun',gloss,,2.7,draft,no,zu.gloss.sun.wav
+zu.gloss.tap,isiZulu,Igama elithi tap lisho umpompi.,,meaning of 'tap',gloss,,2.8,draft,no,zu.gloss.tap.wav
+zu.gloss.ten,isiZulu,Igama elithi ten lisho ishumi.,,meaning of 'ten',gloss,,2.7,draft,no,zu.gloss.ten.wav
+zu.gloss.tin,isiZulu,Igama elithi tin lisho ithini.,,meaning of 'tin',gloss,,2.7,draft,no,zu.gloss.tin.wav
+zu.gloss.toilets,isiZulu,Igama elithi TOILETS lisho izindlu zangasese.,,meaning of 'TOILETS',gloss,,3.9,draft,no,zu.gloss.toilets.wav
+zu.gloss.work,isiZulu,Igama elithi work lisho umsebenzi.,,meaning of 'work',gloss,,3,draft,no,zu.gloss.work.wav
+zu.gloss.yes,isiZulu,Igama elithi yes lisho yebo.,,meaning of 'yes',gloss,,2.6,draft,no,zu.gloss.yes.wav
+zu.gloss.you,isiZulu,Igama elithi you lisho wena.,,meaning of 'you',gloss,,2.6,draft,no,zu.gloss.you.wav
+zu.l.a,isiZulu,a,"Native isiZulu speaker: say only the vowel sound 'a', as in 'amanzi'.",model audio for letter 'a',model_audio,,1,draft,no,zu.l.a.wav
+zu.l.b,isiZulu,b,"Native isiZulu speaker: say only the consonant sound 'b' as it sounds in your language, with no vowel after it.",model audio for letter 'b',model_audio,,1,draft,no,zu.l.b.wav
+zu.l.c,isiZulu,c,"Native isiZulu speaker: the dental click written c, as in 'icici'. Click only, no vowel.",model audio for letter 'c',model_audio,,1,draft,no,zu.l.c.wav
+zu.l.d,isiZulu,d,"Native isiZulu speaker: say only the consonant sound 'd' as it sounds in your language, with no vowel after it.",model audio for letter 'd',model_audio,,1,draft,no,zu.l.d.wav
+zu.l.e,isiZulu,e,"Native isiZulu speaker: say only the vowel sound 'e', as in 'ekhaya'.",model audio for letter 'e',model_audio,,1,draft,no,zu.l.e.wav
+zu.l.i,isiZulu,i,"Native isiZulu speaker: say only the vowel sound 'i', as in 'inja'.",model audio for letter 'i',model_audio,,1,draft,no,zu.l.i.wav
+zu.l.m,isiZulu,m,"Native isiZulu speaker: say only the consonant sound 'm' as it sounds in your language, with no vowel after it.",model audio for letter 'm',model_audio,,1,draft,no,zu.l.m.wav
+zu.l.n,isiZulu,n,"Native isiZulu speaker: say only the consonant sound 'n' as it sounds in your language, with no vowel after it.",model audio for letter 'n',model_audio,,1,draft,no,zu.l.n.wav
+zu.l.o,isiZulu,o,"Native isiZulu speaker: say only the vowel sound 'o', as in 'olwandle'.",model audio for letter 'o',model_audio,,1,draft,no,zu.l.o.wav
+zu.l.p,isiZulu,p,"Native isiZulu speaker: say only the consonant sound 'p' as it sounds in your language, with no vowel after it.",model audio for letter 'p',model_audio,,1,draft,no,zu.l.p.wav
+zu.l.s,isiZulu,s,"Native isiZulu speaker: say only the consonant sound 's' as it sounds in your language, with no vowel after it.",model audio for letter 's',model_audio,,1,draft,no,zu.l.s.wav
+zu.l.t,isiZulu,t,"Native isiZulu speaker: say only the consonant sound 't' as it sounds in your language, with no vowel after it.",model audio for letter 't',model_audio,,1,draft,no,zu.l.t.wav
+zu.l.u,isiZulu,u,"Native isiZulu speaker: say only the vowel sound 'u', as in 'ubisi'.",model audio for letter 'u',model_audio,,1,draft,no,zu.l.u.wav
+zu.l00-hl-vowels.intro,isiZulu,"Uyakwazi kakade ukukhuluma isiZulu. Manje sizofunda izinhlamvu ezibhala imisindo oyaziyo. Siqala ngonkamisa abahlanu: a, e, i, o, u.",,lesson l00-hl-vowels introduction,teaching,l00-hl-vowels,10.6,draft,no,zu.l00-hl-vowels.intro.wav
+zu.l00-hl-vowels.outro,isiZulu,Wenze kahle! Manje wazi onkamisa abahlanu. Esifundweni esilandelayo sizobahlanganisa nezinye izinhlamvu.,,lesson l00-hl-vowels closing,teaching,l00-hl-vowels,8.4,draft,no,zu.l00-hl-vowels.outro.wav
+zu.l00-hl-vowels.t01,isiZulu,"Lezi ngonkamisa abahlanu: a, e, i, o, u. Uhlamvu ngalunye lunomsindo walo.",,teaching step l00-hl-vowels.t01 (explain),teaching,l00-hl-vowels,6.1,draft,no,zu.l00-hl-vowels.t01.wav
+zu.l00-hl-vowels.title,isiZulu,Izinhlamvu nemisindo osuyikhuluma kakade.,,lesson l00-hl-vowels title,title,l00-hl-vowels,3.6,draft,no,zu.l00-hl-vowels.title.wav
+zu.l01-hl-syllables.intro,isiZulu,"Uhlamvu nonkamisa kuyahlangana kwakhe ingxenye yegama, njengo-m no-a benza ma. Izingxenye zakha amagama.",,lesson l01-hl-syllables introduction,teaching,l01-hl-syllables,8.4,draft,no,zu.l01-hl-syllables.intro.wav
+zu.l01-hl-syllables.outro,isiZulu,Uyafunda manje! Ufunde amagama esiZulu. Lelo khono lizokusiza nasesiNgisini.,,lesson l01-hl-syllables closing,teaching,l01-hl-syllables,6.2,draft,no,zu.l01-hl-syllables.outro.wav
+zu.l01-hl-syllables.t01,isiZulu,"Bheka: m kanye no-a kwenza ma. Lalela: mmm, a, ma.",,teaching step l01-hl-syllables.t01 (explain),teaching,l01-hl-syllables,4.2,draft,no,zu.l01-hl-syllables.t01.wav
+zu.l01-hl-syllables.t02,isiZulu,"Futhi b kanye no-a kwenza ba. Lalela: b, a, ba.",,teaching step l01-hl-syllables.t02 (explain),teaching,l01-hl-syllables,4,draft,no,zu.l01-hl-syllables.t02.wav
+zu.l01-hl-syllables.title,isiZulu,"Sakha izingxenye zamagama, sifunde amagama okuqala ngesiZulu.",,lesson l01-hl-syllables title,title,l01-hl-syllables,5.1,draft,no,zu.l01-hl-syllables.title.wav
+zu.l02-bridge.intro,isiZulu,"Usuyakwazi ukufunda ngesiZulu. IsiNgisi sisebenzisa izinhlamvu ezifanayo, kodwa ezinye zizwakala ngendlela ehlukile. Asibheke.",,lesson l02-bridge introduction,teaching,l02-bridge,10.1,draft,no,zu.l02-bridge.intro.wav
+zu.l02-bridge.outro,isiZulu,"Manje uyazi: izinhlamvu eziningi ziyafana, kodwa ezinye zishintsha esiNgisini. Usukulungele izinhlamvu zesiNgisi!",,lesson l02-bridge closing,teaching,l02-bridge,9.1,draft,no,zu.l02-bridge.outro.wav
+zu.l02-bridge.t01,isiZulu,Lezi zinhlamvu zizwakala cishe ngendlela efanayo esiZulwini nasesiNgisini.,,teaching step l02-bridge.t01 (explain),teaching,l02-bridge,6.1,draft,no,zu.l02-bridge.t01.wav
+zu.l02-bridge.t02,isiZulu,"Kodwa qaphela! EsiZulwini, u-c, u-q no-x bayaqhafaza, njengo-c egameni elithi icici. EsiNgisini abaqhafazi. Egameni elithi cat, u-c uzwakala njengo-k.",,teaching step l02-bridge.t02 (contrast_note),teaching,l02-bridge,11.9,draft,no,zu.l02-bridge.t02.wav
+zu.l02-bridge.t04,isiZulu,"Futhi u-th: esiZulwini u-th usegameni elithi thatha. EsiNgisini u-th uzwakala ngendlela ehlukile, njengasegameni elithi the.",,teaching step l02-bridge.t04 (contrast_note),teaching,l02-bridge,9.9,draft,no,zu.l02-bridge.t04.wav
+zu.l02-bridge.t05,isiZulu,Nonkamisa besiNgisi bangazwakala ngendlela ehlukile kancane. Sizobafunda kahle ezifundweni ezilandelayo.,,teaching step l02-bridge.t05 (explain),teaching,l02-bridge,8.4,draft,no,zu.l02-bridge.t05.wav
+zu.l02-bridge.title,isiZulu,Izinhlamvu ezifanayo esiNgisini: okufanayo nokushintshayo.,,lesson l02-bridge title,title,l02-bridge,4.9,draft,no,zu.l02-bridge.title.wav
+zu.l10-satp.intro,isiZulu,"Namuhla sifunda imisindo yezinhlamvu ezine zesiNgisi: s, a, t, p. Sifunda imisindo, hhayi amagama ezinhlamvu.",,lesson l10-satp introduction,teaching,l10-satp,8.8,draft,no,zu.l10-satp.intro.wav
+zu.l10-satp.outro,isiZulu,"Wenze kahle! Wazi imisindo emine: s, a, t, p. Usufundile namagama amancane: at, sat, tap.",,lesson l10-satp closing,teaching,l10-satp,7.2,draft,no,zu.l10-satp.outro.wav
+zu.l10-satp.title,isiZulu,"Imisindo yesiNgisi: s, a, t, p.",,lesson l10-satp title,title,l10-satp,2.8,draft,no,zu.l10-satp.title.wav
+zu.l11-inmd.intro,isiZulu,"Siqhubeka nezinhlamvu ezine ezintsha: i, n, m, d. Bese sifunda uhlamvu c, oluzwakala ngendlela ehlukile esiNgisini.",,lesson l11-inmd introduction,teaching,l11-inmd,9.2,draft,no,zu.l11-inmd.intro.wav
+zu.l11-inmd.outro,isiZulu,"Kuhle! Manje wazi i, n, m, d, futhi uyazi ukuthi u-c esiNgisini uzwakala njengo-k.",,lesson l11-inmd closing,teaching,l11-inmd,6.7,draft,no,zu.l11-inmd.outro.wav
+zu.l11-inmd.t05,isiZulu,"Manje uhlamvu c. EsiZulwini u-c uyaqhafaza, njengasegameni elithi icici. EsiNgisini, egameni elithi cat, u-c akaqhafazi: uzwakala njengo-k.",,teaching step l11-inmd.t05 (letter_intro),teaching,l11-inmd,11.1,draft,no,zu.l11-inmd.t05.wav
+zu.l11-inmd.t06,isiZulu,"Lalela umehluko: lokhu ukuqhafaza kwesiZulu, futhi lokhu ngu-k wesiNgisi. Egameni elithi cat, sisebenzisa u-k.",,teaching step l11-inmd.t06 (contrast_note),teaching,l11-inmd,8.9,draft,no,zu.l11-inmd.t06.wav
+zu.l11-inmd.title,isiZulu,"Imisindo yesiNgisi: i, n, m, d, kanye no-c.",,lesson l11-inmd title,title,l11-inmd,3.7,draft,no,zu.l11-inmd.title.wav
+zu.l12-tracing.intro,isiZulu,Namuhla sizobhala. Uzolandela izinhlamvu ngomunwe wakho esikrinini. Qala echashazini eliluhlaza.,,lesson l12-tracing introduction,teaching,l12-tracing,7.8,draft,no,zu.l12-tracing.intro.wav
+zu.l12-tracing.outro,isiZulu,Wenze kahle! Ubhale izinhlamvu zakho zokuqala zesiNgisi. Qhubeka uprakthize ukubhala.,,lesson l12-tracing closing,teaching,l12-tracing,6.9,draft,no,zu.l12-tracing.outro.wav
+zu.l12-tracing.t01,isiZulu,"Ukubhala kusiza ukufunda. Uma ubhala uhlamvu, uyalukhumbula kalula.",,teaching step l12-tracing.t01 (explain),teaching,l12-tracing,5.6,draft,no,zu.l12-tracing.t01.wav
+zu.l12-tracing.title,isiZulu,Landela futhi ubhale izinhlamvu zakho zokuqala zesiNgisi.,,lesson l12-tracing title,title,l12-tracing,4.8,draft,no,zu.l12-tracing.title.wav
+zu.l20-blending.intro,isiZulu,"Manje sizohlanganisa imisindo emithathu sakhe amagama. Lalela: c, a, t... cat! Ungakhohlwa umsindo wokugcina.",,lesson l20-blending introduction,teaching,l20-blending,8.8,draft,no,zu.l20-blending.intro.wav
+zu.l20-blending.outro,isiZulu,"Uyafunda isiNgisi! Ufunde amagama: cat, sit, map, pen.",,lesson l20-blending closing,teaching,l20-blending,4.6,draft,no,zu.l20-blending.outro.wav
+zu.l20-blending.t03,isiZulu,"EsiZulwini amagama avame ukuphela ngonkamisa. EsiNgisini amagama amaningi aphela ngomsindo onjengo-t. Sithi cat, hhayi cati.",,teaching step l20-blending.t03 (contrast_note),teaching,l20-blending,9.9,draft,no,zu.l20-blending.t03.wav
+zu.l20-blending.title,isiZulu,"Hlanganisa imisindo emithathu wakhe amagama: cat, sit, map, pen.",,lesson l20-blending title,title,l20-blending,5.3,draft,no,zu.l20-blending.title.wav
+zu.l21-picture-words.intro,isiZulu,Namuhla ufunda amagama amasha ngezinhlamvu osuzazi. Sizophinde sifunde izinhlamvu ezimbili ezintsha: b no-u.,,lesson l21-picture-words introduction,teaching,l21-picture-words,8.7,draft,no,zu.l21-picture-words.intro.wav
+zu.l21-picture-words.outro,isiZulu,Kuhle kakhulu! Usufunde amagama amaningi esiNgisi.,,lesson l21-picture-words closing,teaching,l21-picture-words,4.2,draft,no,zu.l21-picture-words.outro.wav
+zu.l21-picture-words.t02,isiZulu,"Uhlamvu u esiNgisini, egameni elithi bus, aluzwakali njengo-u wesiZulu. Lalela: u, bus.",,teaching step l21-picture-words.t02 (letter_intro),teaching,l21-picture-words,7.1,draft,no,zu.l21-picture-words.t02.wav
+zu.l21-picture-words.title,isiZulu,"Hlanganisa amagama nezithombe, wakhe amagama ngezinhlamvu.",,lesson l21-picture-words title,title,l21-picture-words,4.9,draft,no,zu.l21-picture-words.title.wav
+zu.l22-sight-words.intro,isiZulu,"Amanye amagama esiNgisi awalandeli imithetho yemisindo. Siwafunda ngokuwabona wonke, njengesithombe. La magama avela cishe kuyo yonke imisho.",,lesson l22-sight-words introduction,teaching,l22-sight-words,11.2,draft,no,zu.l22-sight-words.intro.wav
+zu.l22-sight-words.outro,isiZulu,"Wenze kahle! Usuyawazi amagama amahlanu amancane: the, a, is, I, you. Uzowabona yonke indawo.",,lesson l22-sight-words closing,teaching,l22-sight-words,7.6,draft,no,zu.l22-sight-words.outro.wav
+zu.l22-sight-words.t01,isiZulu,Leli gama lithi the. Alizwakali njengoba libhaliwe. Ulikhumbule ngokulibona.,,teaching step l22-sight-words.t01 (contrast_note),teaching,l22-sight-words,6.2,draft,no,zu.l22-sight-words.t01.wav
+zu.l22-sight-words.t02,isiZulu,EsiNgisini u-th wenziwa ngolimi phakathi kwamazinyo: the. Akufani no-th wesiZulu egameni elithi thatha.,,teaching step l22-sight-words.t02 (contrast_note),teaching,l22-sight-words,8.3,draft,no,zu.l22-sight-words.t02.wav
+zu.l22-sight-words.t05,isiZulu,"Igama elithi a lisho into eyodwa, njengo-a cat. Igama elithi is lisetshenziswa njengakule: the cat is here.",,teaching step l22-sight-words.t05 (explain),teaching,l22-sight-words,8.6,draft,no,zu.l22-sight-words.t05.wav
+zu.l22-sight-words.title,isiZulu,"Amagama amancane abonakala yonke indawo: the, a, is, I, you.",,lesson l22-sight-words title,title,l22-sight-words,5,draft,no,zu.l22-sight-words.title.wav
+zu.l30-first-sentences.e01.instr,isiZulu,Lalela umusho. Yini ekhona lapha? Thinta isithombe.,,exercise l30-first-sentences.e01 instruction,instruction,l30-first-sentences,4.3,draft,no,zu.l30-first-sentences.e01.instr.wav
+zu.l30-first-sentences.e01.q,isiZulu,Yini ekhona lapha?,,exercise l30-first-sentences.e01 question,instruction,l30-first-sentences,1.8,draft,no,zu.l30-first-sentences.e01.q.wav
+zu.l30-first-sentences.e05.instr,isiZulu,"Funda umusho, bese uphendula umbuzo.",,exercise l30-first-sentences.e05 instruction,instruction,l30-first-sentences,3.2,draft,no,zu.l30-first-sentences.e05.instr.wav
+zu.l30-first-sentences.e05.q,isiZulu,Umuntu angenzani lapha?,,exercise l30-first-sentences.e05 question,instruction,l30-first-sentences,2.2,draft,no,zu.l30-first-sentences.e05.q.wav
+zu.l30-first-sentences.e08.instr,isiZulu,Lalela umusho. Uphi lo muntu? Thinta isithombe.,,exercise l30-first-sentences.e08 instruction,instruction,l30-first-sentences,4,draft,no,zu.l30-first-sentences.e08.instr.wav
+zu.l30-first-sentences.e08.q,isiZulu,Uphi lo muntu?,,exercise l30-first-sentences.e08 question,instruction,l30-first-sentences,1.5,draft,no,zu.l30-first-sentences.e08.q.wav
+zu.l30-first-sentences.e09.instr,isiZulu,"Funda umusho, bese uphendula umbuzo.",,exercise l30-first-sentences.e09 instruction,instruction,l30-first-sentences,3.2,draft,no,zu.l30-first-sentences.e09.instr.wav
+zu.l30-first-sentences.e09.q,isiZulu,Yini ekhona lapha?,,exercise l30-first-sentences.e09 question,instruction,l30-first-sentences,1.8,draft,no,zu.l30-first-sentences.e09.q.wav
+zu.l30-first-sentences.intro,isiZulu,"Usuyakwazi ukufunda amagama. Manje sizowahlanganisa abe imisho. Umusho uqala ngohlamvu olukhulu, uphele ngechashazi.",,lesson l30-first-sentences introduction,teaching,l30-first-sentences,9.3,draft,no,zu.l30-first-sentences.intro.wav
+zu.l30-first-sentences.outro,isiZulu,Wenze kahle kakhulu! Ufunde imisho yakho yokuqala yesiNgisi.,,lesson l30-first-sentences closing,teaching,l30-first-sentences,5,draft,no,zu.l30-first-sentences.outro.wav
+zu.l30-first-sentences.t03,isiZulu,Bheka umusho: I am at work. Usho ukuthi: ngisemsebenzini.,,teaching step l30-first-sentences.t03 (explain),teaching,l30-first-sentences,4.8,draft,no,zu.l30-first-sentences.t03.wav
+zu.l30-first-sentences.title,isiZulu,Funda imisho yakho yokuqala: I am at work. The bus is here.,,lesson l30-first-sentences title,title,l30-first-sentences,4.9,draft,no,zu.l30-first-sentences.title.wav
+zu.l40-sms.e01.instr,isiZulu,"Funda i-SMS, bese uphendula umbuzo.",,exercise l40-sms.e01 instruction,instruction,l40-sms,3.1,draft,no,zu.l40-sms.e01.instr.wav
+zu.l40-sms.e01.q,isiZulu,Ubani othumele le SMS?,,exercise l40-sms.e01 question,instruction,l40-sms,2.1,draft,no,zu.l40-sms.e01.q.wav
+zu.l40-sms.e02.instr,isiZulu,"Funda i-SMS, bese uphendula umbuzo.",,exercise l40-sms.e02 instruction,instruction,l40-sms,3.1,draft,no,zu.l40-sms.e02.instr.wav
+zu.l40-sms.e02.q,isiZulu,Ngaluphi usuku i-appointment?,,exercise l40-sms.e02 question,instruction,l40-sms,2.6,draft,no,zu.l40-sms.e02.q.wav
+zu.l40-sms.e03.instr,isiZulu,"Funda i-SMS, bese uphendula umbuzo.",,exercise l40-sms.e03 instruction,instruction,l40-sms,3.1,draft,no,zu.l40-sms.e03.instr.wav
+zu.l40-sms.e03.q,isiZulu,Le SMS ikutshela ngani?,,exercise l40-sms.e03 question,instruction,l40-sms,2.2,draft,no,zu.l40-sms.e03.q.wav
+zu.l40-sms.e05.instr,isiZulu,"Funda i-SMS, bese uphendula umbuzo.",,exercise l40-sms.e05 instruction,instruction,l40-sms,3.1,draft,no,zu.l40-sms.e05.instr.wav
+zu.l40-sms.e05.q,isiZulu,Kufanele uye nini esitolo?,,exercise l40-sms.e05 question,instruction,l40-sms,2.4,draft,no,zu.l40-sms.e05.q.wav
+zu.l40-sms.e06.instr,isiZulu,"Funda i-SMS, bese uphendula umbuzo.",,exercise l40-sms.e06 instruction,instruction,l40-sms,3.1,draft,no,zu.l40-sms.e06.instr.wav
+zu.l40-sms.e06.q,isiZulu,Ngasiphi isikhathi?,,exercise l40-sms.e06 question,instruction,l40-sms,1.9,draft,no,zu.l40-sms.e06.q.wav
+zu.l40-sms.intro,isiZulu,"Ama-SMS asitshela izinto ezibalulekile: umtholampilo, ibhange, isitolo. Namuhla sizofunda ukuthola ulwazi olubalulekile ku-SMS.",,lesson l40-sms introduction,teaching,l40-sms,10.2,draft,no,zu.l40-sms.intro.wav
+zu.l40-sms.outro,isiZulu,Wenze kahle! Manje uyakwazi ukufunda i-SMS nokuthola ukuthi ivela kubani nokuthi kunini.,,lesson l40-sms closing,teaching,l40-sms,7.2,draft,no,zu.l40-sms.outro.wav
+zu.l40-sms.t04,isiZulu,I-SMS ivame ukuqala ngegama lalowo oyithumele. Lapha kuthi Clinic: umtholampilo.,,teaching step l40-sms.t04 (explain),teaching,l40-sms,6.6,draft,no,zu.l40-sms.t04.wav
+zu.l40-sms.title,isiZulu,"Funda i-SMS elula: isikhumbuzo se-appointment, noma i-airtime iphansi.",,lesson l40-sms title,title,l40-sms,5.8,draft,no,zu.l40-sms.title.wav
+zu.l41-signs.e02.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e02 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e02.instr.wav
+zu.l41-signs.e02.q,isiZulu,Lolu phawu lusho ukuthini?,,exercise l41-signs.e02 question,instruction,l41-signs,2.4,draft,no,zu.l41-signs.e02.q.wav
+zu.l41-signs.e03.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e03 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e03.instr.wav
+zu.l41-signs.e03.q,isiZulu,Lolu phawu lusho ukuthini?,,exercise l41-signs.e03 question,instruction,l41-signs,2.4,draft,no,zu.l41-signs.e03.q.wav
+zu.l41-signs.e04.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e04 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e04.instr.wav
+zu.l41-signs.e04.q,isiZulu,Lolu phawu lusho ukuthini?,,exercise l41-signs.e04 question,instruction,l41-signs,2.4,draft,no,zu.l41-signs.e04.q.wav
+zu.l41-signs.e05.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e05 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e05.instr.wav
+zu.l41-signs.e05.q,isiZulu,Lolu phawu lusho ukuthini?,,exercise l41-signs.e05 question,instruction,l41-signs,2.4,draft,no,zu.l41-signs.e05.q.wav
+zu.l41-signs.e06.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e06 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e06.instr.wav
+zu.l41-signs.e06.q,isiZulu,Ungangena manje?,,exercise l41-signs.e06 question,instruction,l41-signs,1.6,draft,no,zu.l41-signs.e06.q.wav
+zu.l41-signs.e07.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e07 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e07.instr.wav
+zu.l41-signs.e07.q,isiZulu,Ungangena manje?,,exercise l41-signs.e07 question,instruction,l41-signs,1.6,draft,no,zu.l41-signs.e07.q.wav
+zu.l41-signs.intro,isiZulu,Izimpawu zisitshela okufanele sikwenze nokuthi sihlale siphephile. Eziningi zibhalwe ngezinhlamvu ezinkulu.,,lesson l41-signs introduction,teaching,l41-signs,8.6,draft,no,zu.l41-signs.intro.wav
+zu.l41-signs.outro,isiZulu,Kuhle! Manje uyakwazi ukufunda izimpawu ezibalulekile emsebenzini nasedolobheni.,,lesson l41-signs closing,teaching,l41-signs,6.6,draft,no,zu.l41-signs.outro.wav
+zu.l41-signs.t05,isiZulu,OPEN kusho ukuthi kuvuliwe. CLOSED kusho ukuthi kuvaliwe.,,teaching step l41-signs.t05 (explain),teaching,l41-signs,4.8,draft,no,zu.l41-signs.t05.wav
+zu.l41-signs.title,isiZulu,"Funda izimpawu ezivamile: STOP, EXIT, DANGER, TOILETS, OPEN, CLOSED.",,lesson l41-signs title,title,l41-signs,5.6,draft,no,zu.l41-signs.title.wav
+zu.l50-job-notice.e01.instr,isiZulu,"Funda isaziso, bese uphendula umbuzo.",,exercise l50-job-notice.e01 instruction,instruction,l50-job-notice,3.2,draft,no,zu.l50-job-notice.e01.instr.wav
+zu.l50-job-notice.e01.q,isiZulu,Ngumsebenzi muni?,,exercise l50-job-notice.e01 question,instruction,l50-job-notice,1.7,draft,no,zu.l50-job-notice.e01.q.wav
+zu.l50-job-notice.e02.instr,isiZulu,"Funda isaziso, bese uphendula umbuzo.",,exercise l50-job-notice.e02 instruction,instruction,l50-job-notice,3.2,draft,no,zu.l50-job-notice.e02.instr.wav
+zu.l50-job-notice.e02.q,isiZulu,Umsebenzi ukuphi?,,exercise l50-job-notice.e02 question,instruction,l50-job-notice,1.7,draft,no,zu.l50-job-notice.e02.q.wav
+zu.l50-job-notice.e03.instr,isiZulu,"Funda isaziso, bese uphendula umbuzo.",,exercise l50-job-notice.e03 instruction,instruction,l50-job-notice,3.2,draft,no,zu.l50-job-notice.e03.instr.wav
+zu.l50-job-notice.e03.q,isiZulu,Kufanele uphathe ini?,,exercise l50-job-notice.e03 question,instruction,l50-job-notice,2,draft,no,zu.l50-job-notice.e03.q.wav
+zu.l50-job-notice.e04.instr,isiZulu,"Funda isaziso, bese uphendula umbuzo.",,exercise l50-job-notice.e04 instruction,instruction,l50-job-notice,3.2,draft,no,zu.l50-job-notice.e04.instr.wav
+zu.l50-job-notice.e04.q,isiZulu,Kufanele uqale ngasiphi isikhathi?,,exercise l50-job-notice.e04 question,instruction,l50-job-notice,3,draft,no,zu.l50-job-notice.e04.q.wav
+zu.l50-job-notice.e05.instr,isiZulu,"Funda isaziso, bese uphendula umbuzo.",,exercise l50-job-notice.e05 instruction,instruction,l50-job-notice,3.2,draft,no,zu.l50-job-notice.e05.instr.wav
+zu.l50-job-notice.e05.q,isiZulu,Izinsuku zomsebenzi yiziphi?,,exercise l50-job-notice.e05 question,instruction,l50-job-notice,2.6,draft,no,zu.l50-job-notice.e05.q.wav
+zu.l50-job-notice.e06.instr,isiZulu,"Funda isaziso futhi. Lalela umbuzo, bese ubhala impendulo.",,exercise l50-job-notice.e06 instruction,instruction,l50-job-notice,4.9,draft,no,zu.l50-job-notice.e06.instr.wav
+zu.l50-job-notice.e06.q,isiZulu,Kufanele uphathe ini? Bhala igama.,,exercise l50-job-notice.e06 question,instruction,l50-job-notice,3,draft,no,zu.l50-job-notice.e06.q.wav
+zu.l50-job-notice.e07.instr,isiZulu,"Funda isaziso futhi. Lalela umbuzo, bese ubhala impendulo.",,exercise l50-job-notice.e07 instruction,instruction,l50-job-notice,4.9,draft,no,zu.l50-job-notice.e07.instr.wav
+zu.l50-job-notice.e07.q,isiZulu,Ngumsebenzi muni? Bhala igama.,,exercise l50-job-notice.e07 question,instruction,l50-job-notice,2.7,draft,no,zu.l50-job-notice.e07.q.wav
+zu.l50-job-notice.intro,isiZulu,"Izaziso zemisebenzi zinolwazi olubalulekile. Funda isaziso kancane, umugqa ngamunye, bese uphendula imibuzo.",,lesson l50-job-notice introduction,teaching,l50-job-notice,8.7,draft,no,zu.l50-job-notice.intro.wav
+zu.l50-job-notice.outro,isiZulu,"Wenze kahle kakhulu! Ufunde isaziso somsebenzi wedwa, wabhala nezimpendulo.",,lesson l50-job-notice closing,teaching,l50-job-notice,6.2,draft,no,zu.l50-job-notice.outro.wav
+zu.l50-job-notice.title,isiZulu,"Funda isaziso somsebenzi, uphendule imibuzo.",,lesson l50-job-notice title,title,l50-job-notice,3.8,draft,no,zu.l50-job-notice.title.wav
+zu.syl.ba,isiZulu,ba,"Native isiZulu speaker: say the syllable 'ba' clearly, once.",model audio for syllable 'ba',model_audio,,1,draft,no,zu.syl.ba.wav
+zu.syl.be,isiZulu,be,"Native isiZulu speaker: say the syllable 'be' clearly, once.",model audio for syllable 'be',model_audio,,1,draft,no,zu.syl.be.wav
+zu.syl.bi,isiZulu,bi,"Native isiZulu speaker: say the syllable 'bi' clearly, once.",model audio for syllable 'bi',model_audio,,1,draft,no,zu.syl.bi.wav
+zu.syl.bo,isiZulu,bo,"Native isiZulu speaker: say the syllable 'bo' clearly, once.",model audio for syllable 'bo',model_audio,,1,draft,no,zu.syl.bo.wav
+zu.syl.bu,isiZulu,bu,"Native isiZulu speaker: say the syllable 'bu' clearly, once.",model audio for syllable 'bu',model_audio,,1,draft,no,zu.syl.bu.wav
+zu.syl.le,isiZulu,le,"Native isiZulu speaker: say the syllable 'le' clearly, once.",model audio for syllable 'le',model_audio,,1,draft,no,zu.syl.le.wav
+zu.syl.li,isiZulu,li,"Native isiZulu speaker: say the syllable 'li' clearly, once.",model audio for syllable 'li',model_audio,,1,draft,no,zu.syl.li.wav
+zu.syl.ma,isiZulu,ma,"Native isiZulu speaker: say the syllable 'ma' clearly, once.",model audio for syllable 'ma',model_audio,,1,draft,no,zu.syl.ma.wav
+zu.syl.me,isiZulu,me,"Native isiZulu speaker: say the syllable 'me' clearly, once.",model audio for syllable 'me',model_audio,,1,draft,no,zu.syl.me.wav
+zu.syl.mi,isiZulu,mi,"Native isiZulu speaker: say the syllable 'mi' clearly, once.",model audio for syllable 'mi',model_audio,,1,draft,no,zu.syl.mi.wav
+zu.syl.mo,isiZulu,mo,"Native isiZulu speaker: say the syllable 'mo' clearly, once.",model audio for syllable 'mo',model_audio,,1,draft,no,zu.syl.mo.wav
+zu.syl.mu,isiZulu,mu,"Native isiZulu speaker: say the syllable 'mu' clearly, once.",model audio for syllable 'mu',model_audio,,1,draft,no,zu.syl.mu.wav
+zu.syl.se,isiZulu,se,"Native isiZulu speaker: say the syllable 'se' clearly, once.",model audio for syllable 'se',model_audio,,1,draft,no,zu.syl.se.wav
+zu.syl.si,isiZulu,si,"Native isiZulu speaker: say the syllable 'si' clearly, once.",model audio for syllable 'si',model_audio,,1,draft,no,zu.syl.si.wav
+zu.syl.ta,isiZulu,ta,"Native isiZulu speaker: say the syllable 'ta' clearly, once.",model audio for syllable 'ta',model_audio,,1,draft,no,zu.syl.ta.wav
+zu.syl.te,isiZulu,te,"Native isiZulu speaker: say the syllable 'te' clearly, once.",model audio for syllable 'te',model_audio,,1,draft,no,zu.syl.te.wav
+zu.syl.tha,isiZulu,tha,"Native isiZulu speaker: say the syllable 'tha' clearly, once.",model audio for syllable 'tha',model_audio,,1,draft,no,zu.syl.tha.wav
+zu.unit.u0.title,isiZulu,Funda ngolimi lwakho.,,unit u0 title,title,,2,draft,no,zu.unit.u0.title.wav
+zu.unit.u1.title,isiZulu,Izinhlamvu nemisindo yesiNgisi.,,unit u1 title,title,,2.8,draft,no,zu.unit.u1.title.wav
+zu.unit.u2.title,isiZulu,Amagama akho okuqala esiNgisi.,,unit u2 title,title,,2.7,draft,no,zu.unit.u2.title.wav
+zu.unit.u3.title,isiZulu,Imisho yakho yokuqala.,,unit u3 title,title,,2.1,draft,no,zu.unit.u3.title.wav
+zu.unit.u4.title,isiZulu,IsiNgisi sansuku zonke: ama-SMS nezimpawu.,,unit u4 title,title,,3.6,draft,no,zu.unit.u4.title.wav
+zu.unit.u5.title,isiZulu,Ukufunda wedwa.,,unit u5 title,title,,1.6,draft,no,zu.unit.u5.title.wav
+zu.w.amanzi,isiZulu,amanzi,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'amanzi',model_audio,,1.2,draft,no,zu.w.amanzi.wav
+zu.w.ibhasi,isiZulu,ibhasi,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'ibhasi',model_audio,,1.2,draft,no,zu.w.ibhasi.wav
+zu.w.ikati,isiZulu,ikati,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'ikati',model_audio,,1.2,draft,no,zu.w.ikati.wav
+zu.w.imali,isiZulu,imali,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'imali',model_audio,,1.2,draft,no,zu.w.imali.wav
+zu.w.indlu,isiZulu,indlu,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'indlu',model_audio,,1.2,draft,no,zu.w.indlu.wav
+zu.w.inja,isiZulu,inja,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'inja',model_audio,,1.2,draft,no,zu.w.inja.wav
+zu.w.isinkwa,isiZulu,isinkwa,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'isinkwa',model_audio,,1.2,draft,no,zu.w.isinkwa.wav
+zu.w.ubaba,isiZulu,ubaba,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'ubaba',model_audio,,1.2,draft,no,zu.w.ubaba.wav
+zu.w.ubisi,isiZulu,ubisi,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'ubisi',model_audio,,1.2,draft,no,zu.w.ubisi.wav
+zu.w.umama,isiZulu,umama,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'umama',model_audio,,1.2,draft,no,zu.w.umama.wav

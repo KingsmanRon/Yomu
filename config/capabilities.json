@@ -1,0 +1,258 @@
+{
+  "version": "2026-10-26",
+  "description": "Provider capability matrix. The app reads this file at runtime and exposes a capability to learners only when status is 'verified' AND learnerVisible is true. Everything else falls back to the next lower tutor tier (ultimately Tier 1: validated recorded clips). Change a status only after the evaluation described in docs/capability-matrix.md has been completed and recorded here.",
+  "statuses": [
+    "verified",
+    "experimental",
+    "unsupported"
+  ],
+  "capabilities": {
+    "stt": "Speech-to-text: transcribe a learner's spoken question in the teaching language (tutor Tier 2).",
+    "tts": "Text-to-speech: speak generated explanations aloud (tutor Tier 3).",
+    "translation": "Machine translation between English and the teaching language.",
+    "pronunciation_scoring": "Automatic scoring of a learner's spoken English against a model.",
+    "llm_dialogue": "LLM understanding and generation in the language (intent classification for Tier 2, generated explanations for Tier 3)."
+  },
+  "providers": {
+    "lelapa-vulavula": {
+      "name": "Lelapa AI Vulavula",
+      "kind": "external",
+      "adapter": "src/server/providers/stt-vulavula.ts",
+      "credentials": "VULAVULA_API_KEY (server only)",
+      "documentation": "https://docs.lelapa.ai/overview/language-support"
+    },
+    "anthropic-claude": {
+      "name": "Anthropic Claude (Messages API)",
+      "kind": "external",
+      "adapter": "src/server/providers/llm-anthropic.ts",
+      "credentials": "ANTHROPIC_API_KEY (server only)",
+      "documentation": "https://docs.claude.com"
+    },
+    "device-web-speech": {
+      "name": "Device speech engine (Web Speech API on the learner's phone)",
+      "kind": "device",
+      "adapter": "none: not integrated",
+      "credentials": "none",
+      "documentation": "https://developer.mozilla.org/docs/Web/API/Web_Speech_API"
+    },
+    "dev-adapter": {
+      "name": "Development adapter",
+      "kind": "development",
+      "adapter": "src/server/providers/dev-adapter.ts",
+      "credentials": "none",
+      "documentation": "docs/ai-and-speech.md#development-adapter"
+    }
+  },
+  "entries": [
+    {
+      "provider": "lelapa-vulavula",
+      "language": "zu",
+      "capability": "stt",
+      "status": "experimental",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Vendor documentation (checked 2026-10-26) lists isiZulu (lang_code 'zul', code-switched isiZulu) for the synchronous transcription endpoint POST /api/v2alpha/transcribe/sync/file. The adapter is implemented but has not been run against real learner audio. Required before 'verified': word error rate on the Tier 2 question set recorded by 10+ adult isiZulu speakers on entry-level Android phones, in quiet and noisy settings, judged by a native speaker. Adapter details to confirm on the first live call: the multipart field name ('file') and the response fields ('transcription_text', 'language_code') come from vendor examples; a transcript reported in another language is rejected."
+    },
+    {
+      "provider": "lelapa-vulavula",
+      "language": "st",
+      "capability": "stt",
+      "status": "experimental",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Vendor documentation (checked 2026-10-26) lists Sesotho (lang_code 'sot'). The docs note that word-level timings and confidence are not available for Sesotho. Verify that the model handles South African Sesotho orthography and speech (not only Lesotho Sesotho) before use. Same evaluation protocol as isiZulu. Adapter details to confirm on the first live call: the multipart field name ('file') and the response fields ('transcription_text', 'language_code') come from vendor examples; a transcript reported in another language is rejected."
+    },
+    {
+      "provider": "lelapa-vulavula",
+      "language": "zu",
+      "capability": "translation",
+      "status": "experimental",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Advertised by the vendor. Not integrated. The app never machine-translates learner-facing content: all translations come from validated lesson content."
+    },
+    {
+      "provider": "lelapa-vulavula",
+      "language": "st",
+      "capability": "translation",
+      "status": "experimental",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Advertised by the vendor. Not integrated. The app never machine-translates learner-facing content."
+    },
+    {
+      "provider": "lelapa-vulavula",
+      "language": "zu",
+      "capability": "tts",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "No text-to-speech product was found in the vendor documentation on 2026-10-26. Re-check before planning Tier 3."
+    },
+    {
+      "provider": "lelapa-vulavula",
+      "language": "st",
+      "capability": "tts",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "No text-to-speech product was found in the vendor documentation on 2026-10-26."
+    },
+    {
+      "provider": "lelapa-vulavula",
+      "language": "en",
+      "capability": "pronunciation_scoring",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "No pronunciation assessment product was found in the vendor documentation. The app uses self-check with model audio instead and records such practice as 'practised', never 'mastered'."
+    },
+    {
+      "provider": "anthropic-claude",
+      "language": "zu",
+      "capability": "llm_dialogue",
+      "status": "experimental",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Adapter implemented for Tier 2 intent classification (output is restricted to a fixed list of intent IDs, so no generated text reaches learners) and Tier 3 explanation drafting. isiZulu generation quality for adult literacy explanations has not been evaluated by native speakers. Tier 3 also needs a verified isiZulu TTS voice, which does not exist in this matrix. Model is set by AI_LLM_MODEL (default claude-opus-5-5); re-run the evaluation when it changes."
+    },
+    {
+      "provider": "anthropic-claude",
+      "language": "st",
+      "capability": "llm_dialogue",
+      "status": "experimental",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "As for isiZulu. Evaluation must check South African Sesotho orthography (for example 'dijo', not 'lijo'; 'kg' not 'kh'). Model is set by AI_LLM_MODEL (default claude-opus-5-5); re-run the evaluation when it changes."
+    },
+    {
+      "provider": "anthropic-claude",
+      "language": "en",
+      "capability": "llm_dialogue",
+      "status": "experimental",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "English output is only ever shown to facilitators (text view, marked 'AI-generated, unverified'). Learners never receive English text in place of their teaching language. Model is set by AI_LLM_MODEL (default claude-opus-5-5); re-run the evaluation when it changes."
+    },
+    {
+      "provider": "device-web-speech",
+      "language": "zu",
+      "capability": "tts",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Entry-level Android phones do not normally ship an isiZulu voice. Not integrated. The app never falls back to an English device voice for isiZulu content."
+    },
+    {
+      "provider": "device-web-speech",
+      "language": "st",
+      "capability": "tts",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Entry-level Android phones do not normally ship a Sesotho voice. Not integrated."
+    },
+    {
+      "provider": "device-web-speech",
+      "language": "en",
+      "capability": "tts",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Device English voices vary in accent and quality and are not a validated pronunciation model. English model audio must be recorded and reviewed like all other audio."
+    },
+    {
+      "provider": "device-web-speech",
+      "language": "zu",
+      "capability": "stt",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Browser speech recognition availability for isiZulu on Android Chrome is device- and account-dependent and sends audio to a third party without our controls. Not integrated."
+    },
+    {
+      "provider": "device-web-speech",
+      "language": "st",
+      "capability": "stt",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "As for isiZulu. Not integrated."
+    },
+    {
+      "provider": "dev-adapter",
+      "language": "zu",
+      "capability": "stt",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Development adapter: returns a fixed, labelled transcript. Used by automated tests and the developer tutor lab only."
+    },
+    {
+      "provider": "dev-adapter",
+      "language": "st",
+      "capability": "stt",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Development adapter. Never shown to learners."
+    },
+    {
+      "provider": "dev-adapter",
+      "language": "zu",
+      "capability": "llm_dialogue",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Development adapter: deterministic keyword-based intent classification, labelled '[dev adapter]'. Never shown to learners."
+    },
+    {
+      "provider": "dev-adapter",
+      "language": "st",
+      "capability": "llm_dialogue",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Development adapter. Never shown to learners."
+    },
+    {
+      "provider": "dev-adapter",
+      "language": "zu",
+      "capability": "tts",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Development adapter: returns a labelled placeholder tone, never speech. Never shown to learners."
+    },
+    {
+      "provider": "dev-adapter",
+      "language": "st",
+      "capability": "tts",
+      "status": "unsupported",
+      "verifiedAt": null,
+      "verifierRole": null,
+      "learnerVisible": false,
+      "notes": "Development adapter. Never shown to learners."
+    }
+  ]
+}

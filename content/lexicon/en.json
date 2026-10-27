@@ -1,0 +1,2206 @@
+{
+  "$schema": "../schema/lexicon.schema.json",
+  "entries": [
+    {
+      "id": "en.l.s",
+      "lang": "en",
+      "kind": "letter",
+      "text": "s",
+      "audio": {
+        "id": "en.l.s",
+        "text": "/s/: a long hiss, 'sss'",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.s.name",
+        "text": "ess",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      }
+    },
+    {
+      "id": "en.l.a",
+      "lang": "en",
+      "kind": "letter",
+      "text": "a",
+      "audio": {
+        "id": "en.l.a",
+        "text": "/æ/ as in 'cat'",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.a.name",
+        "text": "ay",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      },
+      "contrastiveTags": [
+        "ct.short-vowels",
+        "ct.letter-names"
+      ]
+    },
+    {
+      "id": "en.l.t",
+      "lang": "en",
+      "kind": "letter",
+      "text": "t",
+      "audio": {
+        "id": "en.l.t",
+        "text": "/t/ as in 'tap': short and crisp, not 'tuh'",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.t.name",
+        "text": "tee",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      }
+    },
+    {
+      "id": "en.l.p",
+      "lang": "en",
+      "kind": "letter",
+      "text": "p",
+      "audio": {
+        "id": "en.l.p",
+        "text": "/p/ as in 'pen': short, not 'puh'",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.p.name",
+        "text": "pee",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      }
+    },
+    {
+      "id": "en.l.i",
+      "lang": "en",
+      "kind": "letter",
+      "text": "i",
+      "audio": {
+        "id": "en.l.i",
+        "text": "/ɪ/ as in 'sit'",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.i.name",
+        "text": "eye",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      },
+      "contrastiveTags": [
+        "ct.short-vowels"
+      ]
+    },
+    {
+      "id": "en.l.n",
+      "lang": "en",
+      "kind": "letter",
+      "text": "n",
+      "audio": {
+        "id": "en.l.n",
+        "text": "/n/: a long 'nnn'",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.n.name",
+        "text": "en",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      }
+    },
+    {
+      "id": "en.l.m",
+      "lang": "en",
+      "kind": "letter",
+      "text": "m",
+      "audio": {
+        "id": "en.l.m",
+        "text": "/m/: a long 'mmm'",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.m.name",
+        "text": "em",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      }
+    },
+    {
+      "id": "en.l.d",
+      "lang": "en",
+      "kind": "letter",
+      "text": "d",
+      "audio": {
+        "id": "en.l.d",
+        "text": "/d/ as in 'dad': short, not 'duh'",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.d.name",
+        "text": "dee",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      }
+    },
+    {
+      "id": "en.l.c",
+      "lang": "en",
+      "kind": "letter",
+      "text": "c",
+      "audio": {
+        "id": "en.l.c",
+        "text": "/k/ as in 'cat' (not a click)",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.c.name",
+        "text": "see",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      },
+      "contrastiveTags": [
+        "ct.click-letters",
+        "ct.letter-names"
+      ]
+    },
+    {
+      "id": "en.l.e",
+      "lang": "en",
+      "kind": "letter",
+      "text": "e",
+      "audio": {
+        "id": "en.l.e",
+        "text": "/ɛ/ as in 'pen'",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.e.name",
+        "text": "ee",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      },
+      "contrastiveTags": [
+        "ct.short-vowels"
+      ]
+    },
+    {
+      "id": "en.l.u",
+      "lang": "en",
+      "kind": "letter",
+      "text": "u",
+      "audio": {
+        "id": "en.l.u",
+        "text": "/ʌ/ as in 'bus' (not 'oo')",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.u.name",
+        "text": "you",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      },
+      "contrastiveTags": [
+        "ct.short-vowels"
+      ]
+    },
+    {
+      "id": "en.l.b",
+      "lang": "en",
+      "kind": "letter",
+      "text": "b",
+      "audio": {
+        "id": "en.l.b",
+        "text": "/b/ as in 'bus': short, not 'buh'",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.b.name",
+        "text": "bee",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      }
+    },
+    {
+      "id": "en.l.q",
+      "lang": "en",
+      "kind": "letter",
+      "text": "q",
+      "audio": {
+        "id": "en.l.q",
+        "text": "/kw/ as in 'queen' (not a click)",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",
+        "seconds": 1.2
+      },
+      "nameAudio": {
+        "id": "en.l.q.name",
+        "text": "cue",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Letter NAME, as when spelling aloud.",
+        "seconds": 1
+      },
+      "contrastiveTags": [
+        "ct.click-letters"
+      ]
+    },
+    {
+      "id": "en.w.at",
+      "lang": "en",
+      "kind": "word",
+      "text": "at",
+      "audio": {
+        "id": "en.w.at",
+        "text": "at",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "graphemes": [
+        "a",
+        "t"
+      ]
+    },
+    {
+      "id": "en.w.am",
+      "lang": "en",
+      "kind": "word",
+      "text": "am",
+      "audio": {
+        "id": "en.w.am",
+        "text": "am",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "graphemes": [
+        "a",
+        "m"
+      ]
+    },
+    {
+      "id": "en.w.sat",
+      "lang": "en",
+      "kind": "word",
+      "text": "sat",
+      "audio": {
+        "id": "en.w.sat",
+        "text": "sat",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "graphemes": [
+        "s",
+        "a",
+        "t"
+      ]
+    },
+    {
+      "id": "en.w.tap",
+      "lang": "en",
+      "kind": "word",
+      "text": "tap",
+      "audio": {
+        "id": "en.w.tap",
+        "text": "tap",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "tap",
+      "gloss": {
+        "zu": {
+          "word": "umpompi",
+          "line": {
+            "id": "zu.gloss.tap",
+            "text": "Igama elithi tap lisho umpompi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "pompo",
+          "line": {
+            "id": "st.gloss.tap",
+            "text": "Lentswe tap le bolela pompo.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "t",
+        "a",
+        "p"
+      ]
+    },
+    {
+      "id": "en.w.cat",
+      "lang": "en",
+      "kind": "word",
+      "text": "cat",
+      "audio": {
+        "id": "en.w.cat",
+        "text": "cat",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "cat",
+      "gloss": {
+        "zu": {
+          "word": "ikati",
+          "line": {
+            "id": "zu.gloss.cat",
+            "text": "Igama elithi cat lisho ikati.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "katse",
+          "line": {
+            "id": "st.gloss.cat",
+            "text": "Lentswe cat le bolela katse.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "c",
+        "a",
+        "t"
+      ],
+      "contrastiveTags": [
+        "ct.click-letters",
+        "ct.final-consonants"
+      ]
+    },
+    {
+      "id": "en.w.sit",
+      "lang": "en",
+      "kind": "word",
+      "text": "sit",
+      "audio": {
+        "id": "en.w.sit",
+        "text": "sit",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "sit",
+      "gloss": {
+        "zu": {
+          "word": "hlala phansi",
+          "line": {
+            "id": "zu.gloss.sit",
+            "text": "Igama elithi sit lisho hlala phansi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "dula fatshe",
+          "line": {
+            "id": "st.gloss.sit",
+            "text": "Lentswe sit le bolela dula fatshe.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "s",
+        "i",
+        "t"
+      ],
+      "contrastiveTags": [
+        "ct.short-vowels"
+      ]
+    },
+    {
+      "id": "en.w.map",
+      "lang": "en",
+      "kind": "word",
+      "text": "map",
+      "audio": {
+        "id": "en.w.map",
+        "text": "map",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "map",
+      "gloss": {
+        "zu": {
+          "word": "imephu",
+          "line": {
+            "id": "zu.gloss.map",
+            "text": "Igama elithi map lisho imephu.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "mmapa",
+          "line": {
+            "id": "st.gloss.map",
+            "text": "Lentswe map le bolela mmapa.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "m",
+        "a",
+        "p"
+      ]
+    },
+    {
+      "id": "en.w.pen",
+      "lang": "en",
+      "kind": "word",
+      "text": "pen",
+      "audio": {
+        "id": "en.w.pen",
+        "text": "pen",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "pen",
+      "gloss": {
+        "zu": {
+          "word": "ipeni",
+          "line": {
+            "id": "zu.gloss.pen",
+            "text": "Igama elithi pen lisho ipeni.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "pene",
+          "line": {
+            "id": "st.gloss.pen",
+            "text": "Lentswe pen le bolela pene.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "p",
+        "e",
+        "n"
+      ],
+      "contrastiveTags": [
+        "ct.short-vowels"
+      ]
+    },
+    {
+      "id": "en.w.pan",
+      "lang": "en",
+      "kind": "word",
+      "text": "pan",
+      "audio": {
+        "id": "en.w.pan",
+        "text": "pan",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "pan",
+      "gloss": {
+        "zu": {
+          "word": "ipani",
+          "line": {
+            "id": "zu.gloss.pan",
+            "text": "Igama elithi pan lisho ipani.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "pane",
+          "line": {
+            "id": "st.gloss.pan",
+            "text": "Lentswe pan le bolela pane.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "p",
+        "a",
+        "n"
+      ],
+      "contrastiveTags": [
+        "ct.short-vowels"
+      ]
+    },
+    {
+      "id": "en.w.tin",
+      "lang": "en",
+      "kind": "word",
+      "text": "tin",
+      "audio": {
+        "id": "en.w.tin",
+        "text": "tin",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "tin",
+      "gloss": {
+        "zu": {
+          "word": "ithini",
+          "line": {
+            "id": "zu.gloss.tin",
+            "text": "Igama elithi tin lisho ithini.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "thini",
+          "line": {
+            "id": "st.gloss.tin",
+            "text": "Lentswe tin le bolela thini.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "t",
+        "i",
+        "n"
+      ]
+    },
+    {
+      "id": "en.w.ten",
+      "lang": "en",
+      "kind": "word",
+      "text": "ten",
+      "audio": {
+        "id": "en.w.ten",
+        "text": "ten",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "ten",
+      "gloss": {
+        "zu": {
+          "word": "ishumi",
+          "line": {
+            "id": "zu.gloss.ten",
+            "text": "Igama elithi ten lisho ishumi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "leshome",
+          "line": {
+            "id": "st.gloss.ten",
+            "text": "Lentswe ten le bolela leshome.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "t",
+        "e",
+        "n"
+      ],
+      "contrastiveTags": [
+        "ct.short-vowels"
+      ]
+    },
+    {
+      "id": "en.w.man",
+      "lang": "en",
+      "kind": "word",
+      "text": "man",
+      "audio": {
+        "id": "en.w.man",
+        "text": "man",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "man",
+      "gloss": {
+        "zu": {
+          "word": "indoda",
+          "line": {
+            "id": "zu.gloss.man",
+            "text": "Igama elithi man lisho indoda.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "monna",
+          "line": {
+            "id": "st.gloss.man",
+            "text": "Lentswe man le bolela monna.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "m",
+        "a",
+        "n"
+      ]
+    },
+    {
+      "id": "en.w.dad",
+      "lang": "en",
+      "kind": "word",
+      "text": "dad",
+      "audio": {
+        "id": "en.w.dad",
+        "text": "dad",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "dad",
+      "gloss": {
+        "zu": {
+          "word": "ubaba",
+          "line": {
+            "id": "zu.gloss.dad",
+            "text": "Igama elithi dad lisho ubaba.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "ntate",
+          "line": {
+            "id": "st.gloss.dad",
+            "text": "Lentswe dad le bolela ntate.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "d",
+        "a",
+        "d"
+      ]
+    },
+    {
+      "id": "en.w.sun",
+      "lang": "en",
+      "kind": "word",
+      "text": "sun",
+      "audio": {
+        "id": "en.w.sun",
+        "text": "sun",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "sun",
+      "gloss": {
+        "zu": {
+          "word": "ilanga",
+          "line": {
+            "id": "zu.gloss.sun",
+            "text": "Igama elithi sun lisho ilanga.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "letsatsi",
+          "line": {
+            "id": "st.gloss.sun",
+            "text": "Lentswe sun le bolela letsatsi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "s",
+        "u",
+        "n"
+      ],
+      "contrastiveTags": [
+        "ct.short-vowels"
+      ]
+    },
+    {
+      "id": "en.w.bus",
+      "lang": "en",
+      "kind": "word",
+      "text": "bus",
+      "audio": {
+        "id": "en.w.bus",
+        "text": "bus",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "bus",
+      "gloss": {
+        "zu": {
+          "word": "ibhasi",
+          "line": {
+            "id": "zu.gloss.bus",
+            "text": "Igama elithi bus lisho ibhasi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "bese",
+          "line": {
+            "id": "st.gloss.bus",
+            "text": "Lentswe bus le bolela bese.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "b",
+        "u",
+        "s"
+      ],
+      "contrastiveTags": [
+        "ct.short-vowels",
+        "ct.final-consonants"
+      ]
+    },
+    {
+      "id": "en.w.can",
+      "lang": "en",
+      "kind": "word",
+      "text": "can",
+      "audio": {
+        "id": "en.w.can",
+        "text": "can",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "graphemes": [
+        "c",
+        "a",
+        "n"
+      ],
+      "contrastiveTags": [
+        "ct.click-letters"
+      ]
+    },
+    {
+      "id": "en.w.ship",
+      "lang": "en",
+      "kind": "word",
+      "text": "ship",
+      "audio": {
+        "id": "en.w.ship",
+        "text": "ship",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "ship",
+      "gloss": {
+        "zu": {
+          "word": "umkhumbi",
+          "line": {
+            "id": "zu.gloss.ship",
+            "text": "Igama elithi ship lisho umkhumbi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "sekepe",
+          "line": {
+            "id": "st.gloss.ship",
+            "text": "Lentswe ship le bolela sekepe.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "sh",
+        "i",
+        "p"
+      ],
+      "contrastiveTags": [
+        "ct.vowel-length"
+      ]
+    },
+    {
+      "id": "en.w.sheep",
+      "lang": "en",
+      "kind": "word",
+      "text": "sheep",
+      "audio": {
+        "id": "en.w.sheep",
+        "text": "sheep",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "sheep",
+      "gloss": {
+        "zu": {
+          "word": "imvu",
+          "line": {
+            "id": "zu.gloss.sheep",
+            "text": "Igama elithi sheep lisho imvu.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "nku",
+          "line": {
+            "id": "st.gloss.sheep",
+            "text": "Lentswe sheep le bolela nku.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "graphemes": [
+        "sh",
+        "ee",
+        "p"
+      ],
+      "contrastiveTags": [
+        "ct.vowel-length"
+      ]
+    },
+    {
+      "id": "en.w.work",
+      "lang": "en",
+      "kind": "word",
+      "text": "work",
+      "audio": {
+        "id": "en.w.work",
+        "text": "work",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "work",
+      "gloss": {
+        "zu": {
+          "word": "umsebenzi",
+          "line": {
+            "id": "zu.gloss.work",
+            "text": "Igama elithi work lisho umsebenzi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "mosebetsi",
+          "line": {
+            "id": "st.gloss.work",
+            "text": "Lentswe work le bolela mosebetsi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "contrastiveTags": [
+        "ct.irregular-spelling"
+      ],
+      "irregular": true
+    },
+    {
+      "id": "en.w.here",
+      "lang": "en",
+      "kind": "word",
+      "text": "here",
+      "audio": {
+        "id": "en.w.here",
+        "text": "here",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "gloss": {
+        "zu": {
+          "word": "lapha",
+          "line": {
+            "id": "zu.gloss.here",
+            "text": "Igama elithi here lisho lapha.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "mona",
+          "line": {
+            "id": "st.gloss.here",
+            "text": "Lentswe here le bolela mona.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "contrastiveTags": [
+        "ct.irregular-spelling"
+      ],
+      "irregular": true
+    },
+    {
+      "id": "en.w.clinic",
+      "lang": "en",
+      "kind": "word",
+      "text": "clinic",
+      "audio": {
+        "id": "en.w.clinic",
+        "text": "clinic",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "clinic",
+      "gloss": {
+        "zu": {
+          "word": "umtholampilo",
+          "line": {
+            "id": "zu.gloss.clinic",
+            "text": "Igama elithi clinic lisho umtholampilo.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "tliliniki",
+          "line": {
+            "id": "st.gloss.clinic",
+            "text": "Lentswe clinic le bolela tliliniki.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "en.w.monday",
+      "lang": "en",
+      "kind": "word",
+      "text": "Monday",
+      "audio": {
+        "id": "en.w.monday",
+        "text": "Monday",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "calendar",
+      "gloss": {
+        "zu": {
+          "word": "uMsombuluko",
+          "line": {
+            "id": "zu.gloss.monday",
+            "text": "Igama elithi Monday lisho uMsombuluko.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "Mantaha",
+          "line": {
+            "id": "st.gloss.monday",
+            "text": "Lentswe Monday le bolela Mantaha.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.friday",
+      "lang": "en",
+      "kind": "word",
+      "text": "Friday",
+      "audio": {
+        "id": "en.w.friday",
+        "text": "Friday",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "calendar",
+      "gloss": {
+        "zu": {
+          "word": "uLwesihlanu",
+          "line": {
+            "id": "zu.gloss.friday",
+            "text": "Igama elithi Friday lisho uLwesihlanu.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "Labohlano",
+          "line": {
+            "id": "st.gloss.friday",
+            "text": "Lentswe Friday le bolela Labohlano.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.airtime",
+      "lang": "en",
+      "kind": "word",
+      "text": "airtime",
+      "audio": {
+        "id": "en.w.airtime",
+        "text": "airtime",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "airtime",
+      "gloss": {
+        "zu": {
+          "word": "i-airtime",
+          "line": {
+            "id": "zu.gloss.airtime",
+            "text": "Igama elithi airtime lisho i-airtime.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "airtime",
+          "line": {
+            "id": "st.gloss.airtime",
+            "text": "Lentswe airtime le bolela airtime.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.low",
+      "lang": "en",
+      "kind": "word",
+      "text": "low",
+      "audio": {
+        "id": "en.w.low",
+        "text": "low",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "gloss": {
+        "zu": {
+          "word": "iphansi",
+          "line": {
+            "id": "zu.gloss.low",
+            "text": "Igama elithi low lisho iphansi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "e tlase",
+          "line": {
+            "id": "st.gloss.low",
+            "text": "Lentswe low le bolela e tlase.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.bank",
+      "lang": "en",
+      "kind": "word",
+      "text": "bank",
+      "audio": {
+        "id": "en.w.bank",
+        "text": "bank",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "bank",
+      "gloss": {
+        "zu": {
+          "word": "ibhange",
+          "line": {
+            "id": "zu.gloss.bank",
+            "text": "Igama elithi bank lisho ibhange.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "banka",
+          "line": {
+            "id": "st.gloss.bank",
+            "text": "Lentswe bank le bolela banka.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "en.w.shop",
+      "lang": "en",
+      "kind": "word",
+      "text": "shop",
+      "audio": {
+        "id": "en.w.shop",
+        "text": "shop",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "shop",
+      "gloss": {
+        "zu": {
+          "word": "isitolo",
+          "line": {
+            "id": "zu.gloss.shop",
+            "text": "Igama elithi shop lisho isitolo.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "lebenkele",
+          "line": {
+            "id": "st.gloss.shop",
+            "text": "Lentswe shop le bolela lebenkele.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "en.w.ok",
+      "lang": "en",
+      "kind": "word",
+      "text": "OK",
+      "audio": {
+        "id": "en.w.ok",
+        "text": "OK",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "gloss": {
+        "zu": {
+          "word": "kulungile",
+          "line": {
+            "id": "zu.gloss.ok",
+            "text": "Igama elithi OK lisho kulungile.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "ho lokile",
+          "line": {
+            "id": "st.gloss.ok",
+            "text": "Lentswe OK le bolela ho lokile.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.yes",
+      "lang": "en",
+      "kind": "word",
+      "text": "yes",
+      "audio": {
+        "id": "en.w.yes",
+        "text": "yes",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "gloss": {
+        "zu": {
+          "word": "yebo",
+          "line": {
+            "id": "zu.gloss.yes",
+            "text": "Igama elithi yes lisho yebo.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "e",
+          "line": {
+            "id": "st.gloss.yes",
+            "text": "Lentswe yes le bolela e.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "en.w.stop",
+      "lang": "en",
+      "kind": "word",
+      "text": "STOP",
+      "audio": {
+        "id": "en.w.stop",
+        "text": "STOP",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "sign-stop",
+      "gloss": {
+        "zu": {
+          "word": "yima",
+          "line": {
+            "id": "zu.gloss.stop",
+            "text": "Igama elithi STOP lisho yima.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "ema",
+          "line": {
+            "id": "st.gloss.stop",
+            "text": "Lentswe STOP le bolela ema.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "en.w.exit",
+      "lang": "en",
+      "kind": "word",
+      "text": "EXIT",
+      "audio": {
+        "id": "en.w.exit",
+        "text": "EXIT",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "sign-exit",
+      "gloss": {
+        "zu": {
+          "word": "indlela yokuphuma",
+          "line": {
+            "id": "zu.gloss.exit",
+            "text": "Igama elithi EXIT lisho indlela yokuphuma.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "tsela ya ho tswa",
+          "line": {
+            "id": "st.gloss.exit",
+            "text": "Lentswe EXIT le bolela tsela ya ho tswa.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.danger",
+      "lang": "en",
+      "kind": "word",
+      "text": "DANGER",
+      "audio": {
+        "id": "en.w.danger",
+        "text": "DANGER",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "sign-danger",
+      "gloss": {
+        "zu": {
+          "word": "ingozi",
+          "line": {
+            "id": "zu.gloss.danger",
+            "text": "Igama elithi DANGER lisho ingozi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "kotsi",
+          "line": {
+            "id": "st.gloss.danger",
+            "text": "Lentswe DANGER le bolela kotsi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.toilets",
+      "lang": "en",
+      "kind": "word",
+      "text": "TOILETS",
+      "audio": {
+        "id": "en.w.toilets",
+        "text": "TOILETS",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "sign-toilets",
+      "gloss": {
+        "zu": {
+          "word": "izindlu zangasese",
+          "line": {
+            "id": "zu.gloss.toilets",
+            "text": "Igama elithi TOILETS lisho izindlu zangasese.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "matlwana",
+          "line": {
+            "id": "st.gloss.toilets",
+            "text": "Lentswe TOILETS le bolela matlwana.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.open",
+      "lang": "en",
+      "kind": "word",
+      "text": "OPEN",
+      "audio": {
+        "id": "en.w.open",
+        "text": "OPEN",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "sign-open",
+      "gloss": {
+        "zu": {
+          "word": "kuvuliwe",
+          "line": {
+            "id": "zu.gloss.open",
+            "text": "Igama elithi OPEN lisho kuvuliwe.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "ho bulehile",
+          "line": {
+            "id": "st.gloss.open",
+            "text": "Lentswe OPEN le bolela ho bulehile.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.closed",
+      "lang": "en",
+      "kind": "word",
+      "text": "CLOSED",
+      "audio": {
+        "id": "en.w.closed",
+        "text": "CLOSED",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "sign-closed",
+      "gloss": {
+        "zu": {
+          "word": "kuvaliwe",
+          "line": {
+            "id": "zu.gloss.closed",
+            "text": "Igama elithi CLOSED lisho kuvaliwe.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "ho kwetswe",
+          "line": {
+            "id": "st.gloss.closed",
+            "text": "Lentswe CLOSED le bolela ho kwetswe.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.cleaner",
+      "lang": "en",
+      "kind": "word",
+      "text": "cleaner",
+      "audio": {
+        "id": "en.w.cleaner",
+        "text": "cleaner",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "cleaner",
+      "gloss": {
+        "zu": {
+          "word": "umhlanzi",
+          "line": {
+            "id": "zu.gloss.cleaner",
+            "text": "Igama elithi cleaner lisho umhlanzi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "mohlwekisi",
+          "line": {
+            "id": "st.gloss.cleaner",
+            "text": "Lentswe cleaner le bolela mohlwekisi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.cook",
+      "lang": "en",
+      "kind": "word",
+      "text": "cook",
+      "audio": {
+        "id": "en.w.cook",
+        "text": "cook",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "cook",
+      "gloss": {
+        "zu": {
+          "word": "umpheki",
+          "line": {
+            "id": "zu.gloss.cook",
+            "text": "Igama elithi cook lisho umpheki.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "mophehi",
+          "line": {
+            "id": "st.gloss.cook",
+            "text": "Lentswe cook le bolela mophehi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.driver",
+      "lang": "en",
+      "kind": "word",
+      "text": "driver",
+      "audio": {
+        "id": "en.w.driver",
+        "text": "driver",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "driver",
+      "gloss": {
+        "zu": {
+          "word": "umshayeli",
+          "line": {
+            "id": "zu.gloss.driver",
+            "text": "Igama elithi driver lisho umshayeli.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "mokganni",
+          "line": {
+            "id": "st.gloss.driver",
+            "text": "Lentswe driver le bolela mokganni.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.id",
+      "lang": "en",
+      "kind": "word",
+      "text": "ID",
+      "audio": {
+        "id": "en.w.id",
+        "text": "ID",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "id-book",
+      "gloss": {
+        "zu": {
+          "word": "umazisi",
+          "line": {
+            "id": "zu.gloss.id",
+            "text": "Igama elithi ID lisho umazisi.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "boitsebiso",
+          "line": {
+            "id": "st.gloss.id",
+            "text": "Lentswe ID le bolela boitsebiso.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.w.money",
+      "lang": "en",
+      "kind": "word",
+      "text": "money",
+      "audio": {
+        "id": "en.w.money",
+        "text": "money",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation, natural South African English, clear and unhurried.",
+        "seconds": 1.2
+      },
+      "image": "money",
+      "gloss": {
+        "zu": {
+          "word": "imali",
+          "line": {
+            "id": "zu.gloss.money",
+            "text": "Igama elithi money lisho imali.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "tjhelete",
+          "line": {
+            "id": "st.gloss.money",
+            "text": "Lentswe money le bolela tjhelete.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      },
+      "irregular": true
+    },
+    {
+      "id": "en.sw.the",
+      "lang": "en",
+      "kind": "sight_word",
+      "text": "the",
+      "audio": {
+        "id": "en.sw.the",
+        "text": "the",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation of a high-frequency word, said on its own.",
+        "seconds": 1
+      },
+      "irregular": true,
+      "contrastiveTags": [
+        "ct.aspirated-th-ph",
+        "ct.irregular-spelling"
+      ]
+    },
+    {
+      "id": "en.sw.a",
+      "lang": "en",
+      "kind": "sight_word",
+      "text": "a",
+      "audio": {
+        "id": "en.sw.a",
+        "text": "a",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation of a high-frequency word, said on its own.",
+        "seconds": 1
+      },
+      "irregular": true,
+      "contrastiveTags": [
+        "ct.irregular-spelling"
+      ]
+    },
+    {
+      "id": "en.sw.is",
+      "lang": "en",
+      "kind": "sight_word",
+      "text": "is",
+      "audio": {
+        "id": "en.sw.is",
+        "text": "is",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation of a high-frequency word, said on its own.",
+        "seconds": 1
+      },
+      "irregular": true,
+      "contrastiveTags": [
+        "ct.irregular-spelling"
+      ]
+    },
+    {
+      "id": "en.sw.i",
+      "lang": "en",
+      "kind": "sight_word",
+      "text": "I",
+      "audio": {
+        "id": "en.sw.i",
+        "text": "I",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation of a high-frequency word, said on its own.",
+        "seconds": 1
+      },
+      "irregular": true,
+      "contrastiveTags": [
+        "ct.irregular-spelling"
+      ],
+      "image": "me",
+      "gloss": {
+        "zu": {
+          "word": "mina",
+          "line": {
+            "id": "zu.gloss.i",
+            "text": "Igama elithi I lisho mina.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "nna",
+          "line": {
+            "id": "st.gloss.i",
+            "text": "Lentswe I le bolela nna.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "en.sw.you",
+      "lang": "en",
+      "kind": "sight_word",
+      "text": "you",
+      "audio": {
+        "id": "en.sw.you",
+        "text": "you",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model pronunciation of a high-frequency word, said on its own.",
+        "seconds": 1
+      },
+      "irregular": true,
+      "contrastiveTags": [
+        "ct.irregular-spelling"
+      ],
+      "image": "you",
+      "gloss": {
+        "zu": {
+          "word": "wena",
+          "line": {
+            "id": "zu.gloss.you",
+            "text": "Igama elithi you lisho wena.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        },
+        "st": {
+          "word": "wena",
+          "line": {
+            "id": "st.gloss.you",
+            "text": "Lentswe you le bolela wena.",
+            "review": {
+              "status": "draft"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "en.sen.i-am-at-work",
+      "lang": "en",
+      "kind": "sentence",
+      "text": "I am at work.",
+      "image": "work",
+      "audio": {
+        "id": "en.sen.i-am-at-work",
+        "text": "I am at work.",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model reading of the sentence at a slow, natural pace.",
+        "seconds": 2.5
+      }
+    },
+    {
+      "id": "en.sen.the-bus-is-here",
+      "lang": "en",
+      "kind": "sentence",
+      "text": "The bus is here.",
+      "image": "bus",
+      "audio": {
+        "id": "en.sen.the-bus-is-here",
+        "text": "The bus is here.",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model reading of the sentence at a slow, natural pace.",
+        "seconds": 2.5
+      }
+    },
+    {
+      "id": "en.sen.the-cat-is-here",
+      "lang": "en",
+      "kind": "sentence",
+      "text": "The cat is here.",
+      "image": "cat",
+      "audio": {
+        "id": "en.sen.the-cat-is-here",
+        "text": "The cat is here.",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model reading of the sentence at a slow, natural pace.",
+        "seconds": 2.5
+      }
+    },
+    {
+      "id": "en.sen.you-can-sit-here",
+      "lang": "en",
+      "kind": "sentence",
+      "text": "You can sit here.",
+      "image": "sit",
+      "audio": {
+        "id": "en.sen.you-can-sit-here",
+        "text": "You can sit here.",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model reading of the sentence at a slow, natural pace.",
+        "seconds": 2.5
+      }
+    },
+    {
+      "id": "en.sen.sms-airtime",
+      "lang": "en",
+      "kind": "sentence",
+      "text": "Your airtime is low.",
+      "image": "airtime",
+      "audio": {
+        "id": "en.sen.sms-airtime",
+        "text": "Your airtime is low.",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model reading of the sentence at a slow, natural pace.",
+        "seconds": 2.5
+      }
+    },
+    {
+      "id": "en.sen.sms-clinic",
+      "lang": "en",
+      "kind": "sentence",
+      "text": "Clinic: Your appointment is on Monday at 9:00.",
+      "image": "clinic",
+      "audio": {
+        "id": "en.sen.sms-clinic",
+        "text": "Clinic: Your appointment is on Monday at 9:00.",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model reading of the sentence at a slow, natural pace.",
+        "seconds": 2.5
+      }
+    },
+    {
+      "id": "en.sen.sms-shop",
+      "lang": "en",
+      "kind": "sentence",
+      "text": "Shop: Your order is ready. Come on Friday.",
+      "image": "shop",
+      "audio": {
+        "id": "en.sen.sms-shop",
+        "text": "Shop: Your order is ready. Come on Friday.",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model reading of the sentence at a slow, natural pace.",
+        "seconds": 2.5
+      }
+    },
+    {
+      "id": "en.sen.dad-is-at-the-shop",
+      "lang": "en",
+      "kind": "sentence",
+      "text": "Dad is at the shop.",
+      "image": "shop",
+      "audio": {
+        "id": "en.sen.dad-is-at-the-shop",
+        "text": "Dad is at the shop.",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model reading of the sentence at a slow, natural pace.",
+        "seconds": 2.5
+      }
+    },
+    {
+      "id": "en.sen.the-man-can-sit",
+      "lang": "en",
+      "kind": "sentence",
+      "text": "The man can sit.",
+      "image": "sit",
+      "audio": {
+        "id": "en.sen.the-man-can-sit",
+        "text": "The man can sit.",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Model reading of the sentence at a slow, natural pace.",
+        "seconds": 2.5
+      }
+    },
+    {
+      "id": "en.psg.job-notice",
+      "lang": "en",
+      "kind": "passage",
+      "text": "JOB: CLEANER\nA clinic needs a cleaner.\nWork is from Monday to Friday.\nStart at 7 in the morning.\nBring your ID.\nCome to the clinic on Monday.",
+      "image": "cleaner",
+      "audio": {
+        "id": "en.psg.job-notice",
+        "text": "Job: cleaner. A clinic needs a cleaner. Work is from Monday to Friday. Start at 7 in the morning. Bring your ID. Come to the clinic on Monday.",
+        "review": {
+          "status": "draft"
+        },
+        "note": "Read as a notice, slowly, with a short pause after each line.",
+        "seconds": 14
+      }
+    }
+  ]
+}

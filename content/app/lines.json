@@ -1,0 +1,2576 @@
+{
+  "$schema": "../schema/app-lines.schema.json",
+  "lines": [
+    {
+      "id": "welcome.choose_language",
+      "description": "Language selection: each card plays its own language.",
+      "zu": {
+        "id": "zu.app.welcome.choose_language",
+        "text": "Sawubona! Uma ufuna ukufunda isiNgisi ngesiZulu, thinta lapha.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "isiZulu"
+      },
+      "st": {
+        "id": "st.app.welcome.choose_language",
+        "text": "Dumela! Haeba o batla ho ithuta Senyesemane ka Sesotho, tobetsa mona.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Sesotho"
+      }
+    },
+    {
+      "id": "welcome.hello",
+      "description": "Welcome after choosing a language. Never names the app (the name is configurable).",
+      "zu": {
+        "id": "zu.app.welcome.hello",
+        "text": "Siyakwamukela! Lapha ufunda ukufunda nokubhala isiNgisi, kancane kancane, ngolimi lwakho. Awudingi ukwazi ukufunda ukuze uqale: lalela, bese uthinta izithombe.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.welcome.hello",
+        "text": "Rea o amohela! Mona o ithuta ho bala le ho ngola Senyesemane, butle-butle, ka puo ya hao. Ha o hloke ho tseba ho bala ho qala: mamela, ebe o tobetsa ditshwantsho.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "demo.listen",
+      "description": "How-it-works demo: the listen button.",
+      "zu": {
+        "id": "zu.app.demo.listen",
+        "text": "Lena yinkinobho yokulalela. Iphinda amagama. Yithinte manje.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.demo.listen",
+        "text": "Ena ke konopo ya ho mamela. E pheta mantswe. E tobetse jwale.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "demo.listen_done",
+      "description": "Demo: after tapping listen.",
+      "zu": {
+        "id": "zu.app.demo.listen_done",
+        "text": "Kuhle! Uma ungezwanga kahle, ungayithinta futhi noma nini.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.demo.listen_done",
+        "text": "Ho hotle! Ha o sa utlwa hantle, o ka e tobetsa hape neng kapa neng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "demo.choose",
+      "description": "Demo: answering by tapping a picture.",
+      "zu": {
+        "id": "zu.app.demo.choose",
+        "text": "Ukuze uphendule, uthinta isithombe. Zama: thinta isithombe esikhulu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.demo.choose",
+        "text": "Ho araba, o tobetsa setshwantsho. Leka: tobetsa setshwantsho se seholo.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "demo.continue",
+      "description": "Demo: the green continue arrow.",
+      "zu": {
+        "id": "zu.app.demo.continue",
+        "text": "Umcibisholo oluhlaza ukuyisa phambili. Wuthinte.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.demo.continue",
+        "text": "Motsu o motala o o isa pele. O tobetse.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "demo.help",
+      "description": "Demo: help and press-and-hold to hear a button.",
+      "zu": {
+        "id": "zu.app.demo.help",
+        "text": "Uphawu lombuzo wusizo. Futhi uma ucindezela ubambe noma iyiphi inkinobho, uzozwa ukuthi yenzani.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.demo.help",
+        "text": "Letshwao la potso ke thuso. Mme ha o tobetsa o tshware konopo efe kapa efe, o tla utlwa hore e etsang.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "demo.done",
+      "description": "Demo finished.",
+      "zu": {
+        "id": "zu.app.demo.done",
+        "text": "Usulungile!",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.demo.done",
+        "text": "O se o loketse!",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "save.choice",
+      "description": "Offer to save progress online (registration) or keep it on the phone (guest).",
+      "source": "You can keep your learning on this phone only, or keep it safely on the internet so that it is not lost. Keeping it on the internet uses a little data.",
+      "zu": {
+        "id": "zu.app.save.choice",
+        "text": "Ungagcina ukufunda kwakho kule foni kuphela, noma usigcine ku-inthanethi ngokuphepha ukuze singalahleki. Ukugcina ku-inthanethi kusebenzisa idatha encane.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.save.choice",
+        "text": "O ka boloka thuto ya hao founung ena feela, kapa o e boloke inthaneteng ka polokeho hore e se ke ya lahleha. Ho boloka inthaneteng ho sebedisa data e nyane.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "save.online",
+      "description": "Button: save online (leads to spoken consent).",
+      "source": "I want to keep it on the internet.",
+      "zu": {
+        "id": "zu.app.save.online",
+        "text": "Ngifuna ukugcina ku-inthanethi.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Gcina ku-inthanethi"
+      },
+      "st": {
+        "id": "st.app.save.online",
+        "text": "Ke batla ho boloka inthaneteng.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Boloka inthaneteng"
+      }
+    },
+    {
+      "id": "save.phone_only",
+      "description": "Button: keep on this phone only (guest).",
+      "source": "Keep it on this phone only.",
+      "zu": {
+        "id": "zu.app.save.phone_only",
+        "text": "Gcina kule foni kuphela.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Kule foni kuphela"
+      },
+      "st": {
+        "id": "st.app.save.phone_only",
+        "text": "Boloka founung ena feela.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Founung ena feela"
+      }
+    },
+    {
+      "id": "consent.intro",
+      "description": "Consent 1/5 (POPIA): before anything is stored on the server.",
+      "source": "Before we keep your information on the internet, listen to this.",
+      "zu": {
+        "id": "zu.app.consent.intro",
+        "text": "Ngaphambi kokuthi sigcine imininingwane yakho ku-inthanethi, lalela lokhu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.intro",
+        "text": "Pele re boloka dintlha tsa hao inthaneteng, mamela sena.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.what",
+      "description": "Consent 2/5: what is stored.",
+      "source": "We will keep: your picture, your secret code, locked so that nobody can read it, your language, and your progress: lessons, answers and skills. We do not need your name. We do not keep your voice.",
+      "zu": {
+        "id": "zu.app.consent.what",
+        "text": "Sizogcina: isithombe sakho, ikhodi yakho eyimfihlo ivalelwe ukuze kungabikho muntu oyifundayo, ulimi lwakho, nenqubekela phambili yakho: izifundo, izimpendulo namakhono. Asilidingi igama lakho. Asiligcini izwi lakho.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.what",
+        "text": "Re tla boloka: setshwantsho sa hao, khoutu ya hao ya lekunutu e notleletswe hore ho se be motho ya e balang, puo ya hao, le tswelopele ya hao: dithuto, dikarabo le bokgoni. Ha re hloke lebitso la hao. Ha re boloke lentswe la hao.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.why",
+      "description": "Consent 3/5: why.",
+      "source": "Why: so that your learning is not lost if your phone is lost or broken, and so that you can carry on using another phone.",
+      "zu": {
+        "id": "zu.app.consent.why",
+        "text": "Kungani: ukuze ukufunda kwakho kungalahleki uma ifoni yakho ilahleka noma iphuka, nokuze uqhubeke kwenye ifoni.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.why",
+        "text": "Hobaneng: hore thuto ya hao e se ke ya lahleha ha founu ya hao e lahleha kapa e robeha, le hore o tswele pele founung e nngwe.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.who",
+      "description": "Consent 4/5: who can see it.",
+      "source": "Who can see it: only you. If you join a class later, we will first ask you what your teacher may see. We will never sell your information.",
+      "zu": {
+        "id": "zu.app.consent.who",
+        "text": "Ubani ongakubona: nguwe kuphela. Uma ujoyina ikilasi kamuva, sizokubuza kuqala ukuthi uthisha wakho angabonani. Asisoze sayithengisa imininingwane yakho.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.who",
+        "text": "Ke mang ya ka e bonang: ke wena feela. Ha o kena tlelaseng hamorao, re tla o botsa pele hore titjhere ya hao a ka bona eng. Ha ho mohla re tla rekisa dintlha tsa hao.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.delete",
+      "description": "Consent 5/5: how to delete.",
+      "source": "You can stop at any time. In Me, tap the picture of the bin to delete everything. It is deleted straight away, without phoning anyone.",
+      "zu": {
+        "id": "zu.app.consent.delete",
+        "text": "Ungayeka noma nini. Ku-Mina, thinta isithombe somgqomo ukuze ususe konke. Kuzosuswa ngokushesha, ngaphandle kokushayela muntu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.delete",
+        "text": "O ka emisa neng kapa neng. Ho Nna, tobetsa setshwantsho sa motomo ho hlakola tsohle. Di tla hlakolwa hang-hang, ntle le ho letsetsa motho.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.question",
+      "description": "Consent question.",
+      "source": "Do you agree that we keep your learning safely on the internet?",
+      "zu": {
+        "id": "zu.app.consent.question",
+        "text": "Uyavuma ukuthi sigcine ukufunda kwakho ku-inthanethi ngokuphepha?",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.question",
+        "text": "Na o dumela hore re boloke thuto ya hao inthaneteng ka polokeho?",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.agree",
+      "description": "Consent button: agree.",
+      "source": "Yes, I agree.",
+      "zu": {
+        "id": "zu.app.consent.agree",
+        "text": "Yebo, ngiyavuma.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Yebo, ngiyavuma"
+      },
+      "st": {
+        "id": "st.app.consent.agree",
+        "text": "E, ke a dumela.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "E, ke a dumela"
+      }
+    },
+    {
+      "id": "consent.decline",
+      "description": "Consent button: keep on phone only.",
+      "source": "No, keep it on this phone only.",
+      "zu": {
+        "id": "zu.app.consent.decline",
+        "text": "Cha, gcina kule foni kuphela.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Cha, kule foni kuphela"
+      },
+      "st": {
+        "id": "st.app.consent.decline",
+        "text": "Tjhe, boloka founung feela.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tjhe, founung feela"
+      }
+    },
+    {
+      "id": "consent.analytics",
+      "description": "Separate optional consent: pseudonymous usage counts.",
+      "source": "May we count how you use the app, without your name, so that we can improve it? You can change this at any time in Me.",
+      "zu": {
+        "id": "zu.app.consent.analytics",
+        "text": "Singabala ukuthi uyisebenzisa kanjani i-app, ngaphandle kwegama lakho, ukuze siyithuthukise? Ungashintsha lokhu noma nini ku-Mina.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.analytics",
+        "text": "Na re ka bala hore o sebedisa app jwang, ntle le lebitso la hao, e le hore re e ntlafatse? O ka fetola sena neng kapa neng ho Nna.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.pin",
+      "description": "Confirm the PIN to save it safely online.",
+      "source": "Tap your secret code again, so that we can keep it safely.",
+      "zu": {
+        "id": "zu.app.consent.pin",
+        "text": "Thinta ikhodi yakho eyimfihlo futhi, ukuze siyigcine ngokuphepha.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.pin",
+        "text": "Tobetsa khoutu ya hao ya lekunutu hape, hore re e boloke ka polokeho.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.declined",
+      "description": "After declining consent.",
+      "source": "That is fine. Your learning will stay on this phone only. You can change your mind later in Me.",
+      "zu": {
+        "id": "zu.app.consent.declined",
+        "text": "Kulungile. Ukufunda kwakho kuzohlala kule foni kuphela. Ungashintsha umqondo kamuva ku-Mina.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.declined",
+        "text": "Ho lokile. Thuto ya hao e tla dula founung ena feela. O ka fetola mohopolo hamorao ho Nna.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.saved",
+      "description": "After registration succeeded.",
+      "source": "Thank you. Your learning is now kept safely.",
+      "zu": {
+        "id": "zu.app.consent.saved",
+        "text": "Siyabonga. Ukufunda kwakho sekugciniwe ngokuphepha.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.saved",
+        "text": "Re a leboha. Thuto ya hao jwale e bolokilwe ka polokeho.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.offline",
+      "description": "Registration needs the internet.",
+      "source": "Keeping it on the internet needs the internet. For now, your learning stays on this phone.",
+      "zu": {
+        "id": "zu.app.consent.offline",
+        "text": "Ukugcina ku-inthanethi kudinga i-inthanethi. Okwamanje, ukufunda kwakho kuhlala kule foni.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.consent.offline",
+        "text": "Ho boloka inthaneteng ho hloka inthanete. Hajwale, thuto ya hao e dula founung ena.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "consent.withdraw",
+      "description": "Withdraw account-storage consent (deletes online data).",
+      "source": "If you withdraw your consent, we will delete your learning from the internet. It will stay on this phone only.",
+      "zu": {
+        "id": "zu.app.consent.withdraw",
+        "text": "Uma uhoxisa imvume, sizosusa ukufunda kwakho ku-inthanethi. Kuzohlala kule foni kuphela.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Hoxisa imvume"
+      },
+      "st": {
+        "id": "st.app.consent.withdraw",
+        "text": "Ha o hula tumello, re tla hlakola thuto ya hao inthaneteng. E tla dula founung ena feela.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Hula tumello"
+      }
+    },
+    {
+      "id": "share.intro",
+      "description": "Cohort sharing consent 1/4.",
+      "source": "Your teacher's class wants to see your progress. You choose what they may see.",
+      "zu": {
+        "id": "zu.app.share.intro",
+        "text": "Ikilasi likathisha wakho lifuna ukubona inqubekela phambili yakho. Nguwe okhethayo ukuthi bangabonani.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.share.intro",
+        "text": "Tlelase ya titjhere ya hao e batla ho bona tswelopele ya hao. Ke wena ya kgethang hore ba ka bona eng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "share.basic",
+      "description": "Cohort sharing: what joining always shares.",
+      "source": "If you join, your teacher will see: your picture, your level, the lessons you have finished, and the last day you practised. They will also see numbers for the whole class about skills that were difficult, without pointing to you.",
+      "zu": {
+        "id": "zu.app.share.basic",
+        "text": "Uma ujoyina, uthisha wakho uzobona: isithombe sakho, izinga lakho, izifundo oziqedile, nosuku lokugcina oprakthize ngalo. Uzobona nezibalo zekilasi lonke zamakhono abelukhuni, ngaphandle kokukhomba wena.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.share.basic",
+        "text": "Ha o kena, titjhere ya hao o tla bona: setshwantsho sa hao, boemo ba hao, dithuto tseo o di qetileng, le letsatsi la ho qetela leo o ikwetlisitseng ka lona. O tla bona le dipalo tsa tlelase yohle tsa bokgoni bo neng bo le thata, ntle le ho o supa.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "share.mastery",
+      "description": "Cohort sharing: optional mastery with dates (needed for certificates).",
+      "source": "Do you also want the teacher to see the skills you have learned, with the dates? This is needed for a certificate.",
+      "zu": {
+        "id": "zu.app.share.mastery",
+        "text": "Ingabe ufuna nokuthi uthisha abone amakhono owafundile, nezinsuku? Lokhu kuyadingeka ukuze uthole isitifiketi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.share.mastery",
+        "text": "Na o batla hape hore titjhere a bone bokgoni boo o ithutileng bona, le matsatsi? Sena se a hlokahala bakeng sa setifikeiti.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "share.mistakes",
+      "description": "Cohort sharing: optional mistake history.",
+      "source": "Do you want the teacher to see the questions you got wrong, so that they can help you?",
+      "zu": {
+        "id": "zu.app.share.mistakes",
+        "text": "Ingabe ufuna uthisha abone imibuzo oyiphosile, ukuze akusize?",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.share.mistakes",
+        "text": "Na o batla hore titjhere a bone dipotso tseo o di fositseng, e le hore a o thuse?",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "share.tutor",
+      "description": "Cohort sharing: optional tutor question log.",
+      "source": "Do you want the teacher to see the questions you asked the helper?",
+      "zu": {
+        "id": "zu.app.share.tutor",
+        "text": "Ingabe ufuna uthisha abone imibuzo oyibuze umsizi?",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.share.tutor",
+        "text": "Na o batla hore titjhere a bone dipotso tseo o di botsitseng mothusi?",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "share.yes",
+      "description": "Yes button.",
+      "source": "Yes.",
+      "zu": {
+        "id": "zu.app.share.yes",
+        "text": "Yebo.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Yebo"
+      },
+      "st": {
+        "id": "st.app.share.yes",
+        "text": "E.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "E"
+      }
+    },
+    {
+      "id": "share.no",
+      "description": "No button.",
+      "source": "No.",
+      "zu": {
+        "id": "zu.app.share.no",
+        "text": "Cha.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Cha"
+      },
+      "st": {
+        "id": "st.app.share.no",
+        "text": "Tjhe.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tjhe"
+      }
+    },
+    {
+      "id": "share.confirm",
+      "description": "Confirm joining.",
+      "source": "Join the class.",
+      "zu": {
+        "id": "zu.app.share.confirm",
+        "text": "Joyina ikilasi.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Joyina ikilasi"
+      },
+      "st": {
+        "id": "st.app.share.confirm",
+        "text": "Kena tlelaseng.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Kena tlelaseng"
+      }
+    },
+    {
+      "id": "share.stop_explain",
+      "description": "Before stopping sharing with a class.",
+      "source": "If you stop sharing, your teacher stops seeing your progress straight away.",
+      "zu": {
+        "id": "zu.app.share.stop_explain",
+        "text": "Uma uyeka ukwabelana, uthisha wakho uzoyeka ngokushesha ukubona inqubekela phambili yakho.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Yeka ukwabelana"
+      },
+      "st": {
+        "id": "st.app.share.stop_explain",
+        "text": "Ha o emisa ho arolelana, titjhere ya hao o tla emisa hang-hang ho bona tswelopele ya hao.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Emisa ho arolelana"
+      }
+    },
+    {
+      "id": "share.stopped",
+      "description": "After stopping sharing.",
+      "source": "Sharing has stopped.",
+      "zu": {
+        "id": "zu.app.share.stopped",
+        "text": "Ukwabelana kumisiwe.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.share.stopped",
+        "text": "Ho arolelana ho emisitswe.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "join.intro",
+      "description": "Join a class.",
+      "zu": {
+        "id": "zu.app.join.intro",
+        "text": "Joyina ikilasi lakho. Bhala inombolo ekhonjiswa uthisha wakho, noma uskene ikhodi eyisikwele.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Joyina ikilasi"
+      },
+      "st": {
+        "id": "st.app.join.intro",
+        "text": "Kena tlelaseng ya hao. Ngola nomoro eo titjhere ya hao a o bontshang yona, kapa o skene khoutu e sekwere.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Kena tlelaseng"
+      }
+    },
+    {
+      "id": "join.scan",
+      "description": "Scan the class QR code with the camera.",
+      "zu": {
+        "id": "zu.app.join.scan",
+        "text": "Khomba ikhamera kukhodi eyisikwele.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Skena ikhodi"
+      },
+      "st": {
+        "id": "st.app.join.scan",
+        "text": "Supa khoutu e sekwere ka khamera.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Skena khoutu"
+      }
+    },
+    {
+      "id": "join.need_account",
+      "description": "Joining needs an online account first.",
+      "source": "To join a class, first keep your learning on the internet.",
+      "zu": {
+        "id": "zu.app.join.need_account",
+        "text": "Ukuze ujoyine ikilasi, qala ugcine ukufunda kwakho ku-inthanethi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.join.need_account",
+        "text": "Ho kena tlelaseng, pele boloka thuto ya hao inthaneteng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "join.bad_code",
+      "description": "Unknown class code.",
+      "zu": {
+        "id": "zu.app.join.bad_code",
+        "text": "Leyo nombolo ayisebenzanga. Yihlole nothisha wakho bese uzama futhi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.join.bad_code",
+        "text": "Nomoro eo ha e a sebetsa. E hlahlobe le titjhere ya hao, mme o leke hape.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "join.done",
+      "description": "Joined a class.",
+      "zu": {
+        "id": "zu.app.join.done",
+        "text": "Manje usekilasini.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.join.done",
+        "text": "Jwale o tlelaseng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "mic.explain",
+      "description": "Before asking for microphone permission.",
+      "source": "Some activities ask you to say words aloud. To let you hear yourself, the app needs the microphone. Your voice stays on this phone and is deleted when the activity ends. You can say no and still use everything.",
+      "zu": {
+        "id": "zu.app.mic.explain",
+        "text": "Eminye imisebenzi ikucela ukuthi usho amagama ngezwi. Ukuze uzizwe, i-app idinga imakrofoni. Izwi lakho lihlala kule foni futhi liyasuswa uma umsebenzi uphela. Ungathi cha futhi usasebenzisa konke.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.mic.explain",
+        "text": "Mesebetsi e meng e o kopa ho bua mantswe ka lentswe. Ho iutlwa, app e hloka maekrofounu. Lentswe la hao le dula founung ena mme le hlakolwa ha mosebetsi o fela. O ka re tjhe mme wa nna wa sebedisa tsohle.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "mic.allow",
+      "description": "Allow microphone button.",
+      "source": "Allow the microphone.",
+      "zu": {
+        "id": "zu.app.mic.allow",
+        "text": "Vumela imakrofoni.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Vumela imakrofoni"
+      },
+      "st": {
+        "id": "st.app.mic.allow",
+        "text": "Dumella maekrofounu.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Dumella maekrofounu"
+      }
+    },
+    {
+      "id": "mic.no",
+      "description": "Decline microphone button.",
+      "source": "No, thank you.",
+      "zu": {
+        "id": "zu.app.mic.no",
+        "text": "Cha, ngiyabonga.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Cha, ngiyabonga"
+      },
+      "st": {
+        "id": "st.app.mic.no",
+        "text": "Tjhe, ke a leboha.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tjhe, ke a leboha"
+      }
+    },
+    {
+      "id": "mic.denied",
+      "description": "Microphone not available or refused.",
+      "source": "No problem. Say the words aloud without recording, then tap the arrow when you have finished.",
+      "zu": {
+        "id": "zu.app.mic.denied",
+        "text": "Akunankinga. Sho amagama ngezwi ngaphandle kokuqopha, bese uthinta umcibisholo uma usuqedile.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.mic.denied",
+        "text": "Ha ho bothata. Bua mantswe ka lentswe ntle le ho rekota, ebe o tobetsa motsu ha o qetile.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "repeat.record",
+      "description": "Tap the microphone to record yourself.",
+      "zu": {
+        "id": "zu.app.repeat.record",
+        "text": "Thinta imakrofoni bese usho igama.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Qopha"
+      },
+      "st": {
+        "id": "st.app.repeat.record",
+        "text": "Tobetsa maekrofounu mme o bue lentswe.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Rekota"
+      }
+    },
+    {
+      "id": "repeat.compare",
+      "description": "Compare model and own recording.",
+      "zu": {
+        "id": "zu.app.repeat.compare",
+        "text": "Lalela isibonelo, bese uzilalela wena. Ingabe kuzwakale kufana?",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.repeat.compare",
+        "text": "Mamela mohlala, ebe o iteetsa. Na ho utlwahetse ho tshwana?",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "repeat.say_aloud",
+      "description": "Say aloud without recording.",
+      "zu": {
+        "id": "zu.app.repeat.say_aloud",
+        "text": "Sho igama ngezwi manje. Bese uthinta umcibisholo oluhlaza.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.repeat.say_aloud",
+        "text": "Bua lentswe ka lentswe jwale. Ebe o tobetsa motsu o motala.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "repeat.same",
+      "description": "Self-check: sounded the same.",
+      "zu": {
+        "id": "zu.app.repeat.same",
+        "text": "Kuyafana.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Kuyafana"
+      },
+      "st": {
+        "id": "st.app.repeat.same",
+        "text": "Ho a tshwana.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ho a tshwana"
+      }
+    },
+    {
+      "id": "repeat.different",
+      "description": "Self-check: sounded different.",
+      "zu": {
+        "id": "zu.app.repeat.different",
+        "text": "Kuhlukile.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Kuhlukile"
+      },
+      "st": {
+        "id": "st.app.repeat.different",
+        "text": "Ho fapane.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ho fapane"
+      }
+    },
+    {
+      "id": "repeat.practised",
+      "description": "After a self-check (always recorded as practised, never scored).",
+      "zu": {
+        "id": "zu.app.repeat.practised",
+        "text": "Kuhle ukuprakthiza! Ukusho amagama ngezwi kuyakusiza ukuthi uwakhumbule.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.repeat.practised",
+        "text": "Ho hotle ho ikwetlisa! Ho bua mantswe ka lentswe ho o thusa ho a hopola.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "profile.choose_picture",
+      "description": "Choose an avatar picture.",
+      "zu": {
+        "id": "zu.app.profile.choose_picture",
+        "text": "Zikhethele isithombe. Sizokusiza ukuthola ukufunda kwakho kule foni.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.profile.choose_picture",
+        "text": "Ikgethele setshwantsho. Se tla o thusa ho fumana thuto ya hao founung ena.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "pin.create",
+      "description": "Create a picture PIN.",
+      "zu": {
+        "id": "zu.app.pin.create",
+        "text": "Manje yenza ikhodi yakho eyimfihlo: thinta izithombe ezine. Zikhumbule, futhi ungazikhombisi muntu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.pin.create",
+        "text": "Jwale etsa khoutu ya hao ya lekunutu: tobetsa ditshwantsho tse nne. Di hopole, mme o se ke wa di bontsha motho.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "pin.confirm",
+      "description": "Confirm the PIN.",
+      "zu": {
+        "id": "zu.app.pin.confirm",
+        "text": "Thinta izithombe ezine ezifanayo futhi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.pin.confirm",
+        "text": "Tobetsa ditshwantsho tse nne tse tshwanang hape.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "pin.mismatch",
+      "description": "PIN confirmation did not match.",
+      "zu": {
+        "id": "zu.app.pin.mismatch",
+        "text": "Amakhodi womabili awafani. Asiphinde siyenze.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.pin.mismatch",
+        "text": "Dikhoutu tse pedi ha di tshwane. A re e etseng hape.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "pin.enter",
+      "description": "Enter PIN.",
+      "zu": {
+        "id": "zu.app.pin.enter",
+        "text": "Thinta izithombe zakho ezine eziyimfihlo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.pin.enter",
+        "text": "Tobetsa ditshwantsho tsa hao tse nne tsa lekunutu.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "pin.wrong",
+      "description": "Wrong PIN.",
+      "zu": {
+        "id": "zu.app.pin.wrong",
+        "text": "Leyo khodi ayilungile. Zama futhi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.pin.wrong",
+        "text": "Khoutu eo ha e a nepahala. Leka hape.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "pin.wait",
+      "description": "Too many wrong PINs: short wait.",
+      "zu": {
+        "id": "zu.app.pin.wait",
+        "text": "Sicela ulinde kancane, bese uzama futhi. Uma ukhohlwe ikhodi yakho, cela uthisha wakho akusize.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.pin.wait",
+        "text": "Ka kopo ema hanyane, ebe o leka hape. Ha o lebetse khoutu ya hao, kopa titjhere ya hao hore a o thuse.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "pin.saved",
+      "description": "PIN saved.",
+      "zu": {
+        "id": "zu.app.pin.saved",
+        "text": "Ikhodi yakho eyimfihlo igciniwe.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.pin.saved",
+        "text": "Khoutu ya hao ya lekunutu e bolokilwe.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "profiles.who",
+      "description": "Profile picker on a shared phone.",
+      "zu": {
+        "id": "zu.app.profiles.who",
+        "text": "Ngubani ofundayo manje? Thinta isithombe sakho.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.profiles.who",
+        "text": "Ke mang ya ithutang jwale? Tobetsa setshwantsho sa hao.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "profiles.add",
+      "description": "Add another learner on this phone.",
+      "zu": {
+        "id": "zu.app.profiles.add",
+        "text": "Engeza omunye umfundi kule foni.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Umfundi omusha"
+      },
+      "st": {
+        "id": "st.app.profiles.add",
+        "text": "Eketsa moithuti e mong founung ena.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Moithuti e motjha"
+      }
+    },
+    {
+      "id": "profiles.switch",
+      "description": "Switch learner.",
+      "zu": {
+        "id": "zu.app.profiles.switch",
+        "text": "Shintsha umfundi.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Shintsha umfundi"
+      },
+      "st": {
+        "id": "st.app.profiles.switch",
+        "text": "Fetola moithuti.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Fetola moithuti"
+      }
+    },
+    {
+      "id": "assess.offer",
+      "description": "Offer the optional placement activity.",
+      "zu": {
+        "id": "zu.app.assess.offer",
+        "text": "Ungathanda ukwenza umsebenzi omfushane ukuze sithole indawo engcono yokuqala? Uthatha cishe imizuzu emihlanu. Akusona isivivinyo, futhi awudingi ukukhathazeka ngamaphutha.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.assess.offer",
+        "text": "Na o ka rata ho etsa mosebetsi o mokgutshwane hore re fumane sebaka se setle sa ho qala? O nka metsotso e ka bang mehlano. Hase tlhahlobo, mme ha o a tlameha ho tshwenyeha ka diphoso.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "assess.start",
+      "description": "Start the placement activity.",
+      "zu": {
+        "id": "zu.app.assess.start",
+        "text": "Qala.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Qala"
+      },
+      "st": {
+        "id": "st.app.assess.start",
+        "text": "Qala.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Qala"
+      }
+    },
+    {
+      "id": "assess.skip",
+      "description": "Skip the placement activity.",
+      "zu": {
+        "id": "zu.app.assess.skip",
+        "text": "Yeqa.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Yeqa"
+      },
+      "st": {
+        "id": "st.app.assess.skip",
+        "text": "Tlola.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tlola"
+      }
+    },
+    {
+      "id": "assess.thanks",
+      "description": "Neutral acknowledgement after every placement answer (never right/wrong).",
+      "zu": {
+        "id": "zu.app.assess.thanks",
+        "text": "Ngiyabonga.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.assess.thanks",
+        "text": "Ke a leboha.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "assess.done",
+      "description": "End of placement.",
+      "zu": {
+        "id": "zu.app.assess.done",
+        "text": "Siyabonga. Sithole indawo enhle yokuthi uqale khona.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.assess.done",
+        "text": "Re a leboha. Re fumane sebaka se setle sa hore o qale teng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "place.self_question",
+      "description": "Self-placement when the activity is skipped.",
+      "zu": {
+        "id": "zu.app.place.self_question",
+        "text": "Uyakwazi ukufunda amagama esiZulu?",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.place.self_question",
+        "text": "Na o kgona ho bala mantswe a Sesotho?",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "place.self_yes",
+      "description": "Self-placement: can read the home language.",
+      "zu": {
+        "id": "zu.app.place.self_yes",
+        "text": "Yebo, ngiyakwazi.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Yebo, ngiyakwazi"
+      },
+      "st": {
+        "id": "st.app.place.self_yes",
+        "text": "E, ke a kgona.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "E, ke a kgona"
+      }
+    },
+    {
+      "id": "place.self_no",
+      "description": "Self-placement: cannot read yet / not sure.",
+      "zu": {
+        "id": "zu.app.place.self_no",
+        "text": "Angikakwazi, noma angiqiniseki.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Angikakwazi"
+      },
+      "st": {
+        "id": "st.app.place.self_no",
+        "text": "Ha ke eso kgone, kapa ha ke na bonnete.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ha ke eso kgone"
+      }
+    },
+    {
+      "id": "place.level0",
+      "description": "Start at Level 0.",
+      "zu": {
+        "id": "zu.app.place.level0",
+        "text": "Asiqale ngokufunda ngesiZulu. Kwenza isiNgisi sibe lula.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.place.level0",
+        "text": "A re qaleng ka ho bala ka Sesotho. Ho etsa hore Senyesemane se be bonolo.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "place.level1",
+      "description": "Start at Level 1.",
+      "zu": {
+        "id": "zu.app.place.level1",
+        "text": "Asiqale ngezinhlamvu nemisindo yesiNgisi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.place.level1",
+        "text": "A re qaleng ka ditlhaku le medumo ya Senyesemane.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "place.level2",
+      "description": "Start at Level 2.",
+      "zu": {
+        "id": "zu.app.place.level2",
+        "text": "Asiqale ngamagama akho okuqala esiNgisi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.place.level2",
+        "text": "A re qaleng ka mantswe a hao a pele a Senyesemane.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "place.level3",
+      "description": "Start at Level 3.",
+      "zu": {
+        "id": "zu.app.place.level3",
+        "text": "Asiqale ngemisho.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.place.level3",
+        "text": "A re qaleng ka dipolelo.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "place.level4",
+      "description": "Start at Level 4.",
+      "zu": {
+        "id": "zu.app.place.level4",
+        "text": "Asiqale ngesiNgisi sansuku zonke: ama-SMS nezimpawu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.place.level4",
+        "text": "A re qaleng ka Senyesemane sa letsatsi le letsatsi: di-SMS le matshwao.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "place.change_any_time",
+      "description": "Reassurance that level can change.",
+      "zu": {
+        "id": "zu.app.place.change_any_time",
+        "text": "Ungashintsha lapho uqala khona noma nini.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.place.change_any_time",
+        "text": "O ka fetola moo o qalang teng neng kapa neng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "home.greeting",
+      "description": "Home screen greeting.",
+      "zu": {
+        "id": "zu.app.home.greeting",
+        "text": "Siyakwamukela futhi! Thinta inkinobho enkulu ukuze uqhubeke ufunda.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.home.greeting",
+        "text": "Rea o amohela hape! Tobetsa konopo e kgolo ho tswela pele ho ithuta.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "home.continue",
+      "description": "Continue / start the recommended lesson.",
+      "zu": {
+        "id": "zu.app.home.continue",
+        "text": "Qhubeka ufunde.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Qhubeka"
+      },
+      "st": {
+        "id": "st.app.home.continue",
+        "text": "Tswela pele ho ithuta.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tswela pele"
+      }
+    },
+    {
+      "id": "home.revise",
+      "description": "Start a revision session.",
+      "zu": {
+        "id": "zu.app.home.revise",
+        "text": "Prakthiza amagama obekunzima kuwe.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Prakthiza"
+      },
+      "st": {
+        "id": "st.app.home.revise",
+        "text": "Ikwetlise mantswe a neng a le thata ho wena.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ikwetlise"
+      }
+    },
+    {
+      "id": "home.streak",
+      "description": "Streak kept today.",
+      "zu": {
+        "id": "zu.app.home.streak",
+        "text": "Uprakthize namuhla. Wenze kahle!",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.home.streak",
+        "text": "O ikwetlisitse kajeno. O entse hantle!",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "home.all_done",
+      "description": "Every available lesson completed.",
+      "zu": {
+        "id": "zu.app.home.all_done",
+        "text": "Uqede zonke izifundo ezikhona manje. Qhubeka uprakthize!",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.home.all_done",
+        "text": "O qetile dithuto tsohle tse teng hajwale. Tswela pele ho ikwetlisa!",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "nav.learn",
+      "description": "Bottom navigation: learning path.",
+      "zu": {
+        "id": "zu.app.nav.learn",
+        "text": "Izifundo.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Funda"
+      },
+      "st": {
+        "id": "st.app.nav.learn",
+        "text": "Dithuto.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ithute"
+      }
+    },
+    {
+      "id": "nav.practice",
+      "description": "Bottom navigation: revision.",
+      "zu": {
+        "id": "zu.app.nav.practice",
+        "text": "Ukuprakthiza.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Prakthiza"
+      },
+      "st": {
+        "id": "st.app.nav.practice",
+        "text": "Boikwetliso.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ikwetlise"
+      }
+    },
+    {
+      "id": "nav.progress",
+      "description": "Bottom navigation: progress and badges.",
+      "zu": {
+        "id": "zu.app.nav.progress",
+        "text": "Inqubekela phambili yakho.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Inqubekela"
+      },
+      "st": {
+        "id": "st.app.nav.progress",
+        "text": "Tswelopele ya hao.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tswelopele"
+      }
+    },
+    {
+      "id": "nav.me",
+      "description": "Bottom navigation: profile and settings.",
+      "zu": {
+        "id": "zu.app.nav.me",
+        "text": "Mina: izilungiselelo nemininingwane yami.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Mina"
+      },
+      "st": {
+        "id": "st.app.nav.me",
+        "text": "Nna: disetting le dintlha tsa ka.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Nna"
+      }
+    },
+    {
+      "id": "path.intro",
+      "description": "Learning path screen.",
+      "zu": {
+        "id": "zu.app.path.intro",
+        "text": "Nazi izifundo zakho. Thinta indilinga ukuze uqale.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.path.intro",
+        "text": "Dithuto tsa hao ke tsena. Tobetsa sedikadikwe ho qala.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "path.locked",
+      "description": "Tapping a lesson that is not open yet.",
+      "zu": {
+        "id": "zu.app.path.locked",
+        "text": "Lesi sifundo sizovuleka uma uqeda esingaphambi kwaso.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.path.locked",
+        "text": "Thuto ena e tla buleha ha o qeta e e etellang pele.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "lesson.exit_confirm",
+      "description": "Leaving a lesson early.",
+      "zu": {
+        "id": "zu.app.lesson.exit_confirm",
+        "text": "Ufuna ukumisa isifundo? Inqubekela phambili yakho igciniwe.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.lesson.exit_confirm",
+        "text": "Na o batla ho emisa thuto? Tswelopele ya hao e bolokilwe.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "lesson.stop",
+      "description": "Stop the lesson.",
+      "zu": {
+        "id": "zu.app.lesson.stop",
+        "text": "Misa.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Misa"
+      },
+      "st": {
+        "id": "st.app.lesson.stop",
+        "text": "Emisa.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Emisa"
+      }
+    },
+    {
+      "id": "lesson.keep_going",
+      "description": "Keep going.",
+      "zu": {
+        "id": "zu.app.lesson.keep_going",
+        "text": "Qhubeka.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Qhubeka"
+      },
+      "st": {
+        "id": "st.app.lesson.keep_going",
+        "text": "Tswela pele.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tswela pele"
+      }
+    },
+    {
+      "id": "lesson.complete",
+      "description": "Lesson finished.",
+      "zu": {
+        "id": "zu.app.lesson.complete",
+        "text": "Isifundo siphelile! Wenze kahle.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.lesson.complete",
+        "text": "Thuto e fedile! O entse hantle.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "lesson.next",
+      "description": "Next lesson button.",
+      "zu": {
+        "id": "zu.app.lesson.next",
+        "text": "Isifundo esilandelayo.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Esilandelayo"
+      },
+      "st": {
+        "id": "st.app.lesson.next",
+        "text": "Thuto e latelang.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "E latelang"
+      }
+    },
+    {
+      "id": "revision.intro",
+      "description": "Revision session start.",
+      "zu": {
+        "id": "zu.app.revision.intro",
+        "text": "Asiprakthize izinto obekunzima kuwe.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.revision.intro",
+        "text": "A re ikwetliseng dintho tse neng di le thata ho wena.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "revision.empty",
+      "description": "No revision due.",
+      "zu": {
+        "id": "zu.app.revision.empty",
+        "text": "Akukho okokuprakthiza manje. Wenze kahle!",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.revision.empty",
+        "text": "Ha ho letho la ho ikwetlisa hona jwale. O entse hantle!",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "revision.done",
+      "description": "Revision session finished.",
+      "zu": {
+        "id": "zu.app.revision.done",
+        "text": "Ukuprakthiza kuphelile.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.revision.done",
+        "text": "Boikwetliso bo fedile.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "progress.intro",
+      "description": "Progress screen.",
+      "zu": {
+        "id": "zu.app.progress.intro",
+        "text": "Nakhu osukufundile.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.progress.intro",
+        "text": "Sena ke seo o se ithutileng.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "badge.earned",
+      "description": "New badge.",
+      "zu": {
+        "id": "zu.app.badge.earned",
+        "text": "Uthole ibheji elisha!",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.badge.earned",
+        "text": "O fumane beche e ntjha!",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "me.intro",
+      "description": "Profile and settings screen.",
+      "zu": {
+        "id": "zu.app.me.intro",
+        "text": "Lapha ungashintsha izilungiselelo zakho futhi unakekele imininingwane yakho.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.me.intro",
+        "text": "Mona o ka fetola disetting tsa hao mme o hlokomele dintlha tsa hao.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "me.language",
+      "description": "Change teaching language.",
+      "zu": {
+        "id": "zu.app.me.language",
+        "text": "Shintsha ulimi ofunda ngalo.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ulimi"
+      },
+      "st": {
+        "id": "st.app.me.language",
+        "text": "Fetola puo eo o ithutang ka yona.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Puo"
+      }
+    },
+    {
+      "id": "me.text_size",
+      "description": "Text size setting.",
+      "zu": {
+        "id": "zu.app.me.text_size",
+        "text": "Yenza umbhalo ube mkhulu.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Usayizi wombhalo"
+      },
+      "st": {
+        "id": "st.app.me.text_size",
+        "text": "Etsa mongolo o be moholo.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Boholo ba mongolo"
+      }
+    },
+    {
+      "id": "me.captions",
+      "description": "Captions setting.",
+      "zu": {
+        "id": "zu.app.me.captions",
+        "text": "Bonisa amagama ngaphansi kwezwi.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Amagama ngaphansi"
+      },
+      "st": {
+        "id": "st.app.me.captions",
+        "text": "Bontsha mantswe ka tlasa lentswe.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Mantswe ka tlase"
+      }
+    },
+    {
+      "id": "me.wifi_only",
+      "description": "Download on Wi-Fi only setting.",
+      "zu": {
+        "id": "zu.app.me.wifi_only",
+        "text": "Landa izifundo kuphela uma uku-Wi-Fi, ukuze ungasebenzisi idatha.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Wi-Fi kuphela"
+      },
+      "st": {
+        "id": "st.app.me.wifi_only",
+        "text": "Jarolla dithuto feela ha o le ho Wi-Fi, hore o se sebedise data.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Wi-Fi feela"
+      }
+    },
+    {
+      "id": "me.level",
+      "description": "Change level.",
+      "zu": {
+        "id": "zu.app.me.level",
+        "text": "Khetha lapho ufuna ukuqala khona.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Shintsha izinga"
+      },
+      "st": {
+        "id": "st.app.me.level",
+        "text": "Kgetha moo o batlang ho qala teng.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Fetola boemo"
+      }
+    },
+    {
+      "id": "me.retake",
+      "description": "Retake placement activity.",
+      "zu": {
+        "id": "zu.app.me.retake",
+        "text": "Phinda umsebenzi omfushane ukuze sithole izinga elifanele.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Phinda umsebenzi"
+      },
+      "st": {
+        "id": "st.app.me.retake",
+        "text": "Etsa mosebetsi o mokgutshwane hape hore re fumane boemo bo nepahetseng.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Etsa hape"
+      }
+    },
+    {
+      "id": "me.export",
+      "description": "Download a copy of my data.",
+      "source": "You can get a copy of all the information about you that we keep.",
+      "zu": {
+        "id": "zu.app.me.export",
+        "text": "Ungathola ikhophi yayo yonke imininingwane yakho esiyigcinile.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ikhophi yemininingwane"
+      },
+      "st": {
+        "id": "st.app.me.export",
+        "text": "O ka fumana kopi ya dintlha tsohle tsa hao tseo re di bolokileng.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Kopi ya dintlha"
+      }
+    },
+    {
+      "id": "me.delete",
+      "description": "Delete all my data.",
+      "source": "Delete all my information.",
+      "zu": {
+        "id": "zu.app.me.delete",
+        "text": "Susa yonke imininingwane yami.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Susa konke"
+      },
+      "st": {
+        "id": "st.app.me.delete",
+        "text": "Hlakola dintlha tsohle tsa ka.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Hlakola tsohle"
+      }
+    },
+    {
+      "id": "me.sharing",
+      "description": "What I share with my class.",
+      "zu": {
+        "id": "zu.app.me.sharing",
+        "text": "Bheka noma ushintshe okwabelana nekilasi lakho.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Okwabelana"
+      },
+      "st": {
+        "id": "st.app.me.sharing",
+        "text": "Sheba kapa o fetole seo o se arolelanang le tlelase ya hao.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ho arolelana"
+      }
+    },
+    {
+      "id": "me.downloads",
+      "description": "Lesson downloads.",
+      "zu": {
+        "id": "zu.app.me.downloads",
+        "text": "Landa izifundo ukuze uzisebenzise ngaphandle kwe-inthanethi.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ukulanda"
+      },
+      "st": {
+        "id": "st.app.me.downloads",
+        "text": "Jarolla dithuto ho di sebedisa ntle le inthanete.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ho jarolla"
+      }
+    },
+    {
+      "id": "me.facilitator",
+      "description": "Facilitator help (teacher signs in on this phone).",
+      "zu": {
+        "id": "zu.app.me.facilitator",
+        "text": "Uthisha angakusiza kule foni. Ikhodi yakho eyimfihlo ihlala iyimfihlo.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Usizo lukathisha"
+      },
+      "st": {
+        "id": "st.app.me.facilitator",
+        "text": "Titjhere a ka o thusa founung ena. Khoutu ya hao ya lekunutu e dula e le lekunutu.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Thuso ya titjhere"
+      }
+    },
+    {
+      "id": "me.moved_phone",
+      "description": "This phone's online session was replaced: the learner was moved to another phone. Offers removing the profile from this phone.",
+      "zu": {
+        "id": "zu.app.me.moved_phone",
+        "text": "Izifundo zakho ezigcinwe ku-inthanethi manje zikwenye ifoni. Okwenzayo lapha kuhlala kule foni kuphela. Ungasusa le phrofayela kule foni.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Susa kule foni"
+      },
+      "st": {
+        "id": "st.app.me.moved_phone",
+        "text": "Dithuto tsa hao tse bolokilweng inthaneteng di se di le founung e nngwe. Seo o se etsang mona se dula founung ena feela. O ka tlosa profaele ena founung ena.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tlosa founung ena"
+      }
+    },
+    {
+      "id": "delete.explain",
+      "description": "Explain deletion before confirming.",
+      "source": "If you delete, everything about you is removed from this phone and from our system. Your teacher will no longer see you. This cannot be undone. To delete, press and hold the red button.",
+      "zu": {
+        "id": "zu.app.delete.explain",
+        "text": "Uma usula, konke okumayelana nawe kuzosuswa kule foni nasohlelweni lwethu. Uthisha wakho ngeke esakubona. Lokhu akunakuhlehliswa. Ukuze usule, cindezela ubambe inkinobho ebomvu.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.delete.explain",
+        "text": "Ha o hlakola, tsohle tse mabapi le wena di tla tloswa founung ena le tsamaisong ya rona. Titjhere ya hao a ke ke a hlola a o bona. Sena se ke ke sa kgutliswa. Ho hlakola, tobetsa o tshware konopo e kgubedu.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "delete.confirm",
+      "description": "Press-and-hold delete button.",
+      "source": "Hold to delete.",
+      "zu": {
+        "id": "zu.app.delete.confirm",
+        "text": "Bamba ukuze usule.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Bamba ukuze usule"
+      },
+      "st": {
+        "id": "st.app.delete.confirm",
+        "text": "Tshwara ho hlakola.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tshwara ho hlakola"
+      }
+    },
+    {
+      "id": "delete.done",
+      "description": "After deletion.",
+      "source": "Everything has been deleted. Thank you for learning with us.",
+      "zu": {
+        "id": "zu.app.delete.done",
+        "text": "Konke kususiwe. Siyabonga ngokufunda nathi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.delete.done",
+        "text": "Tsohle di hlakotswe. Re a leboha ka ho ithuta le rona.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "delete.offline",
+      "description": "Online deletion needs connectivity.",
+      "source": "Deleting from the internet needs the internet. Try again when you are connected.",
+      "zu": {
+        "id": "zu.app.delete.offline",
+        "text": "Ukususa ku-inthanethi kudinga i-inthanethi. Zama futhi uma usuxhunyiwe.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.delete.offline",
+        "text": "Ho hlakola inthaneteng ho hloka inthanete. Leka hape ha o hokahane.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "export.done",
+      "description": "Data export ready.",
+      "source": "Your copy is ready.",
+      "zu": {
+        "id": "zu.app.export.done",
+        "text": "Ikhophi yakho isilungile.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.export.done",
+        "text": "Kopi ya hao e se e lokile.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "downloads.intro",
+      "description": "Downloads screen.",
+      "zu": {
+        "id": "zu.app.downloads.intro",
+        "text": "Landa izifundo ukuze uzisebenzise ngaphandle kwe-inthanethi. Usayizi ukhonjiswa ngaphambi kokulanda.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.downloads.intro",
+        "text": "Jarolla dithuto ho di sebedisa ntle le inthanete. Boholo bo bontshwa pele o jarolla.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "downloads.download",
+      "description": "Download button.",
+      "zu": {
+        "id": "zu.app.downloads.download",
+        "text": "Landa.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Landa"
+      },
+      "st": {
+        "id": "st.app.downloads.download",
+        "text": "Jarolla.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Jarolla"
+      }
+    },
+    {
+      "id": "downloads.remove",
+      "description": "Remove download button.",
+      "zu": {
+        "id": "zu.app.downloads.remove",
+        "text": "Susa.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Susa"
+      },
+      "st": {
+        "id": "st.app.downloads.remove",
+        "text": "Tlosa.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tlosa"
+      }
+    },
+    {
+      "id": "downloads.done",
+      "description": "Download finished.",
+      "zu": {
+        "id": "zu.app.downloads.done",
+        "text": "Kulandiwe. Ungasebenzisa lezi zifundo ngaphandle kwe-inthanethi.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.downloads.done",
+        "text": "Di jarollotswe. O ka sebedisa dithuto tsena ntle le inthanete.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "assist.handover",
+      "description": "Facilitator-assisted mode starts.",
+      "source": "Your teacher will help you now. Your secret code stays secret.",
+      "zu": {
+        "id": "zu.app.assist.handover",
+        "text": "Uthisha wakho uzokusiza manje. Ikhodi yakho eyimfihlo ihlala iyimfihlo.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.assist.handover",
+        "text": "Titjhere ya hao o tla o thusa jwale. Khoutu ya hao ya lekunutu e dula e le lekunutu.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "assist.new_pin",
+      "description": "Learner sets a new PIN during facilitator help.",
+      "source": "Make a new secret code. Your teacher should not look.",
+      "zu": {
+        "id": "zu.app.assist.new_pin",
+        "text": "Yenza ikhodi entsha eyimfihlo. Uthisha wakho akufanele abuke.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.assist.new_pin",
+        "text": "Etsa khoutu e ntjha ya lekunutu. Titjhere ya hao ha a a tlameha ho sheba.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "assist.enter_pin",
+      "description": "Device transfer: the learner enters their secret code on the new phone.",
+      "zu": {
+        "id": "zu.app.assist.enter_pin",
+        "text": "Faka ikhodi yakho eyimfihlo ukuze ulethe izifundo zakho kule foni.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.assist.enter_pin",
+        "text": "Kenya khoutu ya hao ya lekunutu ho tlisa dithuto tsa hao founung ena.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "assist.forgot",
+      "description": "Device transfer: the learner has forgotten their secret code.",
+      "zu": {
+        "id": "zu.app.assist.forgot",
+        "text": "Uma ukhohliwe ikhodi yakho, thinta lapha ukuze wenze entsha.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ngikhohliwe"
+      },
+      "st": {
+        "id": "st.app.assist.forgot",
+        "text": "Haeba o lebetse khoutu ya hao, tobetsa mona ho etsa e ntjha.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ke lebetse"
+      }
+    },
+    {
+      "id": "assist.moved",
+      "description": "Device transfer finished.",
+      "zu": {
+        "id": "zu.app.assist.moved",
+        "text": "Kulungile. Izifundo zakho sezikule foni manje.",
+        "review": {
+          "status": "draft"
+        }
+      },
+      "st": {
+        "id": "st.app.assist.moved",
+        "text": "Ho lokile. Dithuto tsa hao di se di le founung ena jwale.",
+        "review": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "net.offline",
+      "description": "Status: offline.",
+      "zu": {
+        "id": "zu.app.net.offline",
+        "text": "Awuxhunyiwe ku-inthanethi.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Awuxhunyiwe"
+      },
+      "st": {
+        "id": "st.app.net.offline",
+        "text": "Ha o a hokahana le inthanete.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Ha o a hokahana"
+      }
+    },
+    {
+      "id": "net.wifi",
+      "description": "Status: on Wi-Fi.",
+      "zu": {
+        "id": "zu.app.net.wifi",
+        "text": "Usebenzisa i-Wi-Fi.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Wi-Fi"
+      },
+      "st": {
+        "id": "st.app.net.wifi",
+        "text": "O sebedisa Wi-Fi.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Wi-Fi"
+      }
+    },
+    {
+      "id": "net.mobile",
+      "description": "Status: on mobile data.",
+      "zu": {
+        "id": "zu.app.net.mobile",
+        "text": "Usebenzisa idatha yeselula.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Idatha"
+      },
+      "st": {
+        "id": "st.app.net.mobile",
+        "text": "O sebedisa data ya founu.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Data"
+      }
+    },
+    {
+      "id": "ui.listen_again",
+      "description": "Listen again button.",
+      "zu": {
+        "id": "zu.app.ui.listen_again",
+        "text": "Lalela futhi.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Lalela futhi"
+      },
+      "st": {
+        "id": "st.app.ui.listen_again",
+        "text": "Mamela hape.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Mamela hape"
+      }
+    },
+    {
+      "id": "ui.listen_slow",
+      "description": "Listen slowly button.",
+      "zu": {
+        "id": "zu.app.ui.listen_slow",
+        "text": "Lalela kancane.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Kancane"
+      },
+      "st": {
+        "id": "st.app.ui.listen_slow",
+        "text": "Mamela butle.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Butle"
+      }
+    },
+    {
+      "id": "ui.help",
+      "description": "Help button.",
+      "zu": {
+        "id": "zu.app.ui.help",
+        "text": "Usizo.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Usizo"
+      },
+      "st": {
+        "id": "st.app.ui.help",
+        "text": "Thuso.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Thuso"
+      }
+    },
+    {
+      "id": "ui.continue",
+      "description": "Continue button.",
+      "zu": {
+        "id": "zu.app.ui.continue",
+        "text": "Qhubeka.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Qhubeka"
+      },
+      "st": {
+        "id": "st.app.ui.continue",
+        "text": "Tswela pele.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tswela pele"
+      }
+    },
+    {
+      "id": "ui.check",
+      "description": "Check answer button.",
+      "zu": {
+        "id": "zu.app.ui.check",
+        "text": "Hlola impendulo.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Hlola"
+      },
+      "st": {
+        "id": "st.app.ui.check",
+        "text": "Hlahloba karabo.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Hlahloba"
+      }
+    },
+    {
+      "id": "ui.back",
+      "description": "Back button.",
+      "zu": {
+        "id": "zu.app.ui.back",
+        "text": "Emuva.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Emuva"
+      },
+      "st": {
+        "id": "st.app.ui.back",
+        "text": "Morao.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Morao"
+      }
+    },
+    {
+      "id": "ui.close",
+      "description": "Close button.",
+      "zu": {
+        "id": "zu.app.ui.close",
+        "text": "Vala.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Vala"
+      },
+      "st": {
+        "id": "st.app.ui.close",
+        "text": "Kwala.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Kwala"
+      }
+    },
+    {
+      "id": "ui.clear",
+      "description": "Clear answer button.",
+      "zu": {
+        "id": "zu.app.ui.clear",
+        "text": "Sula.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Sula"
+      },
+      "st": {
+        "id": "st.app.ui.clear",
+        "text": "Hlakola.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Hlakola"
+      }
+    }
+  ]
+}

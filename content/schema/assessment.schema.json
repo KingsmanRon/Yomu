@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "intro": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "outro": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "items": {
+      "minItems": 5,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema5"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "intro",
+    "outro",
+    "items"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "type": "object",
+      "properties": {
+        "zu": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "st": {
+          "$ref": "#/$defs/__schema4"
+        }
+      },
+      "additionalProperties": false
+    },
+    "__schema1": {
+      "$ref": "#/$defs/__schema2"
+    },
+    "__schema2": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(zu|st|en)\\.[a-z0-9][a-z0-9._-]*$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string"
+        },
+        "seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 90
+        },
+        "review": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "$ref": "#/$defs/__schema3"
+            },
+            "history": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "$ref": "#/$defs/__schema3"
+                  },
+                  "role": {
+                    "type": "string",
+                    "enum": [
+                      "native_speaker",
+                      "adult_literacy_educator",
+                      "linguist",
+                      "aet_specialist",
+                      "voice_director"
+                    ]
+                  },
+                  "date": {
+                    "type": "string",
+                    "format": "date",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "status",
+                  "role",
+                  "date"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "status"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "review"
+      ],
+      "additionalProperties": false
+    },
+    "__schema3": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "native_speaker_reviewed",
+        "educator_reviewed",
+        "approved"
+      ]
+    },
+    "__schema4": {
+      "$ref": "#/$defs/__schema2"
+    },
+    "__schema5": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^as\\.[a-z0-9.-]+$"
+        },
+        "section": {
+          "type": "string",
+          "enum": [
+            "hl_decoding",
+            "letter_recognition",
+            "letter_sounds",
+            "sight_words",
+            "sentence_reading",
+            "transfer_decoding"
+          ]
+        },
+        "pathways": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/__schema6"
+          }
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "read_picture",
+            "hear_choose_text"
+          ]
+        },
+        "target": {
+          "$ref": "#/$defs/__schema7"
+        },
+        "options": {
+          "minItems": 2,
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/__schema7"
+          }
+        },
+        "useLetterName": {
+          "type": "boolean"
+        },
+        "instruction": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "instructionClip": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]*$"
+        }
+      },
+      "required": [
+        "id",
+        "section",
+        "format",
+        "target",
+        "options"
+      ],
+      "additionalProperties": false
+    },
+    "__schema6": {
+      "type": "string",
+      "enum": [
+        "zu",
+        "st"
+      ]
+    },
+    "__schema7": {
+      "type": "string",
+      "pattern": "^(en|zu|st)\\.(l|syl|w|sw|ph|sen|psg)\\.[a-z0-9_-]+$"
+    }
+  },
+  "$id": "https://yomu.invalid/content/schema/assessment.schema.json",
+  "title": "Yomu content: assessment"
+}

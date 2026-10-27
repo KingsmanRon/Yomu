@@ -1,0 +1,82 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Lint, types, unit tests, content
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - name: Content (schema, cross-references, both pathways)
+        run: npm run content:validate
+      - name: JSON Schemas match the content model
+        run: npm run content:schema -- --check
+      - name: AET alignment document is up to date
+        run: npm run docs:aet -- --check
+      - name: Consent scripts document is up to date
+        run: npm run docs:consent -- --check
+      - name: Audio recording manifest is up to date
+        run: npm run audio:manifest -- --check
+      - run: npm test
+
+  integration:
+    name: Database, end-to-end and performance
+    runs-on: ubuntu-latest
+    needs: checks
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: ffmpeg (labelled placeholder audio for lines not yet recorded)
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
+      - name: Start local Supabase (no paid services; data is thrown away)
+        run: npx supabase start -x studio,imgproxy,edge-runtime,logflare,vector,supavisor,realtime,storage-api,postgres-meta
+      - run: npm run env:local
+      - run: npm run build
+      - name: Seed curriculum and development staff accounts
+        run: |
+          npm run db:seed-content
+          npm run db:seed-dev
+      - name: Row-level security and database functions
+        run: npm run test:db
+      - run: npx playwright install --with-deps chromium
+      - name: End-to-end (360x640, both languages, offline, slow network, accessibility)
+        run: npx playwright test
+      - name: Performance budgets (Lighthouse)
+        run: |
+          npx next start -p 3000 > next.log 2>&1 &
+          npx --yes wait-on@8.0.1 http://127.0.0.1:3000/api/health
+          npm run perf:lighthouse
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reports
+          path: |
+            playwright-report/
+            test-results/
+            reports/lighthouse/
+          retention-days: 14

@@ -1,0 +1,881 @@
+﻿asset_id,language,text_to_record,context_note,where_used,kind,lesson_id,target_duration_s,review_status,recorded,file_name
+en.l.a,English (South Africa),/æ/ as in 'cat',"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'a',model_audio,,1.2,draft,no,en.l.a.wav
+en.l.a.name,English (South Africa),ay,"Letter NAME, as when spelling aloud.",letter name for 'a',model_audio,,1,draft,no,en.l.a.name.wav
+en.l.b,English (South Africa),"/b/ as in 'bus': short, not 'buh'","Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'b',model_audio,,1.2,draft,no,en.l.b.wav
+en.l.b.name,English (South Africa),bee,"Letter NAME, as when spelling aloud.",letter name for 'b',model_audio,,1,draft,no,en.l.b.name.wav
+en.l.c,English (South Africa),/k/ as in 'cat' (not a click),"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'c',model_audio,,1.2,draft,no,en.l.c.wav
+en.l.c.name,English (South Africa),see,"Letter NAME, as when spelling aloud.",letter name for 'c',model_audio,,1,draft,no,en.l.c.name.wav
+en.l.d,English (South Africa),"/d/ as in 'dad': short, not 'duh'","Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'd',model_audio,,1.2,draft,no,en.l.d.wav
+en.l.d.name,English (South Africa),dee,"Letter NAME, as when spelling aloud.",letter name for 'd',model_audio,,1,draft,no,en.l.d.name.wav
+en.l.e,English (South Africa),/ɛ/ as in 'pen',"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'e',model_audio,,1.2,draft,no,en.l.e.wav
+en.l.e.name,English (South Africa),ee,"Letter NAME, as when spelling aloud.",letter name for 'e',model_audio,,1,draft,no,en.l.e.name.wav
+en.l.i,English (South Africa),/ɪ/ as in 'sit',"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'i',model_audio,,1.2,draft,no,en.l.i.wav
+en.l.i.name,English (South Africa),eye,"Letter NAME, as when spelling aloud.",letter name for 'i',model_audio,,1,draft,no,en.l.i.name.wav
+en.l.m,English (South Africa),/m/: a long 'mmm',"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'm',model_audio,,1.2,draft,no,en.l.m.wav
+en.l.m.name,English (South Africa),em,"Letter NAME, as when spelling aloud.",letter name for 'm',model_audio,,1,draft,no,en.l.m.name.wav
+en.l.n,English (South Africa),/n/: a long 'nnn',"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'n',model_audio,,1.2,draft,no,en.l.n.wav
+en.l.n.name,English (South Africa),en,"Letter NAME, as when spelling aloud.",letter name for 'n',model_audio,,1,draft,no,en.l.n.name.wav
+en.l.p,English (South Africa),"/p/ as in 'pen': short, not 'puh'","Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'p',model_audio,,1.2,draft,no,en.l.p.wav
+en.l.p.name,English (South Africa),pee,"Letter NAME, as when spelling aloud.",letter name for 'p',model_audio,,1,draft,no,en.l.p.name.wav
+en.l.q,English (South Africa),/kw/ as in 'queen' (not a click),"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'q',model_audio,,1.2,draft,no,en.l.q.wav
+en.l.q.name,English (South Africa),cue,"Letter NAME, as when spelling aloud.",letter name for 'q',model_audio,,1,draft,no,en.l.q.name.wav
+en.l.s,English (South Africa),"/s/: a long hiss, 'sss'","Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 's',model_audio,,1.2,draft,no,en.l.s.wav
+en.l.s.name,English (South Africa),ess,"Letter NAME, as when spelling aloud.",letter name for 's',model_audio,,1,draft,no,en.l.s.name.wav
+en.l.t,English (South Africa),"/t/ as in 'tap': short and crisp, not 'tuh'","Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 't',model_audio,,1.2,draft,no,en.l.t.wav
+en.l.t.name,English (South Africa),tee,"Letter NAME, as when spelling aloud.",letter name for 't',model_audio,,1,draft,no,en.l.t.name.wav
+en.l.u,English (South Africa),/ʌ/ as in 'bus' (not 'oo'),"Letter SOUND for phonics, not the letter name. Say the pure sound once, clearly, with no added vowel.",model audio for letter 'u',model_audio,,1.2,draft,no,en.l.u.wav
+en.l.u.name,English (South Africa),you,"Letter NAME, as when spelling aloud.",letter name for 'u',model_audio,,1,draft,no,en.l.u.name.wav
+en.psg.job-notice,English (South Africa),Job: cleaner. A clinic needs a cleaner. Work is from Monday to Friday. Start at 7 in the morning. Bring your ID. Come to the clinic on Monday.,"Read as a notice, slowly, with a short pause after each line.","model audio for passage 'JOB: CLEANER
+A clinic needs a cleaner.
+Work is from Monday to Friday.
+Start at 7 in the morning.
+Bring your ID.
+Come to the clinic on Monday.'",model_audio,,14,draft,no,en.psg.job-notice.wav
+en.sen.dad-is-at-the-shop,English (South Africa),Dad is at the shop.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'Dad is at the shop.',model_audio,,2.5,draft,no,en.sen.dad-is-at-the-shop.wav
+en.sen.i-am-at-work,English (South Africa),I am at work.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'I am at work.',model_audio,,2.5,draft,no,en.sen.i-am-at-work.wav
+en.sen.sms-airtime,English (South Africa),Your airtime is low.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'Your airtime is low.',model_audio,,2.5,draft,no,en.sen.sms-airtime.wav
+en.sen.sms-clinic,English (South Africa),Clinic: Your appointment is on Monday at 9:00.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'Clinic: Your appointment is on Monday at 9:00.',model_audio,,2.5,draft,no,en.sen.sms-clinic.wav
+en.sen.sms-shop,English (South Africa),Shop: Your order is ready. Come on Friday.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'Shop: Your order is ready. Come on Friday.',model_audio,,2.5,draft,no,en.sen.sms-shop.wav
+en.sen.the-bus-is-here,English (South Africa),The bus is here.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'The bus is here.',model_audio,,2.5,draft,no,en.sen.the-bus-is-here.wav
+en.sen.the-cat-is-here,English (South Africa),The cat is here.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'The cat is here.',model_audio,,2.5,draft,no,en.sen.the-cat-is-here.wav
+en.sen.the-man-can-sit,English (South Africa),The man can sit.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'The man can sit.',model_audio,,2.5,draft,no,en.sen.the-man-can-sit.wav
+en.sen.you-can-sit-here,English (South Africa),You can sit here.,"Model reading of the sentence at a slow, natural pace.",model audio for sentence 'You can sit here.',model_audio,,2.5,draft,no,en.sen.you-can-sit-here.wav
+en.sw.a,English (South Africa),a,"Model pronunciation of a high-frequency word, said on its own.",model audio for sight_word 'a',model_audio,,1,draft,no,en.sw.a.wav
+en.sw.i,English (South Africa),I,"Model pronunciation of a high-frequency word, said on its own.",model audio for sight_word 'I',model_audio,,1,draft,no,en.sw.i.wav
+en.sw.is,English (South Africa),is,"Model pronunciation of a high-frequency word, said on its own.",model audio for sight_word 'is',model_audio,,1,draft,no,en.sw.is.wav
+en.sw.the,English (South Africa),the,"Model pronunciation of a high-frequency word, said on its own.",model audio for sight_word 'the',model_audio,,1,draft,no,en.sw.the.wav
+en.sw.you,English (South Africa),you,"Model pronunciation of a high-frequency word, said on its own.",model audio for sight_word 'you',model_audio,,1,draft,no,en.sw.you.wav
+en.w.airtime,English (South Africa),airtime,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'airtime',model_audio,,1.2,draft,no,en.w.airtime.wav
+en.w.am,English (South Africa),am,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'am',model_audio,,1.2,draft,no,en.w.am.wav
+en.w.at,English (South Africa),at,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'at',model_audio,,1.2,draft,no,en.w.at.wav
+en.w.bank,English (South Africa),bank,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'bank',model_audio,,1.2,draft,no,en.w.bank.wav
+en.w.bus,English (South Africa),bus,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'bus',model_audio,,1.2,draft,no,en.w.bus.wav
+en.w.can,English (South Africa),can,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'can',model_audio,,1.2,draft,no,en.w.can.wav
+en.w.cat,English (South Africa),cat,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'cat',model_audio,,1.2,draft,no,en.w.cat.wav
+en.w.cleaner,English (South Africa),cleaner,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'cleaner',model_audio,,1.2,draft,no,en.w.cleaner.wav
+en.w.clinic,English (South Africa),clinic,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'clinic',model_audio,,1.2,draft,no,en.w.clinic.wav
+en.w.closed,English (South Africa),CLOSED,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'CLOSED',model_audio,,1.2,draft,no,en.w.closed.wav
+en.w.cook,English (South Africa),cook,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'cook',model_audio,,1.2,draft,no,en.w.cook.wav
+en.w.dad,English (South Africa),dad,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'dad',model_audio,,1.2,draft,no,en.w.dad.wav
+en.w.danger,English (South Africa),DANGER,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'DANGER',model_audio,,1.2,draft,no,en.w.danger.wav
+en.w.driver,English (South Africa),driver,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'driver',model_audio,,1.2,draft,no,en.w.driver.wav
+en.w.exit,English (South Africa),EXIT,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'EXIT',model_audio,,1.2,draft,no,en.w.exit.wav
+en.w.friday,English (South Africa),Friday,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'Friday',model_audio,,1.2,draft,no,en.w.friday.wav
+en.w.here,English (South Africa),here,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'here',model_audio,,1.2,draft,no,en.w.here.wav
+en.w.id,English (South Africa),ID,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'ID',model_audio,,1.2,draft,no,en.w.id.wav
+en.w.low,English (South Africa),low,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'low',model_audio,,1.2,draft,no,en.w.low.wav
+en.w.man,English (South Africa),man,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'man',model_audio,,1.2,draft,no,en.w.man.wav
+en.w.map,English (South Africa),map,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'map',model_audio,,1.2,draft,no,en.w.map.wav
+en.w.monday,English (South Africa),Monday,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'Monday',model_audio,,1.2,draft,no,en.w.monday.wav
+en.w.money,English (South Africa),money,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'money',model_audio,,1.2,draft,no,en.w.money.wav
+en.w.ok,English (South Africa),OK,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'OK',model_audio,,1.2,draft,no,en.w.ok.wav
+en.w.open,English (South Africa),OPEN,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'OPEN',model_audio,,1.2,draft,no,en.w.open.wav
+en.w.pan,English (South Africa),pan,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'pan',model_audio,,1.2,draft,no,en.w.pan.wav
+en.w.pen,English (South Africa),pen,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'pen',model_audio,,1.2,draft,no,en.w.pen.wav
+en.w.sat,English (South Africa),sat,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'sat',model_audio,,1.2,draft,no,en.w.sat.wav
+en.w.sheep,English (South Africa),sheep,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'sheep',model_audio,,1.2,draft,no,en.w.sheep.wav
+en.w.ship,English (South Africa),ship,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'ship',model_audio,,1.2,draft,no,en.w.ship.wav
+en.w.shop,English (South Africa),shop,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'shop',model_audio,,1.2,draft,no,en.w.shop.wav
+en.w.sit,English (South Africa),sit,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'sit',model_audio,,1.2,draft,no,en.w.sit.wav
+en.w.stop,English (South Africa),STOP,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'STOP',model_audio,,1.2,draft,no,en.w.stop.wav
+en.w.sun,English (South Africa),sun,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'sun',model_audio,,1.2,draft,no,en.w.sun.wav
+en.w.tap,English (South Africa),tap,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'tap',model_audio,,1.2,draft,no,en.w.tap.wav
+en.w.ten,English (South Africa),ten,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'ten',model_audio,,1.2,draft,no,en.w.ten.wav
+en.w.tin,English (South Africa),tin,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'tin',model_audio,,1.2,draft,no,en.w.tin.wav
+en.w.toilets,English (South Africa),TOILETS,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'TOILETS',model_audio,,1.2,draft,no,en.w.toilets.wav
+en.w.work,English (South Africa),work,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'work',model_audio,,1.2,draft,no,en.w.work.wav
+en.w.yes,English (South Africa),yes,"Model pronunciation, natural South African English, clear and unhurried.",model audio for word 'yes',model_audio,,1.2,draft,no,en.w.yes.wav
+st.app.assess.done,Sesotho (South Africa),Re a leboha. Re fumane sebaka se setle sa hore o qale teng.,,app: End of placement.,app,,4.9,draft,no,st.app.assess.done.wav
+st.app.assess.offer,Sesotho (South Africa),"Na o ka rata ho etsa mosebetsi o mokgutshwane hore re fumane sebaka se setle sa ho qala? O nka metsotso e ka bang mehlano. Hase tlhahlobo, mme ha o a tlameha ho tshwenyeha ka diphoso.",,app: Offer the optional placement activity.,app,,14.5,draft,no,st.app.assess.offer.wav
+st.app.assess.skip,Sesotho (South Africa),Tlola.,,app: Skip the placement activity.,app,,1,draft,no,st.app.assess.skip.wav
+st.app.assess.start,Sesotho (South Africa),Qala.,,app: Start the placement activity.,app,,1,draft,no,st.app.assess.start.wav
+st.app.assess.thanks,Sesotho (South Africa),Ke a leboha.,,app: Neutral acknowledgement after every placement answer (never right/wrong).,app,,1.3,draft,no,st.app.assess.thanks.wav
+st.app.assist.enter_pin,Sesotho (South Africa),Kenya khoutu ya hao ya lekunutu ho tlisa dithuto tsa hao founung ena.,,app: Device transfer: the learner enters their secret code on the new phone.,app,,5.7,draft,no,st.app.assist.enter_pin.wav
+st.app.assist.forgot,Sesotho (South Africa),"Haeba o lebetse khoutu ya hao, tobetsa mona ho etsa e ntjha.",,app: Device transfer: the learner has forgotten their secret code.,app,,5,draft,no,st.app.assist.forgot.wav
+st.app.assist.handover,Sesotho (South Africa),Titjhere ya hao o tla o thusa jwale. Khoutu ya hao ya lekunutu e dula e le lekunutu.,,app: Facilitator-assisted mode starts.,app,,6.9,draft,no,st.app.assist.handover.wav
+st.app.assist.moved,Sesotho (South Africa),Ho lokile. Dithuto tsa hao di se di le founung ena jwale.,,app: Device transfer finished.,app,,4.8,draft,no,st.app.assist.moved.wav
+st.app.assist.new_pin,Sesotho (South Africa),Etsa khoutu e ntjha ya lekunutu. Titjhere ya hao ha a a tlameha ho sheba.,,app: Learner sets a new PIN during facilitator help.,app,,6,draft,no,st.app.assist.new_pin.wav
+st.app.badge.earned,Sesotho (South Africa),O fumane beche e ntjha!,,app: New badge.,app,,2.2,draft,no,st.app.badge.earned.wav
+st.app.consent.agree,Sesotho (South Africa),"E, ke a dumela.",,app: Consent button: agree.,app,,1.6,draft,no,st.app.consent.agree.wav
+st.app.consent.analytics,Sesotho (South Africa),"Na re ka bala hore o sebedisa app jwang, ntle le lebitso la hao, e le hore re e ntlafatse? O ka fetola sena neng kapa neng ho Nna.",,app: Separate optional consent: pseudonymous usage counts.,app,,10.4,draft,no,st.app.consent.analytics.wav
+st.app.consent.decline,Sesotho (South Africa),"Tjhe, boloka founung feela.",,app: Consent button: keep on phone only.,app,,2.5,draft,no,st.app.consent.decline.wav
+st.app.consent.declined,Sesotho (South Africa),Ho lokile. Thuto ya hao e tla dula founung ena feela. O ka fetola mohopolo hamorao ho Nna.,,app: After declining consent.,app,,7.3,draft,no,st.app.consent.declined.wav
+st.app.consent.delete,Sesotho (South Africa),"O ka emisa neng kapa neng. Ho Nna, tobetsa setshwantsho sa motomo ho hlakola tsohle. Di tla hlakolwa hang-hang, ntle le ho letsetsa motho.",,app: Consent 5/5: how to delete.,app,,11,draft,no,st.app.consent.delete.wav
+st.app.consent.intro,Sesotho (South Africa),"Pele re boloka dintlha tsa hao inthaneteng, mamela sena.",,app: Consent 1/5 (POPIA): before anything is stored on the server.,app,,4.7,draft,no,st.app.consent.intro.wav
+st.app.consent.offline,Sesotho (South Africa),"Ho boloka inthaneteng ho hloka inthanete. Hajwale, thuto ya hao e dula founung ena.",,app: Registration needs the internet.,app,,6.8,draft,no,st.app.consent.offline.wav
+st.app.consent.pin,Sesotho (South Africa),"Tobetsa khoutu ya hao ya lekunutu hape, hore re e boloke ka polokeho.",,app: Confirm the PIN to save it safely online.,app,,5.7,draft,no,st.app.consent.pin.wav
+st.app.consent.question,Sesotho (South Africa),Na o dumela hore re boloke thuto ya hao inthaneteng ka polokeho?,,app: Consent question.,app,,5.3,draft,no,st.app.consent.question.wav
+st.app.consent.saved,Sesotho (South Africa),Re a leboha. Thuto ya hao jwale e bolokilwe ka polokeho.,,app: After registration succeeded.,app,,4.7,draft,no,st.app.consent.saved.wav
+st.app.consent.what,Sesotho (South Africa),"Re tla boloka: setshwantsho sa hao, khoutu ya hao ya lekunutu e notleletswe hore ho se be motho ya e balang, puo ya hao, le tswelopele ya hao: dithuto, dikarabo le bokgoni. Ha re hloke lebitso la hao. Ha re boloke lentswe la hao.",,app: Consent 2/5: what is stored.,app,,18,draft,no,st.app.consent.what.wav
+st.app.consent.who,Sesotho (South Africa),"Ke mang ya ka e bonang: ke wena feela. Ha o kena tlelaseng hamorao, re tla o botsa pele hore titjhere ya hao a ka bona eng. Ha ho mohla re tla rekisa dintlha tsa hao.",,app: Consent 4/5: who can see it.,app,,13.2,draft,no,st.app.consent.who.wav
+st.app.consent.why,Sesotho (South Africa),"Hobaneng: hore thuto ya hao e se ke ya lahleha ha founu ya hao e lahleha kapa e robeha, le hore o tswele pele founung e nngwe.",,app: Consent 3/5: why.,app,,10.1,draft,no,st.app.consent.why.wav
+st.app.consent.withdraw,Sesotho (South Africa),"Ha o hula tumello, re tla hlakola thuto ya hao inthaneteng. E tla dula founung ena feela.",,app: Withdraw account-storage consent (deletes online data).,app,,7.2,draft,no,st.app.consent.withdraw.wav
+st.app.delete.confirm,Sesotho (South Africa),Tshwara ho hlakola.,,app: Press-and-hold delete button.,app,,1.9,draft,no,st.app.delete.confirm.wav
+st.app.delete.done,Sesotho (South Africa),Tsohle di hlakotswe. Re a leboha ka ho ithuta le rona.,,app: After deletion.,app,,4.6,draft,no,st.app.delete.done.wav
+st.app.delete.explain,Sesotho (South Africa),"Ha o hlakola, tsohle tse mabapi le wena di tla tloswa founung ena le tsamaisong ya rona. Titjhere ya hao a ke ke a hlola a o bona. Sena se ke ke sa kgutliswa. Ho hlakola, tobetsa o tshware konopo e kgubedu.",,app: Explain deletion before confirming.,app,,16.2,draft,no,st.app.delete.explain.wav
+st.app.delete.offline,Sesotho (South Africa),Ho hlakola inthaneteng ho hloka inthanete. Leka hape ha o hokahane.,,app: Online deletion needs connectivity.,app,,5.6,draft,no,st.app.delete.offline.wav
+st.app.demo.choose,Sesotho (South Africa),"Ho araba, o tobetsa setshwantsho. Leka: tobetsa setshwantsho se seholo.",,app: Demo: answering by tapping a picture.,app,,5.9,draft,no,st.app.demo.choose.wav
+st.app.demo.continue,Sesotho (South Africa),Motsu o motala o o isa pele. O tobetse.,,app: Demo: the green continue arrow.,app,,3.4,draft,no,st.app.demo.continue.wav
+st.app.demo.done,Sesotho (South Africa),O se o loketse!,,app: Demo finished.,app,,1.6,draft,no,st.app.demo.done.wav
+st.app.demo.help,Sesotho (South Africa),"Letshwao la potso ke thuso. Mme ha o tobetsa o tshware konopo efe kapa efe, o tla utlwa hore e etsang.",,app: Demo: help and press-and-hold to hear a button.,app,,8.2,draft,no,st.app.demo.help.wav
+st.app.demo.listen,Sesotho (South Africa),Ena ke konopo ya ho mamela. E pheta mantswe. E tobetse jwale.,,app: How-it-works demo: the listen button.,app,,5.1,draft,no,st.app.demo.listen.wav
+st.app.demo.listen_done,Sesotho (South Africa),"Ho hotle! Ha o sa utlwa hantle, o ka e tobetsa hape neng kapa neng.",,app: Demo: after tapping listen.,app,,5.6,draft,no,st.app.demo.listen_done.wav
+st.app.downloads.done,Sesotho (South Africa),Di jarollotswe. O ka sebedisa dithuto tsena ntle le inthanete.,,app: Download finished.,app,,5.2,draft,no,st.app.downloads.done.wav
+st.app.downloads.download,Sesotho (South Africa),Jarolla.,,app: Download button.,app,,1,draft,no,st.app.downloads.download.wav
+st.app.downloads.intro,Sesotho (South Africa),Jarolla dithuto ho di sebedisa ntle le inthanete. Boholo bo bontshwa pele o jarolla.,,app: Downloads screen.,app,,6.9,draft,no,st.app.downloads.intro.wav
+st.app.downloads.remove,Sesotho (South Africa),Tlosa.,,app: Remove download button.,app,,1,draft,no,st.app.downloads.remove.wav
+st.app.export.done,Sesotho (South Africa),Kopi ya hao e se e lokile.,,app: Data export ready.,app,,2.4,draft,no,st.app.export.done.wav
+st.app.home.all_done,Sesotho (South Africa),O qetile dithuto tsohle tse teng hajwale. Tswela pele ho ikwetlisa!,,app: Every available lesson completed.,app,,5.6,draft,no,st.app.home.all_done.wav
+st.app.home.continue,Sesotho (South Africa),Tswela pele ho ithuta.,,app: Continue / start the recommended lesson.,app,,2.1,draft,no,st.app.home.continue.wav
+st.app.home.greeting,Sesotho (South Africa),Rea o amohela hape! Tobetsa konopo e kgolo ho tswela pele ho ithuta.,,app: Home screen greeting.,app,,5.6,draft,no,st.app.home.greeting.wav
+st.app.home.revise,Sesotho (South Africa),Ikwetlise mantswe a neng a le thata ho wena.,,app: Start a revision session.,app,,3.8,draft,no,st.app.home.revise.wav
+st.app.home.streak,Sesotho (South Africa),O ikwetlisitse kajeno. O entse hantle!,,app: Streak kept today.,app,,3.3,draft,no,st.app.home.streak.wav
+st.app.join.bad_code,Sesotho (South Africa),"Nomoro eo ha e a sebetsa. E hlahlobe le titjhere ya hao, mme o leke hape.",,app: Unknown class code.,app,,6,draft,no,st.app.join.bad_code.wav
+st.app.join.done,Sesotho (South Africa),Jwale o tlelaseng.,,app: Joined a class.,app,,1.8,draft,no,st.app.join.done.wav
+st.app.join.intro,Sesotho (South Africa),"Kena tlelaseng ya hao. Ngola nomoro eo titjhere ya hao a o bontshang yona, kapa o skene khoutu e sekwere.",,app: Join a class.,app,,8.5,draft,no,st.app.join.intro.wav
+st.app.join.need_account,Sesotho (South Africa),"Ho kena tlelaseng, pele boloka thuto ya hao inthaneteng.",,app: Joining needs an online account first.,app,,4.7,draft,no,st.app.join.need_account.wav
+st.app.join.scan,Sesotho (South Africa),Supa khoutu e sekwere ka khamera.,,app: Scan the class QR code with the camera.,app,,2.9,draft,no,st.app.join.scan.wav
+st.app.lesson.complete,Sesotho (South Africa),Thuto e fedile! O entse hantle.,,app: Lesson finished.,app,,2.8,draft,no,st.app.lesson.complete.wav
+st.app.lesson.exit_confirm,Sesotho (South Africa),Na o batla ho emisa thuto? Tswelopele ya hao e bolokilwe.,,app: Leaving a lesson early.,app,,4.8,draft,no,st.app.lesson.exit_confirm.wav
+st.app.lesson.keep_going,Sesotho (South Africa),Tswela pele.,,app: Keep going.,app,,1.3,draft,no,st.app.lesson.keep_going.wav
+st.app.lesson.next,Sesotho (South Africa),Thuto e latelang.,,app: Next lesson button.,app,,1.7,draft,no,st.app.lesson.next.wav
+st.app.lesson.stop,Sesotho (South Africa),Emisa.,,app: Stop the lesson.,app,,1,draft,no,st.app.lesson.stop.wav
+st.app.me.captions,Sesotho (South Africa),Bontsha mantswe ka tlasa lentswe.,,app: Captions setting.,app,,2.9,draft,no,st.app.me.captions.wav
+st.app.me.delete,Sesotho (South Africa),Hlakola dintlha tsohle tsa ka.,,app: Delete all my data.,app,,2.7,draft,no,st.app.me.delete.wav
+st.app.me.downloads,Sesotho (South Africa),Jarolla dithuto ho di sebedisa ntle le inthanete.,,app: Lesson downloads.,app,,4.2,draft,no,st.app.me.downloads.wav
+st.app.me.export,Sesotho (South Africa),O ka fumana kopi ya dintlha tsohle tsa hao tseo re di bolokileng.,,app: Download a copy of my data.,app,,5.4,draft,no,st.app.me.export.wav
+st.app.me.facilitator,Sesotho (South Africa),Titjhere a ka o thusa founung ena. Khoutu ya hao ya lekunutu e dula e le lekunutu.,,app: Facilitator help (teacher signs in on this phone).,app,,6.7,draft,no,st.app.me.facilitator.wav
+st.app.me.intro,Sesotho (South Africa),Mona o ka fetola disetting tsa hao mme o hlokomele dintlha tsa hao.,,app: Profile and settings screen.,app,,5.6,draft,no,st.app.me.intro.wav
+st.app.me.language,Sesotho (South Africa),Fetola puo eo o ithutang ka yona.,,app: Change teaching language.,app,,2.9,draft,no,st.app.me.language.wav
+st.app.me.level,Sesotho (South Africa),Kgetha moo o batlang ho qala teng.,,app: Change level.,app,,3,draft,no,st.app.me.level.wav
+st.app.me.moved_phone,Sesotho (South Africa),Dithuto tsa hao tse bolokilweng inthaneteng di se di le founung e nngwe. Seo o se etsang mona se dula founung ena feela. O ka tlosa profaele ena founung ena.,,app: This phone's online session was replaced: the learner was moved to another phone. Offers removing the profile from this phone.,app,,12.5,draft,no,st.app.me.moved_phone.wav
+st.app.me.retake,Sesotho (South Africa),Etsa mosebetsi o mokgutshwane hape hore re fumane boemo bo nepahetseng.,,app: Retake placement activity.,app,,5.9,draft,no,st.app.me.retake.wav
+st.app.me.sharing,Sesotho (South Africa),Sheba kapa o fetole seo o se arolelanang le tlelase ya hao.,,app: What I share with my class.,app,,4.9,draft,no,st.app.me.sharing.wav
+st.app.me.text_size,Sesotho (South Africa),Etsa mongolo o be moholo.,,app: Text size setting.,app,,2.3,draft,no,st.app.me.text_size.wav
+st.app.me.wifi_only,Sesotho (South Africa),"Jarolla dithuto feela ha o le ho Wi-Fi, hore o se sebedise data.",,app: Download on Wi-Fi only setting.,app,,5.3,draft,no,st.app.me.wifi_only.wav
+st.app.mic.allow,Sesotho (South Africa),Dumella maekrofounu.,,app: Allow microphone button.,app,,1.9,draft,no,st.app.mic.allow.wav
+st.app.mic.denied,Sesotho (South Africa),"Ha ho bothata. Bua mantswe ka lentswe ntle le ho rekota, ebe o tobetsa motsu ha o qetile.",,app: Microphone not available or refused.,app,,7.2,draft,no,st.app.mic.denied.wav
+st.app.mic.explain,Sesotho (South Africa),"Mesebetsi e meng e o kopa ho bua mantswe ka lentswe. Ho iutlwa, app e hloka maekrofounu. Lentswe la hao le dula founung ena mme le hlakolwa ha mosebetsi o fela. O ka re tjhe mme wa nna wa sebedisa tsohle.",,app: Before asking for microphone permission.,app,,16.1,draft,no,st.app.mic.explain.wav
+st.app.mic.no,Sesotho (South Africa),"Tjhe, ke a leboha.",,app: Decline microphone button.,app,,1.8,draft,no,st.app.mic.no.wav
+st.app.nav.learn,Sesotho (South Africa),Dithuto.,,app: Bottom navigation: learning path.,app,,1,draft,no,st.app.nav.learn.wav
+st.app.nav.me,Sesotho (South Africa),Nna: disetting le dintlha tsa ka.,,app: Bottom navigation: profile and settings.,app,,2.9,draft,no,st.app.nav.me.wav
+st.app.nav.practice,Sesotho (South Africa),Boikwetliso.,,app: Bottom navigation: revision.,app,,1.3,draft,no,st.app.nav.practice.wav
+st.app.nav.progress,Sesotho (South Africa),Tswelopele ya hao.,,app: Bottom navigation: progress and badges.,app,,1.8,draft,no,st.app.nav.progress.wav
+st.app.net.mobile,Sesotho (South Africa),O sebedisa data ya founu.,,app: Status: on mobile data.,app,,2.3,draft,no,st.app.net.mobile.wav
+st.app.net.offline,Sesotho (South Africa),Ha o a hokahana le inthanete.,,app: Status: offline.,app,,2.6,draft,no,st.app.net.offline.wav
+st.app.net.wifi,Sesotho (South Africa),O sebedisa Wi-Fi.,,app: Status: on Wi-Fi.,app,,1.7,draft,no,st.app.net.wifi.wav
+st.app.path.intro,Sesotho (South Africa),Dithuto tsa hao ke tsena. Tobetsa sedikadikwe ho qala.,,app: Learning path screen.,app,,4.6,draft,no,st.app.path.intro.wav
+st.app.path.locked,Sesotho (South Africa),Thuto ena e tla buleha ha o qeta e e etellang pele.,,app: Tapping a lesson that is not open yet.,app,,4.3,draft,no,st.app.path.locked.wav
+st.app.pin.confirm,Sesotho (South Africa),Tobetsa ditshwantsho tse nne tse tshwanang hape.,,app: Confirm the PIN.,app,,4.1,draft,no,st.app.pin.confirm.wav
+st.app.pin.create,Sesotho (South Africa),"Jwale etsa khoutu ya hao ya lekunutu: tobetsa ditshwantsho tse nne. Di hopole, mme o se ke wa di bontsha motho.",,app: Create a picture PIN.,app,,8.9,draft,no,st.app.pin.create.wav
+st.app.pin.enter,Sesotho (South Africa),Tobetsa ditshwantsho tsa hao tse nne tsa lekunutu.,,app: Enter PIN.,app,,4.2,draft,no,st.app.pin.enter.wav
+st.app.pin.mismatch,Sesotho (South Africa),Dikhoutu tse pedi ha di tshwane. A re e etseng hape.,,app: PIN confirmation did not match.,app,,4.4,draft,no,st.app.pin.mismatch.wav
+st.app.pin.saved,Sesotho (South Africa),Khoutu ya hao ya lekunutu e bolokilwe.,,app: PIN saved.,app,,3.3,draft,no,st.app.pin.saved.wav
+st.app.pin.wait,Sesotho (South Africa),"Ka kopo ema hanyane, ebe o leka hape. Ha o lebetse khoutu ya hao, kopa titjhere ya hao hore a o thuse.",,app: Too many wrong PINs: short wait.,app,,8.2,draft,no,st.app.pin.wait.wav
+st.app.pin.wrong,Sesotho (South Africa),Khoutu eo ha e a nepahala. Leka hape.,,app: Wrong PIN.,app,,3.2,draft,no,st.app.pin.wrong.wav
+st.app.place.change_any_time,Sesotho (South Africa),O ka fetola moo o qalang teng neng kapa neng.,,app: Reassurance that level can change.,app,,3.9,draft,no,st.app.place.change_any_time.wav
+st.app.place.level0,Sesotho (South Africa),A re qaleng ka ho bala ka Sesotho. Ho etsa hore Senyesemane se be bonolo.,,app: Start at Level 0.,app,,6,draft,no,st.app.place.level0.wav
+st.app.place.level1,Sesotho (South Africa),A re qaleng ka ditlhaku le medumo ya Senyesemane.,,app: Start at Level 1.,app,,4.2,draft,no,st.app.place.level1.wav
+st.app.place.level2,Sesotho (South Africa),A re qaleng ka mantswe a hao a pele a Senyesemane.,,app: Start at Level 2.,app,,4.2,draft,no,st.app.place.level2.wav
+st.app.place.level3,Sesotho (South Africa),A re qaleng ka dipolelo.,,app: Start at Level 3.,app,,2.2,draft,no,st.app.place.level3.wav
+st.app.place.level4,Sesotho (South Africa),A re qaleng ka Senyesemane sa letsatsi le letsatsi: di-SMS le matshwao.,,app: Start at Level 4.,app,,5.9,draft,no,st.app.place.level4.wav
+st.app.place.self_no,Sesotho (South Africa),"Ha ke eso kgone, kapa ha ke na bonnete.",,app: Self-placement: cannot read yet / not sure.,app,,3.4,draft,no,st.app.place.self_no.wav
+st.app.place.self_question,Sesotho (South Africa),Na o kgona ho bala mantswe a Sesotho?,,app: Self-placement when the activity is skipped.,app,,3.2,draft,no,st.app.place.self_question.wav
+st.app.place.self_yes,Sesotho (South Africa),"E, ke a kgona.",,app: Self-placement: can read the home language.,app,,1.5,draft,no,st.app.place.self_yes.wav
+st.app.profile.choose_picture,Sesotho (South Africa),Ikgethele setshwantsho. Se tla o thusa ho fumana thuto ya hao founung ena.,,app: Choose an avatar picture.,app,,6.1,draft,no,st.app.profile.choose_picture.wav
+st.app.profiles.add,Sesotho (South Africa),Eketsa moithuti e mong founung ena.,,app: Add another learner on this phone.,app,,3.1,draft,no,st.app.profiles.add.wav
+st.app.profiles.switch,Sesotho (South Africa),Fetola moithuti.,,app: Switch learner.,app,,1.6,draft,no,st.app.profiles.switch.wav
+st.app.profiles.who,Sesotho (South Africa),Ke mang ya ithutang jwale? Tobetsa setshwantsho sa hao.,,app: Profile picker on a shared phone.,app,,4.6,draft,no,st.app.profiles.who.wav
+st.app.progress.intro,Sesotho (South Africa),Sena ke seo o se ithutileng.,,app: Progress screen.,app,,2.6,draft,no,st.app.progress.intro.wav
+st.app.repeat.compare,Sesotho (South Africa),"Mamela mohlala, ebe o iteetsa. Na ho utlwahetse ho tshwana?",,app: Compare model and own recording.,app,,4.9,draft,no,st.app.repeat.compare.wav
+st.app.repeat.different,Sesotho (South Africa),Ho fapane.,,app: Self-check: sounded different.,app,,1.2,draft,no,st.app.repeat.different.wav
+st.app.repeat.practised,Sesotho (South Africa),Ho hotle ho ikwetlisa! Ho bua mantswe ka lentswe ho o thusa ho a hopola.,,"app: After a self-check (always recorded as practised, never scored).",app,,5.9,draft,no,st.app.repeat.practised.wav
+st.app.repeat.record,Sesotho (South Africa),Tobetsa maekrofounu mme o bue lentswe.,,app: Tap the microphone to record yourself.,app,,3.3,draft,no,st.app.repeat.record.wav
+st.app.repeat.same,Sesotho (South Africa),Ho a tshwana.,,app: Self-check: sounded the same.,app,,1.4,draft,no,st.app.repeat.same.wav
+st.app.repeat.say_aloud,Sesotho (South Africa),Bua lentswe ka lentswe jwale. Ebe o tobetsa motsu o motala.,,app: Say aloud without recording.,app,,4.9,draft,no,st.app.repeat.say_aloud.wav
+st.app.revision.done,Sesotho (South Africa),Boikwetliso bo fedile.,,app: Revision session finished.,app,,2.1,draft,no,st.app.revision.done.wav
+st.app.revision.empty,Sesotho (South Africa),Ha ho letho la ho ikwetlisa hona jwale. O entse hantle!,,app: No revision due.,app,,4.6,draft,no,st.app.revision.empty.wav
+st.app.revision.intro,Sesotho (South Africa),A re ikwetliseng dintho tse neng di le thata ho wena.,,app: Revision session start.,app,,4.5,draft,no,st.app.revision.intro.wav
+st.app.save.choice,Sesotho (South Africa),"O ka boloka thuto ya hao founung ena feela, kapa o e boloke inthaneteng ka polokeho hore e se ke ya lahleha. Ho boloka inthaneteng ho sebedisa data e nyane.",,app: Offer to save progress online (registration) or keep it on the phone (guest).,app,,12.4,draft,no,st.app.save.choice.wav
+st.app.save.online,Sesotho (South Africa),Ke batla ho boloka inthaneteng.,,app: Button: save online (leads to spoken consent).,app,,2.8,draft,no,st.app.save.online.wav
+st.app.save.phone_only,Sesotho (South Africa),Boloka founung ena feela.,,app: Button: keep on this phone only (guest).,app,,2.3,draft,no,st.app.save.phone_only.wav
+st.app.share.basic,Sesotho (South Africa),"Ha o kena, titjhere ya hao o tla bona: setshwantsho sa hao, boemo ba hao, dithuto tseo o di qetileng, le letsatsi la ho qetela leo o ikwetlisitseng ka lona. O tla bona le dipalo tsa tlelase yohle tsa bokgoni bo neng bo le thata, ntle le ho o supa.",,app: Cohort sharing: what joining always shares.,app,,19.4,draft,no,st.app.share.basic.wav
+st.app.share.confirm,Sesotho (South Africa),Kena tlelaseng.,,app: Confirm joining.,app,,1.6,draft,no,st.app.share.confirm.wav
+st.app.share.intro,Sesotho (South Africa),Tlelase ya titjhere ya hao e batla ho bona tswelopele ya hao. Ke wena ya kgethang hore ba ka bona eng.,,app: Cohort sharing consent 1/4.,app,,8.2,draft,no,st.app.share.intro.wav
+st.app.share.mastery,Sesotho (South Africa),"Na o batla hape hore titjhere a bone bokgoni boo o ithutileng bona, le matsatsi? Sena se a hlokahala bakeng sa setifikeiti.",,app: Cohort sharing: optional mastery with dates (needed for certificates).,app,,9.9,draft,no,st.app.share.mastery.wav
+st.app.share.mistakes,Sesotho (South Africa),"Na o batla hore titjhere a bone dipotso tseo o di fositseng, e le hore a o thuse?",,app: Cohort sharing: optional mistake history.,app,,6.6,draft,no,st.app.share.mistakes.wav
+st.app.share.no,Sesotho (South Africa),Tjhe.,,app: No button.,app,,1,draft,no,st.app.share.no.wav
+st.app.share.stop_explain,Sesotho (South Africa),"Ha o emisa ho arolelana, titjhere ya hao o tla emisa hang-hang ho bona tswelopele ya hao.",,app: Before stopping sharing with a class.,app,,7.2,draft,no,st.app.share.stop_explain.wav
+st.app.share.stopped,Sesotho (South Africa),Ho arolelana ho emisitswe.,,app: After stopping sharing.,app,,2.4,draft,no,st.app.share.stopped.wav
+st.app.share.tutor,Sesotho (South Africa),Na o batla hore titjhere a bone dipotso tseo o di botsitseng mothusi?,,app: Cohort sharing: optional tutor question log.,app,,5.7,draft,no,st.app.share.tutor.wav
+st.app.share.yes,Sesotho (South Africa),E.,,app: Yes button.,app,,1,draft,no,st.app.share.yes.wav
+st.app.ui.back,Sesotho (South Africa),Morao.,,app: Back button.,app,,1,draft,no,st.app.ui.back.wav
+st.app.ui.check,Sesotho (South Africa),Hlahloba karabo.,,app: Check answer button.,app,,1.6,draft,no,st.app.ui.check.wav
+st.app.ui.clear,Sesotho (South Africa),Hlakola.,,app: Clear answer button.,app,,1,draft,no,st.app.ui.clear.wav
+st.app.ui.close,Sesotho (South Africa),Kwala.,,app: Close button.,app,,1,draft,no,st.app.ui.close.wav
+st.app.ui.continue,Sesotho (South Africa),Tswela pele.,,app: Continue button.,app,,1.3,draft,no,st.app.ui.continue.wav
+st.app.ui.help,Sesotho (South Africa),Thuso.,,app: Help button.,app,,1,draft,no,st.app.ui.help.wav
+st.app.ui.listen_again,Sesotho (South Africa),Mamela hape.,,app: Listen again button.,app,,1.3,draft,no,st.app.ui.listen_again.wav
+st.app.ui.listen_slow,Sesotho (South Africa),Mamela butle.,,app: Listen slowly button.,app,,1.4,draft,no,st.app.ui.listen_slow.wav
+st.app.welcome.choose_language,Sesotho (South Africa),"Dumela! Haeba o batla ho ithuta Senyesemane ka Sesotho, tobetsa mona.",,app: Language selection: each card plays its own language.,app,,5.7,draft,no,st.app.welcome.choose_language.wav
+st.app.welcome.hello,Sesotho (South Africa),"Rea o amohela! Mona o ithuta ho bala le ho ngola Senyesemane, butle-butle, ka puo ya hao. Ha o hloke ho tseba ho bala ho qala: mamela, ebe o tobetsa ditshwantsho.",,app: Welcome after choosing a language. Never names the app (the name is configurable).,app,,12.9,draft,no,st.app.welcome.hello.wav
+st.assess.intro,Sesotho (South Africa),"A re qaleng. Mamela potso ka nngwe. Ha o sa tsebe, kgetha feela setshwantsho, ho lokile.",,placement activity introduction,assessment,,7.2,draft,no,st.assess.intro.wav
+st.assess.outro,Sesotho (South Africa),Re qetile. Ke a leboha ka ho leka.,,placement activity closing,assessment,,3,draft,no,st.assess.outro.wav
+st.badge.english-sounds,Sesotho (South Africa),O tseba medumo ya hao ya pele ya Senyesemane!,,badge b.english-sounds,app,,3.9,draft,no,st.badge.english-sounds.wav
+st.badge.first-english-word,Sesotho (South Africa),O balile lentswe la hao la pele la Senyesemane o le mong!,,badge b.first-english-word,app,,4.8,draft,no,st.badge.first-english-word.wav
+st.badge.first-hl-word,Sesotho (South Africa),O balile lentswe la hao la pele la Sesotho!,,badge b.first-hl-word,app,,3.7,draft,no,st.badge.first-hl-word.wav
+st.badge.first-lesson,Sesotho (South Africa),O qetile thuto ya hao ya pele!,,badge b.first-lesson,app,,2.7,draft,no,st.badge.first-lesson.wav
+st.badge.first-letters,Sesotho (South Africa),O ngotse ditlhaku tsa hao tsa pele!,,badge b.first-letters,app,,3.1,draft,no,st.badge.first-letters.wav
+st.badge.first-sentence,Sesotho (South Africa),O balile polelo ya hao ya pele ya Senyesemane!,,badge b.first-sentence,app,,3.9,draft,no,st.badge.first-sentence.wav
+st.badge.lessons-5,Sesotho (South Africa),O qetile dithuto tse hlano!,,badge b.lessons-5,app,,2.5,draft,no,st.badge.lessons-5.wav
+st.badge.read-notice,Sesotho (South Africa),O balile tsebiso!,,badge b.read-notice,app,,1.7,draft,no,st.badge.read-notice.wav
+st.badge.read-signs,Sesotho (South Africa),O kgona ho bala matshwao!,,badge b.read-signs,app,,2.3,draft,no,st.badge.read-signs.wav
+st.badge.read-sms,Sesotho (South Africa),O balile SMS!,,badge b.read-sms,app,,1.4,draft,no,st.badge.read-sms.wav
+st.badge.sight-words,Sesotho (South Africa),O tseba mantswe a manyane a bohlokwa!,,badge b.sight-words,app,,3.2,draft,no,st.badge.sight-words.wav
+st.badge.streak-3,Sesotho (South Africa),O ikwetlisitse matsatsi a mararo!,,badge b.streak-3,app,,2.9,draft,no,st.badge.streak-3.wav
+st.badge.streak-7,Sesotho (South Africa),O ikwetlisitse matsatsi a supileng!,,badge b.streak-7,app,,3.1,draft,no,st.badge.streak-7.wav
+st.badge.typed-reply,Sesotho (South Africa),O ngotse karabo founung!,,badge b.typed-reply,app,,2.2,draft,no,st.badge.typed-reply.wav
+st.clip.fb.correct.1,Sesotho (South Africa),O entse hantle!,,tutor clip fb.correct.1: Praise after a correct answer.,feedback,,1.6,draft,no,st.clip.fb.correct.1.wav
+st.clip.fb.correct.2,Sesotho (South Africa),"E, ho nepahetse!",,tutor clip fb.correct.2: Praise after a correct answer.,feedback,,1.6,draft,no,st.clip.fb.correct.2.wav
+st.clip.fb.correct.3,Sesotho (South Africa),Ho hotle haholo!,,tutor clip fb.correct.3: Praise after a correct answer.,feedback,,1.6,draft,no,st.clip.fb.correct.3.wav
+st.clip.fb.correct.read,Sesotho (South Africa),O balile lentswe leo o le mong. O entse hantle!,,tutor clip fb.correct.read: Praise after reading a word with no audio help.,feedback,,4,draft,no,st.clip.fb.correct.read.wav
+st.clip.fb.detail,Sesotho (South Africa),"Bala hape, o batle mantswe a bohlokwa.",,tutor clip fb.detail: Comprehension answer missed a detail.,feedback,,3.3,draft,no,st.clip.fb.detail.wav
+st.clip.fb.first_sound,Sesotho (South Africa),"Mamela modumo wa pele wa lentswe, mme o shebe tlhaku ya pele.",,tutor clip fb.first_sound: The chosen word differs in its first sound.,feedback,,5.1,draft,no,st.clip.fb.first_sound.wav
+st.clip.fb.last_sound,Sesotho (South Africa),Mamela modumo wa ho qetela. O se ke wa o lebala.,,tutor clip fb.last_sound: The chosen word differs in its last sound.,feedback,,4.1,draft,no,st.clip.fb.last_sound.wav
+st.clip.fb.letter_shape,Sesotho (South Africa),Sheba hantle sebopeho sa tlhaku ena.,,tutor clip fb.letter_shape: Confused letters that look alike.,feedback,,3.2,draft,no,st.clip.fb.letter_shape.wav
+st.clip.fb.meaning,Sesotho (South Africa),"Bala lentswe hape butle, mme o shebe ditshwantsho.",,tutor clip fb.meaning: Picture does not match the meaning.,feedback,,4.2,draft,no,st.clip.fb.meaning.wav
+st.clip.fb.middle_sound,Sesotho (South Africa),Mamela modumo o bohareng. Ke tlhaku efe e etsang modumo oo?,,tutor clip fb.middle_sound: The chosen word differs in its middle (vowel) sound.,feedback,,4.9,draft,no,st.clip.fb.middle_sound.wav
+st.clip.fb.missing_letter,Sesotho (South Africa),"Ho na le modumo o haellang. Bua lentswe butle, o mamele medumo yohle.",,tutor clip fb.missing_letter: A sound or letter is missing.,feedback,,5.7,draft,no,st.clip.fb.missing_letter.wav
+st.clip.fb.mistakes_ok,Sesotho (South Africa),Diphoso di re thusa ho ithuta. Re tla boela re ikwetlisa sena hamorao.,,tutor clip fb.mistakes_ok: Reassurance after a missed item.,feedback,,5.8,draft,no,st.clip.fb.mistakes_ok.wav
+st.clip.fb.order,Sesotho (South Africa),Tatellano ha e eso nepahale. Qala ka ho le letshehadi.,,tutor clip fb.order: Tiles or words in the wrong order.,feedback,,4.6,draft,no,st.clip.fb.order.wav
+st.clip.fb.same_different,Sesotho (South Africa),Mamela hape medumo e mmedi ka hloko.,,tutor clip fb.same_different: Wrong same/different judgement.,feedback,,3.2,draft,no,st.clip.fb.same_different.wav
+st.clip.fb.show_answer,Sesotho (South Africa),Karabo ke ena. Sheba mme o mamele.,,tutor clip fb.show_answer: After the second try: show the answer.,feedback,,3,draft,no,st.clip.fb.show_answer.wav
+st.clip.fb.trace_off_path,Sesotho (South Africa),"Latela matheba ka monwana wa hao, o qale lethebeng le letala.",,tutor clip fb.trace_off_path: Tracing left the letter path.,feedback,,5.1,draft,no,st.clip.fb.trace_off_path.wav
+st.clip.fb.try_again,Sesotho (South Africa),Ho batla ho le jwalo. A re lekeng hape.,,tutor clip fb.try_again: Gentle prompt before a second try.,feedback,,3.4,draft,no,st.clip.fb.try_again.wav
+st.clip.fb.typing_mismatch,Sesotho (South Africa),Hlahloba tlhaku ka nngwe. Sheba lentswe mme o le ngole hape.,,tutor clip fb.typing_mismatch: Typed word does not match.,feedback,,5,draft,no,st.clip.fb.typing_mismatch.wav
+st.clip.fb.wrong_choice,Sesotho (South Africa),"Ha se yona. Sheba hape, mme o mamele hape.",,tutor clip fb.wrong_choice: Generic wrong choice.,feedback,,3.6,draft,no,st.clip.fb.wrong_choice.wav
+st.clip.instr.build_sentence,Sesotho (South Africa),Mamela polelo. Beha mantswe ka tatellano e nepahetseng.,,"tutor clip instr.build_sentence: Hear a sentence, put the words in order.",instruction,,4.6,draft,no,st.clip.instr.build_sentence.wav
+st.clip.instr.build_syllables,Sesotho (South Africa),Mamela lentswe. Le hahe ka dikarolo tsa lona.,,"tutor clip instr.build_syllables: Hear a home-language word, build it from syllables.",instruction,,3.9,draft,no,st.clip.instr.build_syllables.wav
+st.clip.instr.build_word,Sesotho (South Africa),Mamela lentswe. Ebe o le aha ka ditlhaku.,,"tutor clip instr.build_word: Hear a word, build it with letter tiles.",instruction,,3.6,draft,no,st.clip.instr.build_word.wav
+st.clip.instr.build_word_picture,Sesotho (South Africa),Sheba setshwantsho. Aha lentswe ka ditlhaku.,,"tutor clip instr.build_word_picture: See a picture, build the word with tiles.",instruction,,3.8,draft,no,st.clip.instr.build_word_picture.wav
+st.clip.instr.copy_word,Sesotho (South Africa),Ngola lentswe lena ka khiboto ya founu.,,"tutor clip instr.copy_word: See a word, type it.",instruction,,3.4,draft,no,st.clip.instr.copy_word.wav
+st.clip.instr.hear_letter,Sesotho (South Africa),Mamela. O utlwa tlhaku efe?,,"tutor clip instr.hear_letter: Hear a word or syllable, choose the letter you hear.",instruction,,2.5,draft,no,st.clip.instr.hear_letter.wav
+st.clip.instr.letter_name,Sesotho (South Africa),Mamela lebitso la tlhaku ya Senyesemane. Tobetsa tlhaku eo.,,"tutor clip instr.letter_name: Placement: hear an English letter name, choose the letter.",instruction,,4.9,draft,no,st.clip.instr.letter_name.wav
+st.clip.instr.letter_sound,Sesotho (South Africa),"Sheba tlhaku. Mamela medumo, ebe o kgetha modumo wa tlhaku ena.",,"tutor clip instr.letter_sound: See a letter, choose its sound from audio options.",instruction,,5.2,draft,no,st.clip.instr.letter_sound.wav
+st.clip.instr.listen_picture,Sesotho (South Africa),Mamela lentswe. Ebe o tobetsa setshwantsho se tsamaellanang le lona.,,"tutor clip instr.listen_picture: Hear a word, then choose the picture.",instruction,,5.6,draft,no,st.clip.instr.listen_picture.wav
+st.clip.instr.listen_repeat,Sesotho (South Africa),"Mamela, ebe o pheta lentswe ka lentswe le hodimo.",,"tutor clip instr.listen_repeat: Listen, then say the word aloud.",instruction,,4.2,draft,no,st.clip.instr.listen_repeat.wav
+st.clip.instr.picture_word,Sesotho (South Africa),Sheba setshwantsho. Tobetsa lentswe le tsamaellanang le sona.,,"tutor clip instr.picture_word: See a picture, then choose the written word.",instruction,,5.1,draft,no,st.clip.instr.picture_word.wav
+st.clip.instr.read_picture,Sesotho (South Africa),Bala lentswe. Ebe o tobetsa setshwantsho se tsamaellanang le lona.,,"tutor clip instr.read_picture: Read a word with no audio, then choose the picture.",instruction,,5.5,draft,no,st.clip.instr.read_picture.wav
+st.clip.instr.read_sentence_picture,Sesotho (South Africa),Bala polelo. Ebe o tobetsa setshwantsho se tsamaellanang le yona.,,"tutor clip instr.read_sentence_picture: Read a sentence with no audio, then choose the picture.",instruction,,5.4,draft,no,st.clip.instr.read_sentence_picture.wav
+st.clip.instr.same_different,Sesotho (South Africa),Mamela medumo e mmedi. Na e a tshwana kapa e a fapana?,,"tutor clip instr.same_different: Hear two sounds, decide same or different.",instruction,,4.6,draft,no,st.clip.instr.same_different.wav
+st.clip.instr.sound_letter,Sesotho (South Africa),Mamela modumo. Tobetsa tlhaku e etsang modumo oo.,,"tutor clip instr.sound_letter: Hear a sound, choose the letter.",instruction,,4.2,draft,no,st.clip.instr.sound_letter.wav
+st.clip.instr.sound_syllable,Sesotho (South Africa),Mamela. Tobetsa karolo ya lentswe eo o e utlwang.,,"tutor clip instr.sound_syllable: Hear a syllable, choose the written syllable.",instruction,,4.2,draft,no,st.clip.instr.sound_syllable.wav
+st.clip.instr.syllable_sound,Sesotho (South Africa),"Bala karolo ena ya lentswe. Mamela dikgetho, ebe o kgetha e tshwanang le yona.",,"tutor clip instr.syllable_sound: See a written syllable, choose its sound from audio options.",instruction,,6.4,draft,no,st.clip.instr.syllable_sound.wav
+st.clip.instr.trace,Sesotho (South Africa),Latela matheba ka monwana wa hao ho ngola tlhaku.,,tutor clip instr.trace: Trace a letter.,instruction,,4.2,draft,no,st.clip.instr.trace.wav
+st.clip.instr.type_picture,Sesotho (South Africa),Sheba setshwantsho. Ngola lentswe ka khiboto ya founu.,,"tutor clip instr.type_picture: See a picture, type the word.",instruction,,4.6,draft,no,st.clip.instr.type_picture.wav
+st.clip.instr.type_word,Sesotho (South Africa),"Mamela lentswe, ebe o le ngola ka khiboto ya founu.",,"tutor clip instr.type_word: Hear a word, type it on the phone keyboard.",instruction,,4.3,draft,no,st.clip.instr.type_word.wav
+st.clip.instr.which_word,Sesotho (South Africa),Mamela. O utlwile lentswe lefe? Le tobetse.,,"tutor clip instr.which_word: Hear one word of a pair, choose which was said.",instruction,,3.7,draft,no,st.clip.instr.which_word.wav
+st.clip.instr.word_sound,Sesotho (South Africa),"Bala lentswe lena. Mamela dikgetho, ebe o kgetha e utlwahalang jwalo ka lentswe lena.",,"tutor clip instr.word_sound: See a word, choose the matching spoken word.",instruction,,6.9,draft,no,st.clip.instr.word_sound.wav
+st.clip.sys.error_generic,Sesotho (South Africa),Ho na le se sa tsamaeng hantle. Tobetsa motsu ho leka hape.,,tutor clip sys.error_generic: Unexpected error with one recovery action.,app,,4.9,draft,no,st.clip.sys.error_generic.wav
+st.clip.sys.needs_download,Sesotho (South Africa),Thuto ena ha e eso jarollwe. Ho e jarolla ho sebedisa data.,,tutor clip sys.needs_download: Lesson content is not on the phone yet.,app,,4.9,draft,no,st.clip.sys.needs_download.wav
+st.clip.sys.offline,Sesotho (South Africa),Ha o a hokahana le inthanete. O ka tswela pele ho ithuta ka dithuto tseo o di jarollotseng.,,tutor clip sys.offline: The device is offline.,app,,7.4,draft,no,st.clip.sys.offline.wav
+st.clip.sys.uses_data,Sesotho (South Africa),Sena se tla sebedisa data ya founu. Boholo bo ngotswe skrineng.,,tutor clip sys.uses_data: Action will use mobile data; size is on screen.,app,,5.2,draft,no,st.clip.sys.uses_data.wav
+st.clip.sys.waiting_wifi,Sesotho (South Africa),Ho jarolla ho tla emela Wi-Fi.,,tutor clip sys.waiting_wifi: Download waits for Wi-Fi (setting).,app,,2.7,draft,no,st.clip.sys.waiting_wifi.wav
+st.clip.teach.blend_demo,Sesotho (South Africa),"Mamela modumo ka mong, ebe re a kopanya ho aha lentswe.",,tutor clip teach.blend_demo: Shared teaching line before a blending demonstration.,instruction,,4.6,draft,no,st.clip.teach.blend_demo.wav
+st.clip.teach.letter_intro,Sesotho (South Africa),Sheba tlhaku ena. Mamela modumo wa yona.,,tutor clip teach.letter_intro: Shared teaching line before a letter is shown and its sound played.,instruction,,3.5,draft,no,st.clip.teach.letter_intro.wav
+st.clip.teach.word_intro,Sesotho (South Africa),Sheba lentswe lena le setshwantsho sa lona. Mamela.,,"tutor clip teach.word_intro: Shared teaching line before a word, its picture and its meaning.",instruction,,4.3,draft,no,st.clip.teach.word_intro.wav
+st.clip.tutor.ask_prompt,Sesotho (South Africa),Botsa potso ya hao ka mora hore tshepe e lle.,,tutor clip tutor.ask_prompt: Tier 2: before recording a spoken question.,tutor,,3.9,draft,no,st.clip.tutor.ask_prompt.wav
+st.clip.tutor.blend_again,Sesotho (South Africa),A re kopanyeng medumo hape.,,tutor clip tutor.blend_again: Before replaying a blending demonstration.,tutor,,2.5,draft,no,st.clip.tutor.blend_again.wav
+st.clip.tutor.cant_answer_yet,Sesotho (South Africa),Ha ke kgone ho araba seo hajwale. A re tswelleng ka thuto.,,tutor clip tutor.cant_answer_yet: Tier 2: no validated clip matches the question.,tutor,,4.9,draft,no,st.clip.tutor.cant_answer_yet.wav
+st.clip.tutor.how_it_works,Sesotho (South Africa),Ke tla o hlalosetsa hore mosebetsi ona o etswa jwang.,,tutor clip tutor.how_it_works: Before replaying how an exercise works.,tutor,,4.5,draft,no,st.clip.tutor.how_it_works.wav
+st.clip.tutor.listen_slow,Sesotho (South Africa),Mamela butle.,,tutor clip tutor.listen_slow: Before slow playback.,tutor,,1.4,draft,no,st.clip.tutor.listen_slow.wav
+st.clip.tutor.menu,Sesotho (South Africa),O batla thuso ka eng? Tobetsa setshwantsho.,,tutor clip tutor.menu: Opening the help panel.,tutor,,3.7,draft,no,st.clip.tutor.menu.wav
+st.clip.tutor.needs_internet,Sesotho (South Africa),Ho botsa dipotso ho hloka inthanete. O ka tswela pele ho ithuta ntle le yona.,,tutor clip tutor.needs_internet: A network-only tutor feature was requested offline.,tutor,,6.3,draft,no,st.clip.tutor.needs_internet.wav
+st.clip.tutor.off_topic,Sesotho (South Africa),Nka o thusa feela ka ho bala le ho ngola Senyesemane. A re tswelleng.,,tutor clip tutor.off_topic: Tier 2/3: question outside English literacy.,tutor,,5.7,draft,no,st.clip.tutor.off_topic.wav
+st.clip.tutor.read_alone_first,Sesotho (South Africa),"Leka ho le bala o le mong pele. Ha nka o balla lona, le ke ke la balwa e le ho bala o le mong. Empa ho lokile ho kopa thuso.",,tutor clip tutor.read_alone_first: When the learner asks to hear a word they are meant to read alone.,tutor,,9.9,draft,no,st.clip.tutor.read_alone_first.wav
+st.clip.tutor.replay_intro,Sesotho (South Africa),Tlhaloso ke ena hape.,,tutor clip tutor.replay_intro: Before replaying the lesson explanation.,tutor,,2,draft,no,st.clip.tutor.replay_intro.wav
+st.clip.tutor.resting,Sesotho (South Africa),Mothusi ha a fumanehe hona jwale. A re tswelleng ka thuto.,,"tutor clip tutor.resting: Tier 2/3 unavailable (spending cap, rate limit or provider failure).",tutor,,4.9,draft,no,st.clip.tutor.resting.wav
+st.clip.tutor.sound_of_letter,Sesotho (South Africa),Mamela hore tlhaku ena e utlwahala jwang ka Senyesemane.,,tutor clip tutor.sound_of_letter: Before playing a letter sound on request.,tutor,,4.7,draft,no,st.clip.tutor.sound_of_letter.wav
+st.clip.tutor.word_meaning,Sesotho (South Africa),E re ke o bolelle hore lentswe lena le bolela eng.,,tutor clip tutor.word_meaning: Before playing a word's meaning on request.,tutor,,4.2,draft,no,st.clip.tutor.word_meaning.wav
+st.gloss.airtime,Sesotho (South Africa),Lentswe airtime le bolela airtime.,,meaning of 'airtime',gloss,,3,draft,no,st.gloss.airtime.wav
+st.gloss.bank,Sesotho (South Africa),Lentswe bank le bolela banka.,,meaning of 'bank',gloss,,2.6,draft,no,st.gloss.bank.wav
+st.gloss.bus,Sesotho (South Africa),Lentswe bus le bolela bese.,,meaning of 'bus',gloss,,2.5,draft,no,st.gloss.bus.wav
+st.gloss.cat,Sesotho (South Africa),Lentswe cat le bolela katse.,,meaning of 'cat',gloss,,2.6,draft,no,st.gloss.cat.wav
+st.gloss.cleaner,Sesotho (South Africa),Lentswe cleaner le bolela mohlwekisi.,,meaning of 'cleaner',gloss,,3.2,draft,no,st.gloss.cleaner.wav
+st.gloss.clinic,Sesotho (South Africa),Lentswe clinic le bolela tliliniki.,,meaning of 'clinic',gloss,,3.1,draft,no,st.gloss.clinic.wav
+st.gloss.closed,Sesotho (South Africa),Lentswe CLOSED le bolela ho kwetswe.,,meaning of 'CLOSED',gloss,,3.2,draft,no,st.gloss.closed.wav
+st.gloss.cook,Sesotho (South Africa),Lentswe cook le bolela mophehi.,,meaning of 'cook',gloss,,2.8,draft,no,st.gloss.cook.wav
+st.gloss.dad,Sesotho (South Africa),Lentswe dad le bolela ntate.,,meaning of 'dad',gloss,,2.6,draft,no,st.gloss.dad.wav
+st.gloss.danger,Sesotho (South Africa),Lentswe DANGER le bolela kotsi.,,meaning of 'DANGER',gloss,,2.8,draft,no,st.gloss.danger.wav
+st.gloss.driver,Sesotho (South Africa),Lentswe driver le bolela mokganni.,,meaning of 'driver',gloss,,3,draft,no,st.gloss.driver.wav
+st.gloss.exit,Sesotho (South Africa),Lentswe EXIT le bolela tsela ya ho tswa.,,meaning of 'EXIT',gloss,,3.5,draft,no,st.gloss.exit.wav
+st.gloss.friday,Sesotho (South Africa),Lentswe Friday le bolela Labohlano.,,meaning of 'Friday',gloss,,3.1,draft,no,st.gloss.friday.wav
+st.gloss.here,Sesotho (South Africa),Lentswe here le bolela mona.,,meaning of 'here',gloss,,2.6,draft,no,st.gloss.here.wav
+st.gloss.i,Sesotho (South Africa),Lentswe I le bolela nna.,,meaning of 'I',gloss,,2.2,draft,no,st.gloss.i.wav
+st.gloss.id,Sesotho (South Africa),Lentswe ID le bolela boitsebiso.,,meaning of 'ID',gloss,,2.9,draft,no,st.gloss.id.wav
+st.gloss.low,Sesotho (South Africa),Lentswe low le bolela e tlase.,,meaning of 'low',gloss,,2.7,draft,no,st.gloss.low.wav
+st.gloss.man,Sesotho (South Africa),Lentswe man le bolela monna.,,meaning of 'man',gloss,,2.6,draft,no,st.gloss.man.wav
+st.gloss.map,Sesotho (South Africa),Lentswe map le bolela mmapa.,,meaning of 'map',gloss,,2.6,draft,no,st.gloss.map.wav
+st.gloss.monday,Sesotho (South Africa),Lentswe Monday le bolela Mantaha.,,meaning of 'Monday',gloss,,2.9,draft,no,st.gloss.monday.wav
+st.gloss.money,Sesotho (South Africa),Lentswe money le bolela tjhelete.,,meaning of 'money',gloss,,2.9,draft,no,st.gloss.money.wav
+st.gloss.ok,Sesotho (South Africa),Lentswe OK le bolela ho lokile.,,meaning of 'OK',gloss,,2.8,draft,no,st.gloss.ok.wav
+st.gloss.open,Sesotho (South Africa),Lentswe OPEN le bolela ho bulehile.,,meaning of 'OPEN',gloss,,3.1,draft,no,st.gloss.open.wav
+st.gloss.pan,Sesotho (South Africa),Lentswe pan le bolela pane.,,meaning of 'pan',gloss,,2.5,draft,no,st.gloss.pan.wav
+st.gloss.pen,Sesotho (South Africa),Lentswe pen le bolela pene.,,meaning of 'pen',gloss,,2.5,draft,no,st.gloss.pen.wav
+st.gloss.sheep,Sesotho (South Africa),Lentswe sheep le bolela nku.,,meaning of 'sheep',gloss,,2.6,draft,no,st.gloss.sheep.wav
+st.gloss.ship,Sesotho (South Africa),Lentswe ship le bolela sekepe.,,meaning of 'ship',gloss,,2.7,draft,no,st.gloss.ship.wav
+st.gloss.shop,Sesotho (South Africa),Lentswe shop le bolela lebenkele.,,meaning of 'shop',gloss,,2.9,draft,no,st.gloss.shop.wav
+st.gloss.sit,Sesotho (South Africa),Lentswe sit le bolela dula fatshe.,,meaning of 'sit',gloss,,3,draft,no,st.gloss.sit.wav
+st.gloss.stop,Sesotho (South Africa),Lentswe STOP le bolela ema.,,meaning of 'STOP',gloss,,2.5,draft,no,st.gloss.stop.wav
+st.gloss.sun,Sesotho (South Africa),Lentswe sun le bolela letsatsi.,,meaning of 'sun',gloss,,2.8,draft,no,st.gloss.sun.wav
+st.gloss.tap,Sesotho (South Africa),Lentswe tap le bolela pompo.,,meaning of 'tap',gloss,,2.6,draft,no,st.gloss.tap.wav
+st.gloss.ten,Sesotho (South Africa),Lentswe ten le bolela leshome.,,meaning of 'ten',gloss,,2.7,draft,no,st.gloss.ten.wav
+st.gloss.tin,Sesotho (South Africa),Lentswe tin le bolela thini.,,meaning of 'tin',gloss,,2.6,draft,no,st.gloss.tin.wav
+st.gloss.toilets,Sesotho (South Africa),Lentswe TOILETS le bolela matlwana.,,meaning of 'TOILETS',gloss,,3.1,draft,no,st.gloss.toilets.wav
+st.gloss.work,Sesotho (South Africa),Lentswe work le bolela mosebetsi.,,meaning of 'work',gloss,,2.9,draft,no,st.gloss.work.wav
+st.gloss.yes,Sesotho (South Africa),Lentswe yes le bolela e.,,meaning of 'yes',gloss,,2.2,draft,no,st.gloss.yes.wav
+st.gloss.you,Sesotho (South Africa),Lentswe you le bolela wena.,,meaning of 'you',gloss,,2.5,draft,no,st.gloss.you.wav
+st.l.a,Sesotho (South Africa),a,"Native South African Sesotho speaker: say only the vowel sound 'a', as in 'ntate'.",model audio for letter 'a',model_audio,,1,draft,no,st.l.a.wav
+st.l.b,Sesotho (South Africa),b,"Native South African Sesotho speaker: say only the consonant sound 'b' as it sounds in your language, with no vowel after it.",model audio for letter 'b',model_audio,,1,draft,no,st.l.b.wav
+st.l.d,Sesotho (South Africa),d,"Native South African Sesotho speaker: say only the consonant sound 'd' as it sounds in your language, with no vowel after it.",model audio for letter 'd',model_audio,,1,draft,no,st.l.d.wav
+st.l.e,Sesotho (South Africa),e,"Native South African Sesotho speaker: say only the vowel sound 'e', as in 'lebese'.",model audio for letter 'e',model_audio,,1,draft,no,st.l.e.wav
+st.l.i,Sesotho (South Africa),i,"Native South African Sesotho speaker: say only the vowel sound 'i', as in 'metsi'.",model audio for letter 'i',model_audio,,1,draft,no,st.l.i.wav
+st.l.m,Sesotho (South Africa),m,"Native South African Sesotho speaker: say only the consonant sound 'm' as it sounds in your language, with no vowel after it.",model audio for letter 'm',model_audio,,1,draft,no,st.l.m.wav
+st.l.n,Sesotho (South Africa),n,"Native South African Sesotho speaker: say only the consonant sound 'n' as it sounds in your language, with no vowel after it.",model audio for letter 'n',model_audio,,1,draft,no,st.l.n.wav
+st.l.o,Sesotho (South Africa),o,"Native South African Sesotho speaker: say only the vowel sound 'o', as in 'ntlo'.",model audio for letter 'o',model_audio,,1,draft,no,st.l.o.wav
+st.l.p,Sesotho (South Africa),p,"Native South African Sesotho speaker: say only the consonant sound 'p' as it sounds in your language, with no vowel after it.",model audio for letter 'p',model_audio,,1,draft,no,st.l.p.wav
+st.l.q,Sesotho (South Africa),q,"Native South African Sesotho speaker: the click written q, as in 'ho qala'. Click only, no vowel.",model audio for letter 'q',model_audio,,1,draft,no,st.l.q.wav
+st.l.s,Sesotho (South Africa),s,"Native South African Sesotho speaker: say only the consonant sound 's' as it sounds in your language, with no vowel after it.",model audio for letter 's',model_audio,,1,draft,no,st.l.s.wav
+st.l.t,Sesotho (South Africa),t,"Native South African Sesotho speaker: say only the consonant sound 't' as it sounds in your language, with no vowel after it.",model audio for letter 't',model_audio,,1,draft,no,st.l.t.wav
+st.l.u,Sesotho (South Africa),u,"Native South African Sesotho speaker: say only the vowel sound 'u', as in 'thuso'.",model audio for letter 'u',model_audio,,1,draft,no,st.l.u.wav
+st.l00-hl-vowels.intro,Sesotho (South Africa),"O se o kgona ho bua Sesotho. Jwale re tla ithuta ditlhaku tse ngolang medumo eo o e tsebang. Re qala ka ditlhaku tse hlano: a, e, i, o, u.",,lesson l00-hl-vowels introduction,teaching,l00-hl-vowels,11,draft,no,st.l00-hl-vowels.intro.wav
+st.l00-hl-vowels.outro,Sesotho (South Africa),O entse hantle! Jwale o tseba ditlhaku tsena tse hlano. Thutong e latelang re tla di kopanya le ditlhaku tse ding.,,lesson l00-hl-vowels closing,teaching,l00-hl-vowels,9.2,draft,no,st.l00-hl-vowels.outro.wav
+st.l00-hl-vowels.t01,Sesotho (South Africa),"Tsena ke ditlhaku tse hlano: a, e, i, o, u. Tlhaku ka nngwe e na le modumo wa yona.",,teaching step l00-hl-vowels.t01 (explain),teaching,l00-hl-vowels,6.8,draft,no,st.l00-hl-vowels.t01.wav
+st.l00-hl-vowels.title,Sesotho (South Africa),Ditlhaku le medumo eo o seng o e bua.,,lesson l00-hl-vowels title,title,l00-hl-vowels,3.2,draft,no,st.l00-hl-vowels.title.wav
+st.l01-hl-syllables.intro,Sesotho (South Africa),"Tlhaku le e nngwe ya ditlhaku tse hlano di kopana ho etsa karolo ya lentswe, jwalo ka m le a di etsa ma. Dikarolo di aha mantswe.",,lesson l01-hl-syllables introduction,teaching,l01-hl-syllables,10.3,draft,no,st.l01-hl-syllables.intro.wav
+st.l01-hl-syllables.outro,Sesotho (South Africa),Jwale o a bala! O balile mantswe a Sesotho. Bokgoni boo bo tla o thusa le ho Senyesemane.,,lesson l01-hl-syllables closing,teaching,l01-hl-syllables,7.2,draft,no,st.l01-hl-syllables.outro.wav
+st.l01-hl-syllables.t01,Sesotho (South Africa),"Sheba: m le a di etsa ma. Mamela: mmm, a, ma.",,teaching step l01-hl-syllables.t01 (explain),teaching,l01-hl-syllables,3.9,draft,no,st.l01-hl-syllables.t01.wav
+st.l01-hl-syllables.t02,Sesotho (South Africa),"Hape b le a di etsa ba. Mamela: b, a, ba.",,teaching step l01-hl-syllables.t02 (explain),teaching,l01-hl-syllables,3.6,draft,no,st.l01-hl-syllables.t02.wav
+st.l01-hl-syllables.title,Sesotho (South Africa),"Re aha dikarolo tsa mantswe, re bala mantswe a pele ka Sesotho.",,lesson l01-hl-syllables title,title,l01-hl-syllables,5.2,draft,no,st.l01-hl-syllables.title.wav
+st.l02-bridge.intro,Sesotho (South Africa),"O se o kgona ho bala ka Sesotho. Senyesemane se sebedisa ditlhaku tse tshwanang, empa tse ding di utlwahala ka tsela e fapaneng. A re shebeng.",,lesson l02-bridge introduction,teaching,l02-bridge,11.3,draft,no,st.l02-bridge.intro.wav
+st.l02-bridge.outro,Sesotho (South Africa),"Jwale o a tseba: ditlhaku tse ngata di a tshwana, empa tse ding di a fetoha ho Senyesemane. O se o loketse ditlhaku tsa Senyesemane!",,lesson l02-bridge closing,teaching,l02-bridge,10.6,draft,no,st.l02-bridge.outro.wav
+st.l02-bridge.t01,Sesotho (South Africa),Ditlhaku tsena di utlwahala hoo e ka bang ka tsela e tshwanang ho Sesotho le ho Senyesemane.,,teaching step l02-bridge.t01 (explain),teaching,l02-bridge,7.5,draft,no,st.l02-bridge.t01.wav
+st.l02-bridge.t03,Sesotho (South Africa),"Empa hlokomela! Ho Sesotho, q e ngola modumo o kang o lentsweng qala. Ho Senyesemane, q ha e utlwahale jwalo.",,teaching step l02-bridge.t03 (contrast_note),teaching,l02-bridge,8.8,draft,no,st.l02-bridge.t03.wav
+st.l02-bridge.t04,Sesotho (South Africa),"Hape th: ho Sesotho th e ka lentsweng thuto. Ho Senyesemane th e utlwahala ka tsela e fapaneng, jwalo ka lentsweng the.",,teaching step l02-bridge.t04 (contrast_note),teaching,l02-bridge,9.6,draft,no,st.l02-bridge.t04.wav
+st.l02-bridge.t05,Sesotho (South Africa),"Le ditlhaku a, e, i, o, u di ka utlwahala ka tsela e fapaneng hanyane ho Senyesemane. Re tla di ithuta hantle dithutong tse latelang.",,teaching step l02-bridge.t05 (explain),teaching,l02-bridge,10.6,draft,no,st.l02-bridge.t05.wav
+st.l02-bridge.title,Sesotho (South Africa),Ditlhaku tse tshwanang ho Senyesemane: se tshwanang le se fetohang.,,lesson l02-bridge title,title,l02-bridge,5.6,draft,no,st.l02-bridge.title.wav
+st.l10-satp.intro,Sesotho (South Africa),"Kajeno re ithuta medumo ya ditlhaku tse nne tsa Senyesemane: s, a, t, p. Re ithuta medumo, e seng mabitso a ditlhaku.",,lesson l10-satp introduction,teaching,l10-satp,9.4,draft,no,st.l10-satp.intro.wav
+st.l10-satp.outro,Sesotho (South Africa),"O entse hantle! O tseba medumo e mene: s, a, t, p. O se o balile le mantswe a manyane: at, sat, tap.",,lesson l10-satp closing,teaching,l10-satp,8.1,draft,no,st.l10-satp.outro.wav
+st.l10-satp.title,Sesotho (South Africa),"Medumo ya Senyesemane: s, a, t, p.",,lesson l10-satp title,title,l10-satp,3,draft,no,st.l10-satp.title.wav
+st.l11-inmd.intro,Sesotho (South Africa),"Re tswela pele ka ditlhaku tse nne tse ntjha: i, n, m, d. Ebe re ithuta tlhaku c, e utlwahalang ka tsela e fapaneng ho Senyesemane.",,lesson l11-inmd introduction,teaching,l11-inmd,10.5,draft,no,st.l11-inmd.intro.wav
+st.l11-inmd.outro,Sesotho (South Africa),"Ho hotle! Jwale o tseba i, n, m, d, mme o a tseba hore c ho Senyesemane e utlwahala jwalo ka k.",,lesson l11-inmd closing,teaching,l11-inmd,7.7,draft,no,st.l11-inmd.outro.wav
+st.l11-inmd.t05,Sesotho (South Africa),"Jwale tlhaku c. Ho Senyesemane, lentsweng cat, c e utlwahala jwalo ka k. Ha e utlwahale jwalo ka modumo wa q wa Sesotho.",,teaching step l11-inmd.t05 (letter_intro),teaching,l11-inmd,9.6,draft,no,st.l11-inmd.t05.wav
+st.l11-inmd.title,Sesotho (South Africa),"Medumo ya Senyesemane: i, n, m, d, le c.",,lesson l11-inmd title,title,l11-inmd,3.5,draft,no,st.l11-inmd.title.wav
+st.l12-tracing.intro,Sesotho (South Africa),Kajeno re tla ngola. O tla latela ditlhaku ka monwana wa hao skrineng. Qala lethebeng le letala.,,lesson l12-tracing introduction,teaching,l12-tracing,7.8,draft,no,st.l12-tracing.intro.wav
+st.l12-tracing.outro,Sesotho (South Africa),O entse hantle! O ngotse ditlhaku tsa hao tsa pele tsa Senyesemane. Tswela pele ho ikwetlisa ho ngola.,,lesson l12-tracing closing,teaching,l12-tracing,8.2,draft,no,st.l12-tracing.outro.wav
+st.l12-tracing.t01,Sesotho (South Africa),"Ho ngola ho thusa ho bala. Ha o ngola tlhaku, o e hopola habonolo.",,teaching step l12-tracing.t01 (explain),teaching,l12-tracing,5.5,draft,no,st.l12-tracing.t01.wav
+st.l12-tracing.title,Sesotho (South Africa),Latela mme o ngole ditlhaku tsa hao tsa pele tsa Senyesemane.,,lesson l12-tracing title,title,l12-tracing,5.1,draft,no,st.l12-tracing.title.wav
+st.l20-blending.intro,Sesotho (South Africa),"Jwale re tla kopanya medumo e meraro ho aha mantswe. Mamela: c, a, t... cat! O se ke wa lebala modumo wa ho qetela.",,lesson l20-blending introduction,teaching,l20-blending,9.2,draft,no,st.l20-blending.intro.wav
+st.l20-blending.outro,Sesotho (South Africa),"O a bala Senyesemane! O balile mantswe: cat, sit, map, pen.",,lesson l20-blending closing,teaching,l20-blending,4.9,draft,no,st.l20-blending.outro.wav
+st.l20-blending.t03,Sesotho (South Africa),"Ho Sesotho mantswe a atisa ho fela ka e nngwe ya ditlhaku a, e, i, o, u. Ho Senyesemane mantswe a mangata a fela ka modumo o kang t. Re re cat, e seng cati.",,teaching step l20-blending.t03 (contrast_note),teaching,l20-blending,12.4,draft,no,st.l20-blending.t03.wav
+st.l20-blending.title,Sesotho (South Africa),"Kopanya medumo e meraro o hahe mantswe: cat, sit, map, pen.",,lesson l20-blending title,title,l20-blending,4.9,draft,no,st.l20-blending.title.wav
+st.l21-picture-words.intro,Sesotho (South Africa),Kajeno o bala mantswe a matjha ka ditlhaku tseo o seng o di tseba. Re tla boela re ithute ditlhaku tse pedi tse ntjha: b le u.,,lesson l21-picture-words introduction,teaching,l21-picture-words,10.1,draft,no,st.l21-picture-words.intro.wav
+st.l21-picture-words.outro,Sesotho (South Africa),Ho hotle haholo! O se o balile mantswe a mangata a Senyesemane.,,lesson l21-picture-words closing,teaching,l21-picture-words,5.2,draft,no,st.l21-picture-words.outro.wav
+st.l21-picture-words.t02,Sesotho (South Africa),"Tlhaku u ho Senyesemane, lentsweng bus, ha e utlwahale jwalo ka u ya Sesotho. Mamela: u, bus.",,teaching step l21-picture-words.t02 (letter_intro),teaching,l21-picture-words,7.6,draft,no,st.l21-picture-words.t02.wav
+st.l21-picture-words.title,Sesotho (South Africa),"Tsamaisa mantswe le ditshwantsho, o hahe mantswe ka ditlhaku.",,lesson l21-picture-words title,title,l21-picture-words,5.1,draft,no,st.l21-picture-words.title.wav
+st.l22-sight-words.intro,Sesotho (South Africa),"Mantswe a mang a Senyesemane ha a latele melao ya medumo. Re a ithuta ka ho a bona a feletse, jwalo ka setshwantsho. Mantswe ana a hlaha hoo e ka bang dipolelong tsohle.",,lesson l22-sight-words introduction,teaching,l22-sight-words,13.4,draft,no,st.l22-sight-words.intro.wav
+st.l22-sight-words.outro,Sesotho (South Africa),"O entse hantle! O se o tseba mantswe a mahlano a manyane: the, a, is, I, you. O tla a bona hohle.",,lesson l22-sight-words closing,teaching,l22-sight-words,7.9,draft,no,st.l22-sight-words.outro.wav
+st.l22-sight-words.t01,Sesotho (South Africa),Lentswe lena ke the. Ha le utlwahale jwalo ka ha le ngotswe. Le hopole ka ho le bona.,,teaching step l22-sight-words.t01 (contrast_note),teaching,l22-sight-words,6.9,draft,no,st.l22-sight-words.t01.wav
+st.l22-sight-words.t02,Sesotho (South Africa),Ho Senyesemane th e etswa ka leleme pakeng tsa meno: the. Ha e tshwane le th ya Sesotho lentsweng thuto.,,teaching step l22-sight-words.t02 (contrast_note),teaching,l22-sight-words,8.4,draft,no,st.l22-sight-words.t02.wav
+st.l22-sight-words.t05,Sesotho (South Africa),"Lentswe a le bolela ntho e le nngwe, jwalo ka a cat. Lentswe is le sebediswa jwalo ka mona: the cat is here.",,teaching step l22-sight-words.t05 (explain),teaching,l22-sight-words,8.7,draft,no,st.l22-sight-words.t05.wav
+st.l22-sight-words.title,Sesotho (South Africa),"Mantswe a manyane a hlahang hohle: the, a, is, I, you.",,lesson l22-sight-words title,title,l22-sight-words,4.6,draft,no,st.l22-sight-words.title.wav
+st.l30-first-sentences.e01.instr,Sesotho (South Africa),Mamela polelo. Ke eng e leng mona? Tobetsa setshwantsho.,,exercise l30-first-sentences.e01 instruction,instruction,l30-first-sentences,4.7,draft,no,st.l30-first-sentences.e01.instr.wav
+st.l30-first-sentences.e01.q,Sesotho (South Africa),Ke eng e leng mona?,,exercise l30-first-sentences.e01 question,instruction,l30-first-sentences,1.9,draft,no,st.l30-first-sentences.e01.q.wav
+st.l30-first-sentences.e05.instr,Sesotho (South Africa),"Bala polelo, ebe o araba potso.",,exercise l30-first-sentences.e05 instruction,instruction,l30-first-sentences,2.8,draft,no,st.l30-first-sentences.e05.instr.wav
+st.l30-first-sentences.e05.q,Sesotho (South Africa),Motho a ka etsang mona?,,exercise l30-first-sentences.e05 question,instruction,l30-first-sentences,2.2,draft,no,st.l30-first-sentences.e05.q.wav
+st.l30-first-sentences.e08.instr,Sesotho (South Africa),Mamela polelo. Motho enwa o kae? Tobetsa setshwantsho.,,exercise l30-first-sentences.e08 instruction,instruction,l30-first-sentences,4.6,draft,no,st.l30-first-sentences.e08.instr.wav
+st.l30-first-sentences.e08.q,Sesotho (South Africa),Motho enwa o kae?,,exercise l30-first-sentences.e08 question,instruction,l30-first-sentences,1.7,draft,no,st.l30-first-sentences.e08.q.wav
+st.l30-first-sentences.e09.instr,Sesotho (South Africa),"Bala polelo, ebe o araba potso.",,exercise l30-first-sentences.e09 instruction,instruction,l30-first-sentences,2.8,draft,no,st.l30-first-sentences.e09.instr.wav
+st.l30-first-sentences.e09.q,Sesotho (South Africa),Ke eng e leng mona?,,exercise l30-first-sentences.e09 question,instruction,l30-first-sentences,1.9,draft,no,st.l30-first-sentences.e09.q.wav
+st.l30-first-sentences.intro,Sesotho (South Africa),"O se o kgona ho bala mantswe. Jwale re tla a kopanya ho etsa dipolelo. Polelo e qala ka tlhaku e kgolo, e fele ka kgutlo.",,lesson l30-first-sentences introduction,teaching,l30-first-sentences,9.7,draft,no,st.l30-first-sentences.intro.wav
+st.l30-first-sentences.outro,Sesotho (South Africa),O entse hantle haholo! O balile dipolelo tsa hao tsa pele tsa Senyesemane.,,lesson l30-first-sentences closing,teaching,l30-first-sentences,6.1,draft,no,st.l30-first-sentences.outro.wav
+st.l30-first-sentences.t03,Sesotho (South Africa),Sheba polelo: I am at work. E bolela hore: ke mosebetsing.,,teaching step l30-first-sentences.t03 (explain),teaching,l30-first-sentences,4.9,draft,no,st.l30-first-sentences.t03.wav
+st.l30-first-sentences.title,Sesotho (South Africa),Bala dipolelo tsa hao tsa pele: I am at work. The bus is here.,,lesson l30-first-sentences title,title,l30-first-sentences,5.2,draft,no,st.l30-first-sentences.title.wav
+st.l40-sms.e01.instr,Sesotho (South Africa),"Bala SMS, ebe o araba potso.",,exercise l40-sms.e01 instruction,instruction,l40-sms,2.6,draft,no,st.l40-sms.e01.instr.wav
+st.l40-sms.e01.q,Sesotho (South Africa),Ke mang ya rometseng SMS ena?,,exercise l40-sms.e01 question,instruction,l40-sms,2.6,draft,no,st.l40-sms.e01.q.wav
+st.l40-sms.e02.instr,Sesotho (South Africa),"Bala SMS, ebe o araba potso.",,exercise l40-sms.e02 instruction,instruction,l40-sms,2.6,draft,no,st.l40-sms.e02.instr.wav
+st.l40-sms.e02.q,Sesotho (South Africa),Appointment e ka letsatsi lefe?,,exercise l40-sms.e02 question,instruction,l40-sms,2.8,draft,no,st.l40-sms.e02.q.wav
+st.l40-sms.e03.instr,Sesotho (South Africa),"Bala SMS, ebe o araba potso.",,exercise l40-sms.e03 instruction,instruction,l40-sms,2.6,draft,no,st.l40-sms.e03.instr.wav
+st.l40-sms.e03.q,Sesotho (South Africa),SMS ena e o bolella ka eng?,,exercise l40-sms.e03 question,instruction,l40-sms,2.5,draft,no,st.l40-sms.e03.q.wav
+st.l40-sms.e05.instr,Sesotho (South Africa),"Bala SMS, ebe o araba potso.",,exercise l40-sms.e05 instruction,instruction,l40-sms,2.6,draft,no,st.l40-sms.e05.instr.wav
+st.l40-sms.e05.q,Sesotho (South Africa),O tlameha ho ya lebenkeleng neng?,,exercise l40-sms.e05 question,instruction,l40-sms,2.9,draft,no,st.l40-sms.e05.q.wav
+st.l40-sms.e06.instr,Sesotho (South Africa),"Bala SMS, ebe o araba potso.",,exercise l40-sms.e06 instruction,instruction,l40-sms,2.6,draft,no,st.l40-sms.e06.instr.wav
+st.l40-sms.e06.q,Sesotho (South Africa),Ka nako mang?,,exercise l40-sms.e06 question,instruction,l40-sms,1.4,draft,no,st.l40-sms.e06.q.wav
+st.l40-sms.intro,Sesotho (South Africa),"Di-SMS di re bolella dintho tsa bohlokwa: tliliniki, banka, lebenkele. Kajeno re tla ithuta ho fumana tlhahisoleseding ya bohlokwa ho SMS.",,lesson l40-sms introduction,teaching,l40-sms,11,draft,no,st.l40-sms.intro.wav
+st.l40-sms.outro,Sesotho (South Africa),O entse hantle! Jwale o kgona ho bala SMS le ho fumana hore e tswa ho mang le hore ke neng.,,lesson l40-sms closing,teaching,l40-sms,7.4,draft,no,st.l40-sms.outro.wav
+st.l40-sms.t04,Sesotho (South Africa),SMS hangata e qala ka lebitso la ya e rometseng. Mona ho re Clinic: tliliniki.,,teaching step l40-sms.t04 (explain),teaching,l40-sms,6.4,draft,no,st.l40-sms.t04.wav
+st.l40-sms.title,Sesotho (South Africa),"Bala SMS e bonolo: kgopotso ya appointment, kapa airtime e tlase.",,lesson l40-sms title,title,l40-sms,5.4,draft,no,st.l40-sms.title.wav
+st.l41-signs.e02.instr,Sesotho (South Africa),"Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",,exercise l41-signs.e02 instruction,instruction,l41-signs,4.9,draft,no,st.l41-signs.e02.instr.wav
+st.l41-signs.e02.q,Sesotho (South Africa),Letshwao lena le bolela eng?,,exercise l41-signs.e02 question,instruction,l41-signs,2.6,draft,no,st.l41-signs.e02.q.wav
+st.l41-signs.e03.instr,Sesotho (South Africa),"Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",,exercise l41-signs.e03 instruction,instruction,l41-signs,4.9,draft,no,st.l41-signs.e03.instr.wav
+st.l41-signs.e03.q,Sesotho (South Africa),Letshwao lena le bolela eng?,,exercise l41-signs.e03 question,instruction,l41-signs,2.6,draft,no,st.l41-signs.e03.q.wav
+st.l41-signs.e04.instr,Sesotho (South Africa),"Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",,exercise l41-signs.e04 instruction,instruction,l41-signs,4.9,draft,no,st.l41-signs.e04.instr.wav
+st.l41-signs.e04.q,Sesotho (South Africa),Letshwao lena le bolela eng?,,exercise l41-signs.e04 question,instruction,l41-signs,2.6,draft,no,st.l41-signs.e04.q.wav
+st.l41-signs.e05.instr,Sesotho (South Africa),"Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",,exercise l41-signs.e05 instruction,instruction,l41-signs,4.9,draft,no,st.l41-signs.e05.instr.wav
+st.l41-signs.e05.q,Sesotho (South Africa),Letshwao lena le bolela eng?,,exercise l41-signs.e05 question,instruction,l41-signs,2.6,draft,no,st.l41-signs.e05.q.wav
+st.l41-signs.e06.instr,Sesotho (South Africa),"Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",,exercise l41-signs.e06 instruction,instruction,l41-signs,4.9,draft,no,st.l41-signs.e06.instr.wav
+st.l41-signs.e06.q,Sesotho (South Africa),Na o ka kena hona jwale?,,exercise l41-signs.e06 question,instruction,l41-signs,2.2,draft,no,st.l41-signs.e06.q.wav
+st.l41-signs.e07.instr,Sesotho (South Africa),"Bala letshwao, ebe o tobetsa setshwantsho se bolelang seo.",,exercise l41-signs.e07 instruction,instruction,l41-signs,4.9,draft,no,st.l41-signs.e07.instr.wav
+st.l41-signs.e07.q,Sesotho (South Africa),Na o ka kena hona jwale?,,exercise l41-signs.e07 question,instruction,l41-signs,2.2,draft,no,st.l41-signs.e07.q.wav
+st.l41-signs.intro,Sesotho (South Africa),Matshwao a re bolella seo re lokelang ho se etsa le ho dula re bolokehile. A mangata a ngotswe ka ditlhaku tse kgolo.,,lesson l41-signs introduction,teaching,l41-signs,9.4,draft,no,st.l41-signs.intro.wav
+st.l41-signs.outro,Sesotho (South Africa),Ho hotle! Jwale o kgona ho bala matshwao a bohlokwa mosebetsing le toropong.,,lesson l41-signs closing,teaching,l41-signs,6.2,draft,no,st.l41-signs.outro.wav
+st.l41-signs.t05,Sesotho (South Africa),OPEN e bolela hore ho bulehile. CLOSED e bolela hore ho kwetswe.,,teaching step l41-signs.t05 (explain),teaching,l41-signs,5.3,draft,no,st.l41-signs.t05.wav
+st.l41-signs.title,Sesotho (South Africa),"Bala matshwao a tlwaelehileng: STOP, EXIT, DANGER, TOILETS, OPEN, CLOSED.",,lesson l41-signs title,title,l41-signs,6,draft,no,st.l41-signs.title.wav
+st.l50-job-notice.e01.instr,Sesotho (South Africa),"Bala tsebiso, ebe o araba potso.",,exercise l50-job-notice.e01 instruction,instruction,l50-job-notice,2.9,draft,no,st.l50-job-notice.e01.instr.wav
+st.l50-job-notice.e01.q,Sesotho (South Africa),Ke mosebetsi ofe?,,exercise l50-job-notice.e01 question,instruction,l50-job-notice,1.7,draft,no,st.l50-job-notice.e01.q.wav
+st.l50-job-notice.e02.instr,Sesotho (South Africa),"Bala tsebiso, ebe o araba potso.",,exercise l50-job-notice.e02 instruction,instruction,l50-job-notice,2.9,draft,no,st.l50-job-notice.e02.instr.wav
+st.l50-job-notice.e02.q,Sesotho (South Africa),Mosebetsi o kae?,,exercise l50-job-notice.e02 question,instruction,l50-job-notice,1.6,draft,no,st.l50-job-notice.e02.q.wav
+st.l50-job-notice.e03.instr,Sesotho (South Africa),"Bala tsebiso, ebe o araba potso.",,exercise l50-job-notice.e03 instruction,instruction,l50-job-notice,2.9,draft,no,st.l50-job-notice.e03.instr.wav
+st.l50-job-notice.e03.q,Sesotho (South Africa),O tlameha ho tlisa eng?,,exercise l50-job-notice.e03 question,instruction,l50-job-notice,2.2,draft,no,st.l50-job-notice.e03.q.wav
+st.l50-job-notice.e04.instr,Sesotho (South Africa),"Bala tsebiso, ebe o araba potso.",,exercise l50-job-notice.e04 instruction,instruction,l50-job-notice,2.9,draft,no,st.l50-job-notice.e04.instr.wav
+st.l50-job-notice.e04.q,Sesotho (South Africa),O tlameha ho qala ka nako mang?,,exercise l50-job-notice.e04 question,instruction,l50-job-notice,2.8,draft,no,st.l50-job-notice.e04.q.wav
+st.l50-job-notice.e05.instr,Sesotho (South Africa),"Bala tsebiso, ebe o araba potso.",,exercise l50-job-notice.e05 instruction,instruction,l50-job-notice,2.9,draft,no,st.l50-job-notice.e05.instr.wav
+st.l50-job-notice.e05.q,Sesotho (South Africa),Matsatsi a mosebetsi ke afe?,,exercise l50-job-notice.e05 question,instruction,l50-job-notice,2.6,draft,no,st.l50-job-notice.e05.q.wav
+st.l50-job-notice.e06.instr,Sesotho (South Africa),"Bala tsebiso hape. Mamela potso, ebe o ngola karabo.",,exercise l50-job-notice.e06 instruction,instruction,l50-job-notice,4.4,draft,no,st.l50-job-notice.e06.instr.wav
+st.l50-job-notice.e06.q,Sesotho (South Africa),O tlameha ho tlisa eng? Ngola lentswe.,,exercise l50-job-notice.e06 question,instruction,l50-job-notice,3.3,draft,no,st.l50-job-notice.e06.q.wav
+st.l50-job-notice.e07.instr,Sesotho (South Africa),"Bala tsebiso hape. Mamela potso, ebe o ngola karabo.",,exercise l50-job-notice.e07 instruction,instruction,l50-job-notice,4.4,draft,no,st.l50-job-notice.e07.instr.wav
+st.l50-job-notice.e07.q,Sesotho (South Africa),Ke mosebetsi ofe? Ngola lentswe.,,exercise l50-job-notice.e07 question,instruction,l50-job-notice,2.9,draft,no,st.l50-job-notice.e07.q.wav
+st.l50-job-notice.intro,Sesotho (South Africa),"Ditsebiso tsa mesebetsi di na le tlhahisoleseding ya bohlokwa. Bala tsebiso butle, mola ka mong, ebe o araba dipotso.",,lesson l50-job-notice introduction,teaching,l50-job-notice,9.4,draft,no,st.l50-job-notice.intro.wav
+st.l50-job-notice.outro,Sesotho (South Africa),"O entse hantle haholo! O balile tsebiso ya mosebetsi o le mong, mme wa ngola le dikarabo.",,lesson l50-job-notice closing,teaching,l50-job-notice,7.2,draft,no,st.l50-job-notice.outro.wav
+st.l50-job-notice.title,Sesotho (South Africa),"Bala tsebiso ya mosebetsi, o arabe dipotso.",,lesson l50-job-notice title,title,l50-job-notice,3.7,draft,no,st.l50-job-notice.title.wav
+st.syl.ba,Sesotho (South Africa),ba,"Native South African Sesotho speaker: say the syllable 'ba' clearly, once.",model audio for syllable 'ba',model_audio,,1,draft,no,st.syl.ba.wav
+st.syl.be,Sesotho (South Africa),be,"Native South African Sesotho speaker: say the syllable 'be' clearly, once.",model audio for syllable 'be',model_audio,,1,draft,no,st.syl.be.wav
+st.syl.bi,Sesotho (South Africa),bi,"Native South African Sesotho speaker: say the syllable 'bi' clearly, once.",model audio for syllable 'bi',model_audio,,1,draft,no,st.syl.bi.wav
+st.syl.bo,Sesotho (South Africa),bo,"Native South African Sesotho speaker: say the syllable 'bo' clearly, once.",model audio for syllable 'bo',model_audio,,1,draft,no,st.syl.bo.wav
+st.syl.bu,Sesotho (South Africa),bu,"Native South African Sesotho speaker: say the syllable 'bu' clearly, once.",model audio for syllable 'bu',model_audio,,1,draft,no,st.syl.bu.wav
+st.syl.le,Sesotho (South Africa),le,"Native South African Sesotho speaker: say the syllable 'le' clearly, once.",model audio for syllable 'le',model_audio,,1,draft,no,st.syl.le.wav
+st.syl.li,Sesotho (South Africa),li,"Native South African Sesotho speaker: say the syllable 'li' clearly, once.",model audio for syllable 'li',model_audio,,1,draft,no,st.syl.li.wav
+st.syl.ma,Sesotho (South Africa),ma,"Native South African Sesotho speaker: say the syllable 'ma' clearly, once.",model audio for syllable 'ma',model_audio,,1,draft,no,st.syl.ma.wav
+st.syl.me,Sesotho (South Africa),me,"Native South African Sesotho speaker: say the syllable 'me' clearly, once.",model audio for syllable 'me',model_audio,,1,draft,no,st.syl.me.wav
+st.syl.mi,Sesotho (South Africa),mi,"Native South African Sesotho speaker: say the syllable 'mi' clearly, once.",model audio for syllable 'mi',model_audio,,1,draft,no,st.syl.mi.wav
+st.syl.mo,Sesotho (South Africa),mo,"Native South African Sesotho speaker: say the syllable 'mo' clearly, once.",model audio for syllable 'mo',model_audio,,1,draft,no,st.syl.mo.wav
+st.syl.mu,Sesotho (South Africa),mu,"Native South African Sesotho speaker: say the syllable 'mu' clearly, once.",model audio for syllable 'mu',model_audio,,1,draft,no,st.syl.mu.wav
+st.syl.se,Sesotho (South Africa),se,"Native South African Sesotho speaker: say the syllable 'se' clearly, once.",model audio for syllable 'se',model_audio,,1,draft,no,st.syl.se.wav
+st.syl.si,Sesotho (South Africa),si,"Native South African Sesotho speaker: say the syllable 'si' clearly, once.",model audio for syllable 'si',model_audio,,1,draft,no,st.syl.si.wav
+st.syl.ta,Sesotho (South Africa),ta,"Native South African Sesotho speaker: say the syllable 'ta' clearly, once.",model audio for syllable 'ta',model_audio,,1,draft,no,st.syl.ta.wav
+st.syl.te,Sesotho (South Africa),te,"Native South African Sesotho speaker: say the syllable 'te' clearly, once.",model audio for syllable 'te',model_audio,,1,draft,no,st.syl.te.wav
+st.syl.tha,Sesotho (South Africa),tha,"Native South African Sesotho speaker: say the syllable 'tha' clearly, once.",model audio for syllable 'tha',model_audio,,1,draft,no,st.syl.tha.wav
+st.syl.tsi,Sesotho (South Africa),tsi,"Native South African Sesotho speaker: say the syllable 'tsi' clearly, once.",model audio for syllable 'tsi',model_audio,,1,draft,no,st.syl.tsi.wav
+st.unit.u0.title,Sesotho (South Africa),Bala ka puo ya hao.,,unit u0 title,title,,1.9,draft,no,st.unit.u0.title.wav
+st.unit.u1.title,Sesotho (South Africa),Ditlhaku le medumo ya Senyesemane.,,unit u1 title,title,,3,draft,no,st.unit.u1.title.wav
+st.unit.u2.title,Sesotho (South Africa),Mantswe a hao a pele a Senyesemane.,,unit u2 title,title,,3.1,draft,no,st.unit.u2.title.wav
+st.unit.u3.title,Sesotho (South Africa),Dipolelo tsa hao tsa pele.,,unit u3 title,title,,2.4,draft,no,st.unit.u3.title.wav
+st.unit.u4.title,Sesotho (South Africa),Senyesemane sa letsatsi le letsatsi: di-SMS le matshwao.,,unit u4 title,title,,4.7,draft,no,st.unit.u4.title.wav
+st.unit.u5.title,Sesotho (South Africa),Ho bala o le mong.,,unit u5 title,title,,1.8,draft,no,st.unit.u5.title.wav
+st.w.bese,Sesotho (South Africa),bese,"Native South African Sesotho speaker: say the word as in everyday speech, clearly.",model audio for word 'bese',model_audio,,1.2,draft,no,st.w.bese.wav
+st.w.bohobe,Sesotho (South Africa),bohobe,"Native South African Sesotho speaker: say the word as in everyday speech, clearly.",model audio for word 'bohobe',model_audio,,1.2,draft,no,st.w.bohobe.wav
+st.w.katse,Sesotho (South Africa),katse,"Native South African Sesotho speaker: say the word as in everyday speech, clearly.",model audio for word 'katse',model_audio,,1.2,draft,no,st.w.katse.wav
+st.w.lebese,Sesotho (South Africa),lebese,"Native South African Sesotho speaker: say the word as in everyday speech, clearly.",model audio for word 'lebese',model_audio,,1.2,draft,no,st.w.lebese.wav
+st.w.metsi,Sesotho (South Africa),metsi,"Native South African Sesotho speaker: say the word as in everyday speech, clearly.",model audio for word 'metsi',model_audio,,1.2,draft,no,st.w.metsi.wav
+st.w.mme,Sesotho (South Africa),mme,"Native South African Sesotho speaker: say the word as in everyday speech, clearly.",model audio for word 'mme',model_audio,,1.2,draft,no,st.w.mme.wav
+st.w.ntate,Sesotho (South Africa),ntate,"Native South African Sesotho speaker: say the word as in everyday speech, clearly.",model audio for word 'ntate',model_audio,,1.2,draft,no,st.w.ntate.wav
+st.w.ntja,Sesotho (South Africa),ntja,"Native South African Sesotho speaker: say the word as in everyday speech, clearly.",model audio for word 'ntja',model_audio,,1.2,draft,no,st.w.ntja.wav
+st.w.ntlo,Sesotho (South Africa),ntlo,"Native South African Sesotho speaker: say the word as in everyday speech, clearly.",model audio for word 'ntlo',model_audio,,1.2,draft,no,st.w.ntlo.wav
+st.w.tjhelete,Sesotho (South Africa),tjhelete,"Native South African Sesotho speaker: say the word as in everyday speech, clearly.",model audio for word 'tjhelete',model_audio,,1.2,draft,no,st.w.tjhelete.wav
+zu.app.assess.done,isiZulu,Siyabonga. Sithole indawo enhle yokuthi uqale khona.,,app: End of placement.,app,,4.4,draft,no,zu.app.assess.done.wav
+zu.app.assess.offer,isiZulu,"Ungathanda ukwenza umsebenzi omfushane ukuze sithole indawo engcono yokuqala? Uthatha cishe imizuzu emihlanu. Akusona isivivinyo, futhi awudingi ukukhathazeka ngamaphutha.",,app: Offer the optional placement activity.,app,,13.6,draft,no,zu.app.assess.offer.wav
+zu.app.assess.skip,isiZulu,Yeqa.,,app: Skip the placement activity.,app,,1,draft,no,zu.app.assess.skip.wav
+zu.app.assess.start,isiZulu,Qala.,,app: Start the placement activity.,app,,1,draft,no,zu.app.assess.start.wav
+zu.app.assess.thanks,isiZulu,Ngiyabonga.,,app: Neutral acknowledgement after every placement answer (never right/wrong).,app,,1.2,draft,no,zu.app.assess.thanks.wav
+zu.app.assist.enter_pin,isiZulu,Faka ikhodi yakho eyimfihlo ukuze ulethe izifundo zakho kule foni.,,app: Device transfer: the learner enters their secret code on the new phone.,app,,5.5,draft,no,zu.app.assist.enter_pin.wav
+zu.app.assist.forgot,isiZulu,"Uma ukhohliwe ikhodi yakho, thinta lapha ukuze wenze entsha.",,app: Device transfer: the learner has forgotten their secret code.,app,,5,draft,no,zu.app.assist.forgot.wav
+zu.app.assist.handover,isiZulu,Uthisha wakho uzokusiza manje. Ikhodi yakho eyimfihlo ihlala iyimfihlo.,,app: Facilitator-assisted mode starts.,app,,5.9,draft,no,zu.app.assist.handover.wav
+zu.app.assist.moved,isiZulu,Kulungile. Izifundo zakho sezikule foni manje.,,app: Device transfer finished.,app,,3.9,draft,no,zu.app.assist.moved.wav
+zu.app.assist.new_pin,isiZulu,Yenza ikhodi entsha eyimfihlo. Uthisha wakho akufanele abuke.,,app: Learner sets a new PIN during facilitator help.,app,,5.1,draft,no,zu.app.assist.new_pin.wav
+zu.app.badge.earned,isiZulu,Uthole ibheji elisha!,,app: New badge.,app,,2,draft,no,zu.app.badge.earned.wav
+zu.app.consent.agree,isiZulu,"Yebo, ngiyavuma.",,app: Consent button: agree.,app,,1.6,draft,no,zu.app.consent.agree.wav
+zu.app.consent.analytics,isiZulu,"Singabala ukuthi uyisebenzisa kanjani i-app, ngaphandle kwegama lakho, ukuze siyithuthukise? Ungashintsha lokhu noma nini ku-Mina.",,app: Separate optional consent: pseudonymous usage counts.,app,,10.4,draft,no,zu.app.consent.analytics.wav
+zu.app.consent.decline,isiZulu,"Cha, gcina kule foni kuphela.",,app: Consent button: keep on phone only.,app,,2.6,draft,no,zu.app.consent.decline.wav
+zu.app.consent.declined,isiZulu,Kulungile. Ukufunda kwakho kuzohlala kule foni kuphela. Ungashintsha umqondo kamuva ku-Mina.,,app: After declining consent.,app,,7.5,draft,no,zu.app.consent.declined.wav
+zu.app.consent.delete,isiZulu,"Ungayeka noma nini. Ku-Mina, thinta isithombe somgqomo ukuze ususe konke. Kuzosuswa ngokushesha, ngaphandle kokushayela muntu.",,app: Consent 5/5: how to delete.,app,,10.1,draft,no,zu.app.consent.delete.wav
+zu.app.consent.intro,isiZulu,"Ngaphambi kokuthi sigcine imininingwane yakho ku-inthanethi, lalela lokhu.",,app: Consent 1/5 (POPIA): before anything is stored on the server.,app,,6.1,draft,no,zu.app.consent.intro.wav
+zu.app.consent.offline,isiZulu,"Ukugcina ku-inthanethi kudinga i-inthanethi. Okwamanje, ukufunda kwakho kuhlala kule foni.",,app: Registration needs the internet.,app,,7.3,draft,no,zu.app.consent.offline.wav
+zu.app.consent.pin,isiZulu,"Thinta ikhodi yakho eyimfihlo futhi, ukuze siyigcine ngokuphepha.",,app: Confirm the PIN to save it safely online.,app,,5.4,draft,no,zu.app.consent.pin.wav
+zu.app.consent.question,isiZulu,Uyavuma ukuthi sigcine ukufunda kwakho ku-inthanethi ngokuphepha?,,app: Consent question.,app,,5.4,draft,no,zu.app.consent.question.wav
+zu.app.consent.saved,isiZulu,Siyabonga. Ukufunda kwakho sekugciniwe ngokuphepha.,,app: After registration succeeded.,app,,4.3,draft,no,zu.app.consent.saved.wav
+zu.app.consent.what,isiZulu,"Sizogcina: isithombe sakho, ikhodi yakho eyimfihlo ivalelwe ukuze kungabikho muntu oyifundayo, ulimi lwakho, nenqubekela phambili yakho: izifundo, izimpendulo namakhono. Asilidingi igama lakho. Asiligcini izwi lakho.",,app: Consent 2/5: what is stored.,app,,17,draft,no,zu.app.consent.what.wav
+zu.app.consent.who,isiZulu,"Ubani ongakubona: nguwe kuphela. Uma ujoyina ikilasi kamuva, sizokubuza kuqala ukuthi uthisha wakho angabonani. Asisoze sayithengisa imininingwane yakho.",,app: Consent 4/5: who can see it.,app,,12.2,draft,no,zu.app.consent.who.wav
+zu.app.consent.why,isiZulu,"Kungani: ukuze ukufunda kwakho kungalahleki uma ifoni yakho ilahleka noma iphuka, nokuze uqhubeke kwenye ifoni.",,app: Consent 3/5: why.,app,,8.9,draft,no,zu.app.consent.why.wav
+zu.app.consent.withdraw,isiZulu,"Uma uhoxisa imvume, sizosusa ukufunda kwakho ku-inthanethi. Kuzohlala kule foni kuphela.",,app: Withdraw account-storage consent (deletes online data).,app,,7.2,draft,no,zu.app.consent.withdraw.wav
+zu.app.delete.confirm,isiZulu,Bamba ukuze usule.,,app: Press-and-hold delete button.,app,,1.8,draft,no,zu.app.delete.confirm.wav
+zu.app.delete.done,isiZulu,Konke kususiwe. Siyabonga ngokufunda nathi.,,app: After deletion.,app,,3.7,draft,no,zu.app.delete.done.wav
+zu.app.delete.explain,isiZulu,"Uma usula, konke okumayelana nawe kuzosuswa kule foni nasohlelweni lwethu. Uthisha wakho ngeke esakubona. Lokhu akunakuhlehliswa. Ukuze usule, cindezela ubambe inkinobho ebomvu.",,app: Explain deletion before confirming.,app,,14,draft,no,zu.app.delete.explain.wav
+zu.app.delete.offline,isiZulu,Ukususa ku-inthanethi kudinga i-inthanethi. Zama futhi uma usuxhunyiwe.,,app: Online deletion needs connectivity.,app,,5.9,draft,no,zu.app.delete.offline.wav
+zu.app.demo.choose,isiZulu,"Ukuze uphendule, uthinta isithombe. Zama: thinta isithombe esikhulu.",,app: Demo: answering by tapping a picture.,app,,5.6,draft,no,zu.app.demo.choose.wav
+zu.app.demo.continue,isiZulu,Umcibisholo oluhlaza ukuyisa phambili. Wuthinte.,,app: Demo: the green continue arrow.,app,,4.1,draft,no,zu.app.demo.continue.wav
+zu.app.demo.done,isiZulu,Usulungile!,,app: Demo finished.,app,,1.2,draft,no,zu.app.demo.done.wav
+zu.app.demo.help,isiZulu,"Uphawu lombuzo wusizo. Futhi uma ucindezela ubambe noma iyiphi inkinobho, uzozwa ukuthi yenzani.",,app: Demo: help and press-and-hold to hear a button.,app,,7.8,draft,no,zu.app.demo.help.wav
+zu.app.demo.listen,isiZulu,Lena yinkinobho yokulalela. Iphinda amagama. Yithinte manje.,,app: How-it-works demo: the listen button.,app,,5,draft,no,zu.app.demo.listen.wav
+zu.app.demo.listen_done,isiZulu,"Kuhle! Uma ungezwanga kahle, ungayithinta futhi noma nini.",,app: Demo: after tapping listen.,app,,4.9,draft,no,zu.app.demo.listen_done.wav
+zu.app.downloads.done,isiZulu,Kulandiwe. Ungasebenzisa lezi zifundo ngaphandle kwe-inthanethi.,,app: Download finished.,app,,5.3,draft,no,zu.app.downloads.done.wav
+zu.app.downloads.download,isiZulu,Landa.,,app: Download button.,app,,1,draft,no,zu.app.downloads.download.wav
+zu.app.downloads.intro,isiZulu,Landa izifundo ukuze uzisebenzise ngaphandle kwe-inthanethi. Usayizi ukhonjiswa ngaphambi kokulanda.,,app: Downloads screen.,app,,8.1,draft,no,zu.app.downloads.intro.wav
+zu.app.downloads.remove,isiZulu,Susa.,,app: Remove download button.,app,,1,draft,no,zu.app.downloads.remove.wav
+zu.app.export.done,isiZulu,Ikhophi yakho isilungile.,,app: Data export ready.,app,,2.3,draft,no,zu.app.export.done.wav
+zu.app.home.all_done,isiZulu,Uqede zonke izifundo ezikhona manje. Qhubeka uprakthize!,,app: Every available lesson completed.,app,,4.7,draft,no,zu.app.home.all_done.wav
+zu.app.home.continue,isiZulu,Qhubeka ufunde.,,app: Continue / start the recommended lesson.,app,,1.6,draft,no,zu.app.home.continue.wav
+zu.app.home.greeting,isiZulu,Siyakwamukela futhi! Thinta inkinobho enkulu ukuze uqhubeke ufunda.,,app: Home screen greeting.,app,,5.6,draft,no,zu.app.home.greeting.wav
+zu.app.home.revise,isiZulu,Prakthiza amagama obekunzima kuwe.,,app: Start a revision session.,app,,3,draft,no,zu.app.home.revise.wav
+zu.app.home.streak,isiZulu,Uprakthize namuhla. Wenze kahle!,,app: Streak kept today.,app,,2.9,draft,no,zu.app.home.streak.wav
+zu.app.join.bad_code,isiZulu,Leyo nombolo ayisebenzanga. Yihlole nothisha wakho bese uzama futhi.,,app: Unknown class code.,app,,5.6,draft,no,zu.app.join.bad_code.wav
+zu.app.join.done,isiZulu,Manje usekilasini.,,app: Joined a class.,app,,1.8,draft,no,zu.app.join.done.wav
+zu.app.join.intro,isiZulu,"Joyina ikilasi lakho. Bhala inombolo ekhonjiswa uthisha wakho, noma uskene ikhodi eyisikwele.",,app: Join a class.,app,,7.6,draft,no,zu.app.join.intro.wav
+zu.app.join.need_account,isiZulu,"Ukuze ujoyine ikilasi, qala ugcine ukufunda kwakho ku-inthanethi.",,app: Joining needs an online account first.,app,,5.4,draft,no,zu.app.join.need_account.wav
+zu.app.join.scan,isiZulu,Khomba ikhamera kukhodi eyisikwele.,,app: Scan the class QR code with the camera.,app,,3.1,draft,no,zu.app.join.scan.wav
+zu.app.lesson.complete,isiZulu,Isifundo siphelile! Wenze kahle.,,app: Lesson finished.,app,,2.9,draft,no,zu.app.lesson.complete.wav
+zu.app.lesson.exit_confirm,isiZulu,Ufuna ukumisa isifundo? Inqubekela phambili yakho igciniwe.,,app: Leaving a lesson early.,app,,4.9,draft,no,zu.app.lesson.exit_confirm.wav
+zu.app.lesson.keep_going,isiZulu,Qhubeka.,,app: Keep going.,app,,1,draft,no,zu.app.lesson.keep_going.wav
+zu.app.lesson.next,isiZulu,Isifundo esilandelayo.,,app: Next lesson button.,app,,2.1,draft,no,zu.app.lesson.next.wav
+zu.app.lesson.stop,isiZulu,Misa.,,app: Stop the lesson.,app,,1,draft,no,zu.app.lesson.stop.wav
+zu.app.me.captions,isiZulu,Bonisa amagama ngaphansi kwezwi.,,app: Captions setting.,app,,2.9,draft,no,zu.app.me.captions.wav
+zu.app.me.delete,isiZulu,Susa yonke imininingwane yami.,,app: Delete all my data.,app,,2.7,draft,no,zu.app.me.delete.wav
+zu.app.me.downloads,isiZulu,Landa izifundo ukuze uzisebenzise ngaphandle kwe-inthanethi.,,app: Lesson downloads.,app,,5,draft,no,zu.app.me.downloads.wav
+zu.app.me.export,isiZulu,Ungathola ikhophi yayo yonke imininingwane yakho esiyigcinile.,,app: Download a copy of my data.,app,,5.2,draft,no,zu.app.me.export.wav
+zu.app.me.facilitator,isiZulu,Uthisha angakusiza kule foni. Ikhodi yakho eyimfihlo ihlala iyimfihlo.,,app: Facilitator help (teacher signs in on this phone).,app,,5.8,draft,no,zu.app.me.facilitator.wav
+zu.app.me.intro,isiZulu,Lapha ungashintsha izilungiselelo zakho futhi unakekele imininingwane yakho.,,app: Profile and settings screen.,app,,6.2,draft,no,zu.app.me.intro.wav
+zu.app.me.language,isiZulu,Shintsha ulimi ofunda ngalo.,,app: Change teaching language.,app,,2.6,draft,no,zu.app.me.language.wav
+zu.app.me.level,isiZulu,Khetha lapho ufuna ukuqala khona.,,app: Change level.,app,,2.9,draft,no,zu.app.me.level.wav
+zu.app.me.moved_phone,isiZulu,Izifundo zakho ezigcinwe ku-inthanethi manje zikwenye ifoni. Okwenzayo lapha kuhlala kule foni kuphela. Ungasusa le phrofayela kule foni.,,app: This phone's online session was replaced: the learner was moved to another phone. Offers removing the profile from this phone.,app,,10.9,draft,no,zu.app.me.moved_phone.wav
+zu.app.me.retake,isiZulu,Phinda umsebenzi omfushane ukuze sithole izinga elifanele.,,app: Retake placement activity.,app,,4.9,draft,no,zu.app.me.retake.wav
+zu.app.me.sharing,isiZulu,Bheka noma ushintshe okwabelana nekilasi lakho.,,app: What I share with my class.,app,,4,draft,no,zu.app.me.sharing.wav
+zu.app.me.text_size,isiZulu,Yenza umbhalo ube mkhulu.,,app: Text size setting.,app,,2.3,draft,no,zu.app.me.text_size.wav
+zu.app.me.wifi_only,isiZulu,"Landa izifundo kuphela uma uku-Wi-Fi, ukuze ungasebenzisi idatha.",,app: Download on Wi-Fi only setting.,app,,5.4,draft,no,zu.app.me.wifi_only.wav
+zu.app.mic.allow,isiZulu,Vumela imakrofoni.,,app: Allow microphone button.,app,,1.8,draft,no,zu.app.mic.allow.wav
+zu.app.mic.denied,isiZulu,"Akunankinga. Sho amagama ngezwi ngaphandle kokuqopha, bese uthinta umcibisholo uma usuqedile.",,app: Microphone not available or refused.,app,,7.6,draft,no,zu.app.mic.denied.wav
+zu.app.mic.explain,isiZulu,"Eminye imisebenzi ikucela ukuthi usho amagama ngezwi. Ukuze uzizwe, i-app idinga imakrofoni. Izwi lakho lihlala kule foni futhi liyasuswa uma umsebenzi uphela. Ungathi cha futhi usasebenzisa konke.",,app: Before asking for microphone permission.,app,,15.6,draft,no,zu.app.mic.explain.wav
+zu.app.mic.no,isiZulu,"Cha, ngiyabonga.",,app: Decline microphone button.,app,,1.6,draft,no,zu.app.mic.no.wav
+zu.app.nav.learn,isiZulu,Izifundo.,,app: Bottom navigation: learning path.,app,,1.1,draft,no,zu.app.nav.learn.wav
+zu.app.nav.me,isiZulu,Mina: izilungiselelo nemininingwane yami.,,app: Bottom navigation: profile and settings.,app,,3.6,draft,no,zu.app.nav.me.wav
+zu.app.nav.practice,isiZulu,Ukuprakthiza.,,app: Bottom navigation: revision.,app,,1.4,draft,no,zu.app.nav.practice.wav
+zu.app.nav.progress,isiZulu,Inqubekela phambili yakho.,,app: Bottom navigation: progress and badges.,app,,2.4,draft,no,zu.app.nav.progress.wav
+zu.app.net.mobile,isiZulu,Usebenzisa idatha yeselula.,,app: Status: on mobile data.,app,,2.5,draft,no,zu.app.net.mobile.wav
+zu.app.net.offline,isiZulu,Awuxhunyiwe ku-inthanethi.,,app: Status: offline.,app,,2.4,draft,no,zu.app.net.offline.wav
+zu.app.net.wifi,isiZulu,Usebenzisa i-Wi-Fi.,,app: Status: on Wi-Fi.,app,,1.9,draft,no,zu.app.net.wifi.wav
+zu.app.path.intro,isiZulu,Nazi izifundo zakho. Thinta indilinga ukuze uqale.,,app: Learning path screen.,app,,4.2,draft,no,zu.app.path.intro.wav
+zu.app.path.locked,isiZulu,Lesi sifundo sizovuleka uma uqeda esingaphambi kwaso.,,app: Tapping a lesson that is not open yet.,app,,4.5,draft,no,zu.app.path.locked.wav
+zu.app.pin.confirm,isiZulu,Thinta izithombe ezine ezifanayo futhi.,,app: Confirm the PIN.,app,,3.4,draft,no,zu.app.pin.confirm.wav
+zu.app.pin.create,isiZulu,"Manje yenza ikhodi yakho eyimfihlo: thinta izithombe ezine. Zikhumbule, futhi ungazikhombisi muntu.",,app: Create a picture PIN.,app,,8,draft,no,zu.app.pin.create.wav
+zu.app.pin.enter,isiZulu,Thinta izithombe zakho ezine eziyimfihlo.,,app: Enter PIN.,app,,3.6,draft,no,zu.app.pin.enter.wav
+zu.app.pin.mismatch,isiZulu,Amakhodi womabili awafani. Asiphinde siyenze.,,app: PIN confirmation did not match.,app,,3.9,draft,no,zu.app.pin.mismatch.wav
+zu.app.pin.saved,isiZulu,Ikhodi yakho eyimfihlo igciniwe.,,app: PIN saved.,app,,2.9,draft,no,zu.app.pin.saved.wav
+zu.app.pin.wait,isiZulu,"Sicela ulinde kancane, bese uzama futhi. Uma ukhohlwe ikhodi yakho, cela uthisha wakho akusize.",,app: Too many wrong PINs: short wait.,app,,7.7,draft,no,zu.app.pin.wait.wav
+zu.app.pin.wrong,isiZulu,Leyo khodi ayilungile. Zama futhi.,,app: Wrong PIN.,app,,3,draft,no,zu.app.pin.wrong.wav
+zu.app.place.change_any_time,isiZulu,Ungashintsha lapho uqala khona noma nini.,,app: Reassurance that level can change.,app,,3.6,draft,no,zu.app.place.change_any_time.wav
+zu.app.place.level0,isiZulu,Asiqale ngokufunda ngesiZulu. Kwenza isiNgisi sibe lula.,,app: Start at Level 0.,app,,4.7,draft,no,zu.app.place.level0.wav
+zu.app.place.level1,isiZulu,Asiqale ngezinhlamvu nemisindo yesiNgisi.,,app: Start at Level 1.,app,,3.6,draft,no,zu.app.place.level1.wav
+zu.app.place.level2,isiZulu,Asiqale ngamagama akho okuqala esiNgisi.,,app: Start at Level 2.,app,,3.5,draft,no,zu.app.place.level2.wav
+zu.app.place.level3,isiZulu,Asiqale ngemisho.,,app: Start at Level 3.,app,,1.7,draft,no,zu.app.place.level3.wav
+zu.app.place.level4,isiZulu,Asiqale ngesiNgisi sansuku zonke: ama-SMS nezimpawu.,,app: Start at Level 4.,app,,4.4,draft,no,zu.app.place.level4.wav
+zu.app.place.self_no,isiZulu,"Angikakwazi, noma angiqiniseki.",,app: Self-placement: cannot read yet / not sure.,app,,2.8,draft,no,zu.app.place.self_no.wav
+zu.app.place.self_question,isiZulu,Uyakwazi ukufunda amagama esiZulu?,,app: Self-placement when the activity is skipped.,app,,3,draft,no,zu.app.place.self_question.wav
+zu.app.place.self_yes,isiZulu,"Yebo, ngiyakwazi.",,app: Self-placement: can read the home language.,app,,1.7,draft,no,zu.app.place.self_yes.wav
+zu.app.profile.choose_picture,isiZulu,Zikhethele isithombe. Sizokusiza ukuthola ukufunda kwakho kule foni.,,app: Choose an avatar picture.,app,,5.6,draft,no,zu.app.profile.choose_picture.wav
+zu.app.profiles.add,isiZulu,Engeza omunye umfundi kule foni.,,app: Add another learner on this phone.,app,,2.9,draft,no,zu.app.profiles.add.wav
+zu.app.profiles.switch,isiZulu,Shintsha umfundi.,,app: Switch learner.,app,,1.7,draft,no,zu.app.profiles.switch.wav
+zu.app.profiles.who,isiZulu,Ngubani ofundayo manje? Thinta isithombe sakho.,,app: Profile picker on a shared phone.,app,,4,draft,no,zu.app.profiles.who.wav
+zu.app.progress.intro,isiZulu,Nakhu osukufundile.,,app: Progress screen.,app,,1.9,draft,no,zu.app.progress.intro.wav
+zu.app.repeat.compare,isiZulu,"Lalela isibonelo, bese uzilalela wena. Ingabe kuzwakale kufana?",,app: Compare model and own recording.,app,,5.2,draft,no,zu.app.repeat.compare.wav
+zu.app.repeat.different,isiZulu,Kuhlukile.,,app: Self-check: sounded different.,app,,1.2,draft,no,zu.app.repeat.different.wav
+zu.app.repeat.practised,isiZulu,Kuhle ukuprakthiza! Ukusho amagama ngezwi kuyakusiza ukuthi uwakhumbule.,,"app: After a self-check (always recorded as practised, never scored).",app,,5.9,draft,no,zu.app.repeat.practised.wav
+zu.app.repeat.record,isiZulu,Thinta imakrofoni bese usho igama.,,app: Tap the microphone to record yourself.,app,,3,draft,no,zu.app.repeat.record.wav
+zu.app.repeat.same,isiZulu,Kuyafana.,,app: Self-check: sounded the same.,app,,1.1,draft,no,zu.app.repeat.same.wav
+zu.app.repeat.say_aloud,isiZulu,Sho igama ngezwi manje. Bese uthinta umcibisholo oluhlaza.,,app: Say aloud without recording.,app,,4.9,draft,no,zu.app.repeat.say_aloud.wav
+zu.app.revision.done,isiZulu,Ukuprakthiza kuphelile.,,app: Revision session finished.,app,,2.2,draft,no,zu.app.revision.done.wav
+zu.app.revision.empty,isiZulu,Akukho okokuprakthiza manje. Wenze kahle!,,app: No revision due.,app,,3.6,draft,no,zu.app.revision.empty.wav
+zu.app.revision.intro,isiZulu,Asiprakthize izinto obekunzima kuwe.,,app: Revision session start.,app,,3.2,draft,no,zu.app.revision.intro.wav
+zu.app.save.choice,isiZulu,"Ungagcina ukufunda kwakho kule foni kuphela, noma usigcine ku-inthanethi ngokuphepha ukuze singalahleki. Ukugcina ku-inthanethi kusebenzisa idatha encane.",,app: Offer to save progress online (registration) or keep it on the phone (guest).,app,,12.2,draft,no,zu.app.save.choice.wav
+zu.app.save.online,isiZulu,Ngifuna ukugcina ku-inthanethi.,,app: Button: save online (leads to spoken consent).,app,,2.8,draft,no,zu.app.save.online.wav
+zu.app.save.phone_only,isiZulu,Gcina kule foni kuphela.,,app: Button: keep on this phone only (guest).,app,,2.2,draft,no,zu.app.save.phone_only.wav
+zu.app.share.basic,isiZulu,"Uma ujoyina, uthisha wakho uzobona: isithombe sakho, izinga lakho, izifundo oziqedile, nosuku lokugcina oprakthize ngalo. Uzobona nezibalo zekilasi lonke zamakhono abelukhuni, ngaphandle kokukhomba wena.",,app: Cohort sharing: what joining always shares.,app,,16,draft,no,zu.app.share.basic.wav
+zu.app.share.confirm,isiZulu,Joyina ikilasi.,,app: Confirm joining.,app,,1.6,draft,no,zu.app.share.confirm.wav
+zu.app.share.intro,isiZulu,Ikilasi likathisha wakho lifuna ukubona inqubekela phambili yakho. Nguwe okhethayo ukuthi bangabonani.,,app: Cohort sharing consent 1/4.,app,,8.2,draft,no,zu.app.share.intro.wav
+zu.app.share.mastery,isiZulu,"Ingabe ufuna nokuthi uthisha abone amakhono owafundile, nezinsuku? Lokhu kuyadingeka ukuze uthole isitifiketi.",,app: Cohort sharing: optional mastery with dates (needed for certificates).,app,,8.9,draft,no,zu.app.share.mastery.wav
+zu.app.share.mistakes,isiZulu,"Ingabe ufuna uthisha abone imibuzo oyiphosile, ukuze akusize?",,app: Cohort sharing: optional mistake history.,app,,5.1,draft,no,zu.app.share.mistakes.wav
+zu.app.share.no,isiZulu,Cha.,,app: No button.,app,,1,draft,no,zu.app.share.no.wav
+zu.app.share.stop_explain,isiZulu,"Uma uyeka ukwabelana, uthisha wakho uzoyeka ngokushesha ukubona inqubekela phambili yakho.",,app: Before stopping sharing with a class.,app,,7.3,draft,no,zu.app.share.stop_explain.wav
+zu.app.share.stopped,isiZulu,Ukwabelana kumisiwe.,,app: After stopping sharing.,app,,1.9,draft,no,zu.app.share.stopped.wav
+zu.app.share.tutor,isiZulu,Ingabe ufuna uthisha abone imibuzo oyibuze umsizi?,,app: Cohort sharing: optional tutor question log.,app,,4.2,draft,no,zu.app.share.tutor.wav
+zu.app.share.yes,isiZulu,Yebo.,,app: Yes button.,app,,1,draft,no,zu.app.share.yes.wav
+zu.app.ui.back,isiZulu,Emuva.,,app: Back button.,app,,1,draft,no,zu.app.ui.back.wav
+zu.app.ui.check,isiZulu,Hlola impendulo.,,app: Check answer button.,app,,1.6,draft,no,zu.app.ui.check.wav
+zu.app.ui.clear,isiZulu,Sula.,,app: Clear answer button.,app,,1,draft,no,zu.app.ui.clear.wav
+zu.app.ui.close,isiZulu,Vala.,,app: Close button.,app,,1,draft,no,zu.app.ui.close.wav
+zu.app.ui.continue,isiZulu,Qhubeka.,,app: Continue button.,app,,1,draft,no,zu.app.ui.continue.wav
+zu.app.ui.help,isiZulu,Usizo.,,app: Help button.,app,,1,draft,no,zu.app.ui.help.wav
+zu.app.ui.listen_again,isiZulu,Lalela futhi.,,app: Listen again button.,app,,1.4,draft,no,zu.app.ui.listen_again.wav
+zu.app.ui.listen_slow,isiZulu,Lalela kancane.,,app: Listen slowly button.,app,,1.6,draft,no,zu.app.ui.listen_slow.wav
+zu.app.welcome.choose_language,isiZulu,"Sawubona! Uma ufuna ukufunda isiNgisi ngesiZulu, thinta lapha.",,app: Language selection: each card plays its own language.,app,,5.2,draft,no,zu.app.welcome.choose_language.wav
+zu.app.welcome.hello,isiZulu,"Siyakwamukela! Lapha ufunda ukufunda nokubhala isiNgisi, kancane kancane, ngolimi lwakho. Awudingi ukwazi ukufunda ukuze uqale: lalela, bese uthinta izithombe.",,app: Welcome after choosing a language. Never names the app (the name is configurable).,app,,12.6,draft,no,zu.app.welcome.hello.wav
+zu.assess.intro,isiZulu,"Masiqale. Lalela umbuzo ngamunye. Uma ungazi, khetha nje isithombe, kulungile.",,placement activity introduction,assessment,,6.4,draft,no,zu.assess.intro.wav
+zu.assess.outro,isiZulu,Siqedile. Ngiyabonga ngokuzama.,,placement activity closing,assessment,,2.8,draft,no,zu.assess.outro.wav
+zu.badge.english-sounds,isiZulu,Wazi imisindo yakho yokuqala yesiNgisi!,,badge b.english-sounds,app,,3.4,draft,no,zu.badge.english-sounds.wav
+zu.badge.first-english-word,isiZulu,Ufunde igama lakho lokuqala lesiNgisi wedwa!,,badge b.first-english-word,app,,3.8,draft,no,zu.badge.first-english-word.wav
+zu.badge.first-hl-word,isiZulu,Ufunde igama lakho lokuqala lesiZulu!,,badge b.first-hl-word,app,,3.2,draft,no,zu.badge.first-hl-word.wav
+zu.badge.first-lesson,isiZulu,Uqede isifundo sakho sokuqala!,,badge b.first-lesson,app,,2.7,draft,no,zu.badge.first-lesson.wav
+zu.badge.first-letters,isiZulu,Ubhale izinhlamvu zakho zokuqala!,,badge b.first-letters,app,,2.9,draft,no,zu.badge.first-letters.wav
+zu.badge.first-sentence,isiZulu,Ufunde umusho wakho wokuqala wesiNgisi!,,badge b.first-sentence,app,,3.4,draft,no,zu.badge.first-sentence.wav
+zu.badge.lessons-5,isiZulu,Uqede izifundo ezinhlanu!,,badge b.lessons-5,app,,2.3,draft,no,zu.badge.lessons-5.wav
+zu.badge.read-notice,isiZulu,Ufunde isaziso!,,badge b.read-notice,app,,1.6,draft,no,zu.badge.read-notice.wav
+zu.badge.read-signs,isiZulu,Uyakwazi ukufunda izimpawu!,,badge b.read-signs,app,,2.5,draft,no,zu.badge.read-signs.wav
+zu.badge.read-sms,isiZulu,Ufunde i-SMS!,,badge b.read-sms,app,,1.4,draft,no,zu.badge.read-sms.wav
+zu.badge.sight-words,isiZulu,Wazi amagama amancane abalulekile!,,badge b.sight-words,app,,3,draft,no,zu.badge.sight-words.wav
+zu.badge.streak-3,isiZulu,Uprakthize izinsuku ezintathu!,,badge b.streak-3,app,,2.7,draft,no,zu.badge.streak-3.wav
+zu.badge.streak-7,isiZulu,Uprakthize izinsuku eziyisikhombisa!,,badge b.streak-7,app,,3.2,draft,no,zu.badge.streak-7.wav
+zu.badge.typed-reply,isiZulu,Ubhale impendulo efonini!,,badge b.typed-reply,app,,2.3,draft,no,zu.badge.typed-reply.wav
+zu.clip.fb.correct.1,isiZulu,Wenze kahle!,,tutor clip fb.correct.1: Praise after a correct answer.,feedback,,1.3,draft,no,zu.clip.fb.correct.1.wav
+zu.clip.fb.correct.2,isiZulu,"Yebo, kulungile!",,tutor clip fb.correct.2: Praise after a correct answer.,feedback,,1.6,draft,no,zu.clip.fb.correct.2.wav
+zu.clip.fb.correct.3,isiZulu,Kuhle kakhulu!,,tutor clip fb.correct.3: Praise after a correct answer.,feedback,,1.5,draft,no,zu.clip.fb.correct.3.wav
+zu.clip.fb.correct.read,isiZulu,Ulifunde wedwa lelo gama. Wenze kahle!,,tutor clip fb.correct.read: Praise after reading a word with no audio help.,feedback,,3.3,draft,no,zu.clip.fb.correct.read.wav
+zu.clip.fb.detail,isiZulu,"Funda futhi, ubheke amagama abalulekile.",,tutor clip fb.detail: Comprehension answer missed a detail.,feedback,,3.5,draft,no,zu.clip.fb.detail.wav
+zu.clip.fb.first_sound,isiZulu,"Lalela umsindo wokuqala wegama, bese ubheka uhlamvu lokuqala.",,tutor clip fb.first_sound: The chosen word differs in its first sound.,feedback,,5.1,draft,no,zu.clip.fb.first_sound.wav
+zu.clip.fb.last_sound,isiZulu,Lalela umsindo wokugcina. Ungawukhohlwa.,,tutor clip fb.last_sound: The chosen word differs in its last sound.,feedback,,3.5,draft,no,zu.clip.fb.last_sound.wav
+zu.clip.fb.letter_shape,isiZulu,Bheka kahle isimo salolu hlamvu.,,tutor clip fb.letter_shape: Confused letters that look alike.,feedback,,2.9,draft,no,zu.clip.fb.letter_shape.wav
+zu.clip.fb.meaning,isiZulu,"Funda igama futhi kancane, bese ubheka izithombe.",,tutor clip fb.meaning: Picture does not match the meaning.,feedback,,4.2,draft,no,zu.clip.fb.meaning.wav
+zu.clip.fb.middle_sound,isiZulu,Lalela umsindo ophakathi nendawo. Yiluphi uhlamvu olwenza lowo msindo?,,tutor clip fb.middle_sound: The chosen word differs in its middle (vowel) sound.,feedback,,5.8,draft,no,zu.clip.fb.middle_sound.wav
+zu.clip.fb.missing_letter,isiZulu,"Kukhona umsindo oshodayo. Sho igama kancane, ulalele yonke imisindo.",,tutor clip fb.missing_letter: A sound or letter is missing.,feedback,,5.6,draft,no,zu.clip.fb.missing_letter.wav
+zu.clip.fb.mistakes_ok,isiZulu,Amaphutha asisiza ukuthi sifunde. Sizophinde sikuprakthize lokhu kamuva.,,tutor clip fb.mistakes_ok: Reassurance after a missed item.,feedback,,5.9,draft,no,zu.clip.fb.mistakes_ok.wav
+zu.clip.fb.order,isiZulu,Ukulandelana akukalungi. Qala ngakwesobunxele.,,tutor clip fb.order: Tiles or words in the wrong order.,feedback,,3.9,draft,no,zu.clip.fb.order.wav
+zu.clip.fb.same_different,isiZulu,Lalela futhi imisindo emibili ngokucophelela.,,tutor clip fb.same_different: Wrong same/different judgement.,feedback,,3.9,draft,no,zu.clip.fb.same_different.wav
+zu.clip.fb.show_answer,isiZulu,Nayi impendulo. Bheka bese ulalela.,,tutor clip fb.show_answer: After the second try: show the answer.,feedback,,3.1,draft,no,zu.clip.fb.show_answer.wav
+zu.clip.fb.trace_off_path,isiZulu,"Landela amachashazi ngomunwe wakho, uqale echashazini eliluhlaza.",,tutor clip fb.trace_off_path: Tracing left the letter path.,feedback,,5.4,draft,no,zu.clip.fb.trace_off_path.wav
+zu.clip.fb.try_again,isiZulu,Cishe. Ake sizame futhi.,,tutor clip fb.try_again: Gentle prompt before a second try.,feedback,,2.2,draft,no,zu.clip.fb.try_again.wav
+zu.clip.fb.typing_mismatch,isiZulu,Hlola uhlamvu ngalunye. Bheka igama bese ulibhala futhi.,,tutor clip fb.typing_mismatch: Typed word does not match.,feedback,,4.7,draft,no,zu.clip.fb.typing_mismatch.wav
+zu.clip.fb.wrong_choice,isiZulu,"Akusiyo leyo. Bheka futhi, bese ulalela futhi.",,tutor clip fb.wrong_choice: Generic wrong choice.,feedback,,3.9,draft,no,zu.clip.fb.wrong_choice.wav
+zu.clip.instr.build_sentence,isiZulu,Lalela umusho. Hlela amagama ngokulandelana okufanele.,,"tutor clip instr.build_sentence: Hear a sentence, put the words in order.",instruction,,4.6,draft,no,zu.clip.instr.build_sentence.wav
+zu.clip.instr.build_syllables,isiZulu,Lalela igama. Lakhe ngezingxenye zalo.,,"tutor clip instr.build_syllables: Hear a home-language word, build it from syllables.",instruction,,3.3,draft,no,zu.clip.instr.build_syllables.wav
+zu.clip.instr.build_word,isiZulu,Lalela igama. Bese ulakha ngezinhlamvu.,,"tutor clip instr.build_word: Hear a word, build it with letter tiles.",instruction,,3.4,draft,no,zu.clip.instr.build_word.wav
+zu.clip.instr.build_word_picture,isiZulu,Bheka isithombe. Yakha igama ngezinhlamvu.,,"tutor clip instr.build_word_picture: See a picture, build the word with tiles.",instruction,,3.6,draft,no,zu.clip.instr.build_word_picture.wav
+zu.clip.instr.copy_word,isiZulu,Bhala leli gama ngekhibhodi yefoni.,,"tutor clip instr.copy_word: See a word, type it.",instruction,,3.1,draft,no,zu.clip.instr.copy_word.wav
+zu.clip.instr.hear_letter,isiZulu,Lalela. Yiluphi uhlamvu olizwayo?,,"tutor clip instr.hear_letter: Hear a word or syllable, choose the letter you hear.",instruction,,2.9,draft,no,zu.clip.instr.hear_letter.wav
+zu.clip.instr.letter_name,isiZulu,Lalela igama lohlamvu lwesiNgisi. Thinta lolo hlamvu.,,"tutor clip instr.letter_name: Placement: hear an English letter name, choose the letter.",instruction,,4.5,draft,no,zu.clip.instr.letter_name.wav
+zu.clip.instr.letter_sound,isiZulu,"Bheka uhlamvu. Lalela imisindo, bese ukhetha umsindo walolu hlamvu.",,"tutor clip instr.letter_sound: See a letter, choose its sound from audio options.",instruction,,5.6,draft,no,zu.clip.instr.letter_sound.wav
+zu.clip.instr.listen_picture,isiZulu,Lalela igama. Bese uthinta isithombe esihambisana nalo.,,"tutor clip instr.listen_picture: Hear a word, then choose the picture.",instruction,,4.6,draft,no,zu.clip.instr.listen_picture.wav
+zu.clip.instr.listen_repeat,isiZulu,"Lalela, bese uphinda igama ngezwi eliphezulu.",,"tutor clip instr.listen_repeat: Listen, then say the word aloud.",instruction,,3.9,draft,no,zu.clip.instr.listen_repeat.wav
+zu.clip.instr.picture_word,isiZulu,Bheka isithombe. Thinta igama elihambisana naso.,,"tutor clip instr.picture_word: See a picture, then choose the written word.",instruction,,4.1,draft,no,zu.clip.instr.picture_word.wav
+zu.clip.instr.read_picture,isiZulu,Funda igama. Bese uthinta isithombe esihambisana nalo.,,"tutor clip instr.read_picture: Read a word with no audio, then choose the picture.",instruction,,4.6,draft,no,zu.clip.instr.read_picture.wav
+zu.clip.instr.read_sentence_picture,isiZulu,Funda umusho. Bese uthinta isithombe esihambisana nawo.,,"tutor clip instr.read_sentence_picture: Read a sentence with no audio, then choose the picture.",instruction,,4.6,draft,no,zu.clip.instr.read_sentence_picture.wav
+zu.clip.instr.same_different,isiZulu,Lalela imisindo emibili. Ingabe iyafana noma iyahlukahluka?,,"tutor clip instr.same_different: Hear two sounds, decide same or different.",instruction,,4.9,draft,no,zu.clip.instr.same_different.wav
+zu.clip.instr.sound_letter,isiZulu,Lalela umsindo. Thinta uhlamvu olwenza lowo msindo.,,"tutor clip instr.sound_letter: Hear a sound, choose the letter.",instruction,,4.3,draft,no,zu.clip.instr.sound_letter.wav
+zu.clip.instr.sound_syllable,isiZulu,Lalela. Thinta ingxenye yegama oyizwayo.,,"tutor clip instr.sound_syllable: Hear a syllable, choose the written syllable.",instruction,,3.5,draft,no,zu.clip.instr.sound_syllable.wav
+zu.clip.instr.syllable_sound,isiZulu,"Funda le ngxenye yegama. Lalela izinketho, bese ukhetha efanayo nayo.",,"tutor clip instr.syllable_sound: See a written syllable, choose its sound from audio options.",instruction,,5.7,draft,no,zu.clip.instr.syllable_sound.wav
+zu.clip.instr.trace,isiZulu,Landela amachashazi ngomunwe wakho ukuze ubhale uhlamvu.,,tutor clip instr.trace: Trace a letter.,instruction,,4.7,draft,no,zu.clip.instr.trace.wav
+zu.clip.instr.type_picture,isiZulu,Bheka isithombe. Bhala igama ngekhibhodi yefoni.,,"tutor clip instr.type_picture: See a picture, type the word.",instruction,,4.1,draft,no,zu.clip.instr.type_picture.wav
+zu.clip.instr.type_word,isiZulu,"Lalela igama, bese ulibhala ngekhibhodi yefoni.",,"tutor clip instr.type_word: Hear a word, type it on the phone keyboard.",instruction,,4,draft,no,zu.clip.instr.type_word.wav
+zu.clip.instr.which_word,isiZulu,Lalela. Yiliphi igama olizwile? Lithinte.,,"tutor clip instr.which_word: Hear one word of a pair, choose which was said.",instruction,,3.6,draft,no,zu.clip.instr.which_word.wav
+zu.clip.instr.word_sound,isiZulu,"Funda leli gama. Lalela izinketho, bese ukhetha ezwakala njengaleli gama.",,"tutor clip instr.word_sound: See a word, choose the matching spoken word.",instruction,,6,draft,no,zu.clip.instr.word_sound.wav
+zu.clip.sys.error_generic,isiZulu,Kukhona okungahambanga kahle. Thinta umcibisholo ukuze uzame futhi.,,tutor clip sys.error_generic: Unexpected error with one recovery action.,app,,5.6,draft,no,zu.clip.sys.error_generic.wav
+zu.clip.sys.needs_download,isiZulu,Lesi sifundo asikalandwa. Ukusilanda kusebenzisa idatha.,,tutor clip sys.needs_download: Lesson content is not on the phone yet.,app,,4.7,draft,no,zu.clip.sys.needs_download.wav
+zu.clip.sys.offline,isiZulu,Awuxhunyiwe ku-inthanethi. Ungaqhubeka ufunde ngezifundo ozilandile.,,tutor clip sys.offline: The device is offline.,app,,5.6,draft,no,zu.clip.sys.offline.wav
+zu.clip.sys.uses_data,isiZulu,Lokhu kuzosebenzisa idatha yeselula. Usayizi ubhalwe esikrinini.,,tutor clip sys.uses_data: Action will use mobile data; size is on screen.,app,,5.3,draft,no,zu.clip.sys.uses_data.wav
+zu.clip.sys.waiting_wifi,isiZulu,Ukulanda kuzolinda i-Wi-Fi.,,tutor clip sys.waiting_wifi: Download waits for Wi-Fi (setting).,app,,2.5,draft,no,zu.clip.sys.waiting_wifi.wav
+zu.clip.teach.blend_demo,isiZulu,"Lalela umsindo ngamunye, bese siyihlanganisa sakhe igama.",,tutor clip teach.blend_demo: Shared teaching line before a blending demonstration.,instruction,,4.8,draft,no,zu.clip.teach.blend_demo.wav
+zu.clip.teach.letter_intro,isiZulu,Bheka lolu hlamvu. Lalela umsindo walo.,,tutor clip teach.letter_intro: Shared teaching line before a letter is shown and its sound played.,instruction,,3.4,draft,no,zu.clip.teach.letter_intro.wav
+zu.clip.teach.word_intro,isiZulu,Bheka leli gama nesithombe salo. Lalela.,,"tutor clip teach.word_intro: Shared teaching line before a word, its picture and its meaning.",instruction,,3.5,draft,no,zu.clip.teach.word_intro.wav
+zu.clip.tutor.ask_prompt,isiZulu,Buza umbuzo wakho emva kokukhala kwensimbi.,,tutor clip tutor.ask_prompt: Tier 2: before recording a spoken question.,tutor,,3.7,draft,no,zu.clip.tutor.ask_prompt.wav
+zu.clip.tutor.blend_again,isiZulu,Masihlanganise imisindo futhi.,,tutor clip tutor.blend_again: Before replaying a blending demonstration.,tutor,,2.7,draft,no,zu.clip.tutor.blend_again.wav
+zu.clip.tutor.cant_answer_yet,isiZulu,Angikwazi ukuphendula lokho okwamanje. Asiqhubeke nesifundo.,,tutor clip tutor.cant_answer_yet: Tier 2: no validated clip matches the question.,tutor,,5,draft,no,zu.clip.tutor.cant_answer_yet.wav
+zu.clip.tutor.how_it_works,isiZulu,Ngizokuchazela ukuthi lo msebenzi wenziwa kanjani.,,tutor clip tutor.how_it_works: Before replaying how an exercise works.,tutor,,4.2,draft,no,zu.clip.tutor.how_it_works.wav
+zu.clip.tutor.listen_slow,isiZulu,Lalela kancane.,,tutor clip tutor.listen_slow: Before slow playback.,tutor,,1.6,draft,no,zu.clip.tutor.listen_slow.wav
+zu.clip.tutor.menu,isiZulu,Ufuna usizo ngani? Thinta isithombe.,,tutor clip tutor.menu: Opening the help panel.,tutor,,3.2,draft,no,zu.clip.tutor.menu.wav
+zu.clip.tutor.needs_internet,isiZulu,Ukubuza imibuzo kudinga i-inthanethi. Ungaqhubeka ufunde ngaphandle kwayo.,,tutor clip tutor.needs_internet: A network-only tutor feature was requested offline.,tutor,,6.1,draft,no,zu.clip.tutor.needs_internet.wav
+zu.clip.tutor.off_topic,isiZulu,Ngingakusiza kuphela ngokufunda nokubhala isiNgisi. Asiqhubeke.,,tutor clip tutor.off_topic: Tier 2/3: question outside English literacy.,tutor,,5.2,draft,no,zu.clip.tutor.off_topic.wav
+zu.clip.tutor.read_alone_first,isiZulu,"Zama ukulifunda wedwa kuqala. Uma ngikufundela lona, ngeke libalwe njengokufunda wedwa. Kodwa kulungile ukucela usizo.",,tutor clip tutor.read_alone_first: When the learner asks to hear a word they are meant to read alone.,tutor,,9.5,draft,no,zu.clip.tutor.read_alone_first.wav
+zu.clip.tutor.replay_intro,isiZulu,Nansi incazelo futhi.,,tutor clip tutor.replay_intro: Before replaying the lesson explanation.,tutor,,2,draft,no,zu.clip.tutor.replay_intro.wav
+zu.clip.tutor.resting,isiZulu,Umsizi akatholakali manje. Asiqhubeke nesifundo.,,"tutor clip tutor.resting: Tier 2/3 unavailable (spending cap, rate limit or provider failure).",tutor,,4.1,draft,no,zu.clip.tutor.resting.wav
+zu.clip.tutor.sound_of_letter,isiZulu,Lalela ukuthi lolu hlamvu luzwakala kanjani esiNgisini.,,tutor clip tutor.sound_of_letter: Before playing a letter sound on request.,tutor,,4.6,draft,no,zu.clip.tutor.sound_of_letter.wav
+zu.clip.tutor.word_meaning,isiZulu,Ake ngikutshele ukuthi leli gama lisho ukuthini.,,tutor clip tutor.word_meaning: Before playing a word's meaning on request.,tutor,,4.1,draft,no,zu.clip.tutor.word_meaning.wav
+zu.gloss.airtime,isiZulu,Igama elithi airtime lisho i-airtime.,,meaning of 'airtime',gloss,,3.2,draft,no,zu.gloss.airtime.wav
+zu.gloss.bank,isiZulu,Igama elithi bank lisho ibhange.,,meaning of 'bank',gloss,,2.9,draft,no,zu.gloss.bank.wav
+zu.gloss.bus,isiZulu,Igama elithi bus lisho ibhasi.,,meaning of 'bus',gloss,,2.7,draft,no,zu.gloss.bus.wav
+zu.gloss.cat,isiZulu,Igama elithi cat lisho ikati.,,meaning of 'cat',gloss,,2.6,draft,no,zu.gloss.cat.wav
+zu.gloss.cleaner,isiZulu,Igama elithi cleaner lisho umhlanzi.,,meaning of 'cleaner',gloss,,3.2,draft,no,zu.gloss.cleaner.wav
+zu.gloss.clinic,isiZulu,Igama elithi clinic lisho umtholampilo.,,meaning of 'clinic',gloss,,3.4,draft,no,zu.gloss.clinic.wav
+zu.gloss.closed,isiZulu,Igama elithi CLOSED lisho kuvaliwe.,,meaning of 'CLOSED',gloss,,3.1,draft,no,zu.gloss.closed.wav
+zu.gloss.cook,isiZulu,Igama elithi cook lisho umpheki.,,meaning of 'cook',gloss,,2.9,draft,no,zu.gloss.cook.wav
+zu.gloss.dad,isiZulu,Igama elithi dad lisho ubaba.,,meaning of 'dad',gloss,,2.6,draft,no,zu.gloss.dad.wav
+zu.gloss.danger,isiZulu,Igama elithi DANGER lisho ingozi.,,meaning of 'DANGER',gloss,,2.9,draft,no,zu.gloss.danger.wav
+zu.gloss.driver,isiZulu,Igama elithi driver lisho umshayeli.,,meaning of 'driver',gloss,,3.2,draft,no,zu.gloss.driver.wav
+zu.gloss.exit,isiZulu,Igama elithi EXIT lisho indlela yokuphuma.,,meaning of 'EXIT',gloss,,3.6,draft,no,zu.gloss.exit.wav
+zu.gloss.friday,isiZulu,Igama elithi Friday lisho uLwesihlanu.,,meaning of 'Friday',gloss,,3.3,draft,no,zu.gloss.friday.wav
+zu.gloss.here,isiZulu,Igama elithi here lisho lapha.,,meaning of 'here',gloss,,2.7,draft,no,zu.gloss.here.wav
+zu.gloss.i,isiZulu,Igama elithi I lisho mina.,,meaning of 'I',gloss,,2.4,draft,no,zu.gloss.i.wav
+zu.gloss.id,isiZulu,Igama elithi ID lisho umazisi.,,meaning of 'ID',gloss,,2.7,draft,no,zu.gloss.id.wav
+zu.gloss.low,isiZulu,Igama elithi low lisho iphansi.,,meaning of 'low',gloss,,2.8,draft,no,zu.gloss.low.wav
+zu.gloss.man,isiZulu,Igama elithi man lisho indoda.,,meaning of 'man',gloss,,2.7,draft,no,zu.gloss.man.wav
+zu.gloss.map,isiZulu,Igama elithi map lisho imephu.,,meaning of 'map',gloss,,2.7,draft,no,zu.gloss.map.wav
+zu.gloss.monday,isiZulu,Igama elithi Monday lisho uMsombuluko.,,meaning of 'Monday',gloss,,3.3,draft,no,zu.gloss.monday.wav
+zu.gloss.money,isiZulu,Igama elithi money lisho imali.,,meaning of 'money',gloss,,2.8,draft,no,zu.gloss.money.wav
+zu.gloss.ok,isiZulu,Igama elithi OK lisho kulungile.,,meaning of 'OK',gloss,,2.9,draft,no,zu.gloss.ok.wav
+zu.gloss.open,isiZulu,Igama elithi OPEN lisho kuvuliwe.,,meaning of 'OPEN',gloss,,2.9,draft,no,zu.gloss.open.wav
+zu.gloss.pan,isiZulu,Igama elithi pan lisho ipani.,,meaning of 'pan',gloss,,2.6,draft,no,zu.gloss.pan.wav
+zu.gloss.pen,isiZulu,Igama elithi pen lisho ipeni.,,meaning of 'pen',gloss,,2.6,draft,no,zu.gloss.pen.wav
+zu.gloss.sheep,isiZulu,Igama elithi sheep lisho imvu.,,meaning of 'sheep',gloss,,2.7,draft,no,zu.gloss.sheep.wav
+zu.gloss.ship,isiZulu,Igama elithi ship lisho umkhumbi.,,meaning of 'ship',gloss,,2.9,draft,no,zu.gloss.ship.wav
+zu.gloss.shop,isiZulu,Igama elithi shop lisho isitolo.,,meaning of 'shop',gloss,,2.9,draft,no,zu.gloss.shop.wav
+zu.gloss.sit,isiZulu,Igama elithi sit lisho hlala phansi.,,meaning of 'sit',gloss,,3.2,draft,no,zu.gloss.sit.wav
+zu.gloss.stop,isiZulu,Igama elithi STOP lisho yima.,,meaning of 'STOP',gloss,,2.6,draft,no,zu.gloss.stop.wav
+zu.gloss.sun,isiZulu,Igama elithi sun lisho ilanga.,,meaning of 'sun',gloss,,2.7,draft,no,zu.gloss.sun.wav
+zu.gloss.tap,isiZulu,Igama elithi tap lisho umpompi.,,meaning of 'tap',gloss,,2.8,draft,no,zu.gloss.tap.wav
+zu.gloss.ten,isiZulu,Igama elithi ten lisho ishumi.,,meaning of 'ten',gloss,,2.7,draft,no,zu.gloss.ten.wav
+zu.gloss.tin,isiZulu,Igama elithi tin lisho ithini.,,meaning of 'tin',gloss,,2.7,draft,no,zu.gloss.tin.wav
+zu.gloss.toilets,isiZulu,Igama elithi TOILETS lisho izindlu zangasese.,,meaning of 'TOILETS',gloss,,3.9,draft,no,zu.gloss.toilets.wav
+zu.gloss.work,isiZulu,Igama elithi work lisho umsebenzi.,,meaning of 'work',gloss,,3,draft,no,zu.gloss.work.wav
+zu.gloss.yes,isiZulu,Igama elithi yes lisho yebo.,,meaning of 'yes',gloss,,2.6,draft,no,zu.gloss.yes.wav
+zu.gloss.you,isiZulu,Igama elithi you lisho wena.,,meaning of 'you',gloss,,2.6,draft,no,zu.gloss.you.wav
+zu.l.a,isiZulu,a,"Native isiZulu speaker: say only the vowel sound 'a', as in 'amanzi'.",model audio for letter 'a',model_audio,,1,draft,no,zu.l.a.wav
+zu.l.b,isiZulu,b,"Native isiZulu speaker: say only the consonant sound 'b' as it sounds in your language, with no vowel after it.",model audio for letter 'b',model_audio,,1,draft,no,zu.l.b.wav
+zu.l.c,isiZulu,c,"Native isiZulu speaker: the dental click written c, as in 'icici'. Click only, no vowel.",model audio for letter 'c',model_audio,,1,draft,no,zu.l.c.wav
+zu.l.d,isiZulu,d,"Native isiZulu speaker: say only the consonant sound 'd' as it sounds in your language, with no vowel after it.",model audio for letter 'd',model_audio,,1,draft,no,zu.l.d.wav
+zu.l.e,isiZulu,e,"Native isiZulu speaker: say only the vowel sound 'e', as in 'ekhaya'.",model audio for letter 'e',model_audio,,1,draft,no,zu.l.e.wav
+zu.l.i,isiZulu,i,"Native isiZulu speaker: say only the vowel sound 'i', as in 'inja'.",model audio for letter 'i',model_audio,,1,draft,no,zu.l.i.wav
+zu.l.m,isiZulu,m,"Native isiZulu speaker: say only the consonant sound 'm' as it sounds in your language, with no vowel after it.",model audio for letter 'm',model_audio,,1,draft,no,zu.l.m.wav
+zu.l.n,isiZulu,n,"Native isiZulu speaker: say only the consonant sound 'n' as it sounds in your language, with no vowel after it.",model audio for letter 'n',model_audio,,1,draft,no,zu.l.n.wav
+zu.l.o,isiZulu,o,"Native isiZulu speaker: say only the vowel sound 'o', as in 'olwandle'.",model audio for letter 'o',model_audio,,1,draft,no,zu.l.o.wav
+zu.l.p,isiZulu,p,"Native isiZulu speaker: say only the consonant sound 'p' as it sounds in your language, with no vowel after it.",model audio for letter 'p',model_audio,,1,draft,no,zu.l.p.wav
+zu.l.s,isiZulu,s,"Native isiZulu speaker: say only the consonant sound 's' as it sounds in your language, with no vowel after it.",model audio for letter 's',model_audio,,1,draft,no,zu.l.s.wav
+zu.l.t,isiZulu,t,"Native isiZulu speaker: say only the consonant sound 't' as it sounds in your language, with no vowel after it.",model audio for letter 't',model_audio,,1,draft,no,zu.l.t.wav
+zu.l.u,isiZulu,u,"Native isiZulu speaker: say only the vowel sound 'u', as in 'ubisi'.",model audio for letter 'u',model_audio,,1,draft,no,zu.l.u.wav
+zu.l00-hl-vowels.intro,isiZulu,"Uyakwazi kakade ukukhuluma isiZulu. Manje sizofunda izinhlamvu ezibhala imisindo oyaziyo. Siqala ngonkamisa abahlanu: a, e, i, o, u.",,lesson l00-hl-vowels introduction,teaching,l00-hl-vowels,10.6,draft,no,zu.l00-hl-vowels.intro.wav
+zu.l00-hl-vowels.outro,isiZulu,Wenze kahle! Manje wazi onkamisa abahlanu. Esifundweni esilandelayo sizobahlanganisa nezinye izinhlamvu.,,lesson l00-hl-vowels closing,teaching,l00-hl-vowels,8.4,draft,no,zu.l00-hl-vowels.outro.wav
+zu.l00-hl-vowels.t01,isiZulu,"Lezi ngonkamisa abahlanu: a, e, i, o, u. Uhlamvu ngalunye lunomsindo walo.",,teaching step l00-hl-vowels.t01 (explain),teaching,l00-hl-vowels,6.1,draft,no,zu.l00-hl-vowels.t01.wav
+zu.l00-hl-vowels.title,isiZulu,Izinhlamvu nemisindo osuyikhuluma kakade.,,lesson l00-hl-vowels title,title,l00-hl-vowels,3.6,draft,no,zu.l00-hl-vowels.title.wav
+zu.l01-hl-syllables.intro,isiZulu,"Uhlamvu nonkamisa kuyahlangana kwakhe ingxenye yegama, njengo-m no-a benza ma. Izingxenye zakha amagama.",,lesson l01-hl-syllables introduction,teaching,l01-hl-syllables,8.4,draft,no,zu.l01-hl-syllables.intro.wav
+zu.l01-hl-syllables.outro,isiZulu,Uyafunda manje! Ufunde amagama esiZulu. Lelo khono lizokusiza nasesiNgisini.,,lesson l01-hl-syllables closing,teaching,l01-hl-syllables,6.2,draft,no,zu.l01-hl-syllables.outro.wav
+zu.l01-hl-syllables.t01,isiZulu,"Bheka: m kanye no-a kwenza ma. Lalela: mmm, a, ma.",,teaching step l01-hl-syllables.t01 (explain),teaching,l01-hl-syllables,4.2,draft,no,zu.l01-hl-syllables.t01.wav
+zu.l01-hl-syllables.t02,isiZulu,"Futhi b kanye no-a kwenza ba. Lalela: b, a, ba.",,teaching step l01-hl-syllables.t02 (explain),teaching,l01-hl-syllables,4,draft,no,zu.l01-hl-syllables.t02.wav
+zu.l01-hl-syllables.title,isiZulu,"Sakha izingxenye zamagama, sifunde amagama okuqala ngesiZulu.",,lesson l01-hl-syllables title,title,l01-hl-syllables,5.1,draft,no,zu.l01-hl-syllables.title.wav
+zu.l02-bridge.intro,isiZulu,"Usuyakwazi ukufunda ngesiZulu. IsiNgisi sisebenzisa izinhlamvu ezifanayo, kodwa ezinye zizwakala ngendlela ehlukile. Asibheke.",,lesson l02-bridge introduction,teaching,l02-bridge,10.1,draft,no,zu.l02-bridge.intro.wav
+zu.l02-bridge.outro,isiZulu,"Manje uyazi: izinhlamvu eziningi ziyafana, kodwa ezinye zishintsha esiNgisini. Usukulungele izinhlamvu zesiNgisi!",,lesson l02-bridge closing,teaching,l02-bridge,9.1,draft,no,zu.l02-bridge.outro.wav
+zu.l02-bridge.t01,isiZulu,Lezi zinhlamvu zizwakala cishe ngendlela efanayo esiZulwini nasesiNgisini.,,teaching step l02-bridge.t01 (explain),teaching,l02-bridge,6.1,draft,no,zu.l02-bridge.t01.wav
+zu.l02-bridge.t02,isiZulu,"Kodwa qaphela! EsiZulwini, u-c, u-q no-x bayaqhafaza, njengo-c egameni elithi icici. EsiNgisini abaqhafazi. Egameni elithi cat, u-c uzwakala njengo-k.",,teaching step l02-bridge.t02 (contrast_note),teaching,l02-bridge,11.9,draft,no,zu.l02-bridge.t02.wav
+zu.l02-bridge.t04,isiZulu,"Futhi u-th: esiZulwini u-th usegameni elithi thatha. EsiNgisini u-th uzwakala ngendlela ehlukile, njengasegameni elithi the.",,teaching step l02-bridge.t04 (contrast_note),teaching,l02-bridge,9.9,draft,no,zu.l02-bridge.t04.wav
+zu.l02-bridge.t05,isiZulu,Nonkamisa besiNgisi bangazwakala ngendlela ehlukile kancane. Sizobafunda kahle ezifundweni ezilandelayo.,,teaching step l02-bridge.t05 (explain),teaching,l02-bridge,8.4,draft,no,zu.l02-bridge.t05.wav
+zu.l02-bridge.title,isiZulu,Izinhlamvu ezifanayo esiNgisini: okufanayo nokushintshayo.,,lesson l02-bridge title,title,l02-bridge,4.9,draft,no,zu.l02-bridge.title.wav
+zu.l10-satp.intro,isiZulu,"Namuhla sifunda imisindo yezinhlamvu ezine zesiNgisi: s, a, t, p. Sifunda imisindo, hhayi amagama ezinhlamvu.",,lesson l10-satp introduction,teaching,l10-satp,8.8,draft,no,zu.l10-satp.intro.wav
+zu.l10-satp.outro,isiZulu,"Wenze kahle! Wazi imisindo emine: s, a, t, p. Usufundile namagama amancane: at, sat, tap.",,lesson l10-satp closing,teaching,l10-satp,7.2,draft,no,zu.l10-satp.outro.wav
+zu.l10-satp.title,isiZulu,"Imisindo yesiNgisi: s, a, t, p.",,lesson l10-satp title,title,l10-satp,2.8,draft,no,zu.l10-satp.title.wav
+zu.l11-inmd.intro,isiZulu,"Siqhubeka nezinhlamvu ezine ezintsha: i, n, m, d. Bese sifunda uhlamvu c, oluzwakala ngendlela ehlukile esiNgisini.",,lesson l11-inmd introduction,teaching,l11-inmd,9.2,draft,no,zu.l11-inmd.intro.wav
+zu.l11-inmd.outro,isiZulu,"Kuhle! Manje wazi i, n, m, d, futhi uyazi ukuthi u-c esiNgisini uzwakala njengo-k.",,lesson l11-inmd closing,teaching,l11-inmd,6.7,draft,no,zu.l11-inmd.outro.wav
+zu.l11-inmd.t05,isiZulu,"Manje uhlamvu c. EsiZulwini u-c uyaqhafaza, njengasegameni elithi icici. EsiNgisini, egameni elithi cat, u-c akaqhafazi: uzwakala njengo-k.",,teaching step l11-inmd.t05 (letter_intro),teaching,l11-inmd,11.1,draft,no,zu.l11-inmd.t05.wav
+zu.l11-inmd.t06,isiZulu,"Lalela umehluko: lokhu ukuqhafaza kwesiZulu, futhi lokhu ngu-k wesiNgisi. Egameni elithi cat, sisebenzisa u-k.",,teaching step l11-inmd.t06 (contrast_note),teaching,l11-inmd,8.9,draft,no,zu.l11-inmd.t06.wav
+zu.l11-inmd.title,isiZulu,"Imisindo yesiNgisi: i, n, m, d, kanye no-c.",,lesson l11-inmd title,title,l11-inmd,3.7,draft,no,zu.l11-inmd.title.wav
+zu.l12-tracing.intro,isiZulu,Namuhla sizobhala. Uzolandela izinhlamvu ngomunwe wakho esikrinini. Qala echashazini eliluhlaza.,,lesson l12-tracing introduction,teaching,l12-tracing,7.8,draft,no,zu.l12-tracing.intro.wav
+zu.l12-tracing.outro,isiZulu,Wenze kahle! Ubhale izinhlamvu zakho zokuqala zesiNgisi. Qhubeka uprakthize ukubhala.,,lesson l12-tracing closing,teaching,l12-tracing,6.9,draft,no,zu.l12-tracing.outro.wav
+zu.l12-tracing.t01,isiZulu,"Ukubhala kusiza ukufunda. Uma ubhala uhlamvu, uyalukhumbula kalula.",,teaching step l12-tracing.t01 (explain),teaching,l12-tracing,5.6,draft,no,zu.l12-tracing.t01.wav
+zu.l12-tracing.title,isiZulu,Landela futhi ubhale izinhlamvu zakho zokuqala zesiNgisi.,,lesson l12-tracing title,title,l12-tracing,4.8,draft,no,zu.l12-tracing.title.wav
+zu.l20-blending.intro,isiZulu,"Manje sizohlanganisa imisindo emithathu sakhe amagama. Lalela: c, a, t... cat! Ungakhohlwa umsindo wokugcina.",,lesson l20-blending introduction,teaching,l20-blending,8.8,draft,no,zu.l20-blending.intro.wav
+zu.l20-blending.outro,isiZulu,"Uyafunda isiNgisi! Ufunde amagama: cat, sit, map, pen.",,lesson l20-blending closing,teaching,l20-blending,4.6,draft,no,zu.l20-blending.outro.wav
+zu.l20-blending.t03,isiZulu,"EsiZulwini amagama avame ukuphela ngonkamisa. EsiNgisini amagama amaningi aphela ngomsindo onjengo-t. Sithi cat, hhayi cati.",,teaching step l20-blending.t03 (contrast_note),teaching,l20-blending,9.9,draft,no,zu.l20-blending.t03.wav
+zu.l20-blending.title,isiZulu,"Hlanganisa imisindo emithathu wakhe amagama: cat, sit, map, pen.",,lesson l20-blending title,title,l20-blending,5.3,draft,no,zu.l20-blending.title.wav
+zu.l21-picture-words.intro,isiZulu,Namuhla ufunda amagama amasha ngezinhlamvu osuzazi. Sizophinde sifunde izinhlamvu ezimbili ezintsha: b no-u.,,lesson l21-picture-words introduction,teaching,l21-picture-words,8.7,draft,no,zu.l21-picture-words.intro.wav
+zu.l21-picture-words.outro,isiZulu,Kuhle kakhulu! Usufunde amagama amaningi esiNgisi.,,lesson l21-picture-words closing,teaching,l21-picture-words,4.2,draft,no,zu.l21-picture-words.outro.wav
+zu.l21-picture-words.t02,isiZulu,"Uhlamvu u esiNgisini, egameni elithi bus, aluzwakali njengo-u wesiZulu. Lalela: u, bus.",,teaching step l21-picture-words.t02 (letter_intro),teaching,l21-picture-words,7.1,draft,no,zu.l21-picture-words.t02.wav
+zu.l21-picture-words.title,isiZulu,"Hlanganisa amagama nezithombe, wakhe amagama ngezinhlamvu.",,lesson l21-picture-words title,title,l21-picture-words,4.9,draft,no,zu.l21-picture-words.title.wav
+zu.l22-sight-words.intro,isiZulu,"Amanye amagama esiNgisi awalandeli imithetho yemisindo. Siwafunda ngokuwabona wonke, njengesithombe. La magama avela cishe kuyo yonke imisho.",,lesson l22-sight-words introduction,teaching,l22-sight-words,11.2,draft,no,zu.l22-sight-words.intro.wav
+zu.l22-sight-words.outro,isiZulu,"Wenze kahle! Usuyawazi amagama amahlanu amancane: the, a, is, I, you. Uzowabona yonke indawo.",,lesson l22-sight-words closing,teaching,l22-sight-words,7.6,draft,no,zu.l22-sight-words.outro.wav
+zu.l22-sight-words.t01,isiZulu,Leli gama lithi the. Alizwakali njengoba libhaliwe. Ulikhumbule ngokulibona.,,teaching step l22-sight-words.t01 (contrast_note),teaching,l22-sight-words,6.2,draft,no,zu.l22-sight-words.t01.wav
+zu.l22-sight-words.t02,isiZulu,EsiNgisini u-th wenziwa ngolimi phakathi kwamazinyo: the. Akufani no-th wesiZulu egameni elithi thatha.,,teaching step l22-sight-words.t02 (contrast_note),teaching,l22-sight-words,8.3,draft,no,zu.l22-sight-words.t02.wav
+zu.l22-sight-words.t05,isiZulu,"Igama elithi a lisho into eyodwa, njengo-a cat. Igama elithi is lisetshenziswa njengakule: the cat is here.",,teaching step l22-sight-words.t05 (explain),teaching,l22-sight-words,8.6,draft,no,zu.l22-sight-words.t05.wav
+zu.l22-sight-words.title,isiZulu,"Amagama amancane abonakala yonke indawo: the, a, is, I, you.",,lesson l22-sight-words title,title,l22-sight-words,5,draft,no,zu.l22-sight-words.title.wav
+zu.l30-first-sentences.e01.instr,isiZulu,Lalela umusho. Yini ekhona lapha? Thinta isithombe.,,exercise l30-first-sentences.e01 instruction,instruction,l30-first-sentences,4.3,draft,no,zu.l30-first-sentences.e01.instr.wav
+zu.l30-first-sentences.e01.q,isiZulu,Yini ekhona lapha?,,exercise l30-first-sentences.e01 question,instruction,l30-first-sentences,1.8,draft,no,zu.l30-first-sentences.e01.q.wav
+zu.l30-first-sentences.e05.instr,isiZulu,"Funda umusho, bese uphendula umbuzo.",,exercise l30-first-sentences.e05 instruction,instruction,l30-first-sentences,3.2,draft,no,zu.l30-first-sentences.e05.instr.wav
+zu.l30-first-sentences.e05.q,isiZulu,Umuntu angenzani lapha?,,exercise l30-first-sentences.e05 question,instruction,l30-first-sentences,2.2,draft,no,zu.l30-first-sentences.e05.q.wav
+zu.l30-first-sentences.e08.instr,isiZulu,Lalela umusho. Uphi lo muntu? Thinta isithombe.,,exercise l30-first-sentences.e08 instruction,instruction,l30-first-sentences,4,draft,no,zu.l30-first-sentences.e08.instr.wav
+zu.l30-first-sentences.e08.q,isiZulu,Uphi lo muntu?,,exercise l30-first-sentences.e08 question,instruction,l30-first-sentences,1.5,draft,no,zu.l30-first-sentences.e08.q.wav
+zu.l30-first-sentences.e09.instr,isiZulu,"Funda umusho, bese uphendula umbuzo.",,exercise l30-first-sentences.e09 instruction,instruction,l30-first-sentences,3.2,draft,no,zu.l30-first-sentences.e09.instr.wav
+zu.l30-first-sentences.e09.q,isiZulu,Yini ekhona lapha?,,exercise l30-first-sentences.e09 question,instruction,l30-first-sentences,1.8,draft,no,zu.l30-first-sentences.e09.q.wav
+zu.l30-first-sentences.intro,isiZulu,"Usuyakwazi ukufunda amagama. Manje sizowahlanganisa abe imisho. Umusho uqala ngohlamvu olukhulu, uphele ngechashazi.",,lesson l30-first-sentences introduction,teaching,l30-first-sentences,9.3,draft,no,zu.l30-first-sentences.intro.wav
+zu.l30-first-sentences.outro,isiZulu,Wenze kahle kakhulu! Ufunde imisho yakho yokuqala yesiNgisi.,,lesson l30-first-sentences closing,teaching,l30-first-sentences,5,draft,no,zu.l30-first-sentences.outro.wav
+zu.l30-first-sentences.t03,isiZulu,Bheka umusho: I am at work. Usho ukuthi: ngisemsebenzini.,,teaching step l30-first-sentences.t03 (explain),teaching,l30-first-sentences,4.8,draft,no,zu.l30-first-sentences.t03.wav
+zu.l30-first-sentences.title,isiZulu,Funda imisho yakho yokuqala: I am at work. The bus is here.,,lesson l30-first-sentences title,title,l30-first-sentences,4.9,draft,no,zu.l30-first-sentences.title.wav
+zu.l40-sms.e01.instr,isiZulu,"Funda i-SMS, bese uphendula umbuzo.",,exercise l40-sms.e01 instruction,instruction,l40-sms,3.1,draft,no,zu.l40-sms.e01.instr.wav
+zu.l40-sms.e01.q,isiZulu,Ubani othumele le SMS?,,exercise l40-sms.e01 question,instruction,l40-sms,2.1,draft,no,zu.l40-sms.e01.q.wav
+zu.l40-sms.e02.instr,isiZulu,"Funda i-SMS, bese uphendula umbuzo.",,exercise l40-sms.e02 instruction,instruction,l40-sms,3.1,draft,no,zu.l40-sms.e02.instr.wav
+zu.l40-sms.e02.q,isiZulu,Ngaluphi usuku i-appointment?,,exercise l40-sms.e02 question,instruction,l40-sms,2.6,draft,no,zu.l40-sms.e02.q.wav
+zu.l40-sms.e03.instr,isiZulu,"Funda i-SMS, bese uphendula umbuzo.",,exercise l40-sms.e03 instruction,instruction,l40-sms,3.1,draft,no,zu.l40-sms.e03.instr.wav
+zu.l40-sms.e03.q,isiZulu,Le SMS ikutshela ngani?,,exercise l40-sms.e03 question,instruction,l40-sms,2.2,draft,no,zu.l40-sms.e03.q.wav
+zu.l40-sms.e05.instr,isiZulu,"Funda i-SMS, bese uphendula umbuzo.",,exercise l40-sms.e05 instruction,instruction,l40-sms,3.1,draft,no,zu.l40-sms.e05.instr.wav
+zu.l40-sms.e05.q,isiZulu,Kufanele uye nini esitolo?,,exercise l40-sms.e05 question,instruction,l40-sms,2.4,draft,no,zu.l40-sms.e05.q.wav
+zu.l40-sms.e06.instr,isiZulu,"Funda i-SMS, bese uphendula umbuzo.",,exercise l40-sms.e06 instruction,instruction,l40-sms,3.1,draft,no,zu.l40-sms.e06.instr.wav
+zu.l40-sms.e06.q,isiZulu,Ngasiphi isikhathi?,,exercise l40-sms.e06 question,instruction,l40-sms,1.9,draft,no,zu.l40-sms.e06.q.wav
+zu.l40-sms.intro,isiZulu,"Ama-SMS asitshela izinto ezibalulekile: umtholampilo, ibhange, isitolo. Namuhla sizofunda ukuthola ulwazi olubalulekile ku-SMS.",,lesson l40-sms introduction,teaching,l40-sms,10.2,draft,no,zu.l40-sms.intro.wav
+zu.l40-sms.outro,isiZulu,Wenze kahle! Manje uyakwazi ukufunda i-SMS nokuthola ukuthi ivela kubani nokuthi kunini.,,lesson l40-sms closing,teaching,l40-sms,7.2,draft,no,zu.l40-sms.outro.wav
+zu.l40-sms.t04,isiZulu,I-SMS ivame ukuqala ngegama lalowo oyithumele. Lapha kuthi Clinic: umtholampilo.,,teaching step l40-sms.t04 (explain),teaching,l40-sms,6.6,draft,no,zu.l40-sms.t04.wav
+zu.l40-sms.title,isiZulu,"Funda i-SMS elula: isikhumbuzo se-appointment, noma i-airtime iphansi.",,lesson l40-sms title,title,l40-sms,5.8,draft,no,zu.l40-sms.title.wav
+zu.l41-signs.e02.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e02 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e02.instr.wav
+zu.l41-signs.e02.q,isiZulu,Lolu phawu lusho ukuthini?,,exercise l41-signs.e02 question,instruction,l41-signs,2.4,draft,no,zu.l41-signs.e02.q.wav
+zu.l41-signs.e03.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e03 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e03.instr.wav
+zu.l41-signs.e03.q,isiZulu,Lolu phawu lusho ukuthini?,,exercise l41-signs.e03 question,instruction,l41-signs,2.4,draft,no,zu.l41-signs.e03.q.wav
+zu.l41-signs.e04.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e04 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e04.instr.wav
+zu.l41-signs.e04.q,isiZulu,Lolu phawu lusho ukuthini?,,exercise l41-signs.e04 question,instruction,l41-signs,2.4,draft,no,zu.l41-signs.e04.q.wav
+zu.l41-signs.e05.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e05 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e05.instr.wav
+zu.l41-signs.e05.q,isiZulu,Lolu phawu lusho ukuthini?,,exercise l41-signs.e05 question,instruction,l41-signs,2.4,draft,no,zu.l41-signs.e05.q.wav
+zu.l41-signs.e06.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e06 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e06.instr.wav
+zu.l41-signs.e06.q,isiZulu,Ungangena manje?,,exercise l41-signs.e06 question,instruction,l41-signs,1.6,draft,no,zu.l41-signs.e06.q.wav
+zu.l41-signs.e07.instr,isiZulu,"Funda uphawu, bese uthinta isithombe esishoyo.",,exercise l41-signs.e07 instruction,instruction,l41-signs,3.9,draft,no,zu.l41-signs.e07.instr.wav
+zu.l41-signs.e07.q,isiZulu,Ungangena manje?,,exercise l41-signs.e07 question,instruction,l41-signs,1.6,draft,no,zu.l41-signs.e07.q.wav
+zu.l41-signs.intro,isiZulu,Izimpawu zisitshela okufanele sikwenze nokuthi sihlale siphephile. Eziningi zibhalwe ngezinhlamvu ezinkulu.,,lesson l41-signs introduction,teaching,l41-signs,8.6,draft,no,zu.l41-signs.intro.wav
+zu.l41-signs.outro,isiZulu,Kuhle! Manje uyakwazi ukufunda izimpawu ezibalulekile emsebenzini nasedolobheni.,,lesson l41-signs closing,teaching,l41-signs,6.6,draft,no,zu.l41-signs.outro.wav
+zu.l41-signs.t05,isiZulu,OPEN kusho ukuthi kuvuliwe. CLOSED kusho ukuthi kuvaliwe.,,teaching step l41-signs.t05 (explain),teaching,l41-signs,4.8,draft,no,zu.l41-signs.t05.wav
+zu.l41-signs.title,isiZulu,"Funda izimpawu ezivamile: STOP, EXIT, DANGER, TOILETS, OPEN, CLOSED.",,lesson l41-signs title,title,l41-signs,5.6,draft,no,zu.l41-signs.title.wav
+zu.l50-job-notice.e01.instr,isiZulu,"Funda isaziso, bese uphendula umbuzo.",,exercise l50-job-notice.e01 instruction,instruction,l50-job-notice,3.2,draft,no,zu.l50-job-notice.e01.instr.wav
+zu.l50-job-notice.e01.q,isiZulu,Ngumsebenzi muni?,,exercise l50-job-notice.e01 question,instruction,l50-job-notice,1.7,draft,no,zu.l50-job-notice.e01.q.wav
+zu.l50-job-notice.e02.instr,isiZulu,"Funda isaziso, bese uphendula umbuzo.",,exercise l50-job-notice.e02 instruction,instruction,l50-job-notice,3.2,draft,no,zu.l50-job-notice.e02.instr.wav
+zu.l50-job-notice.e02.q,isiZulu,Umsebenzi ukuphi?,,exercise l50-job-notice.e02 question,instruction,l50-job-notice,1.7,draft,no,zu.l50-job-notice.e02.q.wav
+zu.l50-job-notice.e03.instr,isiZulu,"Funda isaziso, bese uphendula umbuzo.",,exercise l50-job-notice.e03 instruction,instruction,l50-job-notice,3.2,draft,no,zu.l50-job-notice.e03.instr.wav
+zu.l50-job-notice.e03.q,isiZulu,Kufanele uphathe ini?,,exercise l50-job-notice.e03 question,instruction,l50-job-notice,2,draft,no,zu.l50-job-notice.e03.q.wav
+zu.l50-job-notice.e04.instr,isiZulu,"Funda isaziso, bese uphendula umbuzo.",,exercise l50-job-notice.e04 instruction,instruction,l50-job-notice,3.2,draft,no,zu.l50-job-notice.e04.instr.wav
+zu.l50-job-notice.e04.q,isiZulu,Kufanele uqale ngasiphi isikhathi?,,exercise l50-job-notice.e04 question,instruction,l50-job-notice,3,draft,no,zu.l50-job-notice.e04.q.wav
+zu.l50-job-notice.e05.instr,isiZulu,"Funda isaziso, bese uphendula umbuzo.",,exercise l50-job-notice.e05 instruction,instruction,l50-job-notice,3.2,draft,no,zu.l50-job-notice.e05.instr.wav
+zu.l50-job-notice.e05.q,isiZulu,Izinsuku zomsebenzi yiziphi?,,exercise l50-job-notice.e05 question,instruction,l50-job-notice,2.6,draft,no,zu.l50-job-notice.e05.q.wav
+zu.l50-job-notice.e06.instr,isiZulu,"Funda isaziso futhi. Lalela umbuzo, bese ubhala impendulo.",,exercise l50-job-notice.e06 instruction,instruction,l50-job-notice,4.9,draft,no,zu.l50-job-notice.e06.instr.wav
+zu.l50-job-notice.e06.q,isiZulu,Kufanele uphathe ini? Bhala igama.,,exercise l50-job-notice.e06 question,instruction,l50-job-notice,3,draft,no,zu.l50-job-notice.e06.q.wav
+zu.l50-job-notice.e07.instr,isiZulu,"Funda isaziso futhi. Lalela umbuzo, bese ubhala impendulo.",,exercise l50-job-notice.e07 instruction,instruction,l50-job-notice,4.9,draft,no,zu.l50-job-notice.e07.instr.wav
+zu.l50-job-notice.e07.q,isiZulu,Ngumsebenzi muni? Bhala igama.,,exercise l50-job-notice.e07 question,instruction,l50-job-notice,2.7,draft,no,zu.l50-job-notice.e07.q.wav
+zu.l50-job-notice.intro,isiZulu,"Izaziso zemisebenzi zinolwazi olubalulekile. Funda isaziso kancane, umugqa ngamunye, bese uphendula imibuzo.",,lesson l50-job-notice introduction,teaching,l50-job-notice,8.7,draft,no,zu.l50-job-notice.intro.wav
+zu.l50-job-notice.outro,isiZulu,"Wenze kahle kakhulu! Ufunde isaziso somsebenzi wedwa, wabhala nezimpendulo.",,lesson l50-job-notice closing,teaching,l50-job-notice,6.2,draft,no,zu.l50-job-notice.outro.wav
+zu.l50-job-notice.title,isiZulu,"Funda isaziso somsebenzi, uphendule imibuzo.",,lesson l50-job-notice title,title,l50-job-notice,3.8,draft,no,zu.l50-job-notice.title.wav
+zu.syl.ba,isiZulu,ba,"Native isiZulu speaker: say the syllable 'ba' clearly, once.",model audio for syllable 'ba',model_audio,,1,draft,no,zu.syl.ba.wav
+zu.syl.be,isiZulu,be,"Native isiZulu speaker: say the syllable 'be' clearly, once.",model audio for syllable 'be',model_audio,,1,draft,no,zu.syl.be.wav
+zu.syl.bi,isiZulu,bi,"Native isiZulu speaker: say the syllable 'bi' clearly, once.",model audio for syllable 'bi',model_audio,,1,draft,no,zu.syl.bi.wav
+zu.syl.bo,isiZulu,bo,"Native isiZulu speaker: say the syllable 'bo' clearly, once.",model audio for syllable 'bo',model_audio,,1,draft,no,zu.syl.bo.wav
+zu.syl.bu,isiZulu,bu,"Native isiZulu speaker: say the syllable 'bu' clearly, once.",model audio for syllable 'bu',model_audio,,1,draft,no,zu.syl.bu.wav
+zu.syl.le,isiZulu,le,"Native isiZulu speaker: say the syllable 'le' clearly, once.",model audio for syllable 'le',model_audio,,1,draft,no,zu.syl.le.wav
+zu.syl.li,isiZulu,li,"Native isiZulu speaker: say the syllable 'li' clearly, once.",model audio for syllable 'li',model_audio,,1,draft,no,zu.syl.li.wav
+zu.syl.ma,isiZulu,ma,"Native isiZulu speaker: say the syllable 'ma' clearly, once.",model audio for syllable 'ma',model_audio,,1,draft,no,zu.syl.ma.wav
+zu.syl.me,isiZulu,me,"Native isiZulu speaker: say the syllable 'me' clearly, once.",model audio for syllable 'me',model_audio,,1,draft,no,zu.syl.me.wav
+zu.syl.mi,isiZulu,mi,"Native isiZulu speaker: say the syllable 'mi' clearly, once.",model audio for syllable 'mi',model_audio,,1,draft,no,zu.syl.mi.wav
+zu.syl.mo,isiZulu,mo,"Native isiZulu speaker: say the syllable 'mo' clearly, once.",model audio for syllable 'mo',model_audio,,1,draft,no,zu.syl.mo.wav
+zu.syl.mu,isiZulu,mu,"Native isiZulu speaker: say the syllable 'mu' clearly, once.",model audio for syllable 'mu',model_audio,,1,draft,no,zu.syl.mu.wav
+zu.syl.se,isiZulu,se,"Native isiZulu speaker: say the syllable 'se' clearly, once.",model audio for syllable 'se',model_audio,,1,draft,no,zu.syl.se.wav
+zu.syl.si,isiZulu,si,"Native isiZulu speaker: say the syllable 'si' clearly, once.",model audio for syllable 'si',model_audio,,1,draft,no,zu.syl.si.wav
+zu.syl.ta,isiZulu,ta,"Native isiZulu speaker: say the syllable 'ta' clearly, once.",model audio for syllable 'ta',model_audio,,1,draft,no,zu.syl.ta.wav
+zu.syl.te,isiZulu,te,"Native isiZulu speaker: say the syllable 'te' clearly, once.",model audio for syllable 'te',model_audio,,1,draft,no,zu.syl.te.wav
+zu.syl.tha,isiZulu,tha,"Native isiZulu speaker: say the syllable 'tha' clearly, once.",model audio for syllable 'tha',model_audio,,1,draft,no,zu.syl.tha.wav
+zu.unit.u0.title,isiZulu,Funda ngolimi lwakho.,,unit u0 title,title,,2,draft,no,zu.unit.u0.title.wav
+zu.unit.u1.title,isiZulu,Izinhlamvu nemisindo yesiNgisi.,,unit u1 title,title,,2.8,draft,no,zu.unit.u1.title.wav
+zu.unit.u2.title,isiZulu,Amagama akho okuqala esiNgisi.,,unit u2 title,title,,2.7,draft,no,zu.unit.u2.title.wav
+zu.unit.u3.title,isiZulu,Imisho yakho yokuqala.,,unit u3 title,title,,2.1,draft,no,zu.unit.u3.title.wav
+zu.unit.u4.title,isiZulu,IsiNgisi sansuku zonke: ama-SMS nezimpawu.,,unit u4 title,title,,3.6,draft,no,zu.unit.u4.title.wav
+zu.unit.u5.title,isiZulu,Ukufunda wedwa.,,unit u5 title,title,,1.6,draft,no,zu.unit.u5.title.wav
+zu.w.amanzi,isiZulu,amanzi,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'amanzi',model_audio,,1.2,draft,no,zu.w.amanzi.wav
+zu.w.ibhasi,isiZulu,ibhasi,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'ibhasi',model_audio,,1.2,draft,no,zu.w.ibhasi.wav
+zu.w.ikati,isiZulu,ikati,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'ikati',model_audio,,1.2,draft,no,zu.w.ikati.wav
+zu.w.imali,isiZulu,imali,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'imali',model_audio,,1.2,draft,no,zu.w.imali.wav
+zu.w.indlu,isiZulu,indlu,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'indlu',model_audio,,1.2,draft,no,zu.w.indlu.wav
+zu.w.inja,isiZulu,inja,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'inja',model_audio,,1.2,draft,no,zu.w.inja.wav
+zu.w.isinkwa,isiZulu,isinkwa,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'isinkwa',model_audio,,1.2,draft,no,zu.w.isinkwa.wav
+zu.w.ubaba,isiZulu,ubaba,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'ubaba',model_audio,,1.2,draft,no,zu.w.ubaba.wav
+zu.w.ubisi,isiZulu,ubisi,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'ubisi',model_audio,,1.2,draft,no,zu.w.ubisi.wav
+zu.w.umama,isiZulu,umama,"Native isiZulu speaker: say the word as in everyday speech, clearly.",model audio for word 'umama',model_audio,,1.2,draft,no,zu.w.umama.wav

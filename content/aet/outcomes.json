@@ -1,0 +1,102 @@
+{
+  "$schema": "../schema/aet-outcomes.schema.json",
+  "disclaimer": "PROPOSED MAPPING ONLY. These outcome descriptors were drafted by the product team to help organisations see how lessons relate to Adult Education and Training (AET) levels. They are not official curriculum statements, no SAQA unit standards have been confirmed, and nothing here implies accreditation. Every mapping requires review by an accredited AET specialist before use in any funding, certification or reporting context.",
+  "outcomes": [
+    {
+      "id": "aet.pre.hl-letter-sounds",
+      "level": "pre-aet",
+      "learningArea": "Language, Literacy and Communication (home language): pre-literacy",
+      "outcome": "Associates the letters of the home-language alphabet with their sounds, starting with the vowels.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.pre.hl-decoding",
+      "level": "pre-aet",
+      "learningArea": "Language, Literacy and Communication (home language): pre-literacy",
+      "outcome": "Blends letters into syllables and reads simple, familiar home-language words.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.pre.phonological-awareness",
+      "level": "pre-aet",
+      "learningArea": "Language, Literacy and Communication: pre-literacy",
+      "outcome": "Hears and distinguishes individual sounds in spoken words, including sounds that differ between the home language and English.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.1.letter-sounds",
+      "level": "aet-1",
+      "learningArea": "Language, Literacy and Communication: English (additional language)",
+      "outcome": "Recognises English letters and associates them with their most common sounds.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.1.decode-words",
+      "level": "aet-1",
+      "learningArea": "Language, Literacy and Communication: English (additional language)",
+      "outcome": "Decodes and understands simple, regularly spelt English words, including words not seen before.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.1.sight-words",
+      "level": "aet-1",
+      "learningArea": "Language, Literacy and Communication: English (additional language)",
+      "outcome": "Recognises common high-frequency English words that are not spelt by regular sound rules.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.1.write-letters-words",
+      "level": "aet-1",
+      "learningArea": "Language, Literacy and Communication: English (additional language)",
+      "outcome": "Forms lower-case letters correctly and writes or types simple words.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.1.listen-understand",
+      "level": "aet-1",
+      "learningArea": "Language, Literacy and Communication: English (additional language)",
+      "outcome": "Listens to and understands simple spoken English words and sentences about familiar topics.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.1.read-sentences",
+      "level": "aet-1",
+      "learningArea": "Language, Literacy and Communication: English (additional language)",
+      "outcome": "Reads and understands short, simple English sentences about familiar situations.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.1.write-sentences",
+      "level": "aet-1",
+      "learningArea": "Language, Literacy and Communication: English (additional language)",
+      "outcome": "Builds short, simple English sentences in the correct word order.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.2.functional-reading",
+      "level": "aet-2",
+      "learningArea": "Language, Literacy and Communication: English (additional language)",
+      "outcome": "Reads simple functional texts (SMS messages, signs, notices) and finds key information such as who, what, when and where.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    },
+    {
+      "id": "aet.2.functional-writing",
+      "level": "aet-2",
+      "learningArea": "Language, Literacy and Communication: English (additional language)",
+      "outcome": "Writes or types short functional responses, such as a reply to a message or a short answer.",
+      "officialReference": null,
+      "status": "proposed_unreviewed"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "levels": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema0"
+      }
+    },
+    "units": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema1"
+      }
+    }
+  },
+  "required": [
+    "levels",
+    "units"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "aetLevel": {
+          "type": "string",
+          "enum": [
+            "pre-aet",
+            "aet-1",
+            "aet-2",
+            "aet-3",
+            "aet-4"
+          ]
+        }
+      },
+      "required": [
+        "level",
+        "title",
+        "description",
+        "aetLevel"
+      ],
+      "additionalProperties": false
+    },
+    "__schema1": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^u\\d$"
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "order": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "title": {
+          "type": "object",
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zu": {
+              "$ref": "#/$defs/__schema2"
+            },
+            "st": {
+              "$ref": "#/$defs/__schema2"
+            }
+          },
+          "required": [
+            "en",
+            "zu",
+            "st"
+          ],
+          "additionalProperties": false
+        },
+        "lessons": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/__schema4"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "level",
+        "order",
+        "title",
+        "lessons"
+      ],
+      "additionalProperties": false
+    },
+    "__schema2": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(zu|st|en)\\.[a-z0-9][a-z0-9._-]*$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string"
+        },
+        "seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 90
+        },
+        "review": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "$ref": "#/$defs/__schema3"
+            },
+            "history": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "$ref": "#/$defs/__schema3"
+                  },
+                  "role": {
+                    "type": "string",
+                    "enum": [
+                      "native_speaker",
+                      "adult_literacy_educator",
+                      "linguist",
+                      "aet_specialist",
+                      "voice_director"
+                    ]
+                  },
+                  "date": {
+                    "type": "string",
+                    "format": "date",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "status",
+                  "role",
+                  "date"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "status"
+          ],
+          "additionalProperties": false
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "review"
+      ],
+      "additionalProperties": false
+    },
+    "__schema3": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "native_speaker_reviewed",
+        "educator_reviewed",
+        "approved"
+      ]
+    },
+    "__schema4": {
+      "type": "string",
+      "pattern": "^l\\d\\d-[a-z0-9-]+$"
+    }
+  },
+  "$id": "https://yomu.invalid/content/schema/curriculum.schema.json",
+  "title": "Yomu content: curriculum"
+}
