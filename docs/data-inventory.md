@@ -54,7 +54,7 @@ All learner-owned rows reference `learners.id` with `on delete cascade`: deletin
 | `tutor_unanswered_intents` | Text of questions the tutor had no validated answer for, lesson and step, no learner identifier | Content authors write the missing clips | Server only (pilot export shows counts by step) | 12 months |
 | `ai_spend_daily` | Estimated AI spend and request count per day | Global daily spending cap | Server only | Not personal data |
 | `analytics_events` | Event name, short properties (screen, lesson, step, help option, language), random pseudonym | Usage counts, only for learners whose consent is in force (checked on every request) | Server only; platform admins see aggregates | 13 months |
-| `error_logs` | Error message scrubbed of numbers and contact details, build, optional pseudonym | Fixing defects | Server only | 90 days |
+| `error_logs` | Error message scrubbed of numbers and contact details, build, optional pseudonym | Fixing defects | Server only | 90 days. Reports from phones are accepted without sign-in, so at most 30 per minute are stored across all callers |
 | `join_attempts` | Whether a class code attempt succeeded | Stop code guessing | Server only | 2 days |
 | `deletion_log` | That a deletion happened, when, and who started it; no identifier of the deleted learner | Accountability | Server only | Indefinitely (not personal data) |
 | `staff_roles`, `organisations`, `cohorts`, `cohort_facilitators` | Staff role, optional display name, organisation, classes | Staff access | Staff according to role | Until removed by a platform admin |
