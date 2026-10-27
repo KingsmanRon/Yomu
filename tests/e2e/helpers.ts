@@ -12,35 +12,54 @@ export async function enterPin(page: Page, pin: string) {
   for (const d of pin) await page.getByTestId(`pin-key-${d}`).click();
 }
 
-/** Voice-first onboarding up to the home screen. */
-export async function onboard(page: Page, opts: { lang: Lang; avatar: string; pin: string; save: "phone" | "online"; addingToPhone?: boolean }) {
+/**
+ * Voice-first onboarding up to the home screen. With `a11y`, every onboarding
+ * screen is also checked with axe (on settled screens: reduced motion).
+ */
+export async function onboard(
+  page: Page,
+  opts: { lang: Lang; avatar: string; pin: string; save: "phone" | "online"; addingToPhone?: boolean; a11y?: boolean },
+) {
+  const check = async (screen: string, ready: string) => {
+    await page.getByTestId(ready).first().waitFor();
+    if (opts.a11y) await expectAccessible(page, screen);
+  };
+  if (opts.a11y) await page.emulateMedia({ reducedMotion: "reduce" });
   if (!opts.addingToPhone) {
     await page.goto("/");
     await page.getByTestId("sound-check-play").click();
     await page.getByTestId("sound-check-ok").click();
   }
+  await check("language selection", `choose-${opts.lang}`);
   await page.getByTestId(`choose-${opts.lang}`).click();
   await page.getByTestId("continue").click();
+  await check("demonstration", "demo-listen");
   await page.getByTestId("demo-listen").click();
   await page.getByTestId("demo-step-listen").click();
   await page.getByTestId("demo-picture").click();
   await page.getByTestId("demo-continue").click();
   await page.getByTestId("continue").click();
+  await check("choose a picture", `avatar-${opts.avatar}`);
   await page.getByTestId(`avatar-${opts.avatar}`).click();
   await page.getByTestId("continue").click();
+  await check("make a secret code", "pin-key-1");
   await enterPin(page, opts.pin);
   await enterPin(page, opts.pin);
   await waitForRoute(page, "/save");
+  await check("save choice", "save-phone-only");
   if (opts.save === "phone") {
     await page.getByTestId("save-phone-only").click();
   } else {
     await page.getByTestId("save-online").click();
+    await check("spoken consent", "consent-agree");
     // The agree button unlocks once the spoken explanation has played.
     await page.getByTestId("consent-agree").click({ timeout: 60_000 });
+    await check("usage counts question", "analytics-no");
     await page.getByTestId("analytics-no").click();
     await enterPin(page, opts.pin);
   }
   await waitForRoute(page, "/start-level");
+  await check("where to start", "assessment-skip");
   await page.getByTestId("assessment-skip").click();
   await page.getByTestId("self-not-yet").click();
   await waitForRoute(page, "/home");

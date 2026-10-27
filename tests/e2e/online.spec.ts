@@ -65,7 +65,7 @@ test("usage counts are sent only after the learner says yes, and stop when they 
   const db = adminDb()!;
   const since = new Date().toISOString();
   // The onboarding helper answers "no" to usage counts.
-  await onboard(page, { lang: "zu", avatar: "avatar-drum", pin: "2581", save: "online" });
+  await onboard(page, { lang: "zu", avatar: "avatar-drum", pin: "2581", save: "online", a11y: true });
   const [profile] = await idb<{ learnerId?: string }>(page, "profiles");
   const { data: learner } = await db.from("learners").select("pseudonym").eq("id", profile.learnerId!).single();
   const eventsOf = async () => (await db.from("analytics_events").select("event, props").eq("pseudonym", learner!.pseudonym)).data ?? [];

@@ -22,7 +22,7 @@ for (const [lang, other] of [
     await page.goto("/");
     await page.getByTestId("sound-check-play").waitFor();
     await expectAccessible(page, "sound check");
-    await onboard(page, { lang, avatar: lang === "zu" ? "avatar-protea" : "avatar-aloe", pin: "2468", save: "phone" });
+    await onboard(page, { lang, avatar: lang === "zu" ? "avatar-protea" : "avatar-aloe", pin: "2468", save: "phone", a11y: true });
     await expect(page.getByTestId("continue-lesson")).toBeVisible();
     await expectAccessible(page, "home");
 
@@ -32,6 +32,19 @@ for (const [lang, other] of [
     await page.getByTestId("start-lesson").click();
     await page.getByTestId("continue").first().waitFor();
     await expectAccessible(page, "teaching step");
+    // The tutor's help (Tier 1: validated clips).
+    await page.getByTestId("help").click();
+    await page.getByTestId("help-panel").waitFor();
+    await expectAccessible(page, "tutor help");
+    await page.getByTestId("help-close").click();
+    // The first exercise.
+    const exercise = page.locator("[data-testid=option], [data-testid^=option-], [data-testid=tile], [data-testid=trace-area], [data-testid=typing-input]");
+    for (let i = 0; i < 15 && (await exercise.count()) === 0; i++) {
+      await page.getByTestId("continue").first().click();
+      await page.waitForTimeout(400);
+    }
+    await exercise.first().waitFor();
+    await expectAccessible(page, "exercise");
 
     await playLesson(page);
     await expect(page.getByTestId("done-xp")).toContainText("+");
@@ -55,6 +68,14 @@ for (const [lang, other] of [
     await page.getByTestId("me-privacy").click();
     await waitForRoute(page, "/me/privacy");
     await expectAccessible(page, "privacy");
+
+    // The placement activity, as reached from Me (nothing is recorded unless it is finished).
+    await page.goto("/#/assessment/retake");
+    await page.getByTestId("assessment-begin").waitFor();
+    await expectAccessible(page, "placement activity introduction");
+    await page.getByTestId("assessment-begin").click();
+    await page.getByTestId("assessment-option").first().waitFor();
+    await expectAccessible(page, "placement activity");
 
     // Spoken lines only ever come from this language (or English model audio for English words), never the
     // other one. The only exception is the language choice itself, where each language introduces itself.
