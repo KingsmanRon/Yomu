@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { CompiledExercise, CompiledLex } from "@/lib/content/compiled";
 import { evidenceFor } from "@/lib/learning/evidence";
-import { helpOptions, helpSequence } from "@/learner/tutor/tier1";
+import { helpOptions, helpSequence } from "@/lib/tutor/tier1";
 
 const audio = { src: "/a.ogg", ms: 1000, bytes: 100, placeholder: true, lang: "en" as const };
 const cat: CompiledLex = {

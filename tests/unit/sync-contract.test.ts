@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { ASSESSMENT_INSTRUMENT_VERSION } from "@/config/app";
 import { newOp } from "@/learner/offline/oplog";
-import { targetLexId } from "@/learner/tutor/tier1";
+import { targetLexId } from "@/lib/tutor/tier1";
 import type { Op } from "@/lib/learning/types";
 import { OpSchema, SyncRequestSchema } from "@/server/ops";
 import { compiledContent } from "./compiled-fixture";

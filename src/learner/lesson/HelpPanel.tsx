@@ -5,7 +5,7 @@ import type { CompiledLex, CompiledStep, Lang } from "@/lib/content/compiled";
 import { track } from "../analytics";
 import { useOnline } from "../offline/network";
 import { useLearner } from "../state";
-import { helpOptions, helpSequence, type HelpId, type HelpItem } from "../tutor/tier1";
+import { helpOptions, helpSequence, type HelpId, type HelpItem } from "@/lib/tutor/tier1";
 import { IconHelp, IconLanguage, IconListen, IconMic, IconSlow, IconText } from "../ui/icons";
 import { Caption, Modal } from "../ui/kit";
 import { useSpeech, type Speakable } from "../ui/speech";
@@ -69,8 +69,8 @@ export function HelpPanel({
     return { audio: l.audio, lang: l.lang, rate: item.rate };
   };
 
-  const choose = async (id: HelpId, reveals: boolean) => {
-    void track("tutor_help", { option: id, tier: 1, lessonId }, profile?.id ?? null);
+  const choose = async (id: HelpId, reveals: boolean, tier: 1 | 2 = 1) => {
+    void track("tutor_help", { option: id, tier, lessonId }, profile?.id ?? null);
     if (id === "ask") {
       setAsking(true);
       return;
@@ -90,7 +90,19 @@ export function HelpPanel({
   return (
     <Modal label={line("ui.help")?.label ?? "help"} onClose={onClose}>
       {asking ? (
-        <TutorAsk lang={lang} lessonId={lessonId} step={step} lex={lex} onDone={() => setAsking(false)} />
+        <TutorAsk
+          lang={lang}
+          lessonId={lessonId}
+          step={step}
+          onIntent={async (intent) => {
+            const option = options.find((o) => o.id === intent);
+            if (!option) return false;
+            await choose(option.id, option.reveals, 2);
+            return true;
+          }}
+          onSupported={onSupported}
+          onDone={() => setAsking(false)}
+        />
       ) : (
         <div className="flex flex-col gap-4" data-testid="help-panel">
           <Caption line={clip("tutor.menu")} />

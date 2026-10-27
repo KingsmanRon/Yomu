@@ -28,8 +28,15 @@ export const serverEnv = {
     stt: (process.env.AI_STT_PROVIDER ?? "dev") as SttProviderName,
     tts: (process.env.AI_TTS_PROVIDER ?? "none") as TtsProviderName,
     anthropicKey: process.env.ANTHROPIC_API_KEY ?? "",
-    llmModel: process.env.AI_LLM_MODEL || "claude-haiku-5-5",
+    llmModel: process.env.AI_LLM_MODEL || "claude-opus-5-5",
     vulavulaKey: process.env.VULAVULA_API_KEY ?? "",
+    vulavulaBaseUrl: process.env.VULAVULA_BASE_URL || "https://vulavula-services.lelapa.ai",
+    /** Set from the customer's contract; deliberately high by default so the spending cap errs on the safe side. */
+    vulavulaCostPerMinuteUsd: num("VULAVULA_COST_PER_MINUTE_USD", 0.1),
+    /** Per provider call. */
+    timeoutMs: num("AI_TIMEOUT_MS", 15000),
+    /** Longest spoken question accepted (the app stops recording at 8 s). */
+    maxQuestionSeconds: num("AI_MAX_QUESTION_SECONDS", 10),
     dailyCapUsd: num("AI_DAILY_SPEND_CAP_USD", 5),
     perMinute: num("AI_RATE_LIMIT_PER_MINUTE", 6),
     perDay: num("AI_RATE_LIMIT_PER_DAY", 60),

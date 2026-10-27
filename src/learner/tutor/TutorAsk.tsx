@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { CompiledLex, CompiledStep, Lang } from "@/lib/content/compiled";
+import type { CompiledStep, Lang } from "@/lib/content/compiled";
+import { clipForResult, isHelpIntent, type HelpIntent, type TutorAskResult } from "@/lib/tutor/intents";
 import { track } from "../analytics";
 import { accessToken } from "../offline/auth";
 import { useOnline } from "../offline/network";
@@ -44,20 +45,26 @@ const NO_TIERS: TutorTiersClient = { spokenQuestions: false, generatedSpeech: fa
 
 /**
  * Tier 2: the learner asks a question aloud. The audio goes to the server
- * once, is transcribed by a verified provider and discarded; the answer is
- * always a validated recorded clip.
+ * once, is transcribed by a verified provider and discarded. A question that
+ * matches a help option is answered exactly as if that option had been
+ * tapped (same recordings, same honesty rule); anything else gets a fixed
+ * recorded reply. Tier 3 generated speech plays only when the server reports
+ * a verified voice, and always marks the attempt as supported.
  */
 export function TutorAsk({
   lang,
   lessonId,
   step,
-  lex,
+  onIntent,
+  onSupported,
   onDone,
 }: {
   lang: Lang;
   lessonId: string;
   step: CompiledStep;
-  lex: Record<string, CompiledLex>;
+  /** Answer a help intent with the matching tap-to-help option; false when that help is not available here. */
+  onIntent: (intent: HelpIntent) => Promise<boolean>;
+  onSupported: () => void;
   onDone: () => void;
 }) {
   const { clip, profile } = useLearner();
@@ -65,6 +72,7 @@ export function TutorAsk({
   const online = useOnline();
   const rec = useRecorderBlob(8000);
   const [busy, setBusy] = useState(false);
+  const [generated, setGenerated] = useState(false);
 
   useEffect(() => {
     void speak({ line: clip(online ? "tutor.ask_prompt" : "tutor.needs_internet"), lang });
@@ -77,6 +85,7 @@ export function TutorAsk({
     rec.reset();
     void (async () => {
       setBusy(true);
+      let result: TutorAskResult = { outcome: "resting", reason: "provider_error" };
       try {
         const token = await accessToken(profile.id);
         const form = new FormData();
@@ -85,14 +94,26 @@ export function TutorAsk({
         form.set("lessonId", lessonId);
         form.set("stepId", step.id);
         const res = await fetch("/api/tutor/ask", { method: "POST", body: form, headers: token ? { Authorization: `Bearer ${token}` } : {} });
-        const data = res.ok ? ((await res.json()) as { clipId: string; replay?: "instruction" | "teach"; lexId?: string }) : { clipId: "tutor.resting" };
-        await speak({ line: clip(data.clipId), lang });
-        if (data.replay === "instruction" && step.kind === "exercise") await speak({ line: step.instruction, lang });
-        if (data.replay === "teach" && step.kind === "teach") await speak({ line: step.line, lang });
-        if (data.lexId && lex[data.lexId]?.gloss) await speak({ line: lex[data.lexId].gloss!.line, lang });
-        if (!res.ok) void track("provider_failure", { status: res.status, tier: 2 }, profile.id);
+        if (res.ok) result = (await res.json()) as TutorAskResult;
+        else void track("provider_failure", { status: res.status, tier: 2 }, profile.id);
       } catch {
-        await speak({ line: clip("tutor.resting"), lang });
+        // Network failure: answered as "resting" below.
+      }
+      try {
+        if (result.outcome === "intent" && isHelpIntent(result.intent)) {
+          if (!(await onIntent(result.intent))) await speak({ line: clip("tutor.cant_answer_yet"), lang });
+        } else if (result.outcome === "speech") {
+          if (step.kind === "exercise") onSupported();
+          setGenerated(true);
+          await speak({ audio: { src: `data:${result.mime};base64,${result.audio}`, ms: 0, bytes: result.audio.length, placeholder: false, lang }, lang });
+          setGenerated(false);
+        } else {
+          await speak({ line: clip(clipForResult(result) ?? "tutor.cant_answer_yet"), lang });
+        }
+        // Help intents are tracked by the help panel, like a tap.
+        if (!(result.outcome === "intent" && isHelpIntent(result.intent))) {
+          void track("tutor_help", { option: result.outcome === "intent" ? result.intent : result.outcome, tier: result.outcome === "speech" ? 3 : 2, lessonId }, profile.id);
+        }
       } finally {
         setBusy(false);
       }
@@ -113,6 +134,11 @@ export function TutorAsk({
   return (
     <div className="flex flex-col items-center gap-5" data-testid="tutor-ask">
       <Caption line={clip("tutor.ask_prompt")} />
+      {generated && (
+        <span className="rounded-full bg-accent-soft px-3 py-1 text-sm font-semibold text-accent" data-testid="ai-voice">
+          AI
+        </span>
+      )}
       {busy ? (
         <Spinner />
       ) : (

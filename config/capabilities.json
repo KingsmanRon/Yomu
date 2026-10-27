@@ -1,7 +1,11 @@
 {
   "version": "2026-10-26",
   "description": "Provider capability matrix. The app reads this file at runtime and exposes a capability to learners only when status is 'verified' AND learnerVisible is true. Everything else falls back to the next lower tutor tier (ultimately Tier 1: validated recorded clips). Change a status only after the evaluation described in docs/capability-matrix.md has been completed and recorded here.",
-  "statuses": ["verified", "experimental", "unsupported"],
+  "statuses": [
+    "verified",
+    "experimental",
+    "unsupported"
+  ],
   "capabilities": {
     "stt": "Speech-to-text: transcribe a learner's spoken question in the teaching language (tutor Tier 2).",
     "tts": "Text-to-speech: speak generated explanations aloud (tutor Tier 3).",
@@ -48,7 +52,7 @@
       "verifiedAt": null,
       "verifierRole": null,
       "learnerVisible": false,
-      "notes": "Vendor documentation (checked 2026-10-26) lists isiZulu (lang_code 'zul', code-switched isiZulu) for the synchronous transcription endpoint POST /api/v2alpha/transcribe/sync/file. The adapter is implemented but has not been run against real learner audio. Required before 'verified': word error rate on the Tier 2 question set recorded by 10+ adult isiZulu speakers on entry-level Android phones, in quiet and noisy settings, judged by a native speaker."
+      "notes": "Vendor documentation (checked 2026-10-26) lists isiZulu (lang_code 'zul', code-switched isiZulu) for the synchronous transcription endpoint POST /api/v2alpha/transcribe/sync/file. The adapter is implemented but has not been run against real learner audio. Required before 'verified': word error rate on the Tier 2 question set recorded by 10+ adult isiZulu speakers on entry-level Android phones, in quiet and noisy settings, judged by a native speaker. Adapter details to confirm on the first live call: the multipart field name ('file') and the response fields ('transcription_text', 'language_code') come from vendor examples; a transcript reported in another language is rejected."
     },
     {
       "provider": "lelapa-vulavula",
@@ -58,7 +62,7 @@
       "verifiedAt": null,
       "verifierRole": null,
       "learnerVisible": false,
-      "notes": "Vendor documentation (checked 2026-10-26) lists Sesotho (lang_code 'sot'). The docs note that word-level timings and confidence are not available for Sesotho. Verify that the model handles South African Sesotho orthography and speech (not only Lesotho Sesotho) before use. Same evaluation protocol as isiZulu."
+      "notes": "Vendor documentation (checked 2026-10-26) lists Sesotho (lang_code 'sot'). The docs note that word-level timings and confidence are not available for Sesotho. Verify that the model handles South African Sesotho orthography and speech (not only Lesotho Sesotho) before use. Same evaluation protocol as isiZulu. Adapter details to confirm on the first live call: the multipart field name ('file') and the response fields ('transcription_text', 'language_code') come from vendor examples; a transcript reported in another language is rejected."
     },
     {
       "provider": "lelapa-vulavula",
@@ -118,7 +122,7 @@
       "verifiedAt": null,
       "verifierRole": null,
       "learnerVisible": false,
-      "notes": "Adapter implemented for Tier 2 intent classification (output is restricted to a fixed list of intent IDs, so no generated text reaches learners) and Tier 3 explanation drafting. isiZulu generation quality for adult literacy explanations has not been evaluated by native speakers. Tier 3 also needs a verified isiZulu TTS voice, which does not exist in this matrix."
+      "notes": "Adapter implemented for Tier 2 intent classification (output is restricted to a fixed list of intent IDs, so no generated text reaches learners) and Tier 3 explanation drafting. isiZulu generation quality for adult literacy explanations has not been evaluated by native speakers. Tier 3 also needs a verified isiZulu TTS voice, which does not exist in this matrix. Model is set by AI_LLM_MODEL (default claude-opus-5-5); re-run the evaluation when it changes."
     },
     {
       "provider": "anthropic-claude",
@@ -128,7 +132,7 @@
       "verifiedAt": null,
       "verifierRole": null,
       "learnerVisible": false,
-      "notes": "As for isiZulu. Evaluation must check South African Sesotho orthography (for example 'dijo', not 'lijo'; 'kg' not 'kh')."
+      "notes": "As for isiZulu. Evaluation must check South African Sesotho orthography (for example 'dijo', not 'lijo'; 'kg' not 'kh'). Model is set by AI_LLM_MODEL (default claude-opus-5-5); re-run the evaluation when it changes."
     },
     {
       "provider": "anthropic-claude",
@@ -138,7 +142,7 @@
       "verifiedAt": null,
       "verifierRole": null,
       "learnerVisible": false,
-      "notes": "English output is only ever shown to facilitators (text view, marked 'AI-generated, unverified'). Learners never receive English text in place of their teaching language."
+      "notes": "English output is only ever shown to facilitators (text view, marked 'AI-generated, unverified'). Learners never receive English text in place of their teaching language. Model is set by AI_LLM_MODEL (default claude-opus-5-5); re-run the evaluation when it changes."
     },
     {
       "provider": "device-web-speech",

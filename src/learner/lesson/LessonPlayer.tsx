@@ -5,7 +5,7 @@ import type { CompiledExercise, CompiledLex, CompiledLine, CompiledStep, Lang } 
 import { CORE_CLIPS } from "@/lib/content/feedback";
 import type { AttemptData, ErrorType } from "@/lib/learning/types";
 import { useLearner } from "../state";
-import { targetLexId } from "../tutor/tier1";
+import { targetLexId } from "@/lib/tutor/tier1";
 import { useTutorTiers } from "../tutor/TutorAsk";
 import { IconCheck, IconContinue, IconRetry } from "../ui/icons";
 import { Caption, ListenButton, Modal, ReviewMarker, SpeakButton, TopBar } from "../ui/kit";
