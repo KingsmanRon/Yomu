@@ -5,7 +5,7 @@ import { backendConfigured, type TeachingLanguage } from "@/config/app";
 import type { CompiledLine } from "@/lib/content/compiled";
 import { loadAppLines } from "../content";
 import { api, ApiError } from "../offline/api";
-import { facilitatorSignIn, forgetSession, signInAnonymously } from "../offline/auth";
+import { facilitatorSignIn, forgetSession, signInAnonymously, type PendingFacilitatorSignIn } from "../offline/auth";
 import type { StoredProfile } from "../offline/db";
 import { useOnline } from "../offline/network";
 import { hashLocalPin, restoreProfile, updateProfile } from "../offline/profiles";
@@ -309,11 +309,25 @@ export function Assist({ profileId }: { profileId?: string }) {
   );
 }
 
+const SIGN_IN_ERRORS: Record<string, string> = {
+  invalid_credentials: "Email or password is not correct.",
+  forbidden: "This account is not a facilitator account.",
+  mfa_not_set_up: "This account has no two-step sign-in yet. Sign in once in the staff area (/staff) to set up your authenticator app, then come back.",
+  mfa_code_wrong: "That code is not correct. Type the newest code from your authenticator app.",
+  mfa_required: "Sign in again with the code from your authenticator app.",
+  network: "No internet connection.",
+};
+
 function SignIn({ online, onSignedIn }: { online: boolean; onSignedIn: (f: Facilitator) => void }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [code, setCode] = useState("");
+  const [pending, setPending] = useState<PendingFacilitatorSignIn | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // A half-finished sign-in (password given, code not yet) is ended on leaving.
+  const pendingRef = useRef<PendingFacilitatorSignIn | null>(null);
+  useEffect(() => () => void pendingRef.current?.cancel(), []);
 
   if (!backendConfigured())
     return <p className="rounded-2xl bg-white p-3">Online features are not set up on this server, so facilitator help is not available.</p>;
@@ -324,39 +338,98 @@ function SignIn({ online, onSignedIn }: { online: boolean; onSignedIn: (f: Facil
       </p>
     );
 
-  const submit = async (e: FormEvent) => {
+  const fail = (err: unknown) => {
+    const reason = err instanceof ApiError ? err.code : err instanceof Error ? err.message : "error";
+    setError(SIGN_IN_ERRORS[reason] ?? "Sign-in failed. Please try again.");
+  };
+
+  const submitPassword = async (e: FormEvent) => {
     e.preventDefault();
     setBusy(true);
     setError(null);
     try {
-      const session = await facilitatorSignIn(email.trim(), password);
-      try {
-        const { cohorts } = await api<{ cohorts: AssistCohort[] }>(null, "/api/assist/learners", { token: session.token });
-        onSignedIn({ ...session, cohorts });
-      } catch (err) {
-        await session.signOut();
-        throw err;
-      }
+      const next = await facilitatorSignIn(email.trim(), password);
+      pendingRef.current = next;
+      setPending(next);
     } catch (err) {
-      const code = err instanceof ApiError ? err.code : err instanceof Error ? err.message : "error";
-      setError(
-        code === "invalid_credentials"
-          ? "Email or password is not correct."
-          : code === "forbidden"
-            ? "This account is not a facilitator account."
-            : code === "network"
-              ? "No internet connection."
-              : "Sign-in failed. Please try again.",
-      );
+      fail(err);
     } finally {
       setBusy(false);
       setPassword("");
     }
   };
 
+  const submitCode = async (e: FormEvent) => {
+    e.preventDefault();
+    if (!pending) return;
+    setBusy(true);
+    setError(null);
+    try {
+      const session = await pending.verify(code.replace(/\s/g, ""));
+      try {
+        const { cohorts } = await api<{ cohorts: AssistCohort[] }>(null, "/api/assist/learners", { token: session.token });
+        pendingRef.current = null;
+        onSignedIn({ ...session, cohorts });
+      } catch (err) {
+        pendingRef.current = null;
+        await session.signOut();
+        setPending(null);
+        throw err;
+      }
+    } catch (err) {
+      fail(err);
+    } finally {
+      setBusy(false);
+      setCode("");
+    }
+  };
+
+  const errorLine = error && (
+    <p role="alert" className="font-semibold text-danger" data-testid="assist-error">
+      {error}
+    </p>
+  );
+
+  if (pending)
+    return (
+      <form onSubmit={(e) => void submitCode(e)} className="flex flex-col gap-3">
+        <p>Type the six-digit code from your authenticator app.</p>
+        <label className="flex flex-col gap-1 font-semibold">
+          Code
+          <input
+            required
+            inputMode="numeric"
+            autoComplete="one-time-code"
+            pattern="[0-9 ]{6,7}"
+            maxLength={7}
+            value={code}
+            onChange={(e) => setCode(e.target.value)}
+            data-testid="assist-code"
+            className="min-h-12 w-40 rounded-xl border-2 border-line bg-white px-3 font-mono font-normal tracking-widest"
+          />
+        </label>
+        {errorLine}
+        <button type="submit" disabled={busy} data-testid="assist-verify" className="min-h-14 rounded-2xl bg-primary px-5 text-lg font-bold text-white disabled:opacity-50">
+          {busy ? "Checking…" : "Continue"}
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            void pending.cancel();
+            pendingRef.current = null;
+            setPending(null);
+            setError(null);
+          }}
+          className="min-h-12 rounded-2xl border-2 border-line bg-white px-5 font-semibold"
+        >
+          Cancel
+        </button>
+      </form>
+    );
+
   return (
-    <form onSubmit={(e) => void submit(e)} className="flex flex-col gap-3">
-      <p>Sign in with your facilitator account. You will stay signed in only while you help, and nothing about you is saved on this phone.</p>
+    <form onSubmit={(e) => void submitPassword(e)} className="flex flex-col gap-3">
+      <p>Sign in with your facilitator account and your authenticator app. You will stay signed in only while you help, and nothing about you is saved on this phone.</p>
       <label className="flex flex-col gap-1 font-semibold">
         Email
         <input
@@ -381,11 +454,7 @@ function SignIn({ online, onSignedIn }: { online: boolean; onSignedIn: (f: Facil
           className="min-h-12 rounded-xl border-2 border-line bg-white px-3 font-normal"
         />
       </label>
-      {error && (
-        <p role="alert" className="font-semibold text-danger" data-testid="assist-error">
-          {error}
-        </p>
-      )}
+      {errorLine}
       <button type="submit" disabled={busy} data-testid="assist-signin" className="min-h-14 rounded-2xl bg-primary px-5 text-lg font-bold text-white disabled:opacity-50">
         {busy ? "Signing in…" : "Sign in"}
       </button>

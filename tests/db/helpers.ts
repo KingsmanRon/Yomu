@@ -1,6 +1,7 @@
 import { existsSync } from "node:fs";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import pg from "pg";
+import { totp } from "../totp";
 
 /**
  * Database test helpers. Everything goes through the real Auth and PostgREST
@@ -95,21 +96,56 @@ export interface TestStaff {
   userId: string;
   email: string;
   password: string;
+  /** Key of the staff member's authenticator app; null for an account without two-step sign-in. */
+  totpSecret: string | null;
   token: string;
   db: SupabaseClient;
 }
 
-export async function newStaff(role: "facilitator" | "org_admin" | "content_reviewer" | "platform_admin", orgId: string | null): Promise<TestStaff> {
+/**
+ * A staff account as an administrator creates it. By default it has set up
+ * its authenticator and is signed in with both steps (aal2), as staff access
+ * requires; `{ mfa: false }` gives an account with a password-only session.
+ */
+export async function newStaff(
+  role: "facilitator" | "org_admin" | "content_reviewer" | "platform_admin",
+  orgId: string | null,
+  { mfa = true }: { mfa?: boolean } = {},
+): Promise<TestStaff> {
   const email = `${role}-${crypto.randomUUID().slice(0, 8)}@db-test.yomu.test`;
   const password = `pw-${crypto.randomUUID()}`;
   const { data, error } = await admin.auth.admin.createUser({ email, password, email_confirm: true });
   if (error || !data.user) throw error ?? new Error("no user");
   created.users.push(data.user.id);
   await ok(admin.from("staff_roles").insert({ user_id: data.user.id, role, organisation_id: role === "facilitator" || role === "org_admin" ? orgId : null }));
-  const signIn = createClient(URL_, PUBLISHABLE, opts);
-  const { data: s, error: e } = await signIn.auth.signInWithPassword({ email, password });
+  const client = createClient(URL_, PUBLISHABLE, opts);
+  const { data: s, error: e } = await client.auth.signInWithPassword({ email, password });
   if (e || !s.session) throw e ?? new Error("no session");
-  return { userId: data.user.id, email, password, token: s.session.access_token, db: asUser(s.session.access_token) };
+  const staff: TestStaff = { userId: data.user.id, email, password, totpSecret: null, token: s.session.access_token, db: asUser(s.session.access_token) };
+  if (!mfa) return staff;
+  const enrolled = await client.auth.mfa.enroll({ factorType: "totp" });
+  if (enrolled.error || !enrolled.data) throw enrolled.error ?? new Error("no factor");
+  const verified = await client.auth.mfa.challengeAndVerify({ factorId: enrolled.data.id, code: totp(enrolled.data.totp.secret) });
+  if (verified.error || !verified.data) throw verified.error ?? new Error("not verified");
+  return { ...staff, totpSecret: enrolled.data.totp.secret, token: verified.data.access_token, db: asUser(verified.data.access_token) };
+}
+
+/** Another session of an existing staff member: password only, or with the authenticator code too. */
+export async function signInStaff(staff: TestStaff, { mfa = true }: { mfa?: boolean } = {}): Promise<{ token: string; client: SupabaseClient }> {
+  const client = createClient(URL_, PUBLISHABLE, opts);
+  const { data, error } = await client.auth.signInWithPassword({ email: staff.email, password: staff.password });
+  if (error || !data.session) throw error ?? new Error("no session");
+  if (!mfa) return { token: data.session.access_token, client };
+  const factor = data.user.factors?.find((f) => f.status === "verified");
+  if (!factor || !staff.totpSecret) throw new Error("this staff member has no authenticator");
+  const verified = await client.auth.mfa.challengeAndVerify({ factorId: factor.id, code: totp(staff.totpSecret) });
+  if (verified.error || !verified.data) throw verified.error ?? new Error("not verified");
+  return { token: verified.data.access_token, client };
+}
+
+/** Removes an Auth user created outside these helpers at cleanup. */
+export function trackUser(userId: string): void {
+  created.users.push(userId);
 }
 
 /** A fresh anonymous Auth session, as a phone creates one after spoken consent. Removed by cleanup(). */

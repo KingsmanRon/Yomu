@@ -15,10 +15,10 @@ Principles the design follows:
 | Role | How they sign in | What they can reach |
 |---|---|---|
 | Learner | Picture and secret code on the phone; an anonymous Supabase Auth session per profile after registration | Their own records only (row-level security) |
-| Facilitator | Email and password | The classes they run; for each learner only the fields that learner chose to share (database functions check consent field by field) |
-| Organisation admin | Email and password | Class-level counts for their organisation's classes; never tutor questions, never individual mistakes |
-| Content reviewer | Email and password | Lesson content and review records; no learner data at all |
-| Platform admin | Email and password | The anonymised pilot figures (aggregates only, groups under 5 suppressed) and every organisation's class counts. Staff roles are assigned by the operator in the database (there is no in-app screen for it yet) |
+| Facilitator | Email, password and a code from an authenticator app (two-step sign-in, required) | The classes they run; for each learner only the fields that learner chose to share (database functions check consent field by field) |
+| Organisation admin | Email, password and a code from an authenticator app (two-step sign-in, required) | Class-level counts for their organisation's classes; never tutor questions, never individual mistakes |
+| Content reviewer | Email, password and a code from an authenticator app (two-step sign-in, required) | Lesson content and review records; no learner data at all |
+| Platform admin | Email, password and a code from an authenticator app (two-step sign-in, required) | The anonymised pilot figures (aggregates only, groups under 5 suppressed) and every organisation's class counts. Staff roles are assigned by the operator in the database (there is no in-app screen for it yet) |
 | Server (service role) | Server environment only | Everything; used only by API routes after they have authenticated and authorised the caller |
 
 ## On the learner's phone
@@ -58,10 +58,12 @@ All learner-owned rows reference `learners.id` with `on delete cascade`: deletin
 | `join_attempts` | Whether a class code attempt succeeded | Stop code guessing | Server only | 2 days |
 | `deletion_log` | That a deletion happened, when, and who started it; no identifier of the deleted learner | Accountability | Server only | Indefinitely (not personal data) |
 | `staff_roles`, `organisations`, `cohorts`, `cohort_facilitators` | Staff role, optional display name, organisation, classes | Staff access | Staff according to role | Until removed by a platform admin |
+| `staff_mfa_recovery_codes` | One-time recovery codes for staff two-step sign-in, as keyed hashes (HMAC with the server secret); when each was used | Getting back in after losing the authenticator | Server only (the staff member sees the codes once, when made) | Until replaced by new codes, or the staff account is deleted |
+| `staff_security_events` | Recovery codes made, a recovery code used or wrong, a reset by a platform administrator (who and when) | Audit of staff sign-in recovery; limits wrong recovery codes to 5 per 15 minutes | Server only | Kept (the user link is cleared when a staff account is deleted) |
 | `content_assets`, `content_reviews` | Lesson lines and review decisions: reviewer role, user ID, notes, date | Content review workflow | Content reviewers, platform admins | With the content |
 | Curriculum tables, `provider_capabilities` | Lessons, objectives, AET mapping, capability matrix copy | Reports and review tools | Public curriculum; staff | With the content |
 
-Supabase Auth (`auth.users`) holds one anonymous user per registered learner (no email, no phone) and an email and password hash per staff member. Anonymous users that never became a learner are deleted after 7 days.
+Supabase Auth (`auth.users`) holds one anonymous user per registered learner (no email, no phone) and an email and password hash per staff member, with the staff member's authenticator key (`auth.mfa_factors`). Anonymous users that never became a learner are deleted after 7 days.
 
 ### Retention job
 
