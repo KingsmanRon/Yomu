@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import type { CompiledAudio } from "@/lib/content/compiled";
-import { playableSource } from "@/learner/audio/player";
+import { analyticsDecision, claimOnboardingEvents, flushAnalytics, forgetAnalytics, initAnalytics, track } from "@/learner/analytics";
+import { playableSource, player } from "@/learner/audio/player";
 import { parseJoinCode } from "@/learner/joinCode";
 import { openYomuDB, type StoredProfile, type YomuDB } from "@/learner/offline/db";
 import { appendOp, markAllUnsynced, mergeServerOps, newOp, opsForProfile, unsyncedOps } from "@/learner/offline/oplog";
@@ -127,6 +128,73 @@ describe("audio never falls back to another language", () => {
   });
 });
 
+describe("a clip that stalls never freezes the screen", () => {
+  class FakeAudio {
+    static last: FakeAudio | null = null;
+    preload = "";
+    src = "";
+    playbackRate = 1;
+    onended: (() => void) | null = null;
+    onerror: (() => void) | null = null;
+    paused = false;
+    constructor() {
+      FakeAudio.last = this;
+    }
+    canPlayType() {
+      return "maybe";
+    }
+    play() {
+      return Promise.resolve();
+    }
+    pause() {
+      this.paused = true;
+    }
+    removeAttribute() {}
+  }
+  const clip: CompiledAudio = { src: "/audio/zu/clip.ogg", ms: 1000, bytes: 100, placeholder: true, lang: "zu" };
+
+  it("gives up on a clip that neither ends nor fails, a little after its length", async () => {
+    vi.useFakeTimers();
+    vi.stubGlobal("Audio", FakeAudio);
+    vi.stubGlobal("fetch", async () => new Response(new Blob(["x"])));
+    try {
+      const result = player.play({ audio: clip, expect: "zu" });
+      await vi.advanceTimersByTimeAsync(8_000);
+      expect(FakeAudio.last?.paused).toBe(false);
+      await vi.advanceTimersByTimeAsync(1_500);
+      await expect(result).resolves.toBe("error");
+      expect(FakeAudio.last?.paused).toBe(true);
+      // A clip that plays normally still ends normally.
+      const next = player.play({ audio: clip, expect: "zu" });
+      await vi.advanceTimersByTimeAsync(500);
+      FakeAudio.last?.onended?.();
+      await expect(next).resolves.toBe("ended");
+    } finally {
+      vi.useRealTimers();
+      vi.unstubAllGlobals();
+    }
+  });
+
+  it("lets the newest clip win when an older one finishes loading later", async () => {
+    let releaseSlow: (r: Response) => void = () => {};
+    vi.stubGlobal("Audio", FakeAudio);
+    vi.stubGlobal("fetch", (url: string) =>
+      url.includes("slow") ? new Promise<Response>((r) => (releaseSlow = r)) : Promise.resolve(new Response(new Blob(["x"]))),
+    );
+    try {
+      const older = player.play({ audio: { ...clip, src: "/audio/zu/slow.ogg" }, expect: "zu" });
+      const newer = player.play({ audio: { ...clip, src: "/audio/zu/fast.ogg" }, expect: "zu" });
+      await new Promise((r) => setTimeout(r, 0));
+      releaseSlow(new Response(new Blob(["y"])));
+      await expect(older).resolves.toBe("stopped");
+      FakeAudio.last?.onended?.();
+      await expect(newer).resolves.toBe("ended");
+    } finally {
+      vi.unstubAllGlobals();
+    }
+  });
+});
+
 describe("class join codes", () => {
   it("reads typed codes and scanned links", () => {
     expect(parseJoinCode("515063")).toBe("515063");
@@ -135,5 +203,47 @@ describe("class join codes", () => {
     expect(parseJoinCode("51506")).toBeNull();
     expect(parseJoinCode("5150631")).toBeNull();
     expect(parseJoinCode("hello")).toBeNull();
+  });
+});
+
+describe("usage counts leave the phone only after the learner said yes", () => {
+  const now = Date.parse("2026-10-27T10:00:00Z");
+  const hoursAgo = (h: number) => new Date(now - h * 3600_000).toISOString();
+  const profiles = [{ id: "yes", learnerId: "learner-1", analyticsConsent: true }, { id: "no", learnerId: "learner-2", analyticsConsent: false }, { id: "guest" }];
+
+  it("sends a consenting learner's events and never those of a learner who said no", () => {
+    expect(analyticsDecision({ profileId: "yes", at: hoursAgo(1) }, profiles, now)).toBe("send");
+    expect(analyticsDecision({ profileId: "no", at: hoursAgo(1) }, profiles, now)).toBe("delete");
+    expect(analyticsDecision({ profileId: "removed", at: hoursAgo(1) }, profiles, now)).toBe("delete");
+    expect(analyticsDecision({ profileId: "yes", at: hoursAgo(24 * 8) }, profiles, now)).toBe("delete");
+  });
+
+  it("holds onboarding and guest events for a day only, in case the learner saves online and says yes", () => {
+    expect(analyticsDecision({ profileId: null, at: hoursAgo(1) }, profiles, now)).toBe("keep");
+    expect(analyticsDecision({ profileId: "guest", at: hoursAgo(1) }, profiles, now)).toBe("keep");
+    expect(analyticsDecision({ profileId: "guest", at: hoursAgo(25) }, profiles, now)).toBe("delete");
+    expect(analyticsDecision({ profileId: null, at: hoursAgo(25) }, profiles, now)).toBe("delete");
+  });
+
+  it("attributes onboarding screens to the profile created next, and forgets a profile's events", async () => {
+    const db = await freshDb();
+    await db.add("analytics", { profileId: null, event: "onboarding_step", props: { step: "welcome" }, at: new Date().toISOString() });
+    await claimOnboardingEvents(db, "p1");
+    expect((await db.getAll("analytics")).map((e) => e.profileId)).toEqual(["p1"]);
+    await forgetAnalytics(db, "p1");
+    expect(await db.getAll("analytics")).toHaveLength(0);
+  });
+
+  it("deletes what may not be sent even while offline", async () => {
+    const db = await freshDb();
+    initAnalytics(db);
+    for (const id of ["yes", "no", "guest"]) await track("lesson_start", { lessonId: "l10-satp" }, id);
+    vi.stubGlobal("navigator", { onLine: false });
+    try {
+      await flushAnalytics(profiles);
+    } finally {
+      vi.unstubAllGlobals();
+    }
+    expect((await db.getAll("analytics")).map((e) => e.profileId).sort()).toEqual(["guest", "yes"]);
   });
 });

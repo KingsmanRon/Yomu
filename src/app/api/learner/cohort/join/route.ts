@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { CONSENT_VERSION } from "@/config/app";
 import { handler, json, readJson } from "@/server/http";
-import { recordEvents } from "@/server/observability";
 import { HttpError, requireLearner, supabaseAdmin } from "@/server/supabase";
 
 const Body = z
@@ -28,6 +27,5 @@ export const POST = handler(async (request) => {
   if (error) throw error;
   if (data?.error === "not_found") throw new HttpError(404, "cohort_not_found");
   if (data?.error === "rate_limited") throw new HttpError(429, "too_many_attempts");
-  await recordEvents([{ event: "cohort_join" }], null);
   return json({ cohortId: data.cohortId, name: data.name });
 });

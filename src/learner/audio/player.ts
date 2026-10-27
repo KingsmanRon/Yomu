@@ -33,12 +33,20 @@ export interface PlayRequest {
 
 type Listener = (playingKey: string | null) => void;
 
+/** Longest wait for an audio file (slow 3G included) before giving up on that clip. */
+const FETCH_TIMEOUT_MS = 20_000;
+/** Extra time a clip may take beyond its length before playback is treated as stalled. */
+const STALL_MARGIN_MS = 8_000;
+const UNKNOWN_LENGTH_MS = 15_000;
+
 class Player {
   private el: HTMLAudioElement | null = null;
   private finish: ((r: PlayResult) => void) | null = null;
   private listeners = new Set<Listener>();
   private urls = new Map<string, string>();
   private formats: { opus: boolean; aac: boolean } | null = null;
+  /** Bumped by every stop and play, so a call still loading when a newer one starts gives way to it. */
+  private generation = 0;
   playingKey: string | null = null;
 
   private element(): HTMLAudioElement {
@@ -74,9 +82,17 @@ class Player {
   private async blobUrl(src: string): Promise<string> {
     const cached = this.urls.get(src);
     if (cached) return cached;
-    const res = await fetch(src);
-    if (!res.ok) throw new Error(`audio ${res.status}`);
-    const url = URL.createObjectURL(await res.blob());
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+    let blob: Blob;
+    try {
+      const res = await fetch(src, { signal: controller.signal });
+      if (!res.ok) throw new Error(`audio ${res.status}`);
+      blob = await res.blob();
+    } finally {
+      clearTimeout(timer);
+    }
+    const url = URL.createObjectURL(blob);
     this.urls.set(src, url);
     if (this.urls.size > 120) {
       const [oldSrc, oldUrl] = this.urls.entries().next().value as [string, string];
@@ -87,6 +103,7 @@ class Player {
   }
 
   stop(): void {
+    this.generation += 1;
     const el = this.el;
     if (el) {
       el.pause();
@@ -100,42 +117,46 @@ class Player {
 
   async play(req: PlayRequest): Promise<PlayResult> {
     this.stop();
+    const generation = this.generation;
     const src = playableSource(req.audio, req.expect, this.supported());
     if (!src) return "unavailable";
     let url: string;
     try {
       url = await this.blobUrl(src);
     } catch {
-      return "error";
+      return generation === this.generation ? "error" : "stopped";
     }
+    // Something newer was asked for (or everything was stopped) while this clip loaded.
+    if (generation !== this.generation) return "stopped";
     const el = this.element();
     return new Promise<PlayResult>((resolve) => {
-      this.finish = resolve;
-      el.onended = () => {
-        if (this.finish === resolve) {
-          this.finish = null;
-          this.setPlaying(null);
-          resolve("ended");
-        }
+      const watchdog: { timer?: ReturnType<typeof setTimeout> } = {};
+      const settle = (r: PlayResult) => {
+        clearTimeout(watchdog.timer);
+        resolve(r);
       };
-      el.onerror = () => {
-        if (this.finish === resolve) {
-          this.finish = null;
-          this.setPlaying(null);
-          resolve("error");
-        }
+      const end = (r: PlayResult) => {
+        if (this.finish !== settle) return;
+        this.finish = null;
+        this.setPlaying(null);
+        settle(r);
       };
+      this.finish = settle;
+      el.onended = () => end("ended");
+      el.onerror = () => end("error");
       el.src = url;
       el.playbackRate = req.rate ?? 1;
       (el as HTMLAudioElement & { preservesPitch?: boolean }).preservesPitch = true;
       this.setPlaying(req.key ?? src);
-      el.play().catch((e: unknown) => {
-        if (this.finish === resolve) {
-          this.finish = null;
-          this.setPlaying(null);
-          resolve((e as Error)?.name === "NotAllowedError" ? "blocked" : "error");
-        }
-      });
+      // A clip whose playback stalls (no "ended", no "error") must not freeze the screen waiting for it.
+      const expectedMs = (req.audio?.ms ?? 0) / (req.rate ?? 1);
+      watchdog.timer = setTimeout(() => {
+        if (this.finish !== settle) return;
+        el.pause();
+        el.removeAttribute("src");
+        end("error");
+      }, (expectedMs > 0 ? expectedMs : UNKNOWN_LENGTH_MS) + STALL_MARGIN_MS);
+      el.play().catch((e: unknown) => end((e as Error)?.name === "NotAllowedError" ? "blocked" : "error"));
     });
   }
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { CONSENT_VERSION } from "@/config/app";
+import { forgetAnalytics } from "../analytics";
 import { api, ApiError } from "../offline/api";
 import { accessToken, forgetSession } from "../offline/auth";
 import { useOnline } from "../offline/network";
@@ -20,11 +21,12 @@ interface ClassInfo {
 
 /**
  * Privacy controls, all spoken: what each class can see (change or stop
- * sharing, effective immediately), a copy of my data, withdrawing consent to
- * online storage (keeping learning on the phone), and deleting everything.
+ * sharing, effective immediately), usage counts yes or no, a copy of my data,
+ * withdrawing consent to online storage (keeping learning on the phone), and
+ * deleting everything.
  */
 export function Privacy() {
-  const { db, lang, line, profile, lock, refreshProfiles, activate } = useLearner();
+  const { db, lang, line, profile, lock, refreshProfiles, activate, updateActive } = useLearner();
   const { speak } = useSpeech();
   const online = useOnline();
   const [classes, setClasses] = useState<ClassInfo[] | null>(null);
@@ -68,6 +70,25 @@ export function Privacy() {
     }
   };
 
+  /**
+   * Change the answer to "may we count how you use the app?". Either way the
+   * events queued on this phone under the old answer are cleared: a yes
+   * counts from now on, a no stops counting at once.
+   */
+  const setUsageCounts = async (granted: boolean) => {
+    if (!online) return speak({ line: line("net.offline"), lang });
+    setBusy(true);
+    try {
+      await api(profile.id, "/api/learner/consent", { body: { type: "analytics", granted, version: CONSENT_VERSION, language: lang } });
+      await forgetAnalytics(db, profile.id);
+      await updateActive({ analyticsConsent: granted });
+    } catch {
+      await speak({ line: line("sys.error_generic"), lang });
+    } finally {
+      setBusy(false);
+    }
+  };
+
   const exportData = async () => {
     if (!online) return needOnline();
     const token = await accessToken(profile.id);
@@ -105,6 +126,7 @@ export function Privacy() {
     try {
       if (!(await deleteOnline())) return;
       const updated = await updateProfile(db, profile.id, { learnerId: undefined, registeredAt: undefined, analyticsConsent: false, syncCursor: 0 });
+      await forgetAnalytics(db, profile.id);
       await refreshProfiles();
       await activate(updated);
       await speak({ line: line("delete.done"), lang });
@@ -199,6 +221,24 @@ export function Privacy() {
       )}
 
       <section className="mt-4 flex flex-col gap-3" aria-label="my data">
+        {registered && (
+          <div className="flex items-center gap-3 rounded-3xl bg-white p-4">
+            <ListenButton size="sm" onListen={() => void speak({ line: line("consent.analytics"), lang })} />
+            <span className="flex-1 text-base">{line("consent.analytics")?.text}</span>
+            <button
+              type="button"
+              data-testid="usage-counts"
+              aria-pressed={!!profile.analyticsConsent}
+              aria-label="usage counts"
+              onClick={() => void setUsageCounts(!profile.analyticsConsent)}
+              className={`flex h-12 w-20 shrink-0 items-center rounded-full p-1 ${profile.analyticsConsent ? "justify-end bg-good" : "justify-start bg-line"}`}
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
+                {profile.analyticsConsent ? <IconCheck size={22} className="text-good" /> : <IconClose size={22} className="text-ink-soft" />}
+              </span>
+            </button>
+          </div>
+        )}
         {registered && (
           <SpeakButton testId="export-data" variant="secondary" speech={line("me.export")} onClick={() => void exportData()} className="w-full justify-start">
             <IconExport size={28} />

@@ -72,7 +72,8 @@ export function LessonPlayer({
   intro?: CompiledLine;
   outro?: CompiledLine;
   review?: Parameters<typeof ReviewMarker>[0]["status"];
-  onExit: () => void;
+  /** Called with the index of the step on screen (-1 for the introduction). */
+  onExit: (stepIndex: number) => void;
   onFinish: (r: LessonResult) => void;
 }) {
   const { clip, line, record } = useLearner();
@@ -281,7 +282,7 @@ export function LessonPlayer({
               <IconContinue size={32} />
               <span>{line("lesson.keep_going")?.label}</span>
             </SpeakButton>
-            <SpeakButton testId="stop-lesson" variant="secondary" speech={line("lesson.stop")} onClick={onExit} className="w-full">
+            <SpeakButton testId="stop-lesson" variant="secondary" speech={line("lesson.stop")} onClick={() => onExit(index)} className="w-full">
               <span>{line("lesson.stop")?.label}</span>
             </SpeakButton>
           </div>

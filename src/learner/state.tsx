@@ -80,6 +80,8 @@ export function LearnerProvider({ children }: { children: ReactNode }) {
       const opened = await openYomuDB();
       initAnalytics(opened);
       const list = await listProfiles(opened);
+      // Clear queued usage events nobody agreed to send (works offline too).
+      void flushAnalytics(list);
       const activeId = await getMeta<string>(opened, ACTIVE_KEY);
       // Only one learner on this phone: no picker and no PIN at launch.
       // Several learners: always start at the picture-based profile picker.
@@ -206,9 +208,11 @@ export function LearnerProvider({ children }: { children: ReactNode }) {
       return outcome;
     } finally {
       syncing.current = false;
-      void flushAnalytics(new Set(profiles.filter((p) => p.analyticsConsent).map((p) => p.id)));
+      void listProfiles(db)
+        .then(flushAnalytics)
+        .catch(() => {});
     }
-  }, [db, profile, profiles]);
+  }, [db, profile]);
 
   const record = useCallback(
     async <T extends OpType>(type: T, data: OpData<T>) => {

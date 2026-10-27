@@ -1,9 +1,9 @@
 "use client";
 
 import { lazy, Suspense, useEffect } from "react";
-import { reportError } from "./analytics";
+import { reportError, track } from "./analytics";
 import { useRoute } from "./router";
-import { LearnerProvider } from "./state";
+import { LearnerProvider, useLearner } from "./state";
 import { Spinner } from "./ui/kit";
 import { Start } from "./screens/Start";
 import { SoundCheck } from "./screens/onboarding/SoundCheck";
@@ -56,9 +56,25 @@ const ProfilePicker = lazy(() => load.profiles().then((m) => ({ default: m.Profi
 const PinEntry = lazy(() => load.pin().then((m) => ({ default: m.PinEntry })));
 const Assist = lazy(() => load.assist().then((m) => ({ default: m.Assist })));
 
+/** Onboarding screens, in order. Screens before the profile exists are attributed to it once it is created. */
+const ONBOARDING_SCREENS = ["welcome", "language", "hello", "demo", "profile", "save", "consent", "start-level", "assessment"];
+const BEFORE_PROFILE = new Set(["welcome", "language", "hello", "demo", "profile"]);
+
+/** Which onboarding screens learners reach, to find where they stop (usage counts; see analytics.ts). */
+function useOnboardingViews(screen: string | undefined, sub: string | undefined) {
+  const { lang, profile } = useLearner();
+  useEffect(() => {
+    if (!screen || !ONBOARDING_SCREENS.includes(screen) || (screen === "assessment" && sub === "retake")) return;
+    void track("onboarding_step", { step: screen, language: lang ?? "none" }, BEFORE_PROFILE.has(screen) ? null : (profile?.id ?? null));
+    // One event per screen view: a language chosen on the screen does not count as a second view.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [screen, sub]);
+}
+
 function Routes() {
   const { parts } = useRoute();
   const [a, b, c] = parts;
+  useOnboardingViews(a, b);
   switch (a) {
     case undefined:
       return <Start />;

@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { CONSENT_VERSION } from "@/config/app";
 import { handler, json, readJson } from "@/server/http";
-import { recordEvents } from "@/server/observability";
 import { hashPin, isValidPin } from "@/server/pin";
 import { HttpError, supabaseAdmin, userFromRequest } from "@/server/supabase";
 
@@ -69,6 +68,5 @@ export const POST = handler(async (request) => {
     await db.from("learners").delete().eq("id", learner.id);
     throw failed.error;
   }
-  await recordEvents([{ event: "registration", props: { language: body.teachingLanguage } }], body.consent.analytics ? learner.pseudonym : null);
   return json({ learnerId: learner.id, alreadyRegistered: false }, { status: 201 });
 });

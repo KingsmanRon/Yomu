@@ -21,9 +21,11 @@ const Body = z
   .strict();
 
 /**
- * Product analytics. Guests and learners who did not consent to analytics are
- * counted anonymously (no identifier at all); consenting learners are counted
- * under their random pseudonym. Disabled entirely with ANALYTICS_ENABLED=false.
+ * Product analytics. Recorded only for a signed-in learner whose consent to
+ * usage counts is in force (checked on every request, so a withdrawal takes
+ * effect at once), under their random pseudonym. Anything else is dropped,
+ * never stored anonymously: a learner who said no is not counted at all.
+ * Disabled entirely with ANALYTICS_ENABLED=false.
  */
 export const POST = handler(async (request) => {
   if (!serverEnv.analyticsEnabled) return json({ recorded: 0, disabled: true });
@@ -45,9 +47,10 @@ export const POST = handler(async (request) => {
         if (consent && consent.length > 0) pseudonym = learner.pseudonym;
       }
     } catch {
-      // Unauthenticated analytics are still accepted, anonymously.
+      // Not a valid learner session: nothing is recorded.
     }
   }
+  if (!pseudonym) return json({ recorded: 0, reason: "no_consent" });
   await recordEvents(body.events, pseudonym);
   return json({ recorded: body.events.length });
 });

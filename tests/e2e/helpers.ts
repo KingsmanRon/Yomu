@@ -116,7 +116,7 @@ export async function expectAccessible(page: Page, screen: string) {
   expect(summary, `accessibility problems on ${screen}`).toEqual([]);
 }
 
-export async function idb<T>(page: Page, store: "profiles" | "ops"): Promise<T[]> {
+export async function idb<T>(page: Page, store: "profiles" | "ops" | "analytics"): Promise<T[]> {
   return page.evaluate(async (s) => {
     const req = indexedDB.open("yomu");
     const db = await new Promise<IDBDatabase>((r) => (req.onsuccess = () => r(req.result)));

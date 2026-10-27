@@ -59,3 +59,61 @@ test("declining the consent keeps learning on the phone and stores nothing onlin
   const auth = await page.evaluate(() => Object.keys(localStorage).filter((k) => k.startsWith("yomu-auth-")));
   expect(auth).toEqual([]);
 });
+
+test("usage counts are sent only after the learner says yes, and stop when they say no", async ({ page }) => {
+  test.skip(!(await backendAvailable(page)) || !adminDb(), "needs the local Supabase stack");
+  const db = adminDb()!;
+  const since = new Date().toISOString();
+  // The onboarding helper answers "no" to usage counts.
+  await onboard(page, { lang: "zu", avatar: "avatar-drum", pin: "2581", save: "online" });
+  const [profile] = await idb<{ learnerId?: string }>(page, "profiles");
+  const { data: learner } = await db.from("learners").select("pseudonym").eq("id", profile.learnerId!).single();
+  const eventsOf = async () => (await db.from("analytics_events").select("event, props").eq("pseudonym", learner!.pseudonym)).data ?? [];
+  const anonymous = async () => (await db.from("analytics_events").select("id").is("pseudonym", null).gte("received_at", since)).data ?? [];
+
+  const openAndLeaveLesson = async () => {
+    await page.goto("/#/home");
+    await page.getByTestId("continue-lesson").click();
+    await page.getByTestId("start-lesson").click();
+    await page.getByTestId("continue").first().waitFor();
+    await page.getByTestId("close").click();
+    await page.getByTestId("stop-lesson").click();
+    await waitForRoute(page, "/home");
+  };
+  // Coming online syncs and then sends (or deletes) the queued usage events.
+  const queuedAfterSync = async () => {
+    await page.evaluate(() => window.dispatchEvent(new Event("online")));
+    return (await idb(page, "analytics")).length;
+  };
+
+  // Said no: nothing is counted, not even without a name.
+  await openAndLeaveLesson();
+  await expect.poll(queuedAfterSync, { timeout: 30_000 }).toBe(0);
+  expect(await eventsOf()).toEqual([]);
+  expect(await anonymous()).toEqual([]);
+
+  // Says yes in Me > Privacy: counted from now on, under the random pseudonym.
+  await page.getByTestId("nav-me").click();
+  await page.getByTestId("me-privacy").click();
+  await page.getByTestId("usage-counts").click();
+  await expect(page.getByTestId("usage-counts")).toHaveAttribute("aria-pressed", "true");
+  const active = await db.from("consent_records").select("withdrawn_at").eq("learner_id", profile.learnerId!).eq("consent_type", "analytics");
+  expect(active.data).toEqual([{ withdrawn_at: null }]);
+  await openAndLeaveLesson();
+  await expect.poll(queuedAfterSync, { timeout: 30_000 }).toBe(0);
+  expect((await eventsOf()).map((e) => e.event).sort()).toEqual(["lesson_exit", "lesson_start"]);
+  const exit = (await eventsOf()).find((e) => e.event === "lesson_exit");
+  expect(exit?.props).toMatchObject({ language: "zu", step: expect.any(Number), stepId: expect.any(String) });
+
+  // Says no again: the consent is withdrawn and counting stops at once.
+  await page.getByTestId("nav-me").click();
+  await page.getByTestId("me-privacy").click();
+  await page.getByTestId("usage-counts").click();
+  await expect(page.getByTestId("usage-counts")).toHaveAttribute("aria-pressed", "false");
+  const withdrawn = await db.from("consent_records").select("withdrawn_at").eq("learner_id", profile.learnerId!).eq("consent_type", "analytics");
+  expect(withdrawn.data?.[0]?.withdrawn_at).toBeTruthy();
+  await openAndLeaveLesson();
+  await expect.poll(queuedAfterSync, { timeout: 30_000 }).toBe(0);
+  expect(await eventsOf()).toHaveLength(2);
+  expect(await anonymous()).toEqual([]);
+});

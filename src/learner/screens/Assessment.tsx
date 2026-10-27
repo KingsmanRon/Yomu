@@ -67,6 +67,7 @@ export function Assessment({ kind }: { kind: "placement" | "retake" }) {
     await record("assessment", { kind, instrument: ASSESSMENT_INSTRUMENT_VERSION, skipped, scores: final, placedLevel: level });
     await updateActive({ onboarding: { completed: true, placementDone: true } });
     void track("assessment_complete", { kind, level, skipped }, profile.id);
+    if (kind === "placement") void track("onboarding_complete", { skipped, level }, profile.id);
     await speak({ line: data.outro, lang }, { line: line(`place.level${level}`), lang }, { line: line("place.change_any_time"), lang });
     navigate("/home");
   };

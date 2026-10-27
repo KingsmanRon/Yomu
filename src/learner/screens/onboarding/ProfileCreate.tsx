@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { track } from "../../analytics";
+import { claimOnboardingEvents, track } from "../../analytics";
 import { AVATARS, createProfile } from "../../offline/profiles";
 import { navigate } from "../../router";
 import { useLearner } from "../../state";
@@ -51,6 +51,7 @@ export function ProfileCreate() {
     setBusy(true);
     const profile = await createProfile(db, { avatarId: avatar, language: lang, pin: next });
     await activate(profile);
+    await claimOnboardingEvents(db, profile.id);
     void track("onboarding_step", { step: "profile_created", language: lang }, profile.id);
     await speak({ line: line("pin.saved"), lang });
     navigate("/save");

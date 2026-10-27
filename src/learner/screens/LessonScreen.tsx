@@ -68,9 +68,11 @@ export function LessonScreen({ lessonId }: { lessonId: string }) {
       });
   }, [gate, lang, lessonId]);
 
+  // Once per lesson opening (not again when the profile record is refreshed).
+  const profileId = profile?.id;
   useEffect(() => {
-    if (lesson && profile) void track("lesson_start", { lessonId, level: lesson.level }, profile.id);
-  }, [lesson, lessonId, profile]);
+    if (lesson && profileId && lang) void track("lesson_start", { lessonId, level: lesson.level, language: lang }, profileId);
+  }, [lesson, lessonId, profileId, lang]);
 
   const blocked = !!(lang && catalog && path) && (!info || !info.available[lang!] || availability === "locked");
   useEffect(() => {
@@ -125,8 +127,10 @@ export function LessonScreen({ lessonId }: { lessonId: string }) {
       intro={lesson.intro}
       outro={lesson.outro}
       review={lesson.review}
-      onExit={() => {
-        void track("lesson_exit", { lessonId }, profile.id);
+      onExit={(stepIndex) => {
+        const step = lesson.steps[stepIndex];
+        const stepType = step ? (step.kind === "exercise" ? step.type : "teach") : "intro";
+        void track("lesson_exit", { lessonId, language: lang, step: stepIndex + 1, stepId: step?.id ?? "intro", stepType }, profile.id);
         navigate("/home");
       }}
       onFinish={async (r) => {
@@ -138,7 +142,7 @@ export function LessonScreen({ lessonId }: { lessonId: string }) {
           badgesBefore: Object.keys(derived.badges),
         };
         await record("lesson_complete", { lessonId, correct: r.correct, total: r.total, durationMs: r.durationMs, dataBytes: r.dataBytes });
-        void track("lesson_complete", { lessonId, correct: r.correct, total: r.total, minutes: Math.round(r.durationMs / 60000), dataKb: Math.round((r.dataBytes ?? 0) / 1024) }, profile.id);
+        void track("lesson_complete", { lessonId, language: lang, correct: r.correct, total: r.total, minutes: Math.round(r.durationMs / 60000), dataKb: Math.round((r.dataBytes ?? 0) / 1024) }, profile.id);
         try {
           sessionStorage.setItem("yomu:lessonDone", JSON.stringify(state));
         } catch {
