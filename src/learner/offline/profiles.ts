@@ -1,6 +1,5 @@
 import type { TeachingLanguage } from "@/config/app";
 import { DEFAULT_SETTINGS, type LocalPin, type StoredProfile, type YomuDB } from "./db";
-import { deleteProfileOps } from "./oplog";
 
 /**
  * Picture PIN keys. Each key shows a picture and its number, so the PIN works
@@ -147,10 +146,19 @@ export async function updateProfile(db: YomuDB, id: string, patch: Partial<Store
   return next;
 }
 
-/** Remove a profile and all of its activity from this phone. */
+/**
+ * Remove a profile and everything this phone holds for it, in one local
+ * transaction: the profile, its activity log and its queued usage events
+ * (which are then never sent); then its saved sign-in.
+ */
 export async function deleteProfile(db: YomuDB, id: string): Promise<void> {
-  await deleteProfileOps(db, id);
-  await db.delete("profiles", id);
+  const tx = db.transaction(["profiles", "ops", "analytics"], "readwrite");
+  const ops = tx.objectStore("ops");
+  for (const key of await ops.index("byProfile").getAllKeys(id)) await ops.delete(key);
+  const queued = tx.objectStore("analytics");
+  for (const e of await queued.getAll()) if (e.profileId === id && e.id !== undefined) await queued.delete(e.id);
+  await tx.objectStore("profiles").delete(id);
+  await tx.done;
   try {
     localStorage.removeItem(`yomu-auth-${id}`);
   } catch {

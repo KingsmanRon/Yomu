@@ -67,7 +67,7 @@ export function Me() {
           )}
         </div>
       </div>
-      {profile.sessionLost && (
+      {profile.sessionLost && !profile.deletionRequestedAt && (
         <button
           type="button"
           data-testid="me-moved-phone"

@@ -63,7 +63,7 @@ All learner-owned rows reference `learners.id` with `on delete cascade`: deletin
 | `content_assets`, `content_reviews` | Lesson lines and review decisions: reviewer role, user ID, notes, date | Content review workflow | Content reviewers, platform admins | With the content |
 | Curriculum tables, `provider_capabilities` | Lessons, objectives, AET mapping, capability matrix copy | Reports and review tools | Public curriculum; staff | With the content |
 
-Supabase Auth (`auth.users`) holds one anonymous user per registered learner (no email, no phone) and an email and password hash per staff member, with the staff member's authenticator key (`auth.mfa_factors`). Anonymous users that never became a learner are deleted after 7 days.
+Supabase Auth (`auth.users`) holds one anonymous user per registered learner (no email, no phone) and an email and password hash per staff member, with the staff member's authenticator key (`auth.mfa_factors`). Anonymous users that never became a learner are deleted after 7 days. Auth also keeps its own audit log (`auth.audit_log_entries`): for learners it records events such as token refreshes under the random user ID only (no IP address); for staff, two-step sign-in events include the IP address. The audit log is not changed by deletion or by the retention job (see decisions below).
 
 ### Retention job
 
@@ -75,9 +75,9 @@ Supabase Auth (`auth.users`) holds one anonymous user per registered learner (no
 |---|---|---|
 | Copy of my data (access) | Me > Privacy > copy of my information | `GET /api/learner/export`: one JSON file with everything above about the learner, except the code hash |
 | Stop sharing with a class | Me > Privacy, per class | Immediate: facilitator queries check sharing on every call |
-| Stop usage counts | Me > Privacy | Immediate on the server; queued events are deleted on the phone |
-| Withdraw consent to online storage | Me > Privacy | The account and everything linked to it is deleted on the server; learning stays on the phone as a guest |
-| Delete everything | Me > Privacy, press and hold | Deleted on the server (`delete_learner`, then the Auth user) and on the phone; analytics and error logs carrying the pseudonym are deleted too |
+| Stop usage counts | Me > Privacy | Immediate on the server (consent checked on every request); queued events are deleted on the phone. Counts already stored stay under the random pseudonym until their 13 months end or the account is deleted (see decisions below) |
+| Withdraw consent to online storage | Me > Privacy | The account is deleted on the server exactly as below; on the phone, learning stays as a guest profile, while its queued usage events and saved sign-in are removed |
+| Delete everything | Me > Privacy, press and hold | Deleted on the server in one transaction (`delete_learner`): every learner-owned row, usage counts and error logs carrying the pseudonym, the anonymous Auth user with its sessions and refresh tokens, and the Auth user of a phone the learner was moved away from if its revocation was still pending. On the phone, in one local transaction: the profile, its activity log and its queued usage events; then the saved sign-in. If the reply is lost, trying again finishes the deletion on the phone |
 | Moved to a new phone | Facilitator-assisted move | The old phone's session is revoked; the old phone can remove its local copy |
 
 ## Data sent to other services
@@ -97,4 +97,6 @@ Before any AI provider is enabled for learners: an operator agreement (POPIA sec
 2. **Wording of the consent scripts.** See the review points at the top of [consent-scripts.md](consent-scripts.md) (who can see the data, the responsible party's contact details).
 3. **Pilot research consent.** The `pilot_research` consent type exists in the schema but is not collected in the app yet. The pilot protocol ([pilot-measurement-plan.md](pilot-measurement-plan.md)) uses a facilitator-led, audio-explained consent until it is.
 4. **Hosting region and operator agreements** with Supabase and any AI provider.
-5. **Breach procedure.** POPIA section 22 notification to the Information Regulator and to learners. For learners without phone numbers or email, notification goes through facilitators and an in-app spoken notice; the procedure must be agreed with sponsoring organisations.
+5. **Usage counts after a "no".** When a learner withdraws consent to usage counts, counting stops at once but the counts already stored stay under the random pseudonym until their 13 months end (deleting the account removes them). Decide whether withdrawal should also delete them.
+6. **Supabase Auth's audit log.** It keeps entries indefinitely: random user IDs for learners, and IP addresses for staff two-step sign-in events. Decide on a retention period; a deletion job would need the hosted project's permission to change Auth's tables, which is not verified.
+7. **Breach procedure.** POPIA section 22 notification to the Information Regulator and to learners. For learners without phone numbers or email, notification goes through facilitators and an in-app spoken notice; the procedure must be agreed with sponsoring organisations.
