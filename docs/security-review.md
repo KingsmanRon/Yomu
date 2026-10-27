@@ -96,7 +96,7 @@ Status: **Ready** = code and tests complete. **Conditional** = ready once the li
 
 ## 5. Continuous integration
 
-GitHub Actions runs the same suites as above on every pull request: lint, types, content and generated-file checks, unit tests, then Supabase from scratch, database tests, end-to-end tests and Lighthouse budgets. Before this review `main` was green ([run 2](https://github.com/KingsmanRon/Yomu/actions/runs/40475373250)). Results for the hardening PRs while this report was written:
+GitHub Actions runs the same suites as above on every pull request: lint, types, content and generated-file checks, unit tests, then Supabase from scratch, database tests, end-to-end tests and Lighthouse budgets. Before this review `main` was green ([run 2](https://github.com/KingsmanRon/Yomu/actions/runs/40475373250)). Results for the hardening PRs (each run covers its own PR and every PR below it in the stack):
 
 | PR | Run | Result |
 |---|---|---|
@@ -104,7 +104,7 @@ GitHub Actions runs the same suites as above on every pull request: lint, types,
 | #3 | [40479614496](https://github.com/KingsmanRon/Yomu/actions/runs/40479614496) | Success |
 | #4 | [40480822373](https://github.com/KingsmanRon/Yomu/actions/runs/40480822373) | Success |
 | #5 | [40484894280](https://github.com/KingsmanRon/Yomu/actions/runs/40484894280) | Success |
-| #6 | [40485678052](https://github.com/KingsmanRon/Yomu/actions/runs/40485678052) | Running when written |
-| #7 | [40488964714](https://github.com/KingsmanRon/Yomu/actions/runs/40488964714) | Queued when written |
+| #6 | [40485678052](https://github.com/KingsmanRon/Yomu/actions/runs/40485678052) | Success (40 minutes: the runner's package installs took 30 of them) |
+| #7 | [40488964714](https://github.com/KingsmanRon/Yomu/actions/runs/40488964714) | Success |
 
-No test was skipped, weakened or removed. The end-to-end tests that used the shared development staff accounts now create their own accounts and complete two-step sign-in.
+No test was skipped, weakened or removed. The end-to-end tests that used the shared development staff accounts now create their own accounts and complete two-step sign-in. Because one run came within 5 minutes of the 45-minute limit while the runner's package mirror was slow, the database and end-to-end job now has 60 minutes.
