@@ -102,6 +102,7 @@ Generated files have a `-- --check` mode used by CI (`content:schema`, `docs:aet
 | [docs/ai-and-speech.md](docs/ai-and-speech.md) | Tutor tiers, providers, development adapter, cost controls |
 | [docs/capability-matrix.md](docs/capability-matrix.md) | Provider matrix and the evaluation protocol for each language |
 | [docs/data-inventory.md](docs/data-inventory.md) | POPIA data inventory: what is stored, where, why, who sees it, how long |
+| [docs/security-review.md](docs/security-review.md) | Security findings (fixed vulnerabilities, risks, assumptions) and the pilot-readiness matrix |
 | [docs/consent-scripts.md](docs/consent-scripts.md) | Spoken consent scripts in isiZulu and Sesotho (generated; draft, for review) |
 | [docs/content-review-checklist.md](docs/content-review-checklist.md) | Checklist for native speakers, educators, linguists and AET specialists |
 | [docs/language-validation.md](docs/language-validation.md) | Outstanding language, speech and curriculum validation |
