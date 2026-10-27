@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { CONSENT_VERSION } from "@/config/app";
 import { track } from "../analytics";
+import { parseJoinCode } from "../joinCode";
 import { api, ApiError } from "../offline/api";
 import { useOnline } from "../offline/network";
 import { navigate } from "../router";
@@ -12,12 +13,6 @@ import { Caption, ListenButton, Screen, SpeakButton, Spinner, TopBar } from "../
 import { useSpeech } from "../ui/speech";
 
 type Share = { mastery: boolean; mistakes: boolean; tutorLogs: boolean };
-
-/** Extract a 6-digit class code from typed digits or a scanned QR (URL ending in #/join/123456). */
-export function parseJoinCode(raw: string): string | null {
-  const m = /(?:^|\/join\/|\D)(\d{6})(?:\D|$)/.exec(raw.trim());
-  return m ? m[1] : null;
-}
 
 /**
  * Join a class with the code the facilitator shows (typed on big number

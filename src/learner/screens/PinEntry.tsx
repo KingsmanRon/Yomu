@@ -22,8 +22,9 @@ export function PinEntry({ profileId }: { profileId: string }) {
   const profile = profiles.find((p) => p.id === profileId);
   const [pin, setPin] = useState("");
   const [lines, setLines] = useState<Record<string, CompiledLine> | null>(null);
-  const [waitUntil, setWaitUntil] = useState<number>(profile?.pinRetryAfter ? Date.parse(profile.pinRetryAfter) : 0);
   const [now, setNow] = useState(() => Date.now());
+  // From the stored profile, so the pause also holds after closing or reloading the app.
+  const retryAt = profile?.pinRetryAfter ? Date.parse(profile.pinRetryAfter) : 0;
 
   useEffect(() => {
     if (!profile) return;
@@ -35,14 +36,14 @@ export function PinEntry({ profileId }: { profileId: string }) {
   }, [profile?.id]);
 
   useEffect(() => {
-    if (waitUntil <= Date.now()) return;
+    if (retryAt <= Date.now()) return;
     const t = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(t);
-  }, [waitUntil]);
+  }, [retryAt]);
 
   if (!profile || !db) return <Spinner />;
   const lang = profile.language;
-  const waiting = waitUntil > now;
+  const waiting = retryAt > now;
 
   const submit = async (value: string) => {
     if (await verifyLocalPin(profile, value)) {
@@ -58,7 +59,7 @@ export function PinEntry({ profileId }: { profileId: string }) {
     await refreshProfiles();
     setPin("");
     if (retryAfter) {
-      setWaitUntil(Date.parse(retryAfter));
+      setNow(Date.now());
       await speak({ line: lines?.["pin.wait"], lang });
     } else await speak({ line: lines?.["pin.wrong"], lang });
   };
@@ -75,7 +76,7 @@ export function PinEntry({ profileId }: { profileId: string }) {
       <Caption line={lines?.[waiting ? "pin.wait" : "pin.enter"]} always className="items-center text-center" />
       {waiting ? (
         <p className="text-center text-5xl font-extrabold text-accent" data-testid="pin-wait" role="timer">
-          {Math.ceil((waitUntil - now) / 1000)}
+          {Math.ceil((retryAt - now) / 1000)}
         </p>
       ) : (
         <PinPad

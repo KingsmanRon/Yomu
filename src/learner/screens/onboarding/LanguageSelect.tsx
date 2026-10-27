@@ -72,7 +72,7 @@ export function LanguageSelect() {
               className="flex min-h-32 flex-1 flex-col items-start justify-center gap-1 rounded-2xl bg-primary px-5 py-4 text-left text-white shadow-[0_5px_0_0_var(--color-primary-dark)] active:translate-y-1 active:shadow-none"
             >
               <span className="text-3xl font-extrabold">{LANGUAGE_CONFIG[lang].nativeName}</span>
-              {intro && <span className="text-base font-medium opacity-90">{intro.text}</span>}
+              {intro && <span className="text-base font-medium">{intro.text}</span>}
             </button>
           </div>
         );

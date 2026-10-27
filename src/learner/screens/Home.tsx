@@ -73,8 +73,8 @@ export function Home() {
           </span>
           <span className="flex flex-col gap-1">
             <span className="text-2xl font-extrabold">{line("home.continue")?.label}</span>
-            <span className="text-base font-medium opacity-95">{rec.title[lang].label ?? rec.title[lang].text}</span>
-            <span className="flex items-center gap-2 text-sm opacity-90">
+            <span className="text-base font-medium">{rec.title[lang].label ?? rec.title[lang].text}</span>
+            <span className="flex items-center gap-2 text-sm">
               {resuming && <span className="rounded-full bg-white/20 px-2">…</span>}
               <ReviewMarker status={rec.review[lang]} />
             </span>
@@ -117,7 +117,7 @@ export function Home() {
         <span className="flex items-center gap-2 text-2xl font-extrabold text-accent">
           <IconFlame size={36} /> {derived.streak.current}
         </span>
-        <span className="flex items-center gap-1 text-ink-soft" aria-label="grace days">
+        <span className="flex items-center gap-1 text-ink-soft" role="img" aria-label={`${derived.streak.graceRemaining} grace days`}>
           {Array.from({ length: derived.streak.graceRemaining }, (_, i) => (
             <IconShield key={i} size={24} className="text-primary" />
           ))}

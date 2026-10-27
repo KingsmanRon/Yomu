@@ -201,7 +201,7 @@ export function ReviewMarker({ status }: { status: ReviewStatus | undefined }) {
     <span
       data-testid="review-marker"
       title={`Content status: ${status}. Requires native-speaker and adult-literacy educator review before real-world use.`}
-      className="inline-flex items-center gap-1 rounded-full border border-accent px-2 py-0.5 text-xs font-semibold text-accent"
+      className="inline-flex w-fit items-center gap-1 rounded-full border border-accent bg-accent-soft px-2 py-0.5 text-xs font-semibold text-accent"
     >
       <IconWarning size={14} /> unreviewed
     </span>
@@ -269,7 +269,7 @@ export function TopBar({
         </button>
       )}
       {progress !== undefined && (
-        <div className="h-4 flex-1 overflow-hidden rounded-full bg-line" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress * 100)}>
+        <div className="h-4 flex-1 overflow-hidden rounded-full bg-line" role="progressbar" aria-label="lesson progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress * 100)}>
           <div className="h-full rounded-full bg-good transition-all" style={{ width: `${Math.round(progress * 100)}%` }} />
         </div>
       )}
