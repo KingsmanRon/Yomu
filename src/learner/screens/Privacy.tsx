@@ -47,7 +47,8 @@ export function Privacy() {
   }, [profileId, learnerId, online, reload]);
 
   if (!lang || !profile || !db) return <Spinner />;
-  const registered = !!profile.learnerId;
+  const moved = !!profile.sessionLost;
+  const registered = !!profile.learnerId && !moved;
 
   const needOnline = async () => {
     await speak({ line: line("delete.offline"), lang });
@@ -108,6 +109,20 @@ export function Privacy() {
       await activate(updated);
       await speak({ line: line("delete.done"), lang });
       navigate("/me");
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  /** After a move, the account lives on the other phone: remove only this phone's copy. */
+  const removeFromPhone = async () => {
+    setBusy(true);
+    try {
+      await forgetSession(profile.id);
+      lock();
+      await deleteProfile(db, profile.id);
+      await refreshProfiles();
+      navigate("/", { replace: true });
     } finally {
       setBusy(false);
     }
@@ -201,7 +216,19 @@ export function Privacy() {
             </SpeakButton>
           </div>
         )}
-        <div className="flex flex-col gap-3 rounded-3xl border-2 border-danger bg-danger-soft p-4">
+        {moved && (
+          <div className="flex flex-col gap-3 rounded-3xl border-2 border-accent bg-accent-soft p-4" data-testid="moved-phone">
+            <div className="flex items-start gap-3">
+              <ListenButton size="sm" onListen={() => void speak({ line: line("me.moved_phone"), lang })} />
+              <Caption line={line("me.moved_phone")} />
+            </div>
+            <HoldButton testId="remove-from-phone" speech={line("me.moved_phone")} onConfirm={() => void removeFromPhone()}>
+              <IconBin size={28} />
+              <span>{line("me.moved_phone")?.label}</span>
+            </HoldButton>
+          </div>
+        )}
+        <div className={`flex flex-col gap-3 rounded-3xl border-2 border-danger bg-danger-soft p-4 ${moved ? "hidden" : ""}`}>
           <div className="flex items-start gap-3">
             <ListenButton size="sm" onListen={() => void speak({ line: line("delete.explain"), lang })} />
             <Caption line={line("delete.explain")} />

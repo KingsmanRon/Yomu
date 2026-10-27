@@ -27,6 +27,12 @@ export function Assessment({ kind }: { kind: "placement" | "retake" }) {
   const [index, setIndex] = useState(-1);
   const [scores, setScores] = useState<Scores>({});
   const [locked, setLocked] = useState(false);
+  // The first placement was already recorded (a reload during the result): go home.
+  const [placedAtOpen, setPlacedAtOpen] = useState<boolean | null>(null);
+  if (profile && placedAtOpen === null) setPlacedAtOpen(kind === "placement" && profile.onboarding.placementDone);
+  useEffect(() => {
+    if (placedAtOpen) navigate("/home", { replace: true });
+  }, [placedAtOpen]);
 
   useEffect(() => {
     if (lang) loadAssessment(lang).then(setData).catch(() => navigate("/home"));

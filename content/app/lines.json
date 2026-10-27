@@ -2032,6 +2032,26 @@
       }
     },
     {
+      "id": "me.moved_phone",
+      "description": "This phone's online session was replaced: the learner was moved to another phone. Offers removing the profile from this phone.",
+      "zu": {
+        "id": "zu.app.me.moved_phone",
+        "text": "Izifundo zakho ezigcinwe ku-inthanethi manje zikwenye ifoni. Okwenzayo lapha kuhlala kule foni kuphela. Ungasusa le phrofayela kule foni.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Susa kule foni"
+      },
+      "st": {
+        "id": "st.app.me.moved_phone",
+        "text": "Dithuto tsa hao tse bolokilweng inthaneteng di se di le founung e nngwe. Seo o se etsang mona se dula founung ena feela. O ka tlosa profaele ena founung ena.",
+        "review": {
+          "status": "draft"
+        },
+        "label": "Tlosa founung ena"
+      }
+    },
+    {
       "id": "delete.explain",
       "description": "Explain deletion before confirming.",
       "zu": {

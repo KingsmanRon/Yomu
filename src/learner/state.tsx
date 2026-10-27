@@ -195,9 +195,13 @@ export function LearnerProvider({ children }: { children: ReactNode }) {
       if (outcome.status === "ok") {
         setOps(await opsForProfile(db, id));
         setSync({ status: "ok", pending, lastAt: new Date().toISOString() });
+        if (fresh.sessionLost) setProfile(await updateProfile(db, id, { sessionLost: false }));
       } else {
         setSync({ status: outcome.status === "offline" ? "offline" : outcome.status === "error" ? "error" : "idle", pending });
         if (outcome.status === "error") void track("sync_failure", { code: outcome.code }, id);
+        // The server refused this phone's session (the learner was moved to another phone).
+        const lost = outcome.status === "error" && (outcome.code === "unauthenticated" || outcome.code === "not_registered");
+        if (lost !== !!fresh.sessionLost) setProfile(await updateProfile(db, id, { sessionLost: lost }));
       }
       return outcome;
     } finally {

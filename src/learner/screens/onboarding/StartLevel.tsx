@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ASSESSMENT_INSTRUMENT_VERSION } from "@/config/app";
 import { track } from "../../analytics";
 import { navigate } from "../../router";
@@ -18,11 +18,21 @@ export function StartLevel() {
   const { lang, line, profile, record, updateActive } = useLearner();
   const { speak } = useSpeech();
   const [asked, setAsked] = useState(false);
+  const [placing, setPlacing] = useState(false);
+  // Opened again after placement was recorded (for example a reload while the
+  // result was being spoken): go home instead of placing twice.
+  const [placedAtOpen, setPlacedAtOpen] = useState<boolean | null>(null);
+  if (profile && placedAtOpen === null) setPlacedAtOpen(profile.onboarding.placementDone);
+  useEffect(() => {
+    if (placedAtOpen) navigate("/home", { replace: true });
+  }, [placedAtOpen]);
   const offer = line("assess.offer");
   useSpeakOnMount(lang && offer ? [{ line: offer, lang }] : null, [offer?.id]);
   if (!lang || !profile) return null;
 
   const place = async (level: number) => {
+    if (placing) return;
+    setPlacing(true);
     await record("assessment", {
       kind: "placement",
       instrument: ASSESSMENT_INSTRUMENT_VERSION,
@@ -45,11 +55,11 @@ export function StartLevel() {
           <Caption line={q} />
         </div>
         <div className="mt-auto flex flex-col gap-4">
-          <SpeakButton testId="self-can-read" speech={line("place.self_yes")} onClick={() => void place(1)} className="min-h-24 w-full">
+          <SpeakButton testId="self-can-read" speech={line("place.self_yes")} disabled={placing} onClick={() => void place(1)} className="min-h-24 w-full">
             <IconCheck size={36} />
             <span>{line("place.self_yes")?.label}</span>
           </SpeakButton>
-          <SpeakButton testId="self-not-yet" variant="secondary" speech={line("place.self_no")} onClick={() => void place(0)} className="min-h-24 w-full">
+          <SpeakButton testId="self-not-yet" variant="secondary" speech={line("place.self_no")} disabled={placing} onClick={() => void place(0)} className="min-h-24 w-full">
             <span>{line("place.self_no")?.label}</span>
           </SpeakButton>
         </div>

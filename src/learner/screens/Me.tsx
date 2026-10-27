@@ -16,6 +16,7 @@ import {
   IconShield,
   IconTeacher,
   IconText,
+  IconWarning,
   IconWifi,
 } from "../ui/icons";
 import { BottomNav, Caption, Picture, Screen, Spinner, TopBar } from "../ui/kit";
@@ -57,7 +58,7 @@ export function Me() {
         <Picture src={`/images/${profile.avatarId}.svg`} className="h-20 w-20" />
         <div className="flex flex-col">
           <span className="text-xl font-bold">{profile.nickname ?? LANGUAGE_CONFIG[lang].nativeName}</span>
-          {profile.learnerId ? (
+          {profile.learnerId && !profile.sessionLost ? (
             <span className="flex items-center gap-1 text-sm font-semibold text-good">
               <IconCloud size={18} /> online
             </span>
@@ -66,6 +67,20 @@ export function Me() {
           )}
         </div>
       </div>
+      {profile.sessionLost && (
+        <button
+          type="button"
+          data-testid="me-moved-phone"
+          onClick={() => {
+            void speak({ line: line("me.moved_phone"), lang });
+            navigate("/me/privacy");
+          }}
+          className="mb-4 flex items-start gap-3 rounded-3xl border-2 border-accent bg-accent-soft p-4 text-left"
+        >
+          <IconWarning size={28} className="shrink-0 text-accent" />
+          <Caption line={line("me.moved_phone")} />
+        </button>
+      )}
       <Caption line={line("me.intro")} />
 
       <div className="mt-4 flex flex-col gap-3 pb-6">

@@ -44,6 +44,13 @@ export interface StoredProfile {
   pinRetryAfter?: string;
   syncCursor: number;
   lastSyncAt?: string;
+  /**
+   * The server no longer accepts this phone's session for the learner: a
+   * facilitator moved the learner to another phone (or the account was
+   * deleted elsewhere). Learning here stays on this phone; the learner can
+   * remove the profile from this phone. Cleared by any successful sync.
+   */
+  sessionLost?: boolean;
 }
 
 export type StoredOp = Op & { synced: 0 | 1 };
