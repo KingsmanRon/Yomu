@@ -1,7 +1,8 @@
 import { z } from "zod";
 import { recordAssist, requireFacilitatorOf } from "@/server/assist";
 import { handler, json, readJson } from "@/server/http";
-import { hashPin, isValidPin, pinRetryDelaySeconds, verifyPin } from "@/server/pin";
+import { checkLearnerPin, pinAttemptSucceeded } from "@/server/credentials";
+import { hashPin, isValidPin } from "@/server/pin";
 import { HttpError, supabaseAdmin } from "@/server/supabase";
 
 const Body = z
@@ -46,23 +47,13 @@ export const POST = handler(async (request) => {
   if (lErr) throw lErr;
 
   if (body.pin !== undefined) {
-    const { data: cred, error } = await db.from("learner_credentials").select("pin_hash, failed_attempts, retry_after").eq("learner_id", learner.id).single();
-    if (error) throw error;
-    if (cred.retry_after && new Date(cred.retry_after).getTime() > Date.now()) {
-      return json({ error: "pin_wait", retryAfter: cred.retry_after }, { status: 429 });
+    const check = await checkLearnerPin(learner.id, body.pin);
+    if (!check.ok) {
+      if (check.reason === "wait") return json({ error: "pin_wait", retryAfter: check.retryAfter }, { status: 429 });
+      if (check.reason === "wrong") throw new HttpError(403, "pin_wrong");
+      throw new HttpError(409, "no_credentials");
     }
-    if (!(await verifyPin(body.pin, cred.pin_hash))) {
-      const failed = cred.failed_attempts + 1;
-      const delay = pinRetryDelaySeconds(failed);
-      const { error: countError } = await db
-        .from("learner_credentials")
-        .update({ failed_attempts: failed, retry_after: delay ? new Date(Date.now() + delay * 1000).toISOString() : null })
-        .eq("learner_id", learner.id);
-      if (countError) throw countError;
-      throw new HttpError(403, "pin_wrong");
-    }
-    const { error: resetError } = await db.from("learner_credentials").update({ failed_attempts: 0, retry_after: null }).eq("learner_id", learner.id);
-    if (resetError) throw resetError;
+    if (!(await pinAttemptSucceeded(learner.id, check.verifiedHash))) throw new HttpError(409, "pin_changed");
   } else {
     const { error } = await db
       .from("learner_credentials")

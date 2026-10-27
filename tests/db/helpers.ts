@@ -1,5 +1,6 @@
 import { existsSync } from "node:fs";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import pg from "pg";
 
 /**
  * Database test helpers. Everything goes through the real Auth and PostgREST
@@ -14,6 +15,36 @@ const PUBLISHABLE = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? "";
 const SECRET = process.env.SUPABASE_SECRET_KEY ?? "";
 if (!URL_ || !PUBLISHABLE || !SECRET) throw new Error("Database tests need NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY and SUPABASE_SECRET_KEY");
 if (!/^https?:\/\/(127\.0\.0\.1|localhost)/.test(URL_)) throw new Error(`Refusing to run database tests against ${URL_}`);
+
+const DB_URL = process.env.SUPABASE_DB_URL ?? "postgresql://postgres:postgres@127.0.0.1:54322/postgres";
+if (!/@(127\.0\.0\.1|localhost)[:/]/.test(DB_URL)) throw new Error("Refusing direct SQL against a non-local database");
+
+/** Direct SQL on the local test database, for injecting faults (never used against anything else). */
+export async function sql<T = Record<string, unknown>>(text: string, params: unknown[] = []): Promise<T[]> {
+  const client = new pg.Client({ connectionString: DB_URL });
+  await client.connect();
+  try {
+    return (await client.query(text, params)).rows as T[];
+  } finally {
+    await client.end();
+  }
+}
+
+/**
+ * Runs `fn` while every insert into `table` for this learner fails, to prove
+ * that the operation under test changes nothing unless all of it succeeds.
+ */
+export async function withFailingInsert<T>(table: string, learnerId: string, fn: () => Promise<T>): Promise<T> {
+  const name = `test_fail_${crypto.randomUUID().replace(/-/g, "").slice(0, 12)}`;
+  await sql(`create function public.${name}() returns trigger language plpgsql as $f$ begin if new.learner_id = '${learnerId}' then raise exception 'injected failure'; end if; return new; end $f$`);
+  await sql(`create trigger ${name} before insert on public.${table} for each row execute function public.${name}()`);
+  try {
+    return await fn();
+  } finally {
+    await sql(`drop trigger if exists ${name} on public.${table}`);
+    await sql(`drop function if exists public.${name}()`);
+  }
+}
 
 const opts = { auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false } };
 export const admin: SupabaseClient = createClient(URL_, SECRET, opts);
