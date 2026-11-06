@@ -1,13 +1,16 @@
 import "server-only";
-import { HttpError, requireStaff, supabaseAdmin } from "./supabase";
+import { supabaseAdmin } from "./supabase";
 
 /**
  * Facilitator-assisted mode: a facilitator signs in on a learner's phone to
  * reset a forgotten picture PIN or to move the learner to a new phone. The
- * facilitator may only help learners who are active members of a cohort they
- * facilitate, every action is written to facilitator_assists (and included in
- * the learner's data export), and the PIN is chosen by the learner on the
- * learner's screen: it is never shown to or typed by the facilitator.
+ * facilitator may only help learners who are active members of a live class
+ * they facilitate in its organisation. The resets and moves themselves are
+ * authorised, applied and audited inside the database in one transaction
+ * (assist_reset_pin, transfer_learner); every action is written to
+ * facilitator_assists (and included in the learner's data export). The PIN is
+ * chosen by the learner on the learner's screen: it is never shown to or
+ * typed by the facilitator.
  */
 export interface AssistLearner {
   learnerId: string;
@@ -36,24 +39,4 @@ export async function facilitatorCohorts(userId: string): Promise<AssistCohort[]
     cohorts.set(r.cohort_id, c);
   }
   return [...cohorts.values()].sort((a, b) => a.name.localeCompare(b.name));
-}
-
-/**
- * The facilitator from the bearer token, checked to facilitate a live cohort
- * in which the learner is an active member. Returns that cohort for the audit
- * record.
- */
-export async function requireFacilitatorOf(request: Request, learnerId: string): Promise<{ userId: string; cohortId: string }> {
-  const { user } = await requireStaff(request, ["facilitator"]);
-  const cohorts = await facilitatorCohorts(user.id);
-  const cohort = cohorts.find((c) => c.learners.some((l) => l.learnerId === learnerId));
-  if (!cohort) throw new HttpError(403, "not_your_learner");
-  return { userId: user.id, cohortId: cohort.id };
-}
-
-export async function recordAssist(learnerId: string, facilitatorUserId: string, cohortId: string, action: "pin_reset" | "device_transfer"): Promise<void> {
-  const { error } = await supabaseAdmin()
-    .from("facilitator_assists")
-    .insert({ learner_id: learnerId, facilitator_user_id: facilitatorUserId, cohort_id: cohortId, action });
-  if (error) throw error;
 }
