@@ -48,11 +48,33 @@ export function bearerToken(request: Request): string {
   return match[1];
 }
 
-export async function userFromRequest(request: Request): Promise<{ user: User; token: string }> {
+export interface AuthenticatedRequest {
+  user: User;
+  token: string;
+  /** Authenticator Assurance Level of the session: "aal2" after a second factor. */
+  aal: string | null;
+  sessionId: string | null;
+}
+
+/**
+ * The caller, checked by Auth: a valid signature, not expired, and a session
+ * that still exists (a signed-out or revoked session is refused). The claims
+ * are then read from the token Auth has just accepted.
+ */
+export async function userFromRequest(request: Request): Promise<AuthenticatedRequest> {
   const token = bearerToken(request);
   const { data, error } = await supabaseAdmin().auth.getUser(token);
   if (error || !data.user) throw new HttpError(401, "unauthenticated");
-  return { user: data.user, token };
+  const claims = tokenClaims(token);
+  return { user: data.user, token, aal: claims.aal ?? null, sessionId: claims.session_id ?? null };
+}
+
+function tokenClaims(token: string): { aal?: string; session_id?: string } {
+  try {
+    return JSON.parse(Buffer.from(token.split(".")[1] ?? "", "base64url").toString("utf8")) as { aal?: string; session_id?: string };
+  } catch {
+    return {};
+  }
 }
 
 export interface LearnerRow {
@@ -81,15 +103,34 @@ export async function requireLearner(request: Request): Promise<{ user: User; le
 }
 
 export type StaffRole = "facilitator" | "org_admin" | "content_reviewer" | "platform_admin";
+export const ALL_STAFF_ROLES: StaffRole[] = ["facilitator", "org_admin", "content_reviewer", "platform_admin"];
 
-export async function requireStaff(
-  request: Request,
-  roles: StaffRole[],
-): Promise<{ user: User; token: string; roles: { role: StaffRole; organisation_id: string | null }[] }> {
-  const { user, token } = await userFromRequest(request);
-  const { data, error } = await supabaseAdmin().from("staff_roles").select("role, organisation_id").eq("user_id", user.id);
+export interface StaffRequest extends AuthenticatedRequest {
+  roles: { role: StaffRole; organisation_id: string | null }[];
+}
+
+/**
+ * A staff member with one of `roles`, signed in with their second factor
+ * (aal2). A staff session without it gets 403 mfa_required; the database's
+ * staff checks refuse it too.
+ */
+export async function requireStaff(request: Request, roles: StaffRole[]): Promise<StaffRequest> {
+  const staff = await requireStaffSession(request);
+  if (!staff.roles.some((r) => roles.includes(r.role))) throw new HttpError(403, "forbidden");
+  if (staff.aal !== "aal2") throw new HttpError(403, "mfa_required", "Sign in with the code from your authenticator app first.");
+  return staff;
+}
+
+/**
+ * Any staff member at any assurance level. Only for completing two-step
+ * sign-in (recovery); everything else uses requireStaff.
+ */
+export async function requireStaffSession(request: Request): Promise<StaffRequest> {
+  const auth = await userFromRequest(request);
+  if (auth.user.is_anonymous) throw new HttpError(403, "forbidden");
+  const { data, error } = await supabaseAdmin().from("staff_roles").select("role, organisation_id").eq("user_id", auth.user.id);
   if (error) throw error;
-  const mine = (data ?? []) as { role: StaffRole; organisation_id: string | null }[];
-  if (!mine.some((r) => roles.includes(r.role))) throw new HttpError(403, "forbidden");
-  return { user, token, roles: mine };
+  const roles = (data ?? []) as StaffRequest["roles"];
+  if (roles.length === 0) throw new HttpError(403, "forbidden");
+  return { ...auth, roles };
 }

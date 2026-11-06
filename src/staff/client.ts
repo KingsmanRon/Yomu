@@ -47,3 +47,26 @@ export async function downloadWithToken(path: string, filename: string): Promise
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 5000);
 }
+
+export class StaffApiError extends Error {
+  constructor(
+    public status: number,
+    public code: string,
+    message: string,
+  ) {
+    super(message);
+  }
+}
+
+/** JSON call to a staff API route with the signed-in staff member's token. */
+export async function staffApi<T>(path: string, init: { method?: "GET" | "POST"; body?: unknown } = {}): Promise<T> {
+  const token = await staffToken();
+  const res = await fetch(path, {
+    method: init.method ?? (init.body === undefined ? "GET" : "POST"),
+    headers: { "Content-Type": "application/json", ...(token ? { Authorization: `Bearer ${token}` } : {}) },
+    body: init.body === undefined ? undefined : JSON.stringify(init.body),
+  });
+  const data = (await res.json().catch(() => ({}))) as { error?: string; message?: string };
+  if (!res.ok) throw new StaffApiError(res.status, data.error ?? "error", data.message ?? `Request failed (${res.status})`);
+  return data as T;
+}

@@ -2,18 +2,19 @@ import { z } from "zod";
 import { loadCatalog } from "@/server/catalog";
 import { evidenceCsv, evidencePdf, type AssessmentRow, type EvidenceRow } from "@/server/evidence";
 import { handler } from "@/server/http";
-import { HttpError, supabaseAsUser, userFromRequest } from "@/server/supabase";
+import { HttpError, requireStaff, supabaseAsUser } from "@/server/supabase";
 
 const Query = z.object({ cohort: z.uuid(), format: z.enum(["csv", "pdf"]) });
 
 /**
- * Completion evidence for a class, as CSV or a printable PDF. Runs as the
- * signed-in staff member: the database functions allow only the class's
- * facilitators and its organisation's admins, and include only learners who
- * consented to share mastery.
+ * Completion evidence for a class, as CSV or a printable PDF. Only for
+ * facilitators and organisation admins signed in with their second factor;
+ * then runs as that staff member: the database functions allow only the
+ * class's facilitators and its organisation's admins, and include only
+ * learners who consented to share mastery.
  */
 export const GET = handler(async (request) => {
-  const { token } = await userFromRequest(request);
+  const { token } = await requireStaff(request, ["facilitator", "org_admin"]);
   const url = new URL(request.url);
   const q = Query.parse({ cohort: url.searchParams.get("cohort"), format: url.searchParams.get("format") });
   const db = supabaseAsUser(token);

@@ -75,6 +75,7 @@ async function main() {
   console.log("Seeded local development data (password for all accounts: %s)", PASSWORD);
   for (const s of STAFF) console.log(`  ${s.role.padEnd(17)} ${s.email}`);
   console.log(`  class "Morning class" join code: ${cohort.join_code}`);
+  console.log("Staff sign-in needs a second step: at each account's first sign-in, add it to an authenticator app (QR code or key) and save the recovery codes.");
 }
 
 main().catch((e) => {
