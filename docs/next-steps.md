@@ -1,6 +1,6 @@
 # Next steps for a controlled South African pilot
 
-In priority order. Steps 1–6 are required before any learner uses the app; the rest make the pilot better or prepare for what follows.
+In priority order. Steps 1–6 are required before any learner uses the app; the rest make the pilot better or prepare for what follows. The security review and its pilot-readiness matrix, with the blockers and human validations they add, are in [security-review.md](security-review.md).
 
 ## Before the pilot (required)
 
