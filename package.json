@@ -5,7 +5,7 @@
   "description": "Yomu: a mobile-first English literacy tutor for adults, taught through isiZulu or Sesotho.",
   "license": "MIT",
   "engines": {
-    "node": ">=22"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "next dev",

@@ -5,13 +5,16 @@ import { execSync } from "node:child_process";
 // error logs so problems can be traced to a release.
 function resolveBuildId(): string {
   if (process.env.YOMU_BUILD_ID) return process.env.YOMU_BUILD_ID;
-  let sha = "local";
-  try {
-    sha = execSync("git rev-parse --short HEAD", { stdio: ["ignore", "pipe", "ignore"] })
-      .toString()
-      .trim();
-  } catch {
-    // Not a git checkout (for example a tarball deploy): fall back to "local".
+  // Vercel names the commit; elsewhere ask git.
+  let sha = process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || "local";
+  if (sha === "local") {
+    try {
+      sha = execSync("git rev-parse --short HEAD", { stdio: ["ignore", "pipe", "ignore"] })
+        .toString()
+        .trim();
+    } catch {
+      // Not a git checkout (for example a tarball deploy): fall back to "local".
+    }
   }
   return `${sha}-${Date.now().toString(36)}`;
 }

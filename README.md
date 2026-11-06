@@ -16,7 +16,7 @@ A mobile-first app that teaches South African adults to read and write English *
 
 ## Run it locally
 
-Requirements: Node.js 22+, Docker (for the local Supabase stack) and ffmpeg (the content build generates placeholder audio with it). Nothing here uses paid cloud services.
+Requirements: Node.js 22, Docker (for the local Supabase stack) and ffmpeg (only to import recordings or to make placeholder audio for new lines; the placeholders are committed, so builds such as Vercel's need no ffmpeg). Nothing here uses paid cloud services.
 
 ```bash
 npm ci
@@ -112,6 +112,7 @@ Generated files have a `-- --check` mode used by CI (`content:schema`, `docs:aet
 | [docs/licences.md](docs/licences.md) | Image and audio licences and attribution |
 | [docs/known-limitations.md](docs/known-limitations.md) | What does not work yet, honestly |
 | [docs/next-steps.md](docs/next-steps.md) | Prioritised steps to a controlled pilot |
+| [docs/deploy.md](docs/deploy.md) | Going live: Supabase project, Vercel settings and checks |
 | [docs/test-results.md](docs/test-results.md) | Latest automated test and performance results |
 
 ## Licence

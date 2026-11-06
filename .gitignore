@@ -45,9 +45,9 @@ next-env.d.ts
 supabase/.branches
 supabase/.temp
 
-# generated at build time from content/ (see scripts/build-content.ts)
+# generated at build time from content/ (see scripts/build-content.ts);
+# public/audio/placeholder/ is committed, so hosts without ffmpeg can build
 /public/content/
-/public/audio/placeholder/
 /public/sw.js
 
 # test output
