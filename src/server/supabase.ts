@@ -59,11 +59,14 @@ export interface AuthenticatedRequest {
 /**
  * The caller, checked by Auth: a valid signature, not expired, and a session
  * that still exists (a signed-out or revoked session is refused). The claims
- * are then read from the token Auth has just accepted.
+ * are then read from the token Auth has just accepted. When Auth cannot be
+ * reached the answer is 503, never 401: the app treats 401 as "this phone's
+ * session is gone" (moved or deleted), which an outage must not look like.
  */
 export async function userFromRequest(request: Request): Promise<AuthenticatedRequest> {
   const token = bearerToken(request);
   const { data, error } = await supabaseAdmin().auth.getUser(token);
+  if (error && (!error.status || error.status >= 500)) throw new HttpError(503, "auth_unavailable", "Sign-in could not be checked just now. Try again.");
   if (error || !data.user) throw new HttpError(401, "unauthenticated");
   const claims = tokenClaims(token);
   return { user: data.user, token, aal: claims.aal ?? null, sessionId: claims.session_id ?? null };

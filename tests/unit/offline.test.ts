@@ -32,6 +32,25 @@ describe("a shared phone keeps each learner's activity separate", () => {
     expect((await db.getAll("profiles")).map((p) => p.id)).toEqual([b.id]);
   });
 
+  it("removing a profile also removes its queued usage events and saved sign-in, and nobody else's", async () => {
+    const db = await freshDb();
+    const { a, b } = await twoLearnersOnOnePhone(db);
+    const at = new Date().toISOString();
+    for (const profileId of [a.id, a.id, b.id, null]) await db.add("analytics", { profileId, event: "lesson_start", props: {}, at });
+    const storage = new Map<string, string>([
+      [`yomu-auth-${a.id}`, "session a"],
+      [`yomu-auth-${b.id}`, "session b"],
+    ]);
+    globalThis.localStorage = { removeItem: (k: string) => void storage.delete(k) } as Storage;
+    try {
+      await deleteProfile(db, a.id);
+    } finally {
+      delete (globalThis as { localStorage?: Storage }).localStorage;
+    }
+    expect((await db.getAll("analytics")).map((e) => e.profileId).sort()).toEqual([b.id, null].sort());
+    expect([...storage.keys()]).toEqual([`yomu-auth-${b.id}`]);
+  });
+
   it("protects each profile with its own PIN, stored only as a slow salted hash", async () => {
     const db = await freshDb();
     const { a, b } = await twoLearnersOnOnePhone(db);

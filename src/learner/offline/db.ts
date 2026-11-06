@@ -38,6 +38,8 @@ export interface StoredProfile {
   learnerId?: string;
   registeredAt?: string;
   analyticsConsent?: boolean;
+  /** Set when the learner first asked to delete the online account (see Privacy). */
+  deletionRequestedAt?: string;
   settings: ProfileSettings;
   onboarding: { completed: boolean; placementDone: boolean };
   pinFailures: number;

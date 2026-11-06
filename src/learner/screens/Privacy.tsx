@@ -49,7 +49,9 @@ export function Privacy() {
   }, [profileId, learnerId, online, reload]);
 
   if (!lang || !profile || !db) return <Spinner />;
-  const moved = !!profile.sessionLost;
+  // A session lost after the learner asked to delete the account is most
+  // likely that deletion (its reply lost), not a move to another phone.
+  const moved = !!profile.sessionLost && !profile.deletionRequestedAt;
   const registered = !!profile.learnerId && !moved;
 
   const needOnline = async () => {
@@ -103,16 +105,27 @@ export function Privacy() {
     await speak({ line: line("export.done"), lang });
   };
 
+  /**
+   * Deletes the online account. The server deletes the account and its
+   * session together, so if the reply to an earlier attempt was lost, this
+   * phone's session is already gone: a repeated attempt that finds it gone
+   * (401) or finds no account (403) counts as done. A first attempt that
+   * gets 401 does not, since the learner may have been moved to another
+   * phone (the next sync then shows that).
+   */
   const deleteOnline = async (): Promise<boolean> => {
     if (!registered) return true;
     if (!online) {
       await needOnline();
       return false;
     }
+    const repeated = !!profile.deletionRequestedAt;
+    if (!repeated) await updateActive({ deletionRequestedAt: new Date().toISOString() });
     try {
       await api(profile.id, "/api/learner/delete", { body: {} });
     } catch (e) {
-      if (!(e instanceof ApiError && e.code === "not_registered")) {
+      const gone = e instanceof ApiError && (e.code === "not_registered" || (repeated && e.code === "unauthenticated"));
+      if (!gone) {
         await speak({ line: line("sys.error_generic"), lang });
         return false;
       }
@@ -125,7 +138,13 @@ export function Privacy() {
     setBusy(true);
     try {
       if (!(await deleteOnline())) return;
-      const updated = await updateProfile(db, profile.id, { learnerId: undefined, registeredAt: undefined, analyticsConsent: false, syncCursor: 0 });
+      const updated = await updateProfile(db, profile.id, {
+        learnerId: undefined,
+        registeredAt: undefined,
+        analyticsConsent: false,
+        syncCursor: 0,
+        deletionRequestedAt: undefined,
+      });
       await forgetAnalytics(db, profile.id);
       await refreshProfiles();
       await activate(updated);

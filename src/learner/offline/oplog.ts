@@ -60,12 +60,6 @@ export async function mergeServerOps(db: YomuDB, profileId: string, ops: Op[]): 
   return added;
 }
 
-export async function deleteProfileOps(db: YomuDB, profileId: string): Promise<void> {
-  const tx = db.transaction("ops", "readwrite");
-  for (const key of await tx.store.index("byProfile").getAllKeys(profileId)) await tx.store.delete(key);
-  await tx.done;
-}
-
 export async function markAllUnsynced(db: YomuDB, profileId: string): Promise<void> {
   const tx = db.transaction("ops", "readwrite");
   for (const op of await tx.store.index("byProfile").getAll(profileId)) await tx.store.put({ ...op, synced: 0 });
