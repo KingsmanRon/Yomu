@@ -62,6 +62,9 @@ export async function newLearner(nickname: string, language: "zu" | "st" = "zu")
 
 export interface TestStaff {
   userId: string;
+  email: string;
+  password: string;
+  token: string;
   db: SupabaseClient;
 }
 
@@ -75,7 +78,37 @@ export async function newStaff(role: "facilitator" | "org_admin" | "content_revi
   const signIn = createClient(URL_, PUBLISHABLE, opts);
   const { data: s, error: e } = await signIn.auth.signInWithPassword({ email, password });
   if (e || !s.session) throw e ?? new Error("no session");
-  return { userId: data.user.id, db: asUser(s.session.access_token) };
+  return { userId: data.user.id, email, password, token: s.session.access_token, db: asUser(s.session.access_token) };
+}
+
+/** A fresh anonymous Auth session, as a phone creates one after spoken consent. Removed by cleanup(). */
+export async function newAnonymousSession(): Promise<{ userId: string; token: string }> {
+  const { data, error } = await createClient(URL_, PUBLISHABLE, opts).auth.signInAnonymously();
+  if (error || !data.session || !data.user) throw error ?? new Error("no session");
+  created.users.push(data.user.id);
+  return { userId: data.user.id, token: data.session.access_token };
+}
+
+/** Calls a route handler in-process with a real bearer token, as the app does over HTTP. */
+export async function callRoute(
+  route: (request: Request) => Promise<Response>,
+  init: { method?: string; token?: string; body?: unknown; url?: string } = {},
+): Promise<{ status: number; body: Record<string, unknown> | null }> {
+  const res = await route(
+    new Request(init.url ?? "http://localhost/api/test", {
+      method: init.method ?? (init.body === undefined ? "GET" : "POST"),
+      headers: { "Content-Type": "application/json", ...(init.token ? { Authorization: `Bearer ${init.token}` } : {}) },
+      body: init.body === undefined ? undefined : JSON.stringify(init.body),
+    }),
+  );
+  const text = await res.text();
+  let body: Record<string, unknown> | null = null;
+  try {
+    body = text ? (JSON.parse(text) as Record<string, unknown>) : null;
+  } catch {
+    body = { raw: text };
+  }
+  return { status: res.status, body };
 }
 
 export async function newOrg(): Promise<string> {
@@ -135,6 +168,11 @@ export async function addActivity(learner: TestLearner) {
 }
 
 export async function cleanup() {
+  // Learners created through the app's routes are found by their Auth user.
+  if (created.users.length > 0) {
+    const { data } = await admin.from("learners").select("id").in("auth_user_id", created.users);
+    for (const l of data ?? []) if (!created.learners.includes(l.id)) created.learners.push(l.id);
+  }
   for (const id of created.learners) await admin.rpc("delete_learner", { p_learner: id, p_initiated_by: "platform_admin" });
   for (const id of created.orgs) await admin.from("organisations").delete().eq("id", id);
   for (const id of created.users) await admin.auth.admin.deleteUser(id);

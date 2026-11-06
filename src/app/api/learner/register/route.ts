@@ -25,48 +25,33 @@ const Body = z
  * Registers the learner after spoken consent. The device has just signed in
  * anonymously with Supabase Auth; nothing about the learner was stored on the
  * server before this call.
+ *
+ * Everything is written by one database function in one transaction (learner,
+ * hashed PIN, device link, consent records), so a failure leaves nothing
+ * behind. Only an anonymous session may register: staff accounts cannot
+ * become learners. A repeated call for the same session (a retry after a
+ * lost reply) returns the learner already created.
  */
 export const POST = handler(async (request) => {
   const { user } = await userFromRequest(request);
+  if (!user.is_anonymous) throw new HttpError(403, "not_anonymous");
   const body = Body.parse(await readJson(request));
   if (body.consent.version !== CONSENT_VERSION) throw new HttpError(409, "consent_version_outdated");
 
-  const db = supabaseAdmin();
-  const { data: existing } = await db.from("learners").select("id").eq("auth_user_id", user.id).maybeSingle();
-  if (existing) return json({ learnerId: existing.id, alreadyRegistered: true });
-
-  const { data: device } = await db.from("device_profiles").select("learner_id").eq("id", body.deviceProfileId).maybeSingle();
-  if (device) throw new HttpError(409, "device_profile_taken");
-
-  const { data: learner, error } = await db
-    .from("learners")
-    .insert({
-      auth_user_id: user.id,
-      teaching_language: body.teachingLanguage,
-      avatar_id: body.avatarId,
-      nickname: body.nickname ?? null,
-    })
-    .select("id, pseudonym")
-    .single();
+  const { data, error } = await supabaseAdmin().rpc("register_learner", {
+    p_auth_user: user.id,
+    p_device_profile: body.deviceProfileId,
+    p_language: body.teachingLanguage,
+    p_avatar: body.avatarId,
+    p_nickname: body.nickname ?? null,
+    p_pin_hash: await hashPin(body.pin),
+    p_consent_version: body.consent.version,
+    p_consent_language: body.consent.language,
+    p_analytics: body.consent.analytics,
+  });
   if (error) throw error;
-
-  const pinHash = await hashPin(body.pin);
-  const consents = [
-    { learner_id: learner.id, consent_type: "account_storage", version: body.consent.version, language: body.consent.language },
-    ...(body.consent.analytics
-      ? [{ learner_id: learner.id, consent_type: "analytics", version: body.consent.version, language: body.consent.language }]
-      : []),
-  ];
-  const results = await Promise.all([
-    db.from("learner_credentials").insert({ learner_id: learner.id, pin_hash: pinHash }),
-    db.from("device_profiles").insert({ id: body.deviceProfileId, learner_id: learner.id }),
-    db.from("consent_records").insert(consents),
-  ]);
-  const failed = results.find((r) => r.error);
-  if (failed?.error) {
-    // Undo the partial registration (credentials, devices and consents cascade).
-    await db.from("learners").delete().eq("id", learner.id);
-    throw failed.error;
-  }
-  return json({ learnerId: learner.id, alreadyRegistered: false }, { status: 201 });
+  const result = data as { learnerId?: string; alreadyRegistered?: boolean; error?: string };
+  if (result.error === "device_profile_taken") throw new HttpError(409, "device_profile_taken");
+  if (result.error) throw new HttpError(403, result.error);
+  return json({ learnerId: result.learnerId, alreadyRegistered: result.alreadyRegistered }, { status: result.alreadyRegistered ? 200 : 201 });
 });
