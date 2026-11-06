@@ -5,7 +5,7 @@ import { devToolsEnabled } from "@/server/devtools";
 import { backendReady, serverEnv } from "@/server/env";
 import { handler, json } from "@/server/http";
 import { providers, providerSelection } from "@/server/providers";
-import { HttpError } from "@/server/supabase";
+import { HttpError, requireStaff } from "@/server/supabase";
 import { tutorContext } from "@/server/tutor/context";
 import { isHealthy } from "@/server/tutor/health";
 import { loadMatrix } from "@/server/tutor/matrix";
@@ -23,11 +23,15 @@ const Fields = z.object({
  * Developer tutor lab: runs the configured providers on one question and
  * shows every intermediate result, including for providers the capability
  * matrix has not verified (that is what the lab is for). Not available in
- * production, not reachable from the learner app, stores nothing about
- * anyone, and real providers still count against the daily spending cap.
+ * production unless DEV_TOOLS_ENABLED, not reachable from the learner app,
+ * stores nothing about anyone, and real providers still count against the
+ * daily spending cap that learners share. So wherever a database is
+ * configured (and paid providers can run), only platform administrators and
+ * content reviewers signed in with two-step sign-in may use it.
  */
 export const POST = handler(async (request) => {
   if (!devToolsEnabled()) throw new HttpError(404, "not_found");
+  if (backendReady()) await requireStaff(request, ["platform_admin", "content_reviewer"]);
   const form = await request.formData();
   const f = Fields.parse({ lang: form.get("lang"), lessonId: form.get("lessonId"), stepId: form.get("stepId"), draft: form.get("draft") ?? undefined });
   const audio = form.get("audio");

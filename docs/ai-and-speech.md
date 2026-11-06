@@ -83,7 +83,7 @@ No provider offers verified pronunciation scoring for these learners, so **the a
 
 Its matrix entries are `unsupported` and not learner-visible, so it can never reach learners. The automated tests and the developer tutor lab use it.
 
-**Tutor lab:** `/dev/tutor` (enabled outside production, or with `DEV_TOOLS_ENABLED=true`) runs a typed question through the real server pipeline (limits, matrix, logging) and shows each step. To exercise Tier 2 locally, point `CAPABILITY_MATRIX_PATH` at a copy of the matrix in which the development adapter is marked verified; never commit such a file.
+**Tutor lab:** `/dev/tutor` (enabled outside production, or with `DEV_TOOLS_ENABLED=true`) runs a typed question through the real server pipeline (limits, matrix, logging) and shows each step. Wherever a database is configured, it can be used only by a platform administrator or content reviewer signed in at `/staff` with two-step sign-in, because paid providers spend from the daily cap that learners share. To exercise Tier 2 locally, point `CAPABILITY_MATRIX_PATH` at a copy of the matrix in which the development adapter is marked verified; never commit such a file.
 
 ## Cost controls
 

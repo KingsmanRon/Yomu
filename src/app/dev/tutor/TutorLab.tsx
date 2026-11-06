@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { Catalog, CompiledLesson } from "@/lib/content/compiled";
+import { staffToken } from "@/staff/client";
 
 /**
  * Developer tutor lab. Type a question (sent to the development speech
@@ -56,7 +57,9 @@ export function TutorLab() {
     form.set("draft", String(draft));
     form.set("audio", audio, "question");
     try {
-      const res = await fetch("/api/dev/tutor-lab", { method: "POST", body: form });
+      // Uses the staff session of this browser (sign in at /staff first).
+      const token = await staffToken().catch(() => null);
+      const res = await fetch("/api/dev/tutor-lab", { method: "POST", body: form, headers: token ? { Authorization: `Bearer ${token}` } : {} });
       setResult(JSON.stringify(await res.json(), null, 2));
     } catch (e) {
       setResult(String(e));
@@ -90,7 +93,8 @@ export function TutorLab() {
       <h1 className="text-2xl font-bold">Tutor lab</h1>
       <p className="rounded-xl bg-accent-soft p-3 text-sm">
         Developer tool. Runs the configured AI providers whether or not the capability matrix has verified them, so it is never shown to learners and is
-        absent in production. Nothing is stored; paid providers count against the daily spending cap. Drafts are AI-generated and unverified.
+        absent in production. Nothing is stored; paid providers count against the daily spending cap. Drafts are AI-generated and unverified. With a
+        database configured, sign in at <a href="/staff" className="underline">/staff</a> as a platform administrator or content reviewer first.
       </p>
       <div className="grid gap-3 sm:grid-cols-3">
         <label className="flex flex-col text-sm font-semibold">
