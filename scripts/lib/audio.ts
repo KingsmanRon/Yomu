@@ -179,7 +179,16 @@ export async function buildAudioIndex(
     await pool(toGenerate, opts.concurrency ?? 6, async ({ asset, rel, seconds }) => {
       const out = join(publicDir, rel);
       mkdirSync(dirname(out), { recursive: true });
-      await run("ffmpeg", placeholderArgs(asset.lang, seconds, out));
+      try {
+        await run("ffmpeg", placeholderArgs(asset.lang, seconds, out));
+      } catch (e) {
+        if ((e as NodeJS.ErrnoException).code !== "ENOENT") throw e;
+        throw new Error(
+          `ffmpeg is needed to make placeholder audio for ${toGenerate.length} line(s) without a recording. ` +
+            "Run `npm run content:build` where ffmpeg is installed and commit public/audio/placeholder " +
+            "(hosts such as Vercel have no ffmpeg), or build with SKIP_AUDIO_GENERATION=true.",
+        );
+      }
       report.generated += 1;
     });
   }

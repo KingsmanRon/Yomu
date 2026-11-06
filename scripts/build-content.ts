@@ -9,6 +9,7 @@
  *   public/content/packs/<lang>/<unit>.json     downloadable lesson packs with sizes
  *   public/content/precache.json                what the service worker caches at install
  *   public/audio/placeholder/...                labelled placeholder tones for unrecorded lines
+ *                                               (committed: made only when missing, which needs ffmpeg)
  *   public/sw.js                                service worker for this build
  *
  * Runs before `next build` (npm prebuild). Fails on invalid content, on audio
