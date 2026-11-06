@@ -22,35 +22,20 @@ export interface AssistCohort {
   learners: AssistLearner[];
 }
 
-/** Cohorts the signed-in facilitator runs, with each active learner's picture and nickname. */
+/**
+ * Live classes the facilitator runs (holding the facilitator role in each
+ * class's organisation), with each active learner's picture and nickname.
+ */
 export async function facilitatorCohorts(userId: string): Promise<AssistCohort[]> {
-  const db = supabaseAdmin();
-  const { data: links, error } = await db.from("cohort_facilitators").select("cohort_id, cohorts(id, name, archived_at)").eq("user_id", userId);
+  const { data, error } = await supabaseAdmin().rpc("assist_learners", { p_facilitator: userId });
   if (error) throw error;
-  const cohorts = (links ?? [])
-    .map((l) => l.cohorts as unknown as { id: string; name: string; archived_at: string | null } | null)
-    .filter((c): c is { id: string; name: string; archived_at: string | null } => !!c && !c.archived_at);
-  if (cohorts.length === 0) return [];
-  const { data: members, error: mErr } = await db
-    .from("cohort_memberships")
-    .select("cohort_id, learners(id, avatar_id, nickname, teaching_language)")
-    .in(
-      "cohort_id",
-      cohorts.map((c) => c.id),
-    )
-    .eq("status", "active");
-  if (mErr) throw mErr;
-  return cohorts
-    .map((c) => ({
-      id: c.id,
-      name: c.name,
-      learners: (members ?? [])
-        .filter((m) => m.cohort_id === c.id)
-        .map((m) => m.learners as unknown as { id: string; avatar_id: string; nickname: string | null; teaching_language: "zu" | "st" } | null)
-        .filter((l): l is NonNullable<typeof l> => !!l)
-        .map((l) => ({ learnerId: l.id, avatarId: l.avatar_id, nickname: l.nickname, language: l.teaching_language })),
-    }))
-    .sort((a, b) => a.name.localeCompare(b.name));
+  const cohorts = new Map<string, AssistCohort>();
+  for (const r of (data ?? []) as { cohort_id: string; cohort_name: string; learner_id: string; avatar_id: string; nickname: string | null; teaching_language: "zu" | "st" }[]) {
+    const c = cohorts.get(r.cohort_id) ?? { id: r.cohort_id, name: r.cohort_name, learners: [] };
+    c.learners.push({ learnerId: r.learner_id, avatarId: r.avatar_id, nickname: r.nickname, language: r.teaching_language });
+    cohorts.set(r.cohort_id, c);
+  }
+  return [...cohorts.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
 
 /**

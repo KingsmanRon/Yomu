@@ -8,8 +8,9 @@ const scrypt = promisify(scryptCb) as (pw: string | Buffer, salt: Buffer, len: n
 /**
  * Picture PINs are four taps on a 3x3 grid (digits 1-9). That is a small
  * space, so the server stores a salted, peppered scrypt hash and limits
- * attempts (see learner_credentials.retry_after). The pepper lives only in the
- * server environment, so a database copy alone cannot be brute-forced.
+ * attempts in the database (pin_attempt_begin; see credentials.ts). The
+ * pepper lives only in the server environment, so a database copy alone
+ * cannot be brute-forced.
  */
 const N = 16384;
 const R = 8;
@@ -36,10 +37,4 @@ export async function verifyPin(pin: string, stored: string): Promise<boolean> {
     p: Number(p),
   });
   return actual.length === expected.length && timingSafeEqual(actual, expected);
-}
-
-/** Wait time after repeated wrong PINs: none for the first 4, then growing, capped at 15 minutes. */
-export function pinRetryDelaySeconds(failedAttempts: number): number {
-  if (failedAttempts < 5) return 0;
-  return Math.min(15 * 60, 30 * 2 ** (failedAttempts - 5));
 }
